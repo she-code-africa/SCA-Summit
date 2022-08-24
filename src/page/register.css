@@ -52,7 +52,7 @@ input:focus {
 
 #navbarBg {
 
-  background-color: #B70569
+  background-color: #B70569;
 
 }
 
@@ -64,6 +64,10 @@ input:focus {
     background-color:transparent;
     box-shadow: none;
 
-
 }
 
+#emaillink {
+
+  color:#B70569;
+
+}

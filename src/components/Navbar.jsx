@@ -29,7 +29,7 @@ const NavBar = () => {
 
                     <NavItem>
                         
-                        <NavLink href="#home" className="text-light">Home</NavLink>  
+                        <NavLink href="/" className="text-light">Home</NavLink>  
 
                     </NavItem>
                     

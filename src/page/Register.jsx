@@ -104,11 +104,11 @@ const Register = () => {
       <ShowModal className="text-center" open={isOpen} close={() => { setIsOpen(false) }}>User has already been registered.</ShowModal> 
 
       {/* register title  */}
-      <div className="text-center text-light pt-2 pb-3" id="navbarBg">
+      <div className="text-center text-light pb-3" id="navbarBg">
         
-        <h1 className="display-6">Register</h1>
+        <h1 className="fs-3 fw-light">Register</h1>
 
-        <p className="display-6 fw-bold">Lorem Ipsum Avec Sont Cest</p>
+        <p className="fs-2 fw-bold">Lorem Ipsum Avec Sont Cest</p>
 
         {setError && <div className="text-danger"> {error} </div>}
 
