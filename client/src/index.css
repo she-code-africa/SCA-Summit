@@ -87,6 +87,7 @@ input:focus {
   text-align: center;
   font-family: 'Inter', sans-serif;
 }
+
 /* Home */
 .home {
   background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('./image/home.png') no-repeat;
@@ -121,7 +122,8 @@ input:focus {
 .home div span.details {
   display: flex;
   flex-direction: row;
-  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
 }
 
 .home h6 {
@@ -186,6 +188,7 @@ input:focus {
   margin: 0 auto;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 20px;
+  grid-auto-flow: dense;
   /* overflow: scroll; */
   justify-content: center;
   align-items: center;
@@ -347,6 +350,28 @@ caption button.bn:hover{
   border-bottom: 2px solid var(--primary-main-pink);
 }
 
+/* Sponsors */
+.sponsors {
+  background: url('./image/banner.png');
+  background-size: 800px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 400px;
+  width: 100%;
+}
+
+.sponsors h5 {
+  font-size: 10px;
+  font-weight: 900;
+  color: var(--primary-main-pink);
+}
+
+.sponsors h3 {
+  font-weight: 650;
+  margin: 10px 20px;
+}
+
 @media (max-width: 1024px) {
   .wp {  
     max-width: 960px;
@@ -368,6 +393,7 @@ caption button.bn:hover{
   caption button.bn {
     width: 200px;
   }
+
 }
 
 @media (max-width: 768px) {
@@ -378,23 +404,45 @@ caption button.bn:hover{
 
   .cd {
     margin: 15px;
-    width: 320px;
-    height: 380px;
+    width: 300px;
+    height: 350px;
     background-color: var(--primary-white);
   }
   
   .ig {
     height: 250px;
-    width: 320px;
+    width: 300px;
   }
 
   caption button.bn {
     width: 130px;
     font-size: 16px;
   }
+
+  .sponsors {
+    background-size: 700px;
+    height: 350px;
+    width: 100%;
+  }
 }
 
 @media (max-width: 425px) {
+  .home div {
+    margin: 80px;
+  }
+
+  .home h1 {
+    margin: 10px 30px;
+  }
+
+  .about {
+    margin: 60px;
+  }
+
+  .about h3 {
+    margin: 10px 10px;
+  }
+
   .wp {  
     max-width: 350px;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -456,9 +504,37 @@ caption button.bn:hover{
     color: var(--primary-grey);
     margin-bottom: 100px;
   }
+
+  .sponsors {
+    background-size: 620px;
+    height: 300px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 375px) {
+  .home div {
+    margin: 50px;
+  }
+
+  .home h1 {
+    margin: 10px 30px;
+  }
 }
 
 @media (max-width: 320px) {
+  .home h1 {
+    margin: 10px 10px;
+  }
+
+  .about {
+    margin: 30px;
+  }
+
+  .about h3 {
+    margin: 10px 10px;
+  }
+
   .wp {  
     max-width: 250px;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -479,4 +555,5 @@ caption button.bn:hover{
     width: 80px;
     font-size: 12px;
   }
+  
 }

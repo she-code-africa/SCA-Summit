@@ -9,6 +9,7 @@ import { Home } from './page/Home';
 import { About } from './page/About';
 import { Schedule } from './page/Schedule';
 import { Speakers } from './page/Speakers';
+import { Sponsors } from './page/Sponsors';
 
 const App = () => {
 
@@ -20,11 +21,18 @@ const App = () => {
         
       <NavBar/>
       
-        <Routes><Route path='signup' element = {<Register />}></Route></Routes>
-        <Home/>
-        <About/>
-        <Speakers/>
-        <Schedule/>
+        <Routes>
+        <Route path='/' element = {
+          <>
+            <Home/>
+            <About/>
+            <Speakers/>
+            <Schedule/>
+            <Sponsors/>
+          </>}>
+        </Route>
+          <Route path='signup' element = {<Register />}></Route>  
+        </Routes>
         
         
         <Footer />

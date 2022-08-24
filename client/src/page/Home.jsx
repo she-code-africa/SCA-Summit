@@ -2,7 +2,7 @@ import React from 'react'
 
 export const Home = () => {
   return (
-    <div id="home" class="home">
+    <div id="home" className="home">
       <div>
         <h4>SHE CODE AFRICA TECH SUMMIT 2022</h4>
         <h1>LARGEST GATHERING OF WOMEN IN <span class='pink' >TECH</span></h1>

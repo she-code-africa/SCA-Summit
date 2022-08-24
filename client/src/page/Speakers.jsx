@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import { Card } from '../components/Card';
 import { faker } from '@faker-js/faker';
 
@@ -14,6 +14,12 @@ export const Speakers = () => {
       <div className="tle">SPEAKERS</div>
       <div className="hd">MEET THE SPEAKERS</div>
       <div className="wp">
+        <Card className="itm" name={`${faker.name.firstName()} ${faker.name.lastName()}`} title={faker.name.jobTitle()} pic={faker.image.avatar()}/>
+
+        <Card className="itm" name={`${faker.name.firstName()} ${faker.name.lastName()}`} title={faker.name.jobTitle()} pic={faker.image.avatar()}/>
+
+        <Card className="itm" name={`${faker.name.firstName()} ${faker.name.lastName()}`} title={faker.name.jobTitle()} pic={faker.image.avatar()}/>
+
         <Card className="itm" name={`${faker.name.firstName()} ${faker.name.lastName()}`} title={faker.name.jobTitle()} pic={faker.image.avatar()}/>
 
         <Card className="itm" name={`${faker.name.firstName()} ${faker.name.lastName()}`} title={faker.name.jobTitle()} pic={faker.image.avatar()}/>
