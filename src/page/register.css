@@ -67,7 +67,21 @@ input:focus {
 }
 
 #emaillink {
+  /* background: linear-gradient(to right, #B70569, #fff, #B70569, #fff);
+  -webkit-text-fill-color: transparent;
+  background-clip: text; */
 
-  color:#B70569;
-
+    /* set the background color */
+    /* background:linear-gradient(#fff, #B70569);
+    text-decoration: underline */
+    color: #fa07918f;
+    /* background: linear-gradient(to right, #B70569 0%, #fff 100%); */
+    /* text-shadow: 1px 0 0 #B70569; */
+    /* background-image: radial-gradient(circle, #fff, #B70569, #fff,#B70569 ); */
+    /* background-image: radial-gradient(circle,  #B70569,#fff,#B70569, #fff ); */
+    /* background color masked along the text and clip away the rest */
+    /* -webkit-text-fill-color: transparent; */
+    /* make fill color to transparent so that masked background color will be shown */
+    /* -webkit-background-clip:text; */
+    /* background-clip: text; */
 }
