@@ -13,7 +13,7 @@ module.exports.saveUserDetails = async (req, res) => {
     try {
 
             // destructing of data
-            const { firstName, lastName, email,message } = req.body;
+            const { firstName, lastName, email } = req.body;
 
             // find an existing user using their email
             const existingUser = await userRegistration.findOne({ email })
@@ -26,7 +26,7 @@ module.exports.saveUserDetails = async (req, res) => {
             } else {
 
                 //save the new user data into the database
-                const saveDetails = new userRegistration({ firstName, lastName, email,message })
+                const saveDetails = new userRegistration({ firstName, lastName, email })
             
                 //save user database 
                 const saveUser = await saveDetails.save();
@@ -48,7 +48,7 @@ module.exports.saveUserDetails = async (req, res) => {
                     // send email  
                     await newTransporter.sendMail({
                 
-                        from: "dummy@gmail.com",
+                        from: "engineering@shecodeafrica.org",
                 
                         to: saveUser.email,
                     
@@ -56,7 +56,7 @@ module.exports.saveUserDetails = async (req, res) => {
                     
                         html: generateEmailTicketTemplate(saveUser.firstName, OTP),
 
-                        replyTo: "dummy@gmail.com",
+                        replyTo: "engineering@shecodeafrica.org",
                 
                     });
     
@@ -70,7 +70,7 @@ module.exports.saveUserDetails = async (req, res) => {
         
     } catch (error) {
         
-        console.log(error);
+        console.log(error.message);
 
         res.status(500).json(error)
 

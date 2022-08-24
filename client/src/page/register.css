@@ -25,6 +25,7 @@ input:focus {
 #btnbg {
 
   background-color: #B70569;
+  border-radius: 0;
   border: none;
 
 }
@@ -38,6 +39,7 @@ input:focus {
 #RegisterBtn {
 
   color: #B70569;
+  border-radius: 0;
   border: none;
 
 }

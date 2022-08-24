@@ -1,6 +1,6 @@
 import { Container, List, ListGroupItem } from "reactstrap";
 
-import logoImage from "../image/she-code-africa-logo.png";
+import logoImage from "../image/logo-inverted.png";
 
 const Footer = () => {
 
@@ -8,13 +8,15 @@ const Footer = () => {
 
     <>
       
-      <footer className="bg-dark text-white py-4">
+      <footer className="bg-dark text-white py-4 mt-5">
 
         <Container className="d-flex justify-content-evenly align-items-center">
 
           <div>
 
-            <img src={logoImage} alt={logoImage} width="40" height="64" />
+            {/* <img src={logoImage} alt={logoImage} width="40" height="64" /> */}
+
+            <img src={logoImage} alt={logoImage}/>
 
           </div>
 
