@@ -19,6 +19,8 @@ const Register = () => {
 
   const [email, setEmail] = useState("");
 
+  const [number, setNumber] = useState("");
+
   const [error, setError] = useState();
 
   const [firstNameError, setFirstNameError] = useState(""); //first name error
@@ -26,6 +28,8 @@ const Register = () => {
   const [lastNameError, setLastNameError] = useState(""); //last name error
 
   const [emailError, setEmailError] = useState(""); //email name error
+
+  const [numberError, setNumberError] = useState("");
 
   const [isOpen, setIsOpen] = useState(false);
 
@@ -48,6 +52,10 @@ const Register = () => {
 
       setEmailError("enter email")
 
+    }else if (!number) {
+
+      setNumberError("enter your number")
+
     }
       
     // if it matches users details should be saved to the database
@@ -61,7 +69,9 @@ const Register = () => {
 
           lastName,
 
-          email
+          email,
+
+          number
 
         };
 
@@ -74,6 +84,8 @@ const Register = () => {
         setLastName("");
 
         setEmail("");
+
+        setNumber("")
 
         if (data.message.includes('success')) {
           
@@ -144,6 +156,20 @@ const Register = () => {
                 <Input placeholder="Enter your last name" type="text" value={lastName} onChange={(e) => setLastName(e.target.value)} id="customtextarea" className="p-2"/>
 
                 {!lastName && (<div className="text-danger">{lastNameError}</div>)}
+
+              </FormGroup>
+
+            </Col>
+
+            <Col md={12}>
+
+              <FormGroup>
+
+                <Label className="fw-bold">Number:*</Label>
+
+                <Input placeholder="Enter your phone number" type="number" value={number}  onChange={(e) => setNumber(e.target.value)} id="customtextarea" className="p-2"/>
+
+                {!number && <div className="text-danger">{numberError}</div>}
 
               </FormGroup>
 

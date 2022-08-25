@@ -44,13 +44,17 @@ export const Schedule = () => {
         </div> */}
         <table className="s-1">
           <caption>
-            <button class="bn" onClick={handleClick1}>First Session</button>
-            <button class="bn" onClick={handleClick2}>Second Session</button>
-            <button class="bn" onClick={handleClick3}>Third Session</button>
+            <button className="bn" onClick={handleClick1}>First Session</button>
+            <button className="bn" onClick={handleClick2}>Second Session</button>
+            <button className="bn" onClick={handleClick3}>Third Session</button>
           </caption>
+          <tbody>
+
             {isShown1 && (
-              <tbody>
-              {dayOne.map((dayOne, key) => {
+              // <tbody>
+              // {dayOne.map((dayOne, key) => {
+              dayOne.map((dayOne, key) => {
+
               return  <>
                         <tr key = {key}>
                           <td>{dayOne.duration}</td>
@@ -61,12 +65,15 @@ export const Schedule = () => {
                           <td>{dayOne.summary}</td>
                         </tr>
                       </>
-              })}
-              </tbody>
+              // })}
+              })
+              
+              // {/* </tbody> */}
             )}
+          
             {isShown2 && (
-              <tbody>
-              {dayTwo.map((dayTwo, key) => {
+              // <tbody>
+              dayTwo.map((dayTwo, key) => {
               return  <>
                         <tr key = {key}>
                           <td>{dayTwo.duration}</td>
@@ -77,12 +84,12 @@ export const Schedule = () => {
                           <td>{dayTwo.summary}</td>
                         </tr>
                       </>
-              })}
-              </tbody>
+              })
+              // </tbody>
             )}
             {isShown3 && (
-              <tbody>
-              {dayThree.map((dayThree, key) => {
+              // <tbody>
+              dayThree.map((dayThree, key) => {
               return  <>
                         <tr key = {key}>
                           <td>{dayThree.duration}</td>
@@ -93,9 +100,10 @@ export const Schedule = () => {
                           <td>{dayThree.summary}</td>
                         </tr>
                       </>
-              })}
-              </tbody>
+              })
             )}
+            
+              </tbody>
         </table>
 
       </div>
