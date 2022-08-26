@@ -1,6 +1,6 @@
 import { Home } from './Home/Home';
 
-import { About } from './About';
+import { About } from './About/About';
 
 import { Schedule } from './Schedule';
 
