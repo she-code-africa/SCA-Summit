@@ -107,7 +107,6 @@ const Register = () => {
 
 
   return (
-
     <>
       {/* success message modal */}
       <SuccessMessage className="text-center" success={Success} isClose={() => { setSuccess(false) }} />
@@ -116,7 +115,7 @@ const Register = () => {
       <ShowModal className="text-center" open={isOpen} close={() => { setIsOpen(false) }}>User has already been registered.</ShowModal> 
 
       {/* register title  */}
-      <div className="text-center text-light pb-3" id="navbarBg">
+      <div className="text-center text-light pb-3 register-nav" id="navbarBg">
         
         <h1 className="fs-3 fw-light">Register</h1>
 

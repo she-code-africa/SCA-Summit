@@ -1,8 +1,10 @@
-import React from 'react'
+import React from 'react';
+import NavBar from '../components/Navbar/Navbar';
 
 export const Home = () => {
   return (
     <div id="home" className="home">
+      {/* <NavBar/> */}
       <div>
         <h4>SHE CODE AFRICA TECH SUMMIT 2022</h4>
         <h1>LARGEST GATHERING OF WOMEN IN <span className='pink' >TECH</span></h1>
