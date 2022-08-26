@@ -247,7 +247,7 @@ caption button.bn:hover{
 
 /* Sponsors */
 .sponsors {
-  background: url('./image/banner.png');
+  background: url('./assets/image/banner.png');
   background-size: 800px;
   display: flex;
   flex-direction: column;

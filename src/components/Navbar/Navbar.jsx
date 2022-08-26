@@ -10,7 +10,7 @@ import {
   NavItem,
   NavLink,
 } from "reactstrap";
-import logoImage from "../../image/logo-inverted.png";
+import logoImage from "../../assets/image/logo-inverted.png";
 import "./Navbar.css";
 
 const NavBar = () => {
