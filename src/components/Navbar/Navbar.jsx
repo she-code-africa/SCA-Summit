@@ -10,7 +10,6 @@ import {
   NavItem,
   NavLink,
 } from "reactstrap";
-import { ScrollspyNavLink } from 'reactstrap-scrollspy'
 import logoImage from "../../image/logo-inverted.png";
 import "./Navbar.css";
 
