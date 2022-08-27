@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 import { Container, List, ListGroupItem } from "reactstrap";
 
-import logoImage from "../assets/image/logo-inverted.png";
+import logoImage from "../../assets/image/logo-inverted.png";
 
 import "./footer.css";
 

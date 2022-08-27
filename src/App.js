@@ -4,7 +4,7 @@ import NavBar from "./components/Navbar/Navbar";
 
 import AllHomeComponent from './page/AllHomeComponent';
 
-import Footer from "./components/Footer";
+import Footer from "./components/Footer/Footer";
 
 const App = () => {
 
