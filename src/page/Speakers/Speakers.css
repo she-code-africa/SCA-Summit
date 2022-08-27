@@ -25,70 +25,23 @@
     color: var(--primary-white);
   }
   
-  .wp {
+  .speakers {
     display: grid;
     margin: 0 auto;
-    grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
-    /* gap: 20px; */
+    grid-template-columns: repeat(auto-fit, 420px);
+    column-gap: 15px;
+    row-gap: 0;
     grid-auto-flow: dense;
-    /* place-content: center center; */
     min-width: 95%;
     justify-items: center;
-    align-items: center
+    align-items: center;
+    padding: 20px 35px;
   }
   
-  .cd {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    display: flex;
-    flex-direction: column;
-    transition: 0.3s;
-    margin: 20px;
-    width: 400px;
-    height: 420px;
-    background-color: var(--primary-white);
-  }
-  
-  .ig {
-    height: 300px;
-    width: 380px;
-  }
-  
-  img.ig {
-    width:100%;
-    height:100%;
-  }
-  
-  .cd:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  }
-  
-  .cont {
-    padding: 5px 16px;
-    text-align: justify;
-    margin-left: 15px;
-  }
-  
-  .cont h5 {
-    margin-top: 15px;
-    color: var(--primary-grey);
-  }
-  
-  .cont h2 {
-    margin-top: -10px;
-    font-size: 22px;
-    font-weight: 700;
-    color: var(--secondary);
-  }
-  
-  .cont p {
-    margin-top: -10px;
-    color: var(--primary-grey);
-    font-size: 15px;
-  }
-  
-  button.bn {
-    font-family: 'Inter', sans-serif;
-    font-size: 12px;
+button.bn {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
     padding: 10px 20px;
     border:0.1em solid #FFFFFF;
     background-color: var(--primary-white);
@@ -96,11 +49,39 @@
     border-radius:0.12em;
     box-sizing: border-box;
     text-decoration:none;
-    font-weight: 700;
     color:var(--primary-main-pink);
     transition: all 0.2s;
-  }
+}
   
   button.bn::after {
     background-color: var(--primary-main-pink);
   }
+
+  @media (max-width: 600px) {
+    .speakers-container{
+        padding: 0;
+    }
+    .speakers{
+        padding: 10px;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    .cd{
+        width: 100%;
+        max-width: 100%;
+        margin: 5px;
+    }
+}
+
+@media (min-width: 768px) {
+    .speakers{
+        grid-template-columns: repeat(auto-fit, 1fr);
+    }
+}
+
+@media (min-width: 1200px) {
+    .speakers{
+        grid-template-columns: repeat(auto-fit, 420px);
+    }
+}
+
