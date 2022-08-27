@@ -53,17 +53,34 @@
 
 @media (min-width: 992px) {
     .about{
-        margin: 5rem auto;
+        margin: 4rem auto;
     }
     .about-content{
-        margin: auto 100px auto auto;
+        margin: auto
     }
     .about-content h3{
         font-size: 48px;
         line-height: 60px;
     }
     .about-content p{
-        line-height: 50px;
+        line-height: 30px;
+    }
+    .about img{
+        align-self: flex-end;
+        height: 250px;
+        display: block;
+    }
+}
+
+@media (min-width: 1200px) {
+    .about{
+        margin: 5rem auto;
+    }
+    .about-content{
+        margin: auto 100px auto auto;
+    }
+    .about-content p{
+        line-height: 45px;
     }
     .about img{
         align-self: flex-end;
