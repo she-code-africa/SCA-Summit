@@ -1,0 +1,10 @@
+@media (max-width: 425px) {
+    footer img{
+        height: 70px
+    }
+
+    
+    /* #footerList{
+        font-size: 10px;
+    } */
+}

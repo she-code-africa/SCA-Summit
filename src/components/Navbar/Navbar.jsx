@@ -10,12 +10,17 @@ import {
   NavItem,
   NavLink,
 } from "reactstrap";
+
 import logoImage from "../../assets/image/logo-inverted.png";
+
 import "./Navbar.css";
 
 const NavBar = () => {
+
   const [colorChange, setColorchange] = useState(false);
+
   const [click, setClick] = useState(false);
+
   const changeNavbarColor = () => {
     if (window.scrollY >= 80) {
       setColorchange(true);
@@ -23,18 +28,21 @@ const NavBar = () => {
       setColorchange(false);
     }
   };
+
   window.addEventListener("scroll", changeNavbarColor);
+
   const toggle = () => setClick(!click);
+
   return (
     <Navbar className="navbar" expand="md" id={colorChange ? "navbarBg" : ""}>
       <NavbarBrand>
         <img src={logoImage} alt={logoImage} />
       </NavbarBrand>
-      <NavbarToggler onClick={toggle} className="shadow-sm" />
+      <NavbarToggler onClick={toggle} className="shadow-sm custom-navbar-toggler" id={colorChange ? "navbar-toggler-tranparent" : ""}/>
       <Collapse isOpen={click} navbar>
         <Nav className="m-auto nav-items" navbar>
           <NavItem>
-            <NavLink href="/" className="text-light">
+            <NavLink href="#" className="text-light">
               Home
             </NavLink>
           </NavItem>
@@ -54,7 +62,7 @@ const NavBar = () => {
             </NavLink>
           </NavItem>
         </Nav>
-        <Button className="register-btn" href="signup">
+        <Button className="register-btn" href="/">
           Register
         </Button>
       </Collapse>

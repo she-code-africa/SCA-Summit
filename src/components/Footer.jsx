@@ -4,6 +4,8 @@ import { Container, List, ListGroupItem } from "reactstrap";
 
 import logoImage from "../assets/image/logo-inverted.png";
 
+import "./footer.css";
+
 const Footer = () => {
   return (
     <>
@@ -15,7 +17,7 @@ const Footer = () => {
           <div>
             {/* <img src={logoImage} alt={logoImage} width="40" height="64" /> */}
 
-            <img src={logoImage} alt={logoImage} />
+            <img src={logoImage} alt={logoImage}/>
           </div>
 
           <List>
@@ -27,16 +29,12 @@ const Footer = () => {
               10th October, 2022
             </ListGroupItem>
 
-            <ListGroupItem className="fs-6 mb-3 text-break">
-              10/12 AdmiraListGroupItemty road, Lekki Phase 1, Lagos Nigeria.
-            </ListGroupItem>
+            <ListGroupItem className="fs-6 mb-3">10th October, 2022</ListGroupItem>
 
-            <ListGroupItem className="fs-6 text-break">
-              Have any questions, reach out to us at{" "}
-              <Link to="#email" id="emaillink">
-                Shecodesafrica@gmail.com
-              </Link>
-            </ListGroupItem>
+            <ListGroupItem className="fs-6 mb-3 text-break">10/12 AdmiraListGroupItemty road, Lekki Phase 1, Lagos Nigeria.</ListGroupItem>
+
+            <ListGroupItem className="fs-6 text-break">Have any questions, reach out to us at{" "} <Link to="#email" style={{ color: '#fa07918f'}}>Shecodesafrica@gmail.com</Link></ListGroupItem>
+
           </List>
 
           <List>

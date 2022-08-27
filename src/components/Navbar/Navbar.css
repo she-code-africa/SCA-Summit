@@ -17,6 +17,16 @@
     line-height: 21px;
 }
 
+#navbarBg {
+    background-color: #B70569;
+}
+.custom-navbar-toggler{
+    background-color: #fff;
+}
+
+#navbar-toggler-tranparent{
+    background-color: transparent;
+}
 .register-btn{
     background-color: var(--primary-main-pink);
     color: white;

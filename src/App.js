@@ -4,8 +4,6 @@ import NavBar from "./components/Navbar/Navbar";
 
 import AllHomeComponent from './page/AllHomeComponent';
 
-import Register from "./page/Register";
-
 import Footer from "./components/Footer";
 
 const App = () => {
@@ -21,9 +19,7 @@ const App = () => {
         <Routes>
           
           <Route index element={<AllHomeComponent />}></Route>
-          
-          <Route path='/signup' element={<Register />}></Route> 
-          
+                    
         </Routes>
         
         <Footer />
