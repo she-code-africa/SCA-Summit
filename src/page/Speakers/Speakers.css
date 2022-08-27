@@ -1,0 +1,106 @@
+/* Speakers */
+.speakers-container {
+    background-color: var(--primary-main-pink);
+    text-align: center;
+    padding: 20px;
+}
+  
+.speakers-container h5{
+    text-align: center;
+    padding-top: 25px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--primary-white);
+}
+  
+.speakers-container h6 {
+    text-align: center;
+    margin-top: 25px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 1.5px;
+    color: var(--primary-white);
+  }
+  
+  .wp {
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+    /* gap: 20px; */
+    grid-auto-flow: dense;
+    /* place-content: center center; */
+    min-width: 95%;
+    justify-items: center;
+    align-items: center
+  }
+  
+  .cd {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s;
+    margin: 20px;
+    width: 400px;
+    height: 420px;
+    background-color: var(--primary-white);
+  }
+  
+  .ig {
+    height: 300px;
+    width: 380px;
+  }
+  
+  img.ig {
+    width:100%;
+    height:100%;
+  }
+  
+  .cd:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  .cont {
+    padding: 5px 16px;
+    text-align: justify;
+    margin-left: 15px;
+  }
+  
+  .cont h5 {
+    margin-top: 15px;
+    color: var(--primary-grey);
+  }
+  
+  .cont h2 {
+    margin-top: -10px;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--secondary);
+  }
+  
+  .cont p {
+    margin-top: -10px;
+    color: var(--primary-grey);
+    font-size: 15px;
+  }
+  
+  button.bn {
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    padding: 10px 20px;
+    border:0.1em solid #FFFFFF;
+    background-color: var(--primary-white);
+    margin: 0 0 30px 0;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-weight: 700;
+    color:var(--primary-main-pink);
+    transition: all 0.2s;
+  }
+  
+  button.bn::after {
+    background-color: var(--primary-main-pink);
+  }

@@ -30,7 +30,7 @@ body{
  color: var(--primary-main-pink);
 }
 
-/* Speakers */
+/* Speakers
 .speakers {
   background-color: var(--primary-main-pink);
   text-align: center;
@@ -61,7 +61,7 @@ body{
   gap: 20px;
   grid-auto-flow: dense;
   /* overflow: scroll; */
-  justify-content: center;
+  /* justify-content: center;
   align-items: center;
 }
 
@@ -131,7 +131,7 @@ button.bn {
 
 button.bn::after {
   background-color: var(--primary-main-pink);
-}
+}  */
 
 /* Schedule */
 .schedule {

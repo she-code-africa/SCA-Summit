@@ -4,7 +4,7 @@ import { About } from './About/About';
 
 import { Schedule } from './Schedule';
 
-import { Speakers } from './Speakers';
+import {Speakers} from './Speakers/Speakers'
 
 import { Sponsors } from './Sponsors';
 
