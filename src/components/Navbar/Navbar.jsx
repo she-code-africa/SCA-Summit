@@ -62,7 +62,7 @@ const NavBar = () => {
             </NavLink>
           </NavItem>
         </Nav>
-        <Button className="register-btn" href="/">
+        <Button className={colorChange ? "register-btn white" : "register-btn"} href="/">
           Register
         </Button>
       </Collapse>
