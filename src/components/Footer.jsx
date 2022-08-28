@@ -30,7 +30,7 @@ const Footer = () => {
 
             <ListGroupItem className="fs-6 mb-3 text-break">10/12 AdmiraListGroupItemty road, Lekki Phase 1, Lagos Nigeria.</ListGroupItem>
 
-            <ListGroupItem className="fs-6 text-break">Have any questions, reach out to us at{" "} <Link to="#email" id="emaillink">Shecodesafrica@gmail.com</Link></ListGroupItem>
+            <ListGroupItem className="fs-6 text-break">Have any questions, reach out to us at{" "} <Link to="#email" style={{ color: '#fa07918f'}}>Shecodesafrica@gmail.com</Link></ListGroupItem>
 
           </List>
 

@@ -1,40 +1,3 @@
-body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
-input:focus {
-  outline: none;
-  box-shadow: none;
-}
-
-#btn{
-  margin-bottom: 8rem;
-}
-#btnbg {
-
-  background-color: #B70569;
-  border-radius: 0;
-  border: none;
-
-}
-
-#btnbg:focus{
-
-  box-shadow: none;
- 
-}
 
 #RegisterBtn {
 
@@ -48,40 +11,4 @@ input:focus {
 
   box-shadow: none;
  
-}
-
-#navbarBg {
-
-  background-color: #B70569;
-
-}
-
-#customtextarea {
-  resize: none;
-}
-
-#customtextarea:focus{
-    background-color:transparent;
-    box-shadow: none;
-
-}
-
-#emaillink {
-  /* background: linear-gradient(to right, #B70569, #fff, #B70569, #fff);
-  -webkit-text-fill-color: transparent;
-  background-clip: text; */
-
-    /* set the background color */
-    /* background:linear-gradient(#fff, #B70569);
-    text-decoration: underline */
-    color: #fa07918f;
-    /* background: linear-gradient(to right, #B70569 0%, #fff 100%); */
-    /* text-shadow: 1px 0 0 #B70569; */
-    /* background-image: radial-gradient(circle, #fff, #B70569, #fff,#B70569 ); */
-    /* background-image: radial-gradient(circle,  #B70569,#fff,#B70569, #fff ); */
-    /* background color masked along the text and clip away the rest */
-    /* -webkit-text-fill-color: transparent; */
-    /* make fill color to transparent so that masked background color will be shown */
-    /* -webkit-background-clip:text; */
-    /* background-clip: text; */
 }

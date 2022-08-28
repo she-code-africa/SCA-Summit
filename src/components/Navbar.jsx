@@ -4,6 +4,8 @@ import {Button, Navbar, Nav, NavbarBrand, NavbarToggler,Collapse, NavItem, NavLi
 
 import logoImage from "../image/logo-inverted.png";
 
+import "../page/register.css"
+
 const NavBar = () => {
 
     const [click, setClick] = useState(false);
@@ -12,7 +14,7 @@ const NavBar = () => {
 
     return (
 
-        <Navbar id="navbarBg" className="py-2 px-5" expand="md">
+        <Navbar className="py-2 px-5" expand="md" style={{backgroundColor:'#B70569'}}>
             
             <NavbarBrand>
 
