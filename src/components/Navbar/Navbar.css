@@ -1,0 +1,52 @@
+.navbar {
+    background: transparent;
+    padding: 10px;
+    height: 80px;
+    background-color: transparent;
+    border: none;
+    top: 0px;
+    position: sticky;
+}
+.navbar img{
+    height: 50px
+}
+
+.nav-link{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21px;
+}
+
+#navbarBg {
+    background-color: #B70569;
+}
+
+.register-btn{
+    background-color: var(--primary-main-pink);
+    color: white;
+    inline-size: 100px;
+    border-radius: 2px;
+    border: none;
+}
+
+/* @media (min-width: 600px) {
+    .navbar{
+        padding: 10px;
+    }
+} */
+
+@media (min-width: 768px) {
+    .navbar{
+        padding: 10px 15px;
+    }
+
+    .nav-items{
+        gap: calc(40px - 1rem)
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar{
+        padding: 10px 60px;
+    }
+}
