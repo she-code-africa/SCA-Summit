@@ -38,7 +38,7 @@ const NavBar = () => {
       <NavbarBrand>
         <img src={logoImage} alt={logoImage} />
       </NavbarBrand>
-      <NavbarToggler onClick={toggle} className="shadow-sm" />
+      <NavbarToggler onClick={toggle} className="shadow-sm custom-navbar-toggler" id={colorChange ? "navbar-toggler-tranparent" : ""}/>
       <Collapse isOpen={click} navbar>
         <Nav className="m-auto nav-items" navbar>
           <NavItem>
@@ -62,7 +62,7 @@ const NavBar = () => {
             </NavLink>
           </NavItem>
         </Nav>
-        <Button className="register-btn" href="signup">
+        <Button className="register-btn" href="/">
           Register
         </Button>
       </Collapse>

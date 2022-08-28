@@ -4,6 +4,8 @@ import { Container, List, ListGroupItem } from "reactstrap";
 
 import logoImage from "../assets/image/logo-inverted.png";
 
+import "./footer.css";
+
 const Footer = () => {
   return (
     <>
@@ -15,7 +17,7 @@ const Footer = () => {
           <div>
             {/* <img src={logoImage} alt={logoImage} width="40" height="64" /> */}
 
-            <img src={logoImage} alt={logoImage} />
+            <img src={logoImage} alt={logoImage}/>
           </div>
 
           <List>
