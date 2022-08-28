@@ -8,28 +8,28 @@ import reportWebVitals from './reportWebVitals';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import axios from "axios";
+// import axios from "axios";
 
 import App from './App';
 
 // axios
-axios.defaults.baseURL = 'http://localhost:4000/';
+// axios.defaults.baseURL = 'http://localhost:4000/';
 
-axios.defaults.headers.common['Authorization'] = 'AUTH_TOKEN';
+// axios.defaults.headers.common['Authorization'] = 'AUTH_TOKEN';
 
-axios.defaults.headers.post['Content-Type'] = 'application/json';
+// axios.defaults.headers.post['Content-Type'] = 'application/json';
 
-// Add a request interceptor
-axios.interceptors.request.use(request => {
+// // Add a request interceptor
+// axios.interceptors.request.use(request => {
   
-  // Do something before request is sent  
-  return request;
+//   // Do something before request is sent  
+//   return request;
 
-}, error => {
+// }, error => {
 
-  return Promise.reject(error);
+//   return Promise.reject(error);
 
-});
+// });
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
