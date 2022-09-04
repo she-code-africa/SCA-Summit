@@ -40,7 +40,7 @@ const Hackathon = () => {
 
                         </ul>
 
-                        <Button className="register-btn p-4">Apply now</Button>
+                        <Button className="register-btn p-2">Apply now</Button>
 
                     </Col>    
                 </Row>

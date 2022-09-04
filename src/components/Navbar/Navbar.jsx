@@ -17,10 +17,13 @@ import "./Navbar.css";
 
 const NavBar = () => {
 
+  // use state for changing background color when a user scroll through 
   const [colorChange, setColorchange] = useState(false);
 
+  // use state for hamburger menu 
   const [click, setClick] = useState(false);
 
+  //change background color when a user scroll through 
   const changeNavbarColor = () => {
     if (window.scrollY >= 80) {
       setColorchange(true);
@@ -31,6 +34,7 @@ const NavBar = () => {
 
   window.addEventListener("scroll", changeNavbarColor);
 
+  // toggling hamburger menu 
   const toggle = () => setClick(!click);
 
   return (
