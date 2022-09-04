@@ -1,7 +1,7 @@
 #hackthon-img {
 
-    width: 500px;
-    height: 750px;
+    width: 450px;
+    height: 700px;
     border-radius: 2px;
     object-fit: cover;
 
@@ -10,10 +10,11 @@
 #hackthon {
 
     position: absolute;
-    width: 400px;
-    height: 400px;
-    left: 429px;
+    width: 270px;
+    height: 350px;
+    left: 412px;
     top: 479px;
+    object-fit: cover;
     border-radius: 2px;
     border: 15px solid #FFFFFF;
 
@@ -22,7 +23,7 @@
 .shecode-hackthon-text {
 
     margin-top: 6rem;
-    
+
 }
 
 .shecode-hackthon-text > h2{
@@ -53,11 +54,40 @@
 
 .shecode-hackthon-text > p {
 
-    margin: 15px 0;
+    margin: 15px 0 10px;
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
     line-height: 48px;
     color: #707070;
+
+}
+
+.shecode-hackthon-text ul li {
+
+    color: #B70569;
+    font-size: 30px;
+
+}
+
+.shecode-hackthon-text ul li .start-date {
+    color: #000;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+}
+
+.shecode-hackthon-text ul li .date {
+
+    color: #000;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
 
 }

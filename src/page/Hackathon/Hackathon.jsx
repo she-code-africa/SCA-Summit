@@ -34,14 +34,14 @@ const Hackathon = () => {
 
                         <ul>
 
-                            <li>Start date: <span>October 20-21, 2022</span></li>
+                            <li> <span className="start-date"> Start date:</span> <span className="date">October 20-21, 2022</span></li>
 
-                            <li>Application deadline: <span>October 12, 2022</span></li>
+                            <li><span className="start-date">Application deadline: </span><span className="date">October 12, 2022</span></li>
 
                         </ul>
 
-                        <Button>Apply now</Button>
-                        
+                        <Button className="register-btn p-4">Apply now</Button>
+
                     </Col>    
                 </Row>
 
