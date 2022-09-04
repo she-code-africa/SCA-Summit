@@ -61,6 +61,12 @@ const NavBar = () => {
               Schedule
             </NavLink>
           </NavItem>
+          <NavItem>
+            <NavLink href="/hackathon" className="text-light">
+            Hackathon
+            </NavLink>
+          </NavItem>
+          
         </Nav>
         <Button className="register-btn" href="/">
           Register

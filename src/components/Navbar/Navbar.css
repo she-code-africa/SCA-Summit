@@ -19,6 +19,7 @@
 
 #navbarBg {
     background-color: #B70569;
+    z-index: 10;
 }
 .custom-navbar-toggler{
     background-color: #fff;
