@@ -36,7 +36,10 @@ export const Speakers = () => {
           </>
         )}
       </div>
-      <button className="bn" onClick={handleClick}>{isShown ? 'Hide' : 'View All Speakers'}</button>
+      <div>
+        <button className="bn" onClick={handleClick}>{isShown ? 'Hide' : 'View All Speakers'}</button>
+        <button className="bn" onClick={handleClick}>Become A Speaker</button>
+      </div>
     </div>
   )
 }
