@@ -1,0 +1,187 @@
+/* Schedule */
+.schedule {
+    display:grid;
+    grid-template-areas: "left" "right";
+    grid-template-columns: 1fr;
+    grid-template-rows: 120px 1fr;
+    margin: 20px;
+    align-items: baseline;
+    justify-content: center;
+    gap: 35px
+  }
+  
+  .lt {
+    grid-area: left;
+    text-align: justify;
+
+  }
+  
+  .lt h4 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--primary-main-pink);
+  }
+
+  .lt h5{
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 30px;
+    color: var(--secondary-main-black);
+  }
+  
+  .lt p {
+    color: var(--primary-grey);
+  }
+  
+  .rt {
+    grid-area: right;
+    display: grid;
+  }
+  
+  table {
+    border-collapse: collapse;
+    border-style: hidden;
+    color: var(--primary-dark-pink);
+    width: 100%;
+    text-align: justify;
+    margin-top: 20px;
+  }
+  
+  table td, table th {
+    border-bottom: none;
+    height: 35px;
+  }
+  
+  tr td:nth-child(1) {
+    width: 130px;
+    border-right: 1px solid var(--primary-dark-pink);
+  }
+  
+  tr td:nth-child(2) {
+    padding-left: 20px;
+    margin-left: 10px;
+  }
+  
+  tr:nth-child(even) td:nth-child(even) {
+    color: var(--primary-grey);
+    margin-bottom: 100px;
+  }
+  
+  caption {
+    caption-side: top;
+  }
+  
+  caption button.bn:first-child {
+    text-align: left;
+  }
+  
+  caption button.bn:nth-child(3) {
+    text-align: right;
+  }
+  
+  caption button.bn {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    border: none;
+    border-bottom: 2px solid var(--primary-grey);
+    color: var(--primary-grey);
+    border-radius: 0;
+    background: none;
+    font-size: 12px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    min-width: 85px;
+    max-width: 100px;
+  }
+  
+  caption button.bn:hover{
+    color: var(--primary-main-pink);
+    border-bottom: 2px solid var(--primary-main-pink);
+  }
+  
+  @media (min-width: 425px) {
+    .schedule{
+        grid-template-areas: "left" "right";
+        grid-template-columns: 1fr;
+        grid-template-rows: 120px 1fr;
+        margin: 20px;
+    }
+
+    .lt{
+        margin: 10px;
+        padding: 5px;
+    }
+
+
+    caption{
+      width: 100%;
+      text-align: center;
+    }
+
+    caption button.bn {
+      max-width: 128px;
+      font-size: 12px;
+      text-align: center;
+    }
+  }
+
+
+  @media (min-width: 600px) {
+    .schedule{
+      grid-template-columns: minmax(320px, 1fr) 2fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: "left right";
+      margin: 25px;
+      max-width: 100%;
+    }
+    caption{
+      width: 100%;
+    }
+    caption button.bn {
+      max-width: 90px;
+      font-size: 14px;
+    }
+  }
+
+  @media (min-width: 990px) {
+    .lt{
+      height: 300px;
+      margin: auto 0px;
+    }
+    .lt h5{
+      font-size: 48px;
+      line-height: 60px;
+    }
+    .schedule{
+      grid-template-areas: "left right" "left right";
+    grid-template-columns: minmax(400px, 1fr) 1fr;
+    margin: 2rem auto;
+    }
+    caption button.bn {
+      max-width: 160px;
+      font-size: 14px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .schedule{
+      margin: 2rem auto;
+      max-width: 80%;
+    }
+
+    caption{
+      display: flex;
+    }
+
+    table{
+      display: flex;
+      flex-direction: column;
+    }
+
+    caption button.bn {
+      min-width: 150px;
+      max-width: 250px;
+      font-size: 14px;
+    }
+  }

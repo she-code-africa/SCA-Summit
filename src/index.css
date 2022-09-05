@@ -29,198 +29,6 @@ body{
 .pink {
  color: var(--primary-main-pink);
 }
-
-/* Speakers
-.speakers {
-  background-color: var(--primary-main-pink);
-  text-align: center;
-}
-
-.speakers .tle {
-  text-align: center;
-  padding-top: 25px;
-  font-size: 10px;
-  letter-spacing: 1px;
-  font-weight: 600;
-  color: var(--primary-white);
-}
-
-.speakers .hd {
-  text-align: center;
-  margin-top: 15px;
-  font-size: 20px;
-  font-weight: 1000;
-  letter-spacing: 1.5px;
-  color: var(--primary-white);
-}
-
-.wp {
-  display: grid;
-  margin: 0 auto;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 20px;
-  grid-auto-flow: dense;
-  /* overflow: scroll; */
-  /* justify-content: center;
-  align-items: center;
-}
-
-.cd {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  display: flex;
-  flex-direction: column;
-  transition: 0.3s;
-  margin: 20px;
-  width: 380px;
-  height: 420px;
-  background-color: var(--primary-white);
-}
-
-.ig {
-  height: 300px;
-  width: 380px;
-}
-
-img.ig {
-  width:100%;
-  height:100%;
-}
-
-.cd:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
-.cont {
-  padding: 5px 16px;
-  text-align: justify;
-  margin-left: 15px;
-}
-
-.cont h5 {
-  margin-top: 15px;
-  color: var(--primary-grey);
-}
-
-.cont h2 {
-  margin-top: -10px;
-  font-size: 22px;
-  font-weight: 700;
-  color: var(--secondary);
-}
-
-.cont p {
-  margin-top: -10px;
-  color: var(--primary-grey);
-  font-size: 15px;
-}
-
-button.bn {
-  font-family: 'Inter', sans-serif;
-  font-size: 12px;
-  padding: 10px 20px;
-  border:0.1em solid #FFFFFF;
-  background-color: var(--primary-white);
-  margin: 0 0 30px 0;
-  border-radius:0.12em;
-  box-sizing: border-box;
-  text-decoration:none;
-  font-weight: 700;
-  color:var(--primary-main-pink);
-  transition: all 0.2s;
-}
-
-button.bn::after {
-  background-color: var(--primary-main-pink);
-}  */
-
-/* Schedule */
-.schedule {
-  display:flex;
-  flex-direction:row;
-  margin: 30px 0;
-}
-
-.lt {
-  float: left;
-  width: 40%;
-  text-align: justify;
-  margin: 75px 50px;
-}
-
-.lt h4 {
-  font-weight: bold;
-  color: var(--primary-main-pink);
-}
-
-.lt p {
-  color: var(--primary-grey);
-}
-
-.rt {
-  float: right;
-  width: 60%;
-}
-
-table {
-  border-collapse: collapse;
-  border-style: hidden;
-  color: var(--primary-dark-pink);
-  width: 100%;
-  text-align: justify;
-  margin-top: 20px;
-}
-
-table td, table th {
-  border-left: 1px solid var(--primary-dark-pink);
-  border-bottom: none;
-  height: 35px;
-}
-
-tr td:nth-child(1) {
-  width: 130px;
-}
-
-tr td:nth-child(2) {
-  padding-left: 20px;
-  margin-left: 10px;
-}
-
-tr:nth-child(even) td:nth-child(even) {
-  color: var(--primary-grey);
-  margin-bottom: 100px;
-}
-
-caption {
-  caption-side: top;
-}
-
-caption button.bn:first-child {
-  text-align: left;
-}
-
-caption button.bn:nth-child(3) {
-  text-align: right;
-}
-
-caption button.bn {
-  font-family: 'Inter', sans-serif;
-  font-weight: 500;
-  border: none;
-  border-bottom: 2px solid var(--primary-grey);
-  color: var(--primary-grey);
-  border-radius: 0;
-  background: none;
-  font-size: 17px;
-  margin-bottom: 10px;
-  padding-bottom: 10px;
-  width: 180px;
-}
-
-caption button.bn:hover{
-  color: var(--primary-main-pink);
-  border-bottom: 2px solid var(--primary-main-pink);
-}
-
 /* Sponsors */
 .sponsors {
   background: url('./assets/image/banner.png');
@@ -252,14 +60,6 @@ caption button.bn:hover{
   .cd {
     margin: 50px;   
   } 
-
-  .lt {
-    width: 30%;
-  }
-
-  .rt{
-    width: 70%;
-  }
 
   caption button.bn {
     width: 200px;
@@ -298,7 +98,7 @@ caption button.bn:hover{
 }
 
 @media (max-width: 425px) {
-  
+
 
   .about {
     margin: 60px;
@@ -324,30 +124,12 @@ caption button.bn:hover{
     width: 320px;
   }
 
-  .schedule {
-    display:flex;
-    flex-direction: column;
-  }
-
-  .lt {
-    width: 80%;
-  }
-
-  .rt{
-    width: 90%;
-  }
-
-  caption button.bn {
-    width: 100px;
-    font-size: 15px;
-  }
 
   table {
     width: 100%;
     font-size: 12px;
     text-align: justify;
     margin-top: 20px;
-    margin-left: 10px;
   }
   
   table td, table th {

@@ -1,33 +1,27 @@
-import { Home } from './Home/Home';
+import { Home } from "./Home/Home";
 
-import { About } from './About/About';
+import { About } from "./About/About";
 
-import { Schedule } from './Schedule';
+import { Schedule } from "./Schedule/Schedule";
 
-import {Speakers} from './Speakers/Speakers'
+import { Speakers } from "./Speakers/Speakers";
 
-import { Sponsors } from './Sponsors';
+import { Sponsors } from "./Sponsors";
 
 const AllHomeComponent = () => {
+  return (
+    <>
+      <Home />
 
-    return (
-      
-        <>
+      <About />
 
-            <Home />
-            
-            <About />
-            
-            <Speakers />
-            
-            <Schedule />
-            
-            <Sponsors /> 
-            
-        </>
-        
-    )
-    
-}
+      <Speakers />
 
-export default AllHomeComponent
+      <Schedule />
+
+      <Sponsors />
+    </>
+  );
+};
+
+export default AllHomeComponent;
