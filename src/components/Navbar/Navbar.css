@@ -1,7 +1,7 @@
 .navbar {
     background: transparent;
     padding: 10px;
-    height: 80px;
+    /* height: 80px; */
     background-color: transparent;
     border: none;
     top: 0px;
@@ -22,6 +22,11 @@
     line-height: 21px;
 }
 
+#hackathon{
+   text-decoration: underline;
+    text-underline-position: under;
+}
+
 #navbarBg {
     background-color: #B70569;
     z-index: 10;
@@ -34,25 +39,60 @@
 #navbar-toggler-tranparent{
     background-color: transparent;
 }
+
 .register-btn{
     background-color: var(--primary-main-pink);
     color: white;
     inline-size: 100px;
     border-radius: 2px;
     border: none;
+    font-weight: 500;
 }
 
+.register-btn:hover{
+
+    background-color: #b42174;
+
+}
+
+.hackathon-btn, #hackathon-btn {
+
+    background-color: #fff;
+    color: var(--primary-main-pink);
+    inline-size: 100px;
+    border-radius: 2px;
+    border: none;
+    font-weight: 500;
+
+}
+
+
+#hackathon-btn:hover, .hackathon-btn:hover {
+
+    background-color: rgb(235, 231, 231);
+    
+}
 /* @media (min-width: 600px) {
     .navbar{
         padding: 10px;
     }
 } */
 
+.navbar-nav {
+    align-items: center;
+}
+
+/* @media (max-width: 425px) { */
+ 
+    /* .navbar{ */
+        /* padding-bottom: 7rem; */
+    /* } */
+/* } */
 @media (min-width: 768px) {
     .navbar{
         padding: 10px 15px;
     }
-
+   
     .nav-items{
         gap: calc(40px - 1rem)
     }
@@ -62,4 +102,5 @@
     .navbar{
         padding: 10px 60px;
     }
+   
 }

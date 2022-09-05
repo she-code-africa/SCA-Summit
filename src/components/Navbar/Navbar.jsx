@@ -46,7 +46,7 @@ const NavBar = () => {
 
   // })
 
-  // toggling hamburger menu 
+  // toggling hamburger menu  
   const toggle = () => setClick(!click);
   
   return (
@@ -56,7 +56,7 @@ const NavBar = () => {
       </NavbarBrand>
       <NavbarToggler onClick={toggle} className="shadow-sm custom-navbar-toggler" id={colorChange ? "navbar-toggler-tranparent" : ""}/>
       <Collapse isOpen={click} navbar>
-        <Nav className="m-auto nav-items" navbar>
+        <Nav className="m-auto nav-items mb-2" navbar>
           <NavItem>
             <NavLink href="/" className="text-light">
               Home
@@ -78,15 +78,19 @@ const NavBar = () => {
             </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="/hackathon" className="text-light">
+            <NavLink href="/hackathon" className="text-light" id={location.pathname=== "/hackathon"? "hackathon" :""}>
             Hackathon
             </NavLink>
           </NavItem>
           
         </Nav>
-        <Button className="register-btn" href="/">
-          Register
-        </Button>
+
+          <NavLink href="#" className="text-light me-5 ">
+              Become A Speaker
+              </NavLink>
+          <Button className={location.pathname=== "/hackathon"? "hackathon-btn" :"register-btn"}  href="/" id={colorChange ? "hackathon-btn" : ""}>
+            Register
+          </Button>
       </Collapse>
     </Navbar>
   );
