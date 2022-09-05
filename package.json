@@ -15,7 +15,8 @@
     "react-scripts": "5.0.1",
     "reactstrap": "^9.1.2",
     "reactstrap-scrollspy": "^0.1.1",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "webpack-dev-middleware": "^5.3.3"
   },
   "scripts": {
     "start": "react-scripts start",
