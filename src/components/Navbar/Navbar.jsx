@@ -92,9 +92,7 @@ const NavBar = () => {
           <NavLink to="#" className="text-light me-5 ">
               Become A Speaker
               </NavLink>
-          {/* <Button className={location.pathname=== "/hackathon"? "hackathon-btn" :"register-btn"}   href="/" id={colorChange ? "hackathon-btn" : ""}>
-            Register
-          </Button> */}
+ 
          <Button className={ click ? "mobilebtn" : (location.pathname=== "/hackathon")? "hackathon-btn" :"register-btn"}   href="/" id={colorChange ? "hackathon-btn" : ""}>
             Register
           </Button>
