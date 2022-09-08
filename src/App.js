@@ -5,6 +5,7 @@ import NavBar from "./components/Navbar/Navbar";
 import AllHomeComponent from './page/AllHomeComponent';
 
 import Footer from "./components/Footer/Footer";
+import Hackathon from './page/Hackathon/Hackathon';
 
 const App = () => {
 
@@ -19,6 +20,9 @@ const App = () => {
         <Routes>
           
           <Route index element={<AllHomeComponent />}></Route>
+
+          <Route path='/hackathon' element={<Hackathon/>}></Route>
+
                     
         </Routes>
         

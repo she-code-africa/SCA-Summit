@@ -1,10 +1,20 @@
+#email {
+
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #B70569;
+    font-weight: 200;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#footer-link a{
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
 @media (max-width: 425px) {
     footer img{
         height: 70px
     }
 
-    
-    /* #footerList{
-        font-size: 10px;
-    } */
 }
