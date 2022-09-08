@@ -13,7 +13,7 @@ const Hackathon = () => {
 
             <Container className="my-5">
               
-                <Row className="g-5">
+                <Row className="g-5" id="customgap">
 
                     <Col>
 

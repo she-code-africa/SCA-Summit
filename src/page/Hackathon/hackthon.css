@@ -97,6 +97,10 @@
 /* max-width:768px means upto 768px below  */
 @media screen and (max-width:768px) {
 
+    #customgap {
+        column-gap: 0rem;
+    }
+
     #hackthon-img {
 
         width: 240px;
@@ -106,9 +110,9 @@
 
     #hackthon {
 
-        width: 200px;
+        width: 220px;
         height: 300px;
-        left: 175px;
+        left: 180px;
         top: 429px;
     
     }
