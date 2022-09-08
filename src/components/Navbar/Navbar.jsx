@@ -47,14 +47,18 @@ const NavBar = () => {
   // })
 
   // toggling hamburger menu  
-  const toggle = () => setClick(!click);
+  const toggle = () => {
+    console.log('hi u just clicked me ')
+    setClick(!click)
+  };
+   
   
   return (
-    <Navbar className= {location.pathname=== "/hackathon"? "navbarhackathon" :"navbar"} expand="md" id={colorChange ? "navbarBg" : ""}>
+    <Navbar className= {click ? "mobile-nav" : (location.pathname=== "/hackathon")? "navbarhackathon" :"navbar"} expand="md" id={colorChange ? "navbarBg" : ""}>
       <NavbarBrand>
         <img src={logoImage} alt={logoImage} />
       </NavbarBrand>
-      <NavbarToggler onClick={toggle} className="shadow-sm custom-navbar-toggler" id={colorChange ? "navbar-toggler-tranparent" : ""}/>
+      <NavbarToggler onClick={toggle} className="shadow-sm custom-navbar-toggler" id={ click ? "custom-navbar-toggler" : colorChange ? "navbar-toggler-tranparent" : ""}/>
       <Collapse isOpen={click} navbar>
         <Nav className="m-auto nav-items mb-2" navbar>
           <NavItem>
@@ -88,7 +92,10 @@ const NavBar = () => {
           <NavLink href="#" className="text-light me-5 ">
               Become A Speaker
               </NavLink>
-          <Button className={location.pathname=== "/hackathon"? "hackathon-btn" :"register-btn"}  href="/" id={colorChange ? "hackathon-btn" : ""}>
+          {/* <Button className={location.pathname=== "/hackathon"? "hackathon-btn" :"register-btn"}   href="/" id={colorChange ? "hackathon-btn" : ""}>
+            Register
+          </Button> */}
+         <Button className={ click ? "mobilebtn" : (location.pathname=== "/hackathon")? "hackathon-btn" :"register-btn"}   href="/" id={colorChange ? "hackathon-btn" : ""}>
             Register
           </Button>
       </Collapse>

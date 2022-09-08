@@ -91,3 +91,65 @@
     text-transform: capitalize;
 
 }
+
+/* media query styling  on break point 768 */
+/* for the headerjsx component  */
+/* max-width:768px means upto 768px below  */
+@media screen and (max-width:768px) {
+
+    #hackthon-img {
+
+        width: 240px;
+        height: 600px;
+
+    }
+
+    #hackthon {
+
+        width: 220px;
+        height: 300px;
+        left: 180px;
+        top: 429px;
+    
+    }
+    .shecode-hackthon-text > h2{
+
+        font-size: 30px;
+        line-height: 50px;
+    
+    }
+    
+    .shecode-hackthon-text > span {
+        
+        font-size: 30px;
+        line-height: 20px;
+    
+    }
+
+    
+    .shecode-hackthon-text > p {
+    
+        font-size: 18px;
+        line-height: 40px;
+    
+    }
+    
+    .shecode-hackthon-text ul li {
+    
+        font-size: 25px;
+    
+    }
+    
+    .shecode-hackthon-text ul li .start-date {
+        font-size: 15px;
+        line-height: 16px;
+        letter-spacing: 0.01em;
+    }
+    
+    .shecode-hackthon-text ul li .date {
+    
+        font-size: 15px;
+        line-height: 16px;
+        letter-spacing: 0.01em;
+    }
+}

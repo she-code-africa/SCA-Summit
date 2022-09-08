@@ -10,6 +10,15 @@
 
 .navbarhackathon {
     background-color: #B70569;
+    padding: 10px;
+    border: none;
+    top: 0px;
+    position: sticky;
+}
+
+#navbarBg {
+    background-color: #B70569;
+    z-index: 10;
 }
 
 .navbar img{
@@ -27,10 +36,6 @@
     text-underline-position: under;
 }
 
-#navbarBg {
-    background-color: #B70569;
-    z-index: 10;
-}
 
 .custom-navbar-toggler{
     background-color: #fff;
@@ -103,4 +108,30 @@
         padding: 10px 60px;
     }
    
+}
+
+/* media query styling  on break point 768 */
+/* for the headerjsx component  */
+/* max-width:768px means upto 768px below  */
+@media screen and (max-width:768px) {
+
+    /* .mobile-nav */
+    .mobile-nav {
+        background-color: #b42174;
+
+    }
+    .mobilebtn{
+
+        background-color: #fff;
+        color: var(--primary-main-pink);
+        inline-size: 100px;
+        border-radius: 2px;
+        border: none;
+        font-weight: 500;
+        margin: 20px 0;
+    
+    }
+    #custom-navbar-toggler {
+        background-color: #fff;
+    }
 }
