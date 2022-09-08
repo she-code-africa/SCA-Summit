@@ -31,7 +31,16 @@
     line-height: 21px;
 }
 
-#hackathon{
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color:rgba(255, 255, 255, 0.911);
+}
+
+.navLinksUrl{
+    color: #FFFFFF;
    text-decoration: underline;
     text-underline-position: under;
 }

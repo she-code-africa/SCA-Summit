@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import { useLocation } from 'react-router-dom';
+import { useLocation, NavLink } from 'react-router-dom';
 
 import {
   Button,
@@ -10,7 +10,7 @@ import {
   NavbarToggler,
   Collapse,
   NavItem,
-  NavLink,
+  // NavLink,
 } from "reactstrap";
 
 import logoImage from "../../assets/image/logo-inverted.png";
@@ -61,35 +61,35 @@ const NavBar = () => {
       <NavbarToggler onClick={toggle} className="shadow-sm custom-navbar-toggler" id={ click ? "custom-navbar-toggler" : colorChange ? "navbar-toggler-tranparent" : ""}/>
       <Collapse isOpen={click} navbar>
         <Nav className="m-auto nav-items mb-2" navbar>
-          <NavItem>
-            <NavLink href="/" className="text-light">
+          <NavItem >
+            <NavLink to="/" className={({isActive}) => isActive? "navLinksUrl" :"text-light"} >
               Home
             </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="#about" className="text-light">
+            <NavLink to="#about" className="text-light">
               About
             </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="#speakers" className="text-light">
+            <NavLink to="#speakers" className="text-light" >
               Speakers
             </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="#schedules" className="text-light">
+            <NavLink to="#schedules" className="text-light" >
               Schedule
             </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="/hackathon" className="text-light" id={location.pathname=== "/hackathon"? "hackathon" :""}>
+            <NavLink to="/hackathon" className={({isActive}) => isActive? "navLinksUrl" :"text-light"} >
             Hackathon
             </NavLink>
           </NavItem>
           
         </Nav>
 
-          <NavLink href="#" className="text-light me-5 ">
+          <NavLink to="#" className="text-light me-5 ">
               Become A Speaker
               </NavLink>
           {/* <Button className={location.pathname=== "/hackathon"? "hackathon-btn" :"register-btn"}   href="/" id={colorChange ? "hackathon-btn" : ""}>
