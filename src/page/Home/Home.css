@@ -41,7 +41,7 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  column-gap: 20px;
+  gap: 20px;
 }
 
 .details div {
@@ -84,10 +84,6 @@
 }
 
 @media (min-width: 992px) {
-  .home {
-    background-size: 100% auto;
-  }
-
   .home h1 {
     font-size: 84px;
     line-height: 100px;

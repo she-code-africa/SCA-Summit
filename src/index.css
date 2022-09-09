@@ -18,7 +18,7 @@
 }
 
 body {
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 .App {
@@ -52,7 +52,7 @@ body {
 }
 
 .sponsors p {
-  background: url('./assets/image/banner - Copy.png') repeat;
+  background: url("./assets/image/banner - Copy.png") repeat;
   background-size: 500px;
   margin-bottom: 20px;
   height: 600px;
