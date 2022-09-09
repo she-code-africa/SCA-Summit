@@ -11,18 +11,15 @@ export const Home = () => {
         <h1>
           LARGEST GATHERING OF WOMEN IN <span className="pink">TECH</span>
         </h1>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga id
-          magni veniam adipisci ad veritatis.
-        </p>
+        <p>Elevating the African Women in Tech</p>
         <div className="details">
           <div>
             <img src={calendar} alt="date-time" />
-            <span>10TH OCTOBER, 2022</span>
+            <span>10TH NOVEMBER, 2022</span>
           </div>
           <div>
             <img src={mapPin} alt="map-pin" />
-            <span>CIVIC CENTER, LAGOS NIGERIA</span>
+            <span>Zone Tech Park, Gbagada, Lagos, Nigeria</span>
           </div>
         </div>
       </div>
