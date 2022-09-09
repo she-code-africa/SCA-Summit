@@ -17,10 +17,6 @@
   box-sizing: border-box;
 }
 
-body {
-  /* overflow-x: hidden; */
-}
-
 .App {
   text-align: center;
   font-family: "Inter", sans-serif;

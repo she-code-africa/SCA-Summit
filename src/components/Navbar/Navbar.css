@@ -1,146 +1,143 @@
 .navbar {
-    background: transparent;
-    padding: 10px;
-    /* height: 80px; */
-    background-color: transparent;
-    border: none;
-    top: 0px;
-    position: sticky;
+  background: transparent;
+  padding: 10px;
+  background-color: transparent;
+  border: none;
+  top: 0px;
+  position: sticky;
+}
+
+.navbar-toggler {
+  background-color: transparent;
 }
 
 .navbarhackathon {
-    background-color: #B70569;
-    padding: 10px;
-    border: none;
-    top: 0px;
-    position: sticky;
+  background-color: #b70569;
+  padding: 10px;
+  border: none;
+  top: 0px;
+  position: sticky;
 }
 
 #navbarBg {
-    background-color: #B70569;
-    z-index: 10;
+  background-color: #b70569;
+  z-index: 10;
 }
 
-.navbar img{
-    height: 50px
+.navbar img {
+  height: 50px;
 }
 
-.nav-link{
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 21px;
+.nav-link {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 21px;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 a:hover {
-    color:rgba(255, 255, 255, 0.911);
+  color: rgba(255, 255, 255, 0.911);
 }
 
-.navLinksUrl{
-    color: #FFFFFF;
-   text-decoration: underline;
-    text-underline-position: under;
+.navLinksUrl {
+  color: #ffffff;
+  text-decoration: underline;
+  text-underline-position: under;
 }
 
-
-.custom-navbar-toggler{
-    background-color: #fff;
+.custom-navbar-toggler {
+  background-color: #b42174;
+  border: 1px solid #b42174;
 }
 
-#navbar-toggler-tranparent{
-    background-color: transparent;
+.custom-navbar-toggler .navbar-toggler.icon {
+  background-color: #b42174;
 }
 
-.register-btn{
-    background-color: var(--primary-main-pink);
-    color: white;
-    inline-size: 100px;
-    border-radius: 2px;
-    border: none;
-    font-weight: 500;
+#navbar-toggler-tranparent {
+  background-color: transparent;
 }
 
-.register-btn:hover{
+.nav-item {
+  padding: 0.5rem 0px;
+}
 
+.nav-extra {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+}
+
+.register-btn {
+  background-color: var(--primary-main-pink);
+  color: white;
+  inline-size: 100px;
+  border-radius: 2px;
+  border: none;
+  font-weight: 500;
+}
+
+.register-btn:hover {
+  background-color: #b42174;
+}
+
+.hackathon-btn,
+#hackathon-btn {
+  background-color: #fff;
+  color: var(--primary-main-pink);
+  inline-size: 100px;
+  border-radius: 2px;
+  border: none;
+  font-weight: 500;
+}
+
+#hackathon-btn:hover,
+.hackathon-btn:hover {
+  background-color: rgb(235, 231, 231);
+}
+
+.navbar-nav {
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    padding: 10px 15px;
+  }
+
+  .nav-items {
+    gap: calc(40px - 1rem);
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar {
+    padding: 10px 60px;
+  }
+}
+
+/* media query styling  on break point 768 */
+/* for the headerjsx component  */
+/* max-width:768px means upto 768px below  */
+@media screen and (max-width: 768px) {
+  /* .mobile-nav */
+  .mobile-nav {
     background-color: #b42174;
-
-}
-
-.hackathon-btn, #hackathon-btn {
-
+  }
+  .mobilebtn {
     background-color: #fff;
     color: var(--primary-main-pink);
     inline-size: 100px;
     border-radius: 2px;
     border: none;
     font-weight: 500;
-
-}
-
-
-#hackathon-btn:hover, .hackathon-btn:hover {
-
-    background-color: rgb(235, 231, 231);
-    
-}
-/* @media (min-width: 600px) {
-    .navbar{
-        padding: 10px;
-    }
-} */
-
-.navbar-nav {
-    align-items: center;
-}
-
-/* @media (max-width: 425px) { */
- 
-    /* .navbar{ */
-        /* padding-bottom: 7rem; */
-    /* } */
-/* } */
-@media (min-width: 768px) {
-    .navbar{
-        padding: 10px 15px;
-    }
-   
-    .nav-items{
-        gap: calc(40px - 1rem)
-    }
-}
-
-@media (min-width: 992px) {
-    .navbar{
-        padding: 10px 60px;
-    }
-   
-}
-
-/* media query styling  on break point 768 */
-/* for the headerjsx component  */
-/* max-width:768px means upto 768px below  */
-@media screen and (max-width:768px) {
-
-    /* .mobile-nav */
-    .mobile-nav {
-        background-color: #b42174;
-
-    }
-    .mobilebtn{
-
-        background-color: #fff;
-        color: var(--primary-main-pink);
-        inline-size: 100px;
-        border-radius: 2px;
-        border: none;
-        font-weight: 500;
-        margin: 20px 0;
-    
-    }
-    #custom-navbar-toggler {
-        background-color: #fff;
-    }
+    margin: 20px 0;
+  }
+  #custom-navbar-toggler {
+    background-color: #fff;
+  }
 }

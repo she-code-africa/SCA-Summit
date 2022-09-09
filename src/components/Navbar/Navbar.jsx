@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import { useLocation, NavLink } from 'react-router-dom';
+import { useLocation, NavLink } from "react-router-dom";
 
 import {
   Button,
@@ -18,17 +18,16 @@ import logoImage from "../../assets/image/logo-inverted.png";
 import "./Navbar.css";
 
 const NavBar = () => {
-
-  // use location for redirecting and changing of navbar color on a diff page 
+  // use location for redirecting and changing of navbar color on a diff page
   const location = useLocation();
 
-  // use state for changing background color when a user scroll through 
+  // use state for changing background color when a user scroll through
   const [colorChange, setColorchange] = useState(false);
 
-  // use state for hamburger menu 
+  // use state for hamburger menu
   const [click, setClick] = useState(false);
 
-  //change background color when a user scroll through 
+  //change background color when a user scroll through
   const changeNavbarColor = () => {
     if (window.scrollY >= 80) {
       setColorchange(true);
@@ -39,30 +38,54 @@ const NavBar = () => {
 
   window.addEventListener("scroll", changeNavbarColor);
 
-  // works the same way as the previous one 
+  // works the same way as the previous one
   // useEffect(() => {
   //   changeNavbarColor()
   // window.addEventListener("scroll", changeNavbarColor);
 
   // })
 
-  // toggling hamburger menu  
+  // toggling hamburger menu
   const toggle = () => {
-    console.log('hi u just clicked me ')
-    setClick(!click)
+    console.log("hi u just clicked me ");
+    setClick(!click);
   };
-   
-  
+
   return (
-    <Navbar className= {click ? "mobile-nav" : (location.pathname=== "/hackathon")? "navbarhackathon" :"navbar"} expand="md" id={colorChange ? "navbarBg" : ""}>
+    <Navbar
+      className={
+        click
+          ? "mobile-nav"
+          : location.pathname === "/hackathon"
+          ? "navbarhackathon"
+          : "navbar"
+      }
+      expand="md"
+      id={colorChange ? "navbarBg" : ""}
+    >
       <NavbarBrand>
         <img src={logoImage} alt={logoImage} />
       </NavbarBrand>
-      <NavbarToggler onClick={toggle} className="shadow-sm custom-navbar-toggler" id={ click ? "custom-navbar-toggler" : colorChange ? "navbar-toggler-tranparent" : ""}/>
+      <NavbarToggler
+        onClick={toggle}
+        className="shadow-sm custom-navbar-toggler"
+        id={
+          click
+            ? "custom-navbar-toggler"
+            : colorChange
+            ? "navbar-toggler-tranparent"
+            : ""
+        }
+      />
       <Collapse isOpen={click} navbar>
         <Nav className="m-auto nav-items mb-2" navbar>
-          <NavItem >
-            <NavLink to="/" className={({isActive}) => isActive? "navLinksUrl" :"text-light"} >
+          <NavItem>
+            <NavLink
+              to="/"
+              className={({ isActive }) =>
+                isActive ? "navLinksUrl" : "text-light"
+              }
+            >
               Home
             </NavLink>
           </NavItem>
@@ -72,30 +95,46 @@ const NavBar = () => {
             </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink to="#speakers" className="text-light" >
+            <NavLink to="#speakers" className="text-light">
               Speakers
             </NavLink>
           </NavItem>
-          <NavItem>
+          {/* <NavItem>
             <NavLink to="#schedules" className="text-light" >
               Schedule
             </NavLink>
-          </NavItem>
+          </NavItem> */}
           <NavItem>
-            <NavLink to="/hackathon" className={({isActive}) => isActive? "navLinksUrl" :"text-light"} >
-            Hackathon
+            <NavLink
+              to="/hackathon"
+              className={({ isActive }) =>
+                isActive ? "navLinksUrl" : "text-light"
+              }
+            >
+              Hackathon
             </NavLink>
           </NavItem>
-          
         </Nav>
 
-          <NavLink to="#" className="text-light me-5 ">
-              Become A Speaker
-              </NavLink>
- 
-         <Button className={ click ? "mobilebtn" : (location.pathname=== "/hackathon")? "hackathon-btn" :"register-btn"}   href="/" id={colorChange ? "hackathon-btn" : ""}>
+        <div className="nav-extra">
+          <NavLink to="#" className="text-light">
+            Become A Speaker
+          </NavLink>
+
+          <Button
+            className={
+              click
+                ? "mobilebtn"
+                : location.pathname === "/hackathon"
+                ? "hackathon-btn"
+                : "register-btn"
+            }
+            href="/"
+            id={colorChange ? "hackathon-btn" : ""}
+          >
             Register
           </Button>
+        </div>
       </Collapse>
     </Navbar>
   );
