@@ -142,7 +142,7 @@ caption button.bn:hover {
   }
 }
 
-@media (min-width: 990px) {
+@media (min-width: 992px) {
   .lt {
     height: 300px;
     margin: auto 0px;
