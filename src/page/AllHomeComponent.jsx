@@ -10,6 +10,8 @@ import { Speakers } from "./Speakers/Speakers";
 
 import { Sponsors } from "./Sponsors";
 
+import Hackathon from "./Hackathon/Hackathon";
+
 const AllHomeComponent = () => {
   return (
     <>
@@ -20,6 +22,8 @@ const AllHomeComponent = () => {
       <About />
 
       <Speakers />
+
+      {/* <Hackathon /> */}
 
       {/* <Schedule /> */}
 
