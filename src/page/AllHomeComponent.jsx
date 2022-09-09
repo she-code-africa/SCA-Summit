@@ -1,5 +1,7 @@
 import { Home } from "./Home/Home";
 
+import { Attendees } from "./Attendees/Attendees";
+
 import { About } from "./About/About";
 
 import { Schedule } from "./Schedule/Schedule";
@@ -12,6 +14,8 @@ const AllHomeComponent = () => {
   return (
     <>
       <Home />
+
+      <Attendees />
 
       <About />
 
