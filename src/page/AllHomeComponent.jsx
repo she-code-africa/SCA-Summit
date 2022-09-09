@@ -21,7 +21,7 @@ const AllHomeComponent = () => {
 
       <Speakers />
 
-      <Schedule />
+      {/* <Schedule /> */}
 
       <Sponsors />
     </>
