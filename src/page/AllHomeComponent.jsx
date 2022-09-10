@@ -23,7 +23,7 @@ const AllHomeComponent = () => {
 
       <Speakers />
 
-      {/* <Hackathon /> */}
+      <Hackathon />
 
       {/* <Schedule /> */}
 
