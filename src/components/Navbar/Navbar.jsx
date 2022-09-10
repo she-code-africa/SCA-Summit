@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { useLocation, NavLink } from "react-router-dom";
 import AnchorLink from "react-anchor-link-smooth-scroll";
+import { NavLink as RRNavLink } from "react-router-dom";
+
 import {
   Button,
   Navbar,
@@ -79,10 +81,9 @@ const NavBar = () => {
           <AnchorLink href="#home">
             <NavItem>
               <NavLink
-                to="/"
-                className={({ isActive }) =>
-                  isActive ? "navLinksUrl" : "text-light"
-                }
+                to="#home"
+                activeClassName="navLinksUrl"
+                className="text-light"
               >
                 Home
               </NavLink>
@@ -90,7 +91,11 @@ const NavBar = () => {
           </AnchorLink>
           <AnchorLink href="#about">
             <NavItem>
-              <NavLink to="#about" className="text-light">
+              <NavLink
+                to="#about"
+                className="text-light"
+                activeClassName="navLinksUrl"
+              >
                 About
               </NavLink>
             </NavItem>
