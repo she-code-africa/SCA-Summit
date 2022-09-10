@@ -12,7 +12,11 @@ const Hackathon = () => {
       <div className="hackathon-images">
         <img src={HackathonImg} id="hackathon-img" alt={HackathonImg} />
 
-        <img src={HackathonImg1} alt={HackathonImg1} class="hackathon-img-2" />
+        <img
+          src={HackathonImg1}
+          alt={HackathonImg1}
+          className="hackathon-img-2"
+        />
       </div>
 
       <div className="shecode-hackathon-text">

@@ -1,14 +1,30 @@
+.nav-container {
+  position: sticky;
+  border: none;
+  top: 0px;
+}
 .navbar {
   background: transparent;
   padding: 10px;
   background-color: transparent;
-  border: none;
-  top: 0px;
-  position: sticky;
 }
 
 .navbar-toggler {
   background-color: transparent;
+}
+
+.nav-item {
+  color: #fff;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+.is-active {
+  padding: 4px 0;
+  text-decoration: underline;
+  text-underline-position: under;
+  font-weight: 600;
 }
 
 .navbarhackathon {
@@ -42,12 +58,6 @@ a:hover {
   color: rgba(255, 255, 255, 0.911);
 }
 
-.navLinksUrl {
-  color: #ffffff;
-  text-decoration: underline;
-  text-underline-position: under;
-}
-
 .custom-navbar-toggler {
   background-color: #b42174;
   border: 1px solid #b42174;
@@ -59,10 +69,6 @@ a:hover {
 
 #navbar-toggler-tranparent {
   background-color: transparent;
-}
-
-.nav-item {
-  padding: 0.5rem 0px;
 }
 
 .nav-extra {
@@ -104,9 +110,21 @@ a:hover {
   align-items: center;
 }
 
+.nav-extra a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+}
+
 @media (max-width: 600px) {
   .nav-extra {
     flex-direction: column;
+  }
+
+  .navbar-nav {
+    gap: 8px;
   }
 }
 

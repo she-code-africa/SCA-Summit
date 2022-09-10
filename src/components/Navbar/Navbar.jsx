@@ -1,7 +1,6 @@
 import { useState } from "react";
-import { useLocation, NavLink } from "react-router-dom";
-import AnchorLink from "react-anchor-link-smooth-scroll";
-import { NavLink as RRNavLink } from "react-router-dom";
+import { useLocation } from "react-router-dom";
+import ScrollspyNav from "react-scrollspy-nav";
 
 import {
   Button,
@@ -37,111 +36,80 @@ const NavBar = () => {
 
   window.addEventListener("scroll", changeNavbarColor);
 
-  // works the same way as the previous one
-  // useEffect(() => {
-  //   changeNavbarColor()
-  // window.addEventListener("scroll", changeNavbarColor);
-
-  // })
-
   // toggling hamburger menu
   const toggle = () => {
-    console.log("hi u just clicked me ");
     setClick(!click);
   };
 
+  const navLinks = document.querySelectorAll(".nav-item");
+  navLinks.forEach((l) => {
+    l.addEventListener("click", () => {
+      setClick(false);
+    });
+  });
+
   return (
-    <Navbar
-      className={
-        click
-          ? "mobile-nav"
-          : location.pathname === "/hackathon"
-          ? "navbarhackathon"
-          : "navbar"
-      }
-      expand="md"
-      id={colorChange ? "navbarBg" : ""}
-    >
-      <NavbarBrand>
-        <img src={logoImage} alt={logoImage} />
-      </NavbarBrand>
-      <NavbarToggler
-        onClick={toggle}
-        className="shadow-sm custom-navbar-toggler"
-        id={
-          click
-            ? "custom-navbar-toggler"
-            : colorChange
-            ? "navbar-toggler-tranparent"
-            : ""
-        }
-      />
-      <Collapse isOpen={click} navbar>
-        <Nav className="m-auto nav-items mb-2" navbar>
-          <AnchorLink href="#home">
-            <NavItem>
-              <NavLink
-                to="#home"
-                activeClassName="navLinksUrl"
-                className="text-light"
-              >
-                Home
-              </NavLink>
-            </NavItem>
-          </AnchorLink>
-          <AnchorLink href="#about">
-            <NavItem>
-              <NavLink
-                to="#about"
-                className="text-light"
-                activeClassName="navLinksUrl"
-              >
-                About
-              </NavLink>
-            </NavItem>
-          </AnchorLink>
-          <AnchorLink href="#speakers">
-            <NavItem>
-              <NavLink to="#speakers" className="text-light">
-                Speakers
-              </NavLink>
-            </NavItem>
-          </AnchorLink>
-          {/* <NavItem>
-            <NavLink to="#schedules" className="text-light" >
-              Schedule
-            </NavLink>
-          </NavItem> */}
-          <AnchorLink href="#hackathon">
-            <NavItem>
-              <NavLink to="#hackathon" className="text-light">
-                Hackathon
-              </NavLink>
-            </NavItem>
-          </AnchorLink>
-        </Nav>
-
-        <div className="nav-extra">
-          <NavLink to="#" className="text-light">
-            Become A Speaker
-          </NavLink>
-
-          <Button
-            className={
+    <div className="nav-container">
+      <ScrollspyNav
+        scrollTargetIds={["home", "about", "speakers", "hackathon"]}
+        offset={100}
+        activeNavClass="is-active"
+        scrollDuration="500"
+        headerBackground="true"
+      >
+        <Navbar
+          className={click ? "mobile-nav" : "navbar"}
+          expand="md"
+          id={colorChange ? "navbarBg" : ""}
+        >
+          <NavbarBrand>
+            <img src={logoImage} alt={logoImage} />
+          </NavbarBrand>
+          <NavbarToggler
+            onClick={toggle}
+            className="shadow-sm custom-navbar-toggler"
+            id={
               click
-                ? "mobilebtn"
-                : location.pathname === "/hackathon"
-                ? "hackathon-btn"
-                : "register-btn"
+                ? "custom-navbar-toggler"
+                : colorChange
+                ? "navbar-toggler-tranparent"
+                : ""
             }
-            href="/"
-            id={colorChange ? "hackathon-btn" : ""}
-          >
-            Register
-          </Button>
-        </div>
-      </Collapse>
-    </Navbar>
+          />
+          <Collapse isOpen={click} navbar>
+            <Nav className="m-auto nav-items" navbar>
+              <a className="nav-item" href="#home">
+                Home
+              </a>
+              <a className="nav-item" href="#about">
+                About
+              </a>
+              <a className="nav-item" href="#speakers">
+                Speakers
+              </a>
+              {/* 
+            <NavLink to="#schedules"  >
+              Schedule
+           */}
+              <a className="nav-item" href="#hackathon">
+                Hackathon
+              </a>
+            </Nav>
+
+            <div className="nav-extra">
+              <a href="#">Become A Speaker</a>
+              <Button
+                className={click ? "mobilebtn" : "register-btn"}
+                href="/"
+                id={colorChange ? "hackathon-btn" : ""}
+              >
+                Register
+              </Button>
+            </div>
+          </Collapse>
+        </Navbar>
+      </ScrollspyNav>
+    </div>
   );
 };
 

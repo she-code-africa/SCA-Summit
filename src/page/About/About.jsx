@@ -5,7 +5,7 @@ import deco from "../../assets/image/Deco.svg";
 export const About = () => {
   return (
     <div className="container">
-      <div id="about" className="about">
+      <div className="about">
         <div className="about-content">
           <h5>ABOUT EVENT</h5>
           <h3>THE LARGEST COMMUNITY OF WOMEN IN TECH SUMMIT</h3>
