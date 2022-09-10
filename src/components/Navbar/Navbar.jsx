@@ -114,12 +114,7 @@ const NavBar = () => {
           </NavItem> */}
           <AnchorLink href="#hackathon">
             <NavItem>
-              <NavLink
-                to="#hackathon"
-                className={({ isActive }) =>
-                  isActive ? "navLinksUrl" : "text-light"
-                }
-              >
+              <NavLink to="#hackathon" className="text-light">
                 Hackathon
               </NavLink>
             </NavItem>
