@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { useLocation } from "react-router-dom";
 import ScrollspyNav from "react-scrollspy-nav";
 
 import {
@@ -9,16 +8,11 @@ import {
   NavbarBrand,
   NavbarToggler,
   Collapse,
-  NavItem,
-  // NavLink,
 } from "reactstrap";
 import logoImage from "../../assets/image/logo-inverted.png";
 import "./Navbar.css";
 
 const NavBar = () => {
-  // use location for redirecting and changing of navbar color on a diff page
-  const location = useLocation();
-
   // use state for changing background color when a user scroll through
   const [colorChange, setColorchange] = useState(false);
 
