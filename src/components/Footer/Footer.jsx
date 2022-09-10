@@ -43,33 +43,45 @@ const Footer = () => {
             <ListGroupItem className="fs-5 fw-bold mb-3">Socials</ListGroupItem>
 
             <ListGroupItem className="fs-6 mb-3">
-              <Link to="#instagram" className="text-white">
+              <a href="https://shecodeafrica.org/" className="text-white">
                 Our Website
-              </Link>
+              </a>
             </ListGroupItem>
 
             <ListGroupItem className="fs-6 mb-3">
-              <Link to="#instagram" className="text-white">
+              <a
+                href="https://www.instagram.com/shecodeafrica/"
+                className="text-white"
+              >
                 Instagram
-              </Link>
+              </a>
             </ListGroupItem>
 
             <ListGroupItem className="fs-6 mb-3">
-              <Link to="#twitter" className="text-white">
+              <a
+                href="https://twitter.com/SheCodeAfrica"
+                className="text-white"
+              >
                 Twitter
-              </Link>
+              </a>
             </ListGroupItem>
 
             <ListGroupItem className="fs-6 mb-3">
-              <Link to="#linkedIn" className="text-white">
+              <a
+                href="https://www.linkedin.com/company/she-code-africa/mycompany/"
+                className="text-white"
+              >
                 LinkedIn
-              </Link>
+              </a>
             </ListGroupItem>
 
             <ListGroupItem className="fs-6">
-              <Link to="#facebook" className="text-white">
+              <a
+                href="https://www.facebook.com/SheCodeAfrica/"
+                className="text-white"
+              >
                 Facebook
-              </Link>
+              </a>
             </ListGroupItem>
           </List>
         </Container>
@@ -80,7 +92,7 @@ const Footer = () => {
           <div className="text-center fs-6 my-3 text-break m-auto">
             All rights reserved. She Code Africa &copy; 2022.
             <p style={{ fontSize: "12px" }}>
-              Designed by 💕 Yasira, Opeoluwa and Iyobosa
+              Created with 💕 by Yasira, Opeoluwa and Iyobosa
             </p>
           </div>
         </Container>
