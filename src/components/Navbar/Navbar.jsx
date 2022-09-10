@@ -1,7 +1,6 @@
 import { useState } from "react";
-
 import { useLocation, NavLink } from "react-router-dom";
-
+import AnchorLink from "react-anchor-link-smooth-scroll";
 import {
   Button,
   Navbar,
@@ -12,9 +11,7 @@ import {
   NavItem,
   // NavLink,
 } from "reactstrap";
-
 import logoImage from "../../assets/image/logo-inverted.png";
-
 import "./Navbar.css";
 
 const NavBar = () => {
@@ -79,41 +76,49 @@ const NavBar = () => {
       />
       <Collapse isOpen={click} navbar>
         <Nav className="m-auto nav-items mb-2" navbar>
-          <NavItem>
-            <NavLink
-              to="/"
-              className={({ isActive }) =>
-                isActive ? "navLinksUrl" : "text-light"
-              }
-            >
-              Home
-            </NavLink>
-          </NavItem>
-          <NavItem>
-            <NavLink to="#about" className="text-light">
-              About
-            </NavLink>
-          </NavItem>
-          <NavItem>
-            <NavLink to="#speakers" className="text-light">
-              Speakers
-            </NavLink>
-          </NavItem>
+          <AnchorLink href="#home">
+            <NavItem>
+              <NavLink
+                to="/"
+                className={({ isActive }) =>
+                  isActive ? "navLinksUrl" : "text-light"
+                }
+              >
+                Home
+              </NavLink>
+            </NavItem>
+          </AnchorLink>
+          <AnchorLink href="#about">
+            <NavItem>
+              <NavLink to="#about" className="text-light">
+                About
+              </NavLink>
+            </NavItem>
+          </AnchorLink>
+          <AnchorLink href="#speakers">
+            <NavItem>
+              <NavLink to="#speakers" className="text-light">
+                Speakers
+              </NavLink>
+            </NavItem>
+          </AnchorLink>
           {/* <NavItem>
             <NavLink to="#schedules" className="text-light" >
               Schedule
             </NavLink>
           </NavItem> */}
-          <NavItem>
-            <NavLink
-              to="/hackathon"
-              className={({ isActive }) =>
-                isActive ? "navLinksUrl" : "text-light"
-              }
-            >
-              Hackathon
-            </NavLink>
-          </NavItem>
+          <AnchorLink href="#hackathon">
+            <NavItem>
+              <NavLink
+                to="/hackathon"
+                className={({ isActive }) =>
+                  isActive ? "navLinksUrl" : "text-light"
+                }
+              >
+                Hackathon
+              </NavLink>
+            </NavItem>
+          </AnchorLink>
         </Nav>
 
         <div className="nav-extra">
