@@ -46,6 +46,10 @@
   flex-wrap: wrap;
 }
 
+.btns-container a {
+  color: var(--primary-main-pink);
+}
+
 button.bn {
   font-weight: 600;
   font-size: 16px;

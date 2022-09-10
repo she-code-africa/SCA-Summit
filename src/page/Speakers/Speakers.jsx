@@ -86,8 +86,13 @@ export const Speakers = () => {
         <button className="bn" onClick={handleClick}>
           {isShown ? "Hide" : "View All Speakers"}
         </button>
-        <button className="bn" onClick={handleClick}>
-          Become A Speaker
+        <button className="bn">
+          <a
+            href="https://docs.google.com/forms/d/1casH1J97QxffQ6WSvBxvWExFxX_WIV21ocj_lm2lx1E/edit"
+            // className="bn"
+          >
+            Become A Speaker
+          </a>
         </button>
       </div>
     </div>

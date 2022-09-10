@@ -91,7 +91,9 @@ const NavBar = () => {
             </Nav>
 
             <div className="nav-extra">
-              <a href="#">Become A Speaker</a>
+              <a href="https://docs.google.com/forms/d/1casH1J97QxffQ6WSvBxvWExFxX_WIV21ocj_lm2lx1E/edit">
+                Become A Speaker
+              </a>
               <Button
                 className={click ? "mobilebtn" : "register-btn"}
                 href="/"
