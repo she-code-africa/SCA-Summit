@@ -8,7 +8,7 @@
   margin: 3rem auto;
 }
 
-#hackthon-img {
+#hackathon-img {
   width: 100%;
   border-radius: 2px;
   object-fit: cover;
@@ -27,13 +27,13 @@
   display: none;
 }
 
-.shecode-hackthon-text {
+.shecode-hackathon-text {
   margin-top: 5rem;
   text-align: center;
   padding: 20px;
 }
 
-.shecode-hackthon-text > h2 {
+.shecode-hackathon-text > h2 {
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -41,7 +41,7 @@
   color: #000;
 }
 
-.shecode-hackthon-text > span {
+.shecode-hackathon-text > span {
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -49,11 +49,11 @@
   color: #000;
 }
 
-.shecode-hackthon-text > span > span {
+.shecode-hackathon-text > span > span {
   color: #b70569;
 }
 
-.shecode-hackthon-text > p {
+.shecode-hackathon-text > p {
   margin: 15px 0 10px;
   font-style: normal;
   font-weight: 500;
@@ -62,12 +62,12 @@
   color: #707070;
 }
 
-.shecode-hackthon-text ul li {
+.shecode-hackathon-text ul li {
   color: #b70569;
   font-size: 30px;
 }
 
-.shecode-hackthon-text ul li .start-date {
+.shecode-hackathon-text ul li .start-date {
   color: #000;
   font-style: normal;
   font-weight: 400;
@@ -77,7 +77,7 @@
   text-transform: capitalize;
 }
 
-.shecode-hackthon-text ul li .date {
+.shecode-hackathon-text ul li .date {
   color: #000;
   font-style: normal;
   font-weight: 500;
@@ -88,45 +88,45 @@
 }
 
 @media screen and (max-width: 600px) {
-  #hackthon {
+  #hackathon {
     width: 220px;
     height: 300px;
     left: 180px;
     top: 429px;
   }
 
-  .shecode-hackthon-text {
+  .shecode-hackathon-text {
     margin-top: 3rem;
     text-align: center;
     padding: 15px;
   }
 
-  .shecode-hackthon-text > h2 {
+  .shecode-hackathon-text > h2 {
     font-size: 30px;
     line-height: 50px;
   }
 
-  .shecode-hackthon-text > span {
+  .shecode-hackathon-text > span {
     font-size: 30px;
     line-height: 20px;
   }
 
-  .shecode-hackthon-text > p {
+  .shecode-hackathon-text > p {
     font-size: 18px;
     line-height: 40px;
   }
 
-  .shecode-hackthon-text ul li {
+  .shecode-hackathon-text ul li {
     font-size: 25px;
   }
 
-  .shecode-hackthon-text ul li .start-date {
+  .shecode-hackathon-text ul li .start-date {
     font-size: 15px;
     line-height: 16px;
     letter-spacing: 0.01em;
   }
 
-  .shecode-hackthon-text ul li .date {
+  .shecode-hackathon-text ul li .date {
     font-size: 15px;
     line-height: 16px;
     letter-spacing: 0.01em;
@@ -138,7 +138,7 @@
     display: flex;
     justify-content: center;
   }
-  #hackthon-img {
+  #hackathon-img {
     width: 90%;
   }
 
@@ -147,29 +147,29 @@
     width: 50%;
   }
 
-  .shecode-hackthon-text {
+  .shecode-hackathon-text {
     padding: 10px 35px;
     margin: 2rem auto;
   }
 
-  .shecode-hackthon-text > h2 {
+  .shecode-hackathon-text > h2 {
     font-size: 30px;
     line-height: 50px;
   }
 
-  .shecode-hackthon-text > span {
+  .shecode-hackathon-text > span {
     font-size: 30px;
     line-height: 20px;
   }
 
-  .shecode-hackthon-text > p {
+  .shecode-hackathon-text > p {
     font-size: 18px;
     line-height: 40px;
   }
 }
 
 @media (min-width: 768px) {
-  #hackthon-img {
+  #hackathon-img {
     display: none;
   }
 
@@ -183,7 +183,7 @@
     grid-template-columns: 1fr minmax(250px, 600px);
   }
 
-  #hackthon-img {
+  #hackathon-img {
     display: block;
     width: 80%;
   }
@@ -192,7 +192,7 @@
     display: block;
   }
 
-  .shecode-hackthon-text {
+  .shecode-hackathon-text {
     margin: 2rem auto;
     text-align: left;
   }
@@ -206,16 +206,16 @@
     margin-top: 55%;
   }
 
-  #hackthon-img {
+  #hackathon-img {
     width: 70%;
   }
 
-  .shecode-hackthon-text > h2 {
+  .shecode-hackathon-text > h2 {
     font-size: 48px;
     line-height: 60px;
   }
 
-  .shecode-hackthon-text > span {
+  .shecode-hackathon-text > span {
     font-size: 48px;
     line-height: 60px;
   }

@@ -4,18 +4,18 @@ import HackathonImg from "../../assets/image/hackton.png";
 
 import HackathonImg1 from "../../assets/image/hackton2png.png";
 
-import "./hackthon.css";
+import "./Hackathon.css";
 
 const Hackathon = () => {
   return (
     <div className="hackathon-container" id="hackathon">
       <div className="hackathon-images">
-        <img src={HackathonImg} id="hackthon-img" alt={HackathonImg} />
+        <img src={HackathonImg} id="hackathon-img" alt={HackathonImg} />
 
         <img src={HackathonImg1} alt={HackathonImg1} class="hackathon-img-2" />
       </div>
 
-      <div className="shecode-hackthon-text">
+      <div className="shecode-hackathon-text">
         <h2>She Code Africa Hackathon</h2>
 
         <span>
