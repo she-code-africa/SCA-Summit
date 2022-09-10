@@ -25,37 +25,6 @@
 .pink {
   color: var(--primary-main-pink);
 }
-/* Sponsors */
-.sponsors {
-  background: url("./assets/image/banner.png");
-  background-size: 800px;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  height: 400px;
-  width: 100%;
-}
-
-.sponsors h5 {
-  font-size: 10px;
-  font-weight: 900;
-  color: var(--primary-main-pink);
-}
-
-.sponsors h3 {
-  font-weight: 650;
-  margin: 10px 20px;
-}
-
-.sponsors p {
-  background: url("./assets/image/banner - Copy.png") repeat;
-  background-size: 500px;
-  margin-bottom: 20px;
-  height: 600px;
-  width: 100%;
-  font-size: 10px;
-  font-weight: 900;
-}
 
 @media (max-width: 1024px) {
   .wp {
@@ -82,12 +51,6 @@
   caption button.bn {
     width: 130px;
     font-size: 16px;
-  }
-
-  .sponsors {
-    background-size: 700px;
-    height: 350px;
-    width: 100%;
   }
 }
 
@@ -136,12 +99,6 @@
   tr:nth-child(even) td:nth-child(even) {
     color: var(--primary-grey);
     margin-bottom: 100px;
-  }
-
-  .sponsors {
-    background-size: 620px;
-    height: 300px;
-    width: 100%;
   }
 }
 

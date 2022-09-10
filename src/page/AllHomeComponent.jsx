@@ -8,7 +8,7 @@ import { Schedule } from "./Schedule/Schedule";
 
 import { Speakers } from "./Speakers/Speakers";
 
-import { Sponsors } from "./Sponsors";
+import { Sponsors } from "./Sponsors/Sponsors";
 
 import Hackathon from "./Hackathon/Hackathon";
 
