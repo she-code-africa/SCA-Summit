@@ -44,6 +44,12 @@ const Footer = () => {
 
             <ListGroupItem className="fs-6 mb-3">
               <Link to="#instagram" className="text-white">
+                Our Website
+              </Link>
+            </ListGroupItem>
+
+            <ListGroupItem className="fs-6 mb-3">
+              <Link to="#instagram" className="text-white">
                 Instagram
               </Link>
             </ListGroupItem>
@@ -72,8 +78,10 @@ const Footer = () => {
           <hr />
 
           <div className="text-center fs-6 my-3 text-break m-auto">
-            All rights reserved. She codes africa . 2022 Designed by Yasira and
-            Iyobosa
+            All rights reserved. She Code Africa &copy; 2022.
+            <p style={{ fontSize: "12px" }}>
+              Designed by 💕 Yasira, Opeoluwa and Iyobosa
+            </p>
           </div>
         </Container>
       </footer>
