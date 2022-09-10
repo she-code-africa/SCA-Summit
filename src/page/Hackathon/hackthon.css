@@ -1,159 +1,222 @@
-#hackthon-img {
-
-    width: 450px;
-    height: 700px;
-    border-radius: 2px;
-    object-fit: cover;
-
+.hackathon-container {
+  display: grid;
+  grid-template-columns: auto;
+  padding: 30px 0;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  margin: 3rem auto;
 }
 
-#hackthon {
+#hackthon-img {
+  width: 100%;
+  border-radius: 2px;
+  object-fit: cover;
+  max-height: 800px;
+}
 
-    position: absolute;
-    width: 270px;
-    height: 350px;
-    left: 412px;
-    top: 479px;
-    object-fit: cover;
-    border-radius: 2px;
-    border: 15px solid #FFFFFF;
-
+.hackathon-img-2 {
+  /* position: absolute; */
+  object-fit: cover;
+  border-radius: 2px;
+  border: 15px solid #ffffff;
+  margin-left: -50%;
+  margin-top: 65%;
+  max-height: 400px;
+  width: 45%;
+  display: none;
 }
 
 .shecode-hackthon-text {
-
-    margin-top: 6rem;
-
+  margin-top: 5rem;
+  text-align: center;
+  padding: 20px;
 }
 
-.shecode-hackthon-text > h2{
-
-    font-style: normal;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 60px;
-    color: #000;
-
+.shecode-hackthon-text > h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+  color: #000;
 }
 
 .shecode-hackthon-text > span {
-    
-    font-style: normal;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 25px;
-    color: #000;
-
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 25px;
+  color: #000;
 }
 
 .shecode-hackthon-text > span > span {
-
-    color: #B70569;
-
+  color: #b70569;
 }
 
 .shecode-hackthon-text > p {
-
-    margin: 15px 0 10px;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 48px;
-    color: #707070;
-
+  margin: 15px 0 10px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 48px;
+  color: #707070;
 }
 
 .shecode-hackthon-text ul li {
-
-    color: #B70569;
-    font-size: 30px;
-
+  color: #b70569;
+  font-size: 30px;
 }
 
 .shecode-hackthon-text ul li .start-date {
-    color: #000;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 20px;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
+  color: #000;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
 }
 
 .shecode-hackthon-text ul li .date {
-
-    color: #000;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 20px;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-
+  color: #000;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
 }
 
-/* media query styling  on break point 768 */
-/* for the headerjsx component  */
-/* max-width:768px means upto 768px below  */
-@media screen and (max-width:768px) {
+@media screen and (max-width: 600px) {
+  #hackthon {
+    width: 220px;
+    height: 300px;
+    left: 180px;
+    top: 429px;
+  }
 
-    #customgap {
-        column-gap: 0rem;
-    }
+  .shecode-hackthon-text {
+    margin-top: 3rem;
+    text-align: center;
+    padding: 15px;
+  }
 
-    #hackthon-img {
+  .shecode-hackthon-text > h2 {
+    font-size: 30px;
+    line-height: 50px;
+  }
 
-        width: 240px;
-        height: 600px;
+  .shecode-hackthon-text > span {
+    font-size: 30px;
+    line-height: 20px;
+  }
 
-    }
+  .shecode-hackthon-text > p {
+    font-size: 18px;
+    line-height: 40px;
+  }
 
-    #hackthon {
+  .shecode-hackthon-text ul li {
+    font-size: 25px;
+  }
 
-        width: 220px;
-        height: 300px;
-        left: 180px;
-        top: 429px;
-    
-    }
-    .shecode-hackthon-text > h2{
+  .shecode-hackthon-text ul li .start-date {
+    font-size: 15px;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+  }
 
-        font-size: 30px;
-        line-height: 50px;
-    
-    }
-    
-    .shecode-hackthon-text > span {
-        
-        font-size: 30px;
-        line-height: 20px;
-    
-    }
+  .shecode-hackthon-text ul li .date {
+    font-size: 15px;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+  }
+}
 
-    
-    .shecode-hackthon-text > p {
-    
-        font-size: 18px;
-        line-height: 40px;
-    
-    }
-    
-    .shecode-hackthon-text ul li {
-    
-        font-size: 25px;
-    
-    }
-    
-    .shecode-hackthon-text ul li .start-date {
-        font-size: 15px;
-        line-height: 16px;
-        letter-spacing: 0.01em;
-    }
-    
-    .shecode-hackthon-text ul li .date {
-    
-        font-size: 15px;
-        line-height: 16px;
-        letter-spacing: 0.01em;
-    }
+@media (min-width: 600px) {
+  .hackathon-images {
+    display: flex;
+    justify-content: center;
+  }
+  #hackthon-img {
+    width: 90%;
+  }
+
+  .hackathon-img-2 {
+    display: block;
+    width: 50%;
+  }
+
+  .shecode-hackthon-text {
+    padding: 10px 35px;
+    margin: 2rem auto;
+  }
+
+  .shecode-hackthon-text > h2 {
+    font-size: 30px;
+    line-height: 50px;
+  }
+
+  .shecode-hackthon-text > span {
+    font-size: 30px;
+    line-height: 20px;
+  }
+
+  .shecode-hackthon-text > p {
+    font-size: 18px;
+    line-height: 40px;
+  }
+}
+
+@media (min-width: 768px) {
+  #hackthon-img {
+    display: none;
+  }
+
+  .hackathon-img-2 {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  .hackathon-container {
+    grid-template-columns: 1fr minmax(250px, 600px);
+  }
+
+  #hackthon-img {
+    display: block;
+    width: 80%;
+  }
+
+  .hackathon-img-2 {
+    display: block;
+  }
+
+  .shecode-hackthon-text {
+    margin: 2rem auto;
+    text-align: left;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hackathon-img-2 {
+    display: block;
+    width: 50%;
+    margin-left: -35%;
+    margin-top: 55%;
+  }
+
+  #hackthon-img {
+    width: 70%;
+  }
+
+  .shecode-hackthon-text > h2 {
+    font-size: 48px;
+    line-height: 60px;
+  }
+
+  .shecode-hackthon-text > span {
+    font-size: 48px;
+    line-height: 60px;
+  }
 }

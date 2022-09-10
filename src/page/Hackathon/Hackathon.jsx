@@ -7,49 +7,50 @@ import HackathonImg1 from "../../assets/image/hackton2png.png";
 import "./hackthon.css";
 
 const Hackathon = () => {
-    return (
-      
-        <>
+  return (
+    <>
+      <div className="hackathon-container">
+        <div className="hackathon-images">
+          <img src={HackathonImg} id="hackthon-img" alt={HackathonImg} />
 
-            <Container className="my-5">
-              
-                <Row className="g-5" id="customgap">
+          <img
+            src={HackathonImg1}
+            alt={HackathonImg1}
+            class="hackathon-img-2"
+          />
+        </div>
 
-                    <Col>
+        <div className="shecode-hackthon-text">
+          <h2>She Code Africa Hackathon</h2>
 
-                        <img src={HackathonImg} id="hackthon-img" alt={HackathonImg} />
+          <span>
+            2022: <span>Gamification</span>
+          </span>
 
-                        <img src={HackathonImg1} alt={HackathonImg1} id="hackthon" />
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil quas
+            maxime cupiditate magnam sed id ipsum, sequi sit aliquid quo porro
+            mollitia quidem praesentium, a facere saepe tempora neque ad?
+          </p>
 
-                    </Col>
+          <ul>
+            <li>
+              {" "}
+              <span className="start-date"> Start date:</span>{" "}
+              <span className="date">October 20-21, 2022</span>
+            </li>
 
-                    <Col className="shecode-hackthon-text">
-                        <h2>She Codes Africa Hackathon</h2>
+            <li>
+              <span className="start-date">Application deadline: </span>
+              <span className="date">October 12, 2022</span>
+            </li>
+          </ul>
 
-                        <span>2022: <span>Gamification</span></span>
+          <Button className="register-btn p-2">Apply now</Button>
+        </div>
+      </div>
+    </>
+  );
+};
 
-                        <p>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil quas maxime cupiditate magnam sed id ipsum, sequi sit aliquid quo porro mollitia quidem praesentium, a facere saepe tempora neque ad?
-                        </p>
-
-                        <ul>
-
-                            <li> <span className="start-date"> Start date:</span> <span className="date">October 20-21, 2022</span></li>
-
-                            <li><span className="start-date">Application deadline: </span><span className="date">October 12, 2022</span></li>
-
-                        </ul>
-
-                        <Button className="register-btn p-2">Apply now</Button>
-
-                    </Col>    
-                </Row>
-
-            </Container>
-        </>
-        
-    )
-    
-}
-
-export default Hackathon
+export default Hackathon;
