@@ -3,7 +3,7 @@ import "./Attendees.css";
 
 export const Attendees = () => {
   return (
-    <div className="attendees">
+    <div className="attendees" id="about">
       <div>
         <h2>1000</h2>
         <p>Women Participants</p>
