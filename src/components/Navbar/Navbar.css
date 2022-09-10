@@ -110,7 +110,7 @@ a:hover {
   align-items: center;
 }
 
-.nav-extra a {
+.nav-extra .speaker-link {
   color: #fff;
   text-decoration: none;
   font-weight: 600;
@@ -121,6 +121,10 @@ a:hover {
 @media (max-width: 600px) {
   .nav-extra {
     flex-direction: column;
+  }
+
+  .nav-extra .speaker-link {
+    padding: 25px 0px 0px 0px;
   }
 
   .navbar-nav {

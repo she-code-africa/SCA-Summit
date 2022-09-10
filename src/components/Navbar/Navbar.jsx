@@ -91,7 +91,7 @@ const NavBar = () => {
             </Nav>
 
             <div className="nav-extra">
-              <a href="https://docs.google.com/forms/d/1casH1J97QxffQ6WSvBxvWExFxX_WIV21ocj_lm2lx1E/edit">
+              <a href="https://docs.google.com/forms/d/1casH1J97QxffQ6WSvBxvWExFxX_WIV21ocj_lm2lx1E/edit" className="speaker-link">
                 Become A Speaker
               </a>
               <Button
