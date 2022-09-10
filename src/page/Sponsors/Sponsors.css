@@ -36,22 +36,10 @@
   margin: auto 30px;
 }
 
-/* .sponsors div {
-  display: grid;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  justify-items: center;
-}
-
-.sponsors div p {
-  grid-column: 1/ -1;
-} */
-
 @media (max-width: 600px) {
   .sponsors {
     overflow: scroll;
+    margin: 0;
   }
 
   .sponsors::-webkit-scrollbar {
@@ -69,7 +57,7 @@
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: 1fr;
-    grid-template-rows: auto 1fr;
+    grid-template-rows: 1fr;
     gap: 20px;
     overflow: scroll;
   }

@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import NavBar from "./components/Navbar/Navbar";
 
-import AllHomeComponent from "./page/AllHomeComponent";
+import Main from "./page/Main/Main";
 
 import Footer from "./components/Footer/Footer";
 
@@ -13,7 +13,7 @@ const App = () => {
         <NavBar />
 
         <Routes>
-          <Route index element={<AllHomeComponent />}></Route>
+          <Route index element={<Main />}></Route>
         </Routes>
 
         <Footer />
