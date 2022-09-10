@@ -1,8 +1,8 @@
 import { Button } from "reactstrap";
 
-import HackathonImg from "../../assets/image/hackton.png";
+import HackathonImg from "../../assets/image/hackathon.png";
 
-import HackathonImg1 from "../../assets/image/hackton2png.png";
+import HackathonImg1 from "../../assets/image/hackathon2png.png";
 
 import "./Hackathon.css";
 
