@@ -133,6 +133,10 @@ a:hover {
 }
 
 @media (min-width: 768px) {
+  .navbar img {
+    height: 70px;
+  }
+
   .navbar {
     padding: 10px 15px;
   }
