@@ -6,7 +6,6 @@
   z-index: 40;
   width: 100%;
   background-color: transparent;
-  /* padding: 0.25rem 0.5rem; */
 }
 
 .navbar {
@@ -75,7 +74,6 @@ a {
 }
 
 .nav-item {
-  /* text-decoration: none; */
   color: #fff;
   font-size: 18px;
   line-height: 21px;
