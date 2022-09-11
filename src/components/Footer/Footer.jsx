@@ -24,7 +24,7 @@ const Footer = () => {
             </ListGroupItem>
 
             <ListGroupItem className="fs-6 mb-3">
-              10th November, 2022
+              12th November, 2022
             </ListGroupItem>
 
             <ListGroupItem className="fs-6 mb-3 text-break">
@@ -34,7 +34,7 @@ const Footer = () => {
             <ListGroupItem className="fs-6 text-break">
               Have any questions, reach out to us at{" "}
               <Link to="#email" id="email">
-                partnerships@shecodeafrica.org
+                summit@shecodeafrica.org
               </Link>
             </ListGroupItem>
           </List>
@@ -91,9 +91,6 @@ const Footer = () => {
 
           <div className="text-center fs-6 my-3 text-break m-auto">
             All rights reserved. She Code Africa &copy; 2022.
-            <p style={{ fontSize: "12px" }}>
-              Created with 💕 by Yasira, Opeoluwa and Iyobosa
-            </p>
           </div>
         </Container>
       </footer>
