@@ -3,7 +3,6 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  padding: 30px;
   justify-content: center;
   align-items: center;
   margin: 40px auto;
@@ -24,7 +23,13 @@
   width: 45%;
 }
 
-.sponsors div p {
+.sponsors div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.sponsors p {
   margin: 30px;
   width: 100%;
   font-weight: 700;
@@ -34,12 +39,14 @@
 
 .sponsors div img {
   margin: auto 30px;
+  max-width: 150px;
 }
 
 @media (max-width: 600px) {
   .sponsors {
-    overflow: scroll;
+    /* overflow: scroll; */
     margin: 0;
+    padding: 15px;
   }
 
   .sponsors::-webkit-scrollbar {
@@ -50,28 +57,19 @@
     width: 90%;
     margin: 15px auto;
     font-size: 28px;
-    line-height: 40px;
+    line-height: 38px;
   }
 
   .sponsors div {
     display: grid;
-    grid-auto-flow: column;
     grid-auto-columns: 1fr;
     grid-template-rows: 1fr;
     gap: 20px;
-    overflow: scroll;
   }
+}
 
-  .sponsors div::-webkit-scrollbar {
-    display: none;
-  }
-
-  .sponsors div p {
-    margin: 15px auto;
-    grid-column: 1/ -1;
-  }
-
+@media (min-width: 992px) {
   .sponsors div img {
-    margin: auto;
+    max-width: 180px;
   }
 }
