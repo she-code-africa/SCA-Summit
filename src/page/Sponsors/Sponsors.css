@@ -17,10 +17,10 @@
 
 .sponsors h3 {
   font-weight: 700;
-  font-size: 48px;
-  line-height: 60px;
-  margin: 35px auto;
-  width: 45%;
+  width: 100%;
+  margin: 15px auto;
+  font-size: 28px;
+  line-height: 38px;
 }
 
 .sponsors div {
@@ -53,13 +53,6 @@
     display: none;
   }
 
-  .sponsors h3 {
-    width: 90%;
-    margin: 15px auto;
-    font-size: 28px;
-    line-height: 38px;
-  }
-
   .sponsors div {
     display: grid;
     grid-auto-columns: 1fr;
@@ -68,8 +61,29 @@
   }
 }
 
+@media (min-width: 600px) {
+  .sponsors h3 {
+    font-size: 32px;
+    width: 100%;
+  }
+}
+
 @media (min-width: 992px) {
+  .sponsors h3 {
+    width: 50%;
+    font-size: 38px;
+    margin: 35px auto;
+  }
   .sponsors div img {
     max-width: 180px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .sponsors h3 {
+    width: 50%;
+    font-size: 48px;
+    line-height: 60px;
+    margin: 35px auto;
   }
 }
