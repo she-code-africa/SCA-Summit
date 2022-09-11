@@ -7,7 +7,7 @@ export const Home = () => {
   return (
     <div id="home" className="home">
       <div className="home-content">
-        <h4>SHE CODE AFRICA TECH SUMMIT 2022</h4>
+        <h4>SHE CODE AFRICA SUMMIT 2022</h4>
         <h1>
           LARGEST GATHERING OF WOMEN IN <span className="pink">TECH</span>
         </h1>
@@ -15,7 +15,7 @@ export const Home = () => {
         <div className="details">
           <div>
             <img src={calendar} alt="date-time" />
-            <span>10TH NOVEMBER, 2022</span>
+            <span>12TH NOVEMBER, 2022</span>
           </div>
           <div>
             <img src={mapPin} alt="map-pin" />
