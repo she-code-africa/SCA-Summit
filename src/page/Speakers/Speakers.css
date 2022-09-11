@@ -1,6 +1,6 @@
 /* Speakers */
 .speakers-container {
-  background-color: var(--primary-main-pink);
+  background-color: var(--primary-light-pink);
   text-align: center;
   padding: 20px;
 }
@@ -12,7 +12,7 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
-  color: var(--primary-white);
+  color: var(--primary-main-pink);
 }
 
 .speakers-container h6 {
@@ -22,7 +22,7 @@
   font-size: 40px;
   line-height: 48px;
   letter-spacing: 1.5px;
-  color: var(--primary-white);
+  color: var(--primary-main-pink);
 }
 
 .speakers {
