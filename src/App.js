@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import NavBar from "./components/Navbar/Navbar";
+import Nav from "./components/Nav/Nav";
 
 import Main from "./page/Main/Main";
 
@@ -10,7 +10,7 @@ const App = () => {
   return (
     <>
       <BrowserRouter>
-        <NavBar />
+        <Nav />
 
         <Routes>
           <Route index element={<Main />}></Route>

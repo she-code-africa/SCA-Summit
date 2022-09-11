@@ -1,0 +1,134 @@
+.nav-container {
+  position: fixed;
+  border: none;
+  top: 0px;
+  left: 0;
+  z-index: 40;
+  width: 100%;
+  background-color: transparent;
+  /* padding: 0.25rem 0.5rem; */
+}
+
+.navbar {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.navbarBg {
+  background-color: var(--primary-main-pink);
+}
+
+.nav-logo {
+  display: flex;
+  text-decoration-line: none;
+  align-items: center;
+  z-index: 20;
+}
+
+.nav-logo img {
+  width: 2.5rem;
+  display: block;
+  height: auto;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.nav-btn {
+  background-color: transparent;
+  border: 0;
+  box-shadow: none;
+}
+
+.nav-btn img {
+  height: 2.5rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.is-active {
+  padding: 4px 0;
+  text-decoration: underline;
+  text-underline-position: under;
+  font-weight: 600;
+}
+
+.nav-items {
+  display: none;
+  flex-direction: column;
+  min-height: 90vh;
+  min-width: 100%;
+  padding: 6rem 0;
+  overflow: hidden;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-item {
+  /* text-decoration: none; */
+  color: #fff;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 600;
+  margin-bottom: auto;
+  margin-top: 0;
+  display: block;
+  text-transform: uppercase;
+}
+
+.nav-item:hover {
+  color: white;
+  padding: 4px 0;
+  text-decoration: underline;
+  text-underline-position: under;
+  font-weight: 600;
+}
+
+.nav-extra a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+@media (min-width: 1024px) {
+  .navbar {
+    padding: 1rem 3rem;
+  }
+  .nav-btn {
+    display: none;
+  }
+
+  .nav-items {
+    display: block;
+    min-height: 10px;
+    padding: 0;
+    min-width: auto;
+  }
+
+  .nav-items div {
+    margin-left: 2rem;
+  }
+
+  .nav-item {
+    display: inline-block;
+    margin-left: 2rem;
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+
+  .nav-extra {
+    display: inline-block;
+    text-transform: capitalize;
+  }
+}

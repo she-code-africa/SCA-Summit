@@ -118,7 +118,8 @@ a:hover {
   line-height: 19px;
 }
 
-@media (max-width: 600px) {
+
+@media (max-width: 768px) {
   .nav-extra {
     flex-direction: column;
   }
@@ -128,7 +129,16 @@ a:hover {
   }
 
   .navbar-nav {
-    gap: 8px;
+    gap: 80px;
+  }
+  .nav-item {
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  .navbar-collapse {
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -157,8 +167,13 @@ a:hover {
 /* max-width:768px means upto 768px below  */
 @media screen and (max-width: 768px) {
   /* .mobile-nav */
+  .navbar > .container-fluid {
+    height: 100%;
+    align-items: baseline;
+  }
   .mobile-nav {
     background-color: #b42174;
+    height: 100vh;
   }
   .mobilebtn {
     background-color: #fff;
@@ -171,5 +186,6 @@ a:hover {
   }
   #custom-navbar-toggler {
     background-color: #fff;
+    max-height: 40px;
   }
 }

@@ -53,7 +53,7 @@ const NavBar = () => {
       >
         <Navbar
           className={click ? "mobile-nav" : "navbar"}
-          expand="md"
+          expand="lg"
           id={colorChange ? "navbarBg" : ""}
         >
           <NavbarBrand>
@@ -91,7 +91,10 @@ const NavBar = () => {
             </Nav>
 
             <div className="nav-extra">
-              <a href="https://docs.google.com/forms/d/1casH1J97QxffQ6WSvBxvWExFxX_WIV21ocj_lm2lx1E/edit" className="speaker-link">
+              <a
+                href="https://docs.google.com/forms/d/1casH1J97QxffQ6WSvBxvWExFxX_WIV21ocj_lm2lx1E/edit"
+                className="speaker-link"
+              >
                 Become A Speaker
               </a>
               <Button
