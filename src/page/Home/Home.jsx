@@ -2,6 +2,7 @@ import React from "react";
 import "./Home.css";
 import calendar from "../../assets/icons/calendar.svg";
 import mapPin from "../../assets/icons/map-pin.svg";
+import { Button } from "reactstrap";
 
 export const Home = () => {
   return (
@@ -22,6 +23,9 @@ export const Home = () => {
             <span>Zone Tech Park, Gbagada, Lagos, Nigeria</span>
           </div>
         </div>
+        <Button className="register-btn" href="/">
+          Register
+        </Button>
       </div>
     </div>
   );
