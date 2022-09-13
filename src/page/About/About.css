@@ -24,7 +24,6 @@
 
 .about-container h2 {
   text-align: left;
-  padding: 0px 20px;
 }
 
 .about-content blockquote {
@@ -36,7 +35,6 @@
   display: flex;
   flex-direction: column;
   text-align: justify;
-  padding: 20px;
   justify-content: center;
   margin: auto;
   max-width: 800px;
@@ -60,6 +58,10 @@
     font-size: 1.25rem;
     text-transform: uppercase;
     padding: 0px;
+  }
+
+  .about-content {
+    padding: 20px;
   }
 
   .about-content blockquote {
