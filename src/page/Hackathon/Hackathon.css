@@ -4,25 +4,22 @@
   margin: auto;
   justify-content: center;
   align-items: center;
-  /* width: 95%; */
 }
 
 #hackathon-img {
   width: 100%;
   border-radius: 2px;
   object-fit: cover;
-  max-height: 800px;
+  display: none;
 }
 
 .hackathon-img-2 {
-  /* position: absolute; */
   object-fit: cover;
   border-radius: 2px;
   border: 15px solid #ffffff;
   margin-left: -50%;
-  margin-top: 65%;
-  max-height: 400px;
-  width: 45%;
+  margin-top: 35em;
+  width: 60%;
   display: none;
 }
 
@@ -52,6 +49,10 @@
   font-size: 20px;
   line-height: 45px;
   text-align: justify;
+}
+
+.shecode-hackathon-text .objectives {
+  list-style: 1.5rem;
 }
 
 .shecode-hackathon-text ul li {
@@ -91,14 +92,7 @@
   .hackathon-images {
     display: flex;
     justify-content: center;
-  }
-  #hackathon-img {
-    width: 40%;
-  }
-
-  .hackathon-img-2 {
-    display: block;
-    width: 50%;
+    height: 100%;
   }
 
   .shecode-hackathon-text {
@@ -122,24 +116,18 @@
   }
 }
 
-@media (min-width: 768px) {
-  #hackathon-img {
-    display: none;
-  }
-
-  .hackathon-img-2 {
-    display: none;
-  }
-}
-
-@media (min-width: 992px) {
+@media (min-width: 1024px) {
   .hackathon-container {
-    grid-template-columns: 1fr minmax(250px, 600px);
+    grid-template-columns: minmax(250px, 500px) 1fr;
+    margin-top: 2rem;
+    gap: 20px;
+    padding: 1rem 2rem;
   }
 
   #hackathon-img {
     display: block;
-    width: 80%;
+    width: 95%;
+    margin-left: 10px;
   }
 
   .hackathon-img-2 {
@@ -147,26 +135,37 @@
   }
 
   .shecode-hackathon-text {
-    margin: 2rem auto;
+    margin: auto;
     text-align: left;
-  }
-}
-
-@media (min-width: 1200px) {
-  .hackathon-img-2 {
-    display: block;
-    width: 50%;
-    margin-left: -35%;
-    margin-top: 55%;
-  }
-
-  #hackathon-img {
-    width: 70%;
+    padding: 0px 25px;
   }
 
   .shecode-hackathon-text > h2 {
-    font-size: 48px;
-    line-height: 60px;
+    line-height: 40px;
+  }
+
+  .shecode-hackathon-text > p {
+    line-height: 24px;
+  }
+
+  .shecode-hackathon-text .objectives {
+    line-height: 1.35rem;
+  }
+
+  .shecode-hackathon-text .register-btn {
+    margin: 20px auto;
+  }
+}
+
+@media (min-width: 1280px) {
+  .hackathon-container {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2rem 3rem;
+  }
+
+  .shecode-hackathon-text > h2 {
+    font-size: 38px;
+    line-height: 50px;
   }
 
   .shecode-hackathon-text > span {

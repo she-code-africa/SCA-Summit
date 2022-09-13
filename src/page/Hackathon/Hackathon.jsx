@@ -38,7 +38,7 @@ const Hackathon = () => {
         </p>
 
         <h6 className="text-start">Objectives</h6>
-        <ul className="lh-lg">
+        <ul className="objectives">
           <li>
             Support open source projects solving prevalent problems globally
             with special preference for open source projects supporting
