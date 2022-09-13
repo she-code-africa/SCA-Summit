@@ -68,7 +68,12 @@ const Hackathon = () => {
           Application deadline: October 12, 2022
         </p>
 
-        <Button className="register-btn p-2">Apply now</Button>
+        <a
+          className="register-btn p-2 text-center"
+          href="https://docs.google.com/forms/d/e/1FAIpQLSfsMX2ZRdf0uXkLJZZxiBgE-g8JHupLv_cc9IqH9_ch4U2PIA/viewform"
+        >
+          Apply now
+        </a>
       </div>
     </div>
   );

@@ -16,7 +16,7 @@
 .hackathon-img-2 {
   object-fit: cover;
   border-radius: 2px;
-  border: 15px solid #ffffff;
+  border: 10px solid #ffffff;
   margin-left: -50%;
   margin-top: 35em;
   width: 60%;
@@ -59,6 +59,10 @@
   color: #b70569;
   font-size: 16px;
   text-align: left;
+}
+
+.shecode-hackathon-text .register-btn:hover {
+  background-color: var(--primary-light-pink);
 }
 
 @media screen and (max-width: 600px) {
