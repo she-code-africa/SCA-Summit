@@ -52,7 +52,7 @@
 .details img {
   height: 20px;
   vertical-align: text-bottom;
-  margin-right: 36px;
+  margin-right: 10px;
 }
 
 .register-btn {
@@ -81,7 +81,7 @@
     padding: 9px 15px;
   }
 
-  .home-content{
+  .home-content {
     margin-top: 55px;
   }
 }
