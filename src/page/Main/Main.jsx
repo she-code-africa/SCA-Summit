@@ -5,6 +5,7 @@ import { About } from "../About/About";
 import { Speakers } from "../Speakers/Speakers";
 import { Sponsors } from "../Sponsors/Sponsors";
 import Hackathon from "../Hackathon/Hackathon";
+import { Tag } from "../../components/Tag/Tag";
 
 import "./Main.css";
 
@@ -12,7 +13,7 @@ const Main = () => {
   return (
     <div className="main">
       <Home />
-
+      <Tag />
       <Attendees />
 
       <About />
