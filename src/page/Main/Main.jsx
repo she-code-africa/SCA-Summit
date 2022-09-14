@@ -17,13 +17,13 @@ const Main = () => {
       <Attendees />
 
       <About />
-      <Tag />
+      {/* <Tag /> */}
       <Speakers />
-      <Tag />
+      {/* <Tag /> */}
       <Hackathon />
 
       {/* <Schedule /> */}
-      <Tag />
+      {/* <Tag /> */}
       <Sponsors />
     </div>
   );
