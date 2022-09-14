@@ -33,9 +33,9 @@ const Footer = () => {
 
             <ListGroupItem className="fs-6 text-break">
               Have any questions, reach out to us at{" "}
-              <Link to="#email" id="email">
+              <a href="mailto: summit@shecodeafrica.org" id="email">
                 summit@shecodeafrica.org
-              </Link>
+              </a>
             </ListGroupItem>
           </List>
 
