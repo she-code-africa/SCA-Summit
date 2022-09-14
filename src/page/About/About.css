@@ -42,7 +42,6 @@
     flex-direction: row;
     margin-left: 8rem;
     margin-right: 8rem;
-    gap: 20px;
   }
 
   .img-container {
@@ -51,11 +50,12 @@
 
   .about-container h2 {
     width: 50%;
-    margin-left: 2.5rem;
     z-index: 20;
-    font-size: 1.25rem;
+    font-size: 3rem;
     text-transform: uppercase;
     padding: 0px;
+    line-height: 45px;
+    min-width: 300px;
   }
 
   .about-content {
@@ -71,11 +71,15 @@
 }
 
 @media (min-width: 1280px) {
+  .about-container {
+    gap: 20px;
+  }
   .about-container h2 {
+    margin-left: 2.5rem;
     font-size: 3.5rem;
     width: 45%;
-    line-height: 60px;
     max-width: 500px;
+    line-height: 60px;
   }
   .about {
     margin: 5rem auto;
