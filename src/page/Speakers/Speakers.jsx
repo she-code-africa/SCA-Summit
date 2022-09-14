@@ -11,7 +11,7 @@ export const Speakers = () => {
   };
 
   return (
-    <div className="speakers-container" id="speakers">
+    <section className="speakers-container" id="speakers">
       <h5>SPEAKERS</h5>
       <h6>MEET THE SPEAKERS</h6>
       <div className="speakers">
@@ -95,6 +95,6 @@ export const Speakers = () => {
           </a>
         </button>
       </div>
-    </div>
+    </section>
   );
 };

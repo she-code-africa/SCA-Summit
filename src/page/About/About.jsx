@@ -4,7 +4,7 @@ import deco from "../../assets/image/deco.png";
 
 export const About = () => {
   return (
-    <div className="about-container">
+    <section className="about-container">
       <div className="img-container">
         <img src={deco} alt="deco" />
       </div>
@@ -24,6 +24,6 @@ export const About = () => {
           the tech industry and paterning Companies.
         </blockquote>
       </div>
-    </div>
+    </section>
   );
 };

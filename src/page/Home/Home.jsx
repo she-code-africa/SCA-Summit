@@ -5,7 +5,7 @@ import mapPin from "../../assets/icons/map-pin.svg";
 
 export const Home = () => {
   return (
-    <div id="home" className="home">
+    <section id="home" className="home">
       <div className="home-content">
         <h4>SHE CODE AFRICA SUMMIT 2022</h4>
         <h1>
@@ -29,6 +29,6 @@ export const Home = () => {
           Register
         </a>
       </div>
-    </div>
+    </section>
   );
 };

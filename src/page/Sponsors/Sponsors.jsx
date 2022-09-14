@@ -5,7 +5,7 @@ import tetra from "../../assets/image/tetra.svg";
 
 export const Sponsors = () => {
   return (
-    <div className="sponsors">
+    <section className="sponsors">
       <h5>SPONSORSHIP</h5>
       <h3>OFFICIAL SPONSORS OF EVENT</h3>
       <p>PREMIUM SPONSORS</p>
@@ -31,6 +31,6 @@ export const Sponsors = () => {
         <img src={tetra} alt="tetra-logo" />
         <img src={google} alt="google-logo" />
       </div>
-    </div>
+    </section>
   );
 };

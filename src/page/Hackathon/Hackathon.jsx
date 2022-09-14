@@ -4,7 +4,7 @@ import "./Hackathon.css";
 
 const Hackathon = () => {
   return (
-    <div className="hackathon-container" id="hackathon">
+    <section className="hackathon-container" id="hackathon">
       <div className="hackathon-images">
         <img src={HackathonImg} id="hackathon-img" alt={HackathonImg} />
 
@@ -71,7 +71,7 @@ const Hackathon = () => {
           Apply now
         </a>
       </div>
-    </div>
+    </section>
   );
 };
 
