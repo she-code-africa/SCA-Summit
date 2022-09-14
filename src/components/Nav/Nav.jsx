@@ -37,7 +37,10 @@ const Nav = () => {
         scrollDuration="500"
         headerBackground="true"
       >
-        <div className={colorChange || toggle ? "navbar navbarBg" : "navbar"}>
+        <div
+          className={colorChange || toggle ? "navbar navbarBg" : "navbar"}
+          id={toggle ? "h-full" : ""}
+        >
           <a className="nav-logo" href="/">
             <img src={logoImage} alt="She Code Africa's Logo" />
           </a>
@@ -65,7 +68,7 @@ const Nav = () => {
             <div className="nav-extra">
               <a
                 href="https://docs.google.com/forms/d/1casH1J97QxffQ6WSvBxvWExFxX_WIV21ocj_lm2lx1E/edit"
-                className="speaker-link"
+                className={colorChange || toggle ? "speaker-link" : ""}
               >
                 Become A Speaker
               </a>
