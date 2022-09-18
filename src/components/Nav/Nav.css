@@ -22,7 +22,7 @@
   background-color: var(--primary-main-pink);
 }
 
-#h-full{
+#h-full {
   height: 100vh;
 }
 
@@ -140,5 +140,11 @@ a {
   .nav-extra {
     display: inline-block;
     text-transform: capitalize;
+  }
+}
+
+@media (orientation: landscape) {
+  .nav-items {
+    padding: 2rem 0;
   }
 }

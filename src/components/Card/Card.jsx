@@ -6,7 +6,7 @@ export const Card = (props) => {
     <div className="cd">
       <img src={props.pic} alt="Avatar" />
       <div className="cont">
-        <p>Speaker</p>
+        {/* <p>Speaker</p> */}
         <h2>{props.name}</h2>
         <p>{props.title}</p>
       </div>
