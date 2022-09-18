@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Card } from "../../components/Card/Card";
-import { faker } from "@faker-js/faker";
+// import { faker } from "@faker-js/faker";
 import "./Speakers.css";
 import placeholder from "../../assets/image/avatar.png";
 export const Speakers = () => {
@@ -61,22 +61,22 @@ export const Speakers = () => {
           <>
             <Card
               className="itm"
-              name={`${faker.name.firstName()} ${faker.name.lastName()}`}
-              title={faker.name.jobTitle()}
+              // name={`${faker.name.firstName()} ${faker.name.lastName()}`}
+              // title={faker.name.jobTitle()}
               pic={placeholder}
             />
 
             <Card
               className="itm"
-              name={`${faker.name.firstName()} ${faker.name.lastName()}`}
-              title={faker.name.jobTitle()}
+              // name={`${faker.name.firstName()} ${faker.name.lastName()}`}
+              // title={faker.name.jobTitle()}
               pic={placeholder}
             />
 
             <Card
               className="itm"
-              name={`${faker.name.firstName()} ${faker.name.lastName()}`}
-              title={faker.name.jobTitle()}
+              // name={`${faker.name.firstName()} ${faker.name.lastName()}`}
+              // title={faker.name.jobTitle()}
               pic={placeholder}
             />
           </>
