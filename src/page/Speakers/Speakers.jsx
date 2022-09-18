@@ -17,42 +17,42 @@ export const Speakers = () => {
       <div className="speakers">
         <Card
           className="itm"
-          // name={`${faker.name.firstName()} ${faker.name.lastName()}`}
+          name="TBD"
           // title={faker.name.jobTitle()}
           pic={placeholder}
         />
 
         <Card
           className="itm"
-          // name={`${faker.name.firstName()} ${faker.name.lastName()}`}
+          name="TBD"
           // title={faker.name.jobTitle()}
           pic={placeholder}
         />
 
         <Card
           className="itm"
-          // name={`${faker.name.firstName()} ${faker.name.lastName()}`}
+          name="TBD"
           // title={faker.name.jobTitle()}
           pic={placeholder}
         />
 
         <Card
           className="itm"
-          // name={`${faker.name.firstName()} ${faker.name.lastName()}`}
+          name="TBD"
           // title={faker.name.jobTitle()}
           pic={placeholder}
         />
 
         <Card
           className="itm"
-          // name={`${faker.name.firstName()} ${faker.name.lastName()}`}
+          name="TBD"
           // title={faker.name.jobTitle()}
           pic={placeholder}
         />
 
         <Card
           className="itm"
-          // name={`${faker.name.firstName()} ${faker.name.lastName()}`}
+          name="TBD"
           // title={faker.name.jobTitle()}
           pic={placeholder}
         />
@@ -61,21 +61,21 @@ export const Speakers = () => {
           <>
             <Card
               className="itm"
-              // name={`${faker.name.firstName()} ${faker.name.lastName()}`}
+              name="TBD"
               // title={faker.name.jobTitle()}
               pic={placeholder}
             />
 
             <Card
               className="itm"
-              // name={`${faker.name.firstName()} ${faker.name.lastName()}`}
+              name="TBD"
               // title={faker.name.jobTitle()}
               pic={placeholder}
             />
 
             <Card
               className="itm"
-              // name={`${faker.name.firstName()} ${faker.name.lastName()}`}
+              name="TBD"
               // title={faker.name.jobTitle()}
               pic={placeholder}
             />
