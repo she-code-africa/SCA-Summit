@@ -26,8 +26,6 @@ export const Sponsors = () => {
       <p>GOLD SPONSORS</p>
       <div>
         <img src={yellowCard} alt="yellowcard-logo" />
-
-        <img src={oseq} alt="OSEQ-logo" />
       </div>
       {/* <p>SILVER SPONSORS</p>
       <div>
