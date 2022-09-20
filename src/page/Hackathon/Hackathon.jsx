@@ -57,14 +57,16 @@ const Hackathon = () => {
           <li>Reward innovative thinking</li>
         </ul>
 
-        <h6>All Participants get data stipends and SCA Swag and</h6>
+        <h6 className="text-start">
+          All Participants get data stipends and SCA Swag and
+        </h6>
         <ul>
           <li>First Place Cash Prize: N500,000</li>
           <li>Second Place Cash Prize: N300,000</li>
           <li>Third Place Cash Prize: N200,000</li>
         </ul>
 
-        <h6>Other Possible Prizes</h6>
+        <h6 className="text-start">Other Possible Prizes</h6>
         <ul>
           <li>
             Chance to receive external internship opportunities, and
