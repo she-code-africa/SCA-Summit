@@ -19,21 +19,20 @@
   object-fit: cover;
   border-radius: 2px;
   border: 10px solid #ffffff;
-  margin-left: 45%;
-  margin-top: -13em;
-  max-width: 380px;
-  max-height: 320px;
+  margin-left: 47%;
+  margin-top: -9em;
+  max-width: 350px;
+  max-height: 300px;
   display: none;
 }
 
 .shecode-hackathon-text {
   margin-top: 5rem;
   text-align: center;
-  padding: 20px;
-  /* max-width: 900px; */
+  max-width: 900px;
 }
 
-.shecode-hackathon-text > h2 {
+h2 {
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -43,12 +42,11 @@
   text-align: justify;
 }
 
-.shecode-hackathon-text h2 > span {
+h2 > span {
   color: #b70569;
 }
 
 .shecode-hackathon-text > p {
-  margin: 15px 0 10px;
   font-style: normal;
   font-size: 20px;
   line-height: 45px;
@@ -84,7 +82,7 @@
     padding: 15px;
   }
 
-  .shecode-hackathon-text > h2 {
+  h2 {
     font-size: 28px;
     line-height: 40px;
     text-align: left;
@@ -107,7 +105,7 @@
     margin: 2rem auto;
   }
 
-  .shecode-hackathon-text > h2 {
+  h2 {
     font-size: 30px;
     line-height: 50px;
   }
@@ -136,7 +134,7 @@
     padding: 0px 25px;
   }
 
-  .shecode-hackathon-text > h2 {
+  h2 {
     line-height: 40px;
   }
 
@@ -149,36 +147,46 @@
   }
 
   .shecode-hackathon-text .register-btn {
-    margin: 20px auto;
+    margin: 2px auto;
   }
 }
 
 @media (min-width: 1280px) {
   .hackathon-container {
-    padding: 2rem 1rem;
+    padding: 2rem;
+  }
+
+  .hackathon {
+    display: grid;
+    grid-template-columns: 650px 1fr;
   }
 
   .hackathon-images {
     display: block;
-    float: left;
-    margin-right: 45px;
+    margin-right: 10px;
     max-height: 850px;
+    flex: none;
   }
 
   #hackathon-img {
     display: block;
-    width: 95%;
+    width: 100%;
+    height: 90%;
     max-width: 800px;
-    max-height: 750px;
+    max-height: 800px;
   }
 
   .hackathon-img-2 {
     display: block;
   }
 
-  .shecode-hackathon-text > h2 {
+  h2 {
     font-size: 38px;
     line-height: 50px;
+  }
+
+  .shecode-hackathon-text {
+    padding: 5px 25px;
   }
 
   .shecode-hackathon-text > span {
