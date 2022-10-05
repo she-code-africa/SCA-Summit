@@ -120,7 +120,10 @@ a {
   }
 
   .nav-items {
-    display: block;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
     min-height: 10px;
     padding: 0;
     min-width: auto;
@@ -128,6 +131,7 @@ a {
 
   .nav-items div {
     margin-left: 2rem;
+    align-self: center;
   }
 
   .nav-item {
@@ -138,7 +142,8 @@ a {
   }
 
   .nav-extra {
-    display: inline-block;
+    display: inline-flex;
+    gap: 8px;
     text-transform: capitalize;
   }
 }

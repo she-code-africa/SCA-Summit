@@ -30,28 +30,28 @@ const Nav = () => {
   window.addEventListener("scroll", changeNavbarColor);
   return (
     <div className="nav-container">
-      <ScrollspyNav
-        scrollTargetIds={["home", "about", "speakers", "hackathon"]}
-        offset={100}
-        activeNavClass="is-active"
-        scrollDuration="500"
-        headerBackground="true"
+      <div
+        className={colorChange || toggle ? "navbar navbarBg" : "navbar"}
+        id={toggle ? "h-full" : ""}
       >
-        <div
-          className={colorChange || toggle ? "navbar navbarBg" : "navbar"}
-          id={toggle ? "h-full" : ""}
-        >
-          <a className="nav-logo" href="/">
-            <img src={logoImage} alt="She Code Africa's Logo" />
-          </a>
-          <button className="nav-btn" onClick={handleToggle}>
-            {toggle ? (
-              <img src={close} alt="menu-btn" className="icon" />
-            ) : (
-              <img src={menu} alt="menu-btn" className="icon" />
-            )}
-          </button>
-          <nav className={toggle ? "nav-items flex" : "nav-items"}>
+        <a className="nav-logo" href="/">
+          <img src={logoImage} alt="She Code Africa's Logo" />
+        </a>
+        <button className="nav-btn" onClick={handleToggle}>
+          {toggle ? (
+            <img src={close} alt="menu-btn" className="icon" />
+          ) : (
+            <img src={menu} alt="menu-btn" className="icon" />
+          )}
+        </button>
+        <nav className={toggle ? "nav-items flex" : "nav-items"}>
+          <ScrollspyNav
+            scrollTargetIds={["home", "about", "speakers", "hackathon"]}
+            offset={100}
+            activeNavClass="is-active"
+            scrollDuration="500"
+            headerBackground="true"
+          >
             <a className="nav-item" href="#home">
               Home
             </a>
@@ -65,17 +65,24 @@ const Nav = () => {
             <a className="nav-item" href="#hackathon">
               Hackathon
             </a>
-            <div className="nav-extra">
-              <a
-                href="https://docs.google.com/forms/d/1casH1J97QxffQ6WSvBxvWExFxX_WIV21ocj_lm2lx1E/edit"
-                className={colorChange || toggle ? "speaker-link" : ""}
-              >
-                Become A Speaker
-              </a>
-            </div>
-          </nav>
-        </div>
-      </ScrollspyNav>
+          </ScrollspyNav>
+          <div className="nav-extra">
+            <a
+              href="https://docs.google.com/forms/d/1casH1J97QxffQ6WSvBxvWExFxX_WIV21ocj_lm2lx1E/edit"
+              className={colorChange || toggle ? "speaker-link" : ""}
+            >
+              Become A Speaker
+            </a>
+
+            <a
+              href="https://forms.gle/Qc8LaVQhGEvsQzps9"
+              className={colorChange || toggle ? "speaker-link" : ""}
+            >
+              Become A Volunteer
+            </a>
+          </div>
+        </nav>
+      </div>
     </div>
   );
 };
