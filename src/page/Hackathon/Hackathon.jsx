@@ -75,16 +75,16 @@ const Hackathon = () => {
           <p className="fw-bold lh-base">
             Duration: October 10, 2022 - October 31st, 2022
           </p>
-          <p className="fw-bold lh-base">
+          {/* <p className="fw-bold lh-base">
             Application deadline: October 12, 2022
-          </p>
+          </p> */}
 
-          <a
+          {/* <a
             className="register-btn p-2 text-center"
             href="https://docs.google.com/forms/d/e/1FAIpQLSfsMX2ZRdf0uXkLJZZxiBgE-g8JHupLv_cc9IqH9_ch4U2PIA/viewform"
           >
             Apply now
-          </a>
+          </a> */}
         </div>
       </div>
     </section>
