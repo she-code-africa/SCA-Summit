@@ -71,6 +71,13 @@ a {
   overflow: hidden;
 }
 
+.nav-items div {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  text-align: center;
+}
+
 .flex {
   display: flex;
   justify-content: center;
@@ -94,6 +101,11 @@ a {
   text-decoration: underline;
   text-underline-position: under;
   font-weight: 600;
+}
+
+.nav-items .nav-extra {
+  margin-top: 3rem;
+  gap: 1rem;
 }
 
 .nav-extra a {
@@ -132,6 +144,7 @@ a {
   .nav-items div {
     margin-left: 2rem;
     align-self: center;
+    display: block;
   }
 
   .nav-item {
@@ -141,10 +154,15 @@ a {
     text-transform: capitalize;
   }
 
-  .nav-extra {
-    display: inline-flex;
+  .nav-items .nav-extra {
+    display: block;
     gap: 8px;
     text-transform: capitalize;
+    margin-top: 0;
+  }
+
+  .nav-extra a {
+    margin-left: 8px;
   }
 }
 

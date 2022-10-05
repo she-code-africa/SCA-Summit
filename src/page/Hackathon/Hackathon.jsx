@@ -15,7 +15,7 @@ const Hackathon = () => {
           <img src={hackathon} alt={hackathon} className="hackathon-img-2" />
         </div>
         <div className="shecode-hackathon-text">
-          <p class="hackathon-info">
+          <p className="hackathon-info">
             SCA HackFest aims to be an annual open source hackathon organized by
             She Code Africa dedicated to building and improving open source
             projects that serve people and solve problems around the world.
