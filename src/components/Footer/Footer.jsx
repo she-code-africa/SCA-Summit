@@ -29,6 +29,15 @@ const Footer = () => {
               Zone Tech Park, Gbagada, Lagos Nigeria .
             </ListGroupItem>
 
+            <ListGroupItem className="fs-6 mb-3 text-break">
+              <a
+                href="https://forms.gle/Qc8LaVQhGEvsQzps9"
+                className="text-light"
+              >
+                Become A Volunteer
+              </a>
+            </ListGroupItem>
+
             <ListGroupItem className="fs-6 text-break">
               Have any questions, reach out to us at{" "}
               <a href="mailto: summit@shecodeafrica.org" id="email">
