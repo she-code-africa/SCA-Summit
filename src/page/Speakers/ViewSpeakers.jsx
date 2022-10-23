@@ -17,8 +17,8 @@ import princess from "../../assets/image/Princess-Egbuna-Oluebube.jpeg";
 
 const ViewSpeakers = () => {
   return (
-    <div>
-      <>
+    <div className="speakers-container">
+      <div className="speakers mt-md-5">
         <Card
           className="itm"
           name="Odunayo Eweniyi"
@@ -122,13 +122,7 @@ const ViewSpeakers = () => {
           pic={paloma}
         />
 
-        {/* <Card
-              className="itm"
-              name="Chidinma Nwanya "
-              title="Managing Partner, Katwig & Dale"
-              role="Panelist"
-              pic={placeholder}
-            />
+        {/* 
 
             <Card
               className="itm"
@@ -161,7 +155,7 @@ const ViewSpeakers = () => {
               role="Panelist"
               pic={placeholder}
             /> */}
-      </>
+      </div>
     </div>
   );
 };
