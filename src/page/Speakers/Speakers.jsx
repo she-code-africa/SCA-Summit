@@ -29,11 +29,6 @@ export const Speakers = ({ handleClick }) => {
         <button className="bn" onClick={() => handleClick()}>
           View All Speakers
         </button>
-        <button className="bn">
-          <a href="https://docs.google.com/forms/d/1casH1J97QxffQ6WSvBxvWExFxX_WIV21ocj_lm2lx1E/edit">
-            Become A Speaker
-          </a>
-        </button>
       </div>
     </section>
   );

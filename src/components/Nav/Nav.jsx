@@ -69,13 +69,6 @@ const Nav = ({ setIsShown }) => {
           </ScrollspyNav>
           <div className="nav-extra">
             <a
-              href="https://docs.google.com/forms/d/1casH1J97QxffQ6WSvBxvWExFxX_WIV21ocj_lm2lx1E/edit"
-              className={colorChange || toggle ? "speaker-link" : ""}
-            >
-              Become A Speaker
-            </a>
-
-            <a
               href="https://forms.gle/Qc8LaVQhGEvsQzps9"
               className={colorChange || toggle ? "speaker-link" : ""}
             >
