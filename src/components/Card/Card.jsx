@@ -40,7 +40,7 @@ export const Card = (props) => {
                 width="30px"
               />
             </button>
-            Other modal Content here
+            Other modal Content here {props.name}
           </div>
         </section>
       </dialog>

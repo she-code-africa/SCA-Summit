@@ -93,10 +93,11 @@
 }
 
 .modal-content button {
-  display: inline-block;
+  display: inline;
   text-align: right;
   background-color: transparent;
   border: none;
+  outline: none;
 }
 
 @media (min-width: 420px) {
