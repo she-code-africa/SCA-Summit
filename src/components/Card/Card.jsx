@@ -1,21 +1,22 @@
 import React, { useRef, useEffect } from "react";
-import { CloseCircleOutline } from 'react-ionicons'
 import "./Card.css";
 
 export const Card = (props) => {
-  const showModal = useRef()
-  const hideModal = useRef()
-  const modal = useRef()
+  const showModal = useRef();
+  const hideModal = useRef();
+  const modal = useRef();
 
   useEffect(() => {
-    showModal?.current?.addEventListener('click', () => {
-      modal?.current?.showModal()
-    })
+    showModal?.current?.addEventListener("click", () => {
+      modal?.current?.showModal();
+      document.body.style.overflow = "hidden";
+    });
 
-    hideModal?.current?.addEventListener('click', () => {
-      modal?.current?.close()
-    })
-  }, [])
+    hideModal?.current?.addEventListener("click", () => {
+      modal?.current?.close();
+      document.body.style.overflow = "unset";
+    });
+  }, []);
 
   return (
     <>
@@ -23,24 +24,20 @@ export const Card = (props) => {
         <img src={props.pic} alt="Avatar" />
         <div className="cont">
           <h2>{props.name}</h2>
-          <p>{props.title}</p>
+          <p className="title">{props.title}</p>
           <p>{props.role}</p>
-          {/* <p></p> */}
         </div>
       </div>
 
       <dialog id="modal" ref={modal}>
         <section className="speakers-modal-container">
           <div className="modal-content">
-            <button ref={hideModal}>
-              <CloseCircleOutline
-                color={'#00000'} 
-                title="close modal"
-                height="30px"
-                width="30px"
-              />
+            <button ref={hideModal} className="fs-3">
+              x
             </button>
-            Other modal Content here {props.name}
+            <h2>{props.name}</h2>
+            <h3>{props.title}</h3>
+            <p className="text-justify text-break bio">{props.bio}</p>
           </div>
         </section>
       </dialog>

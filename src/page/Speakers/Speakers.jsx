@@ -2,65 +2,26 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Card } from "../../components/Card/Card";
 import "./Speakers.css";
-import odun from "../../assets/image/Odunayo_Eweniyi.JPG";
-import ashley from "../../assets/image/Ashley-Immanuel.jpg";
-import esther from "../../assets/image/Esther-Olamoyegun.jpg";
-import mbaoma from "../../assets/image/Mbaoma-Chioma-Mary.jpg";
-import adebayo from "../../assets/image/Esther-Temi-Adebayo.jpeg";
-import princess from "../../assets/image/Princess-Egbuna-Oluebube.jpeg";
+import { speakers } from "../../utils";
 export const Speakers = () => {
+  const speakersList = speakers.splice(0, 6);
   return (
     <section className="speakers-container" id="speakers">
       <h5>SPEAKERS</h5>
       <h6>MEET THE SPEAKERS</h6>
       <div className="speakers">
-        <Card
-          className="itm"
-          name="Odunayo Eweniyi"
-          title="COO & Co-founder, Piggyvest"
-          pic={odun}
-          role="Keynote Speaker"
-        />
-
-        <Card
-          className="itm"
-          name="Ashley Immanuel "
-          title="COO & Co-founder, Semicolon"
-          pic={ashley}
-          role="Keynote Speaker"
-        />
-
-        <Card
-          className="itm"
-          name="Esther Olamoyegun"
-          title="Content Marketer & Writer"
-          pic={esther}
-          role="Panelist"
-        />
-
-        <Card
-          className="itm"
-          name="Mbaoma Chioma Mary"
-          title="Software Engineer & Technical Writer"
-          pic={mbaoma}
-          role="Panelist"
-        />
-
-        <Card
-          className="itm"
-          name="Esther Adebayo"
-          role="Panelist"
-          title="Technical Recruiter, Decagon"
-          pic={adebayo}
-        />
-
-        <Card
-          className="itm"
-          name="Oluebube Princess Egbuna"
-          title="Engineering Lead, Well Beyond"
-          role="Panelist"
-          pic={princess}
-        />
+        {speakersList.map(({ name, role, title, pic, bio }, index) => {
+          return (
+            <Card
+              key={index}
+              name={name}
+              role={role}
+              title={title}
+              pic={pic}
+              bio={bio}
+            />
+          );
+        })}
       </div>
       <div className="btns-container">
         <button className="bn">
