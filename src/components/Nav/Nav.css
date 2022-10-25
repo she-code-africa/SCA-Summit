@@ -106,6 +106,7 @@ a {
 .nav-items .nav-extra {
   margin-top: 3rem;
   gap: 1rem;
+  align-items: center;
 }
 
 .nav-extra a {
