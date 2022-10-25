@@ -1,18 +1,25 @@
+import { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Nav from "./components/Nav/Nav";
 import Main from "./page/Main/Main";
 import Footer from "./components/Footer/Footer";
-import ViewSpeakers from "./page/Speakers/ViewSpeakers";
 
 const App = () => {
+  const [isShown, setIsShown] = useState(false);
+
+  const handleClick = () => {
+    setIsShown(true);
+  };
   return (
     <>
       <BrowserRouter>
-        <Nav />
+        <Nav setIsShown={setIsShown}/>
 
         <Routes>
-          <Route index element={<Main />}></Route>
-          <Route path="/speakers" element={<ViewSpeakers />}></Route>
+          <Route
+            index
+            element={<Main isShown={isShown} handleClick={handleClick} />}
+          ></Route>
         </Routes>
 
         <Footer />
