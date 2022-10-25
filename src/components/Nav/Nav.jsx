@@ -5,7 +5,7 @@ import menu from "../../assets/icons/menu.svg";
 import close from "../../assets/icons/close.svg";
 import ScrollspyNav from "react-scrollspy-nav";
 
-const Nav = () => {
+const Nav = ({ setIsShown }) => {
   const [toggle, setToggle] = useState(false);
   const [colorChange, setColorchange] = useState(false);
   const handleToggle = () => {
@@ -24,6 +24,7 @@ const Nav = () => {
   navLinks.forEach((link) => {
     link.addEventListener("click", () => {
       setToggle(false);
+      setIsShown(false);
     });
   });
 

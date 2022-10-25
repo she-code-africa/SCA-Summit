@@ -1,96 +1,36 @@
-import React, { useState } from "react";
+import React from "react";
 import { Card } from "../../components/Card/Card";
-// import { faker } from "@faker-js/faker";
 import "./Speakers.css";
-import placeholder from "../../assets/image/avatar.png";
-export const Speakers = () => {
-  const [isShown, setIsShown] = useState(false);
-
-  const handleClick = (event) => {
-    setIsShown((current) => !current);
-  };
-
+import { speakers } from "../../utils";
+export const Speakers = ({ handleClick }) => {
+  let list = speakers.filter((sp) => {
+    return sp;
+  });
+  const speakersList = list.splice(0, 6);
   return (
     <section className="speakers-container" id="speakers">
       <h5>SPEAKERS</h5>
       <h6>MEET THE SPEAKERS</h6>
       <div className="speakers">
-        <Card
-          className="itm"
-          name="TBD"
-          // title={faker.name.jobTitle()}
-          pic={placeholder}
-        />
-
-        <Card
-          className="itm"
-          name="TBD"
-          // title={faker.name.jobTitle()}
-          pic={placeholder}
-        />
-
-        <Card
-          className="itm"
-          name="TBD"
-          // title={faker.name.jobTitle()}
-          pic={placeholder}
-        />
-
-        <Card
-          className="itm"
-          name="TBD"
-          // title={faker.name.jobTitle()}
-          pic={placeholder}
-        />
-
-        <Card
-          className="itm"
-          name="TBD"
-          // title={faker.name.jobTitle()}
-          pic={placeholder}
-        />
-
-        <Card
-          className="itm"
-          name="TBD"
-          // title={faker.name.jobTitle()}
-          pic={placeholder}
-        />
-
-        {isShown && (
-          <>
+        {speakersList.map(({ name, role, title, pic, bio }, index) => {
+          return (
             <Card
-              className="itm"
-              name="TBD"
-              // title={faker.name.jobTitle()}
-              pic={placeholder}
+              key={index}
+              name={name}
+              role={role}
+              title={title}
+              pic={pic}
+              bio={bio}
             />
-
-            <Card
-              className="itm"
-              name="TBD"
-              // title={faker.name.jobTitle()}
-              pic={placeholder}
-            />
-
-            <Card
-              className="itm"
-              name="TBD"
-              // title={faker.name.jobTitle()}
-              pic={placeholder}
-            />
-          </>
-        )}
+          );
+        })}
       </div>
       <div className="btns-container">
-        <button className="bn" onClick={handleClick}>
-          {isShown ? "Hide" : "View All Speakers"}
+        <button className="bn" onClick={() => handleClick()}>
+          View All Speakers
         </button>
         <button className="bn">
-          <a
-            href="https://docs.google.com/forms/d/1casH1J97QxffQ6WSvBxvWExFxX_WIV21ocj_lm2lx1E/edit"
-            // className="bn"
-          >
+          <a href="https://docs.google.com/forms/d/1casH1J97QxffQ6WSvBxvWExFxX_WIV21ocj_lm2lx1E/edit">
             Become A Speaker
           </a>
         </button>

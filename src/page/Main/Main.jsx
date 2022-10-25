@@ -9,22 +9,28 @@ import { Tag } from "../../components/Tag/Tag";
 
 import "./Main.css";
 
-const Main = () => {
+import ViewSpeakers from "../Speakers/ViewSpeakers";
+
+const Main = ({isShown, handleClick}) => {
+  
   return (
     <div className="main">
-      <Home />
-      <Tag />
-      <Attendees />
+      {isShown ? (
+        <ViewSpeakers />
+      ) : (
+        <>
+          <Home />
+          <Tag />
+          <Attendees />
 
-      <About />
-      {/* <Tag /> */}
-      <Speakers />
-      {/* <Tag /> */}
-      <Hackathon />
+          <About />
+          <Speakers handleClick={handleClick}/>
+          <Hackathon />
 
-      {/* <Schedule /> */}
-      {/* <Tag /> */}
-      <Sponsors />
+          {/* <Schedule /> */}
+          <Sponsors />
+        </>
+      )}
     </div>
   );
 };
