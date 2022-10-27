@@ -30,7 +30,10 @@ export const Schedule = () => {
       <div className="lt">
         <h4>SCHEDULE PLAN</h4>
         <h5>SUMMIT SCHEDULE</h5>
-        <p>A general overview of the event at She Code Africa Summit Schedule 2022</p>
+        <p>
+          A general overview of the event at She Code Africa Summit Schedule
+          2022
+        </p>
       </div>
 
       <div className="rt">
@@ -61,10 +64,11 @@ export const Schedule = () => {
                 return (
                   <>
                     <tr key={key}>
-                      <th rowSpan={2}>{dayOne.duration}</th>
+                      <th>{dayOne.duration}</th>
                       <td>{dayOne.programme}</td>
                     </tr>
                     <tr key={key}>
+                      <th></th>
                       <td>{dayOne.summary}</td>
                     </tr>
                   </>
@@ -76,10 +80,11 @@ export const Schedule = () => {
                 return (
                   <>
                     <tr key={key}>
-                      <th rowSpan={2}>{dayTwo.duration}</th>
+                      <th>{dayTwo.duration}</th>
                       <td>{dayTwo.programme}</td>
                     </tr>
                     <tr key={key}>
+                      <th></th>
                       <td>{dayTwo.summary}</td>
                     </tr>
                   </>
@@ -90,7 +95,7 @@ export const Schedule = () => {
                 return (
                   <>
                     <tr key={key}>
-                      <th rowSpan={2}>{dayThree.duration}</th>
+                      <th>{dayThree.duration}</th>
                       <td>{dayThree.programme}</td>
                     </tr>
                     <tr key={key}>

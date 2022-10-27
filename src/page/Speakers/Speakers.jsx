@@ -6,7 +6,7 @@ export const Speakers = ({ handleClick }) => {
   let list = speakers.filter((sp) => {
     return sp;
   });
-  const speakersList = list.splice(0, 6);
+  const speakersList = list.splice(0, 8);
   return (
     <section className="speakers-container" id="speakers">
       <h5>SPEAKERS</h5>
