@@ -30,10 +30,7 @@ export const Sponsors = () => {
       <p>SILVER SPONSORS</p>
       <div>
         <img src={outreachy} alt="outreachy-logo" />
-      </div>
-
-      
-      
+      </div>   
       <p>BRONZE SPONSORS</p>
       <div>
         <img src={womenTechmakers} alt="women-techmakers-logo" />
