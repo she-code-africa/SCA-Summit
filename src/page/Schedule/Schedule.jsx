@@ -30,75 +30,71 @@ export const Schedule = () => {
       <div className="lt">
         <h4>SCHEDULE PLAN</h4>
         <h5>SUMMIT SCHEDULE</h5>
-        <p>A general overview of the event at shecodeafrica summit 2022</p>
+        <p>A general overview of the event at She Code Africa Summit Schedule 2022</p>
       </div>
 
       <div className="rt">
-          <table className="s-1">
-          <caption>
-            <button className="bn" onClick={handleClick1}>
+        <table className="s-1">
+          <div className="tab">
+            <button
+              className={isShown1 ? "bn active" : "bn"}
+              onClick={handleClick1}
+            >
               First Session
             </button>
-            <button className="bn" onClick={handleClick2}>
+            <button
+              className={isShown2 ? "bn active" : "bn"}
+              onClick={handleClick2}
+            >
               Second Session
             </button>
-            <button className="bn" onClick={handleClick3}>
+            <button
+              className={isShown3 ? "bn active" : "bn"}
+              onClick={handleClick3}
+            >
               Third Session
             </button>
-          </caption>
+          </div>
           <tbody>
             {isShown1 &&
-              // <tbody>
-              // {dayOne.map((dayOne, key) => {
               dayOne.map((dayOne, key) => {
                 return (
                   <>
                     <tr key={key}>
-                      <td>{dayOne.duration}</td>
+                      <th rowSpan={2}>{dayOne.duration}</th>
                       <td>{dayOne.programme}</td>
                     </tr>
                     <tr key={key}>
-                      <td></td>
                       <td>{dayOne.summary}</td>
                     </tr>
                   </>
                 );
-                // })}
-              })
-
-              // {/* </tbody> */}
-            }
+              })}
 
             {isShown2 &&
-              // <tbody>
               dayTwo.map((dayTwo, key) => {
                 return (
                   <>
                     <tr key={key}>
-                      <td>{dayTwo.duration}</td>
+                      <th rowSpan={2}>{dayTwo.duration}</th>
                       <td>{dayTwo.programme}</td>
                     </tr>
                     <tr key={key}>
-                      <td></td>
                       <td>{dayTwo.summary}</td>
                     </tr>
                   </>
                 );
-              })
-              // </tbody>
-            }
+              })}
             {isShown3 &&
-              // <tbody>
               dayThree.map((dayThree, key) => {
                 return (
                   <>
                     <tr key={key}>
-                      <td>{dayThree.duration}</td>
+                      <th rowSpan={2}>{dayThree.duration}</th>
                       <td>{dayThree.programme}</td>
                     </tr>
                     <tr key={key}>
-                      <td></td>
-                      <td>{dayThree.summary}</td>
+                      {dayThree.summary && <td>{dayOne.summary}</td>}
                     </tr>
                   </>
                 );

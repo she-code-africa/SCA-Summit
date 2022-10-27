@@ -45,6 +45,9 @@ table {
   width: 100%;
   text-align: justify;
   margin-top: 20px;
+  border-spacing: 0 15px;
+  display: flex;
+  flex-direction: column;
 }
 
 table td,
@@ -53,12 +56,16 @@ table th {
   height: 35px;
 }
 
-tr td:nth-child(1) {
-  width: 130px;
+tr:nth-child(even) td {
+  padding-bottom: 0.75rem;
+}
+
+tr th {
+  min-width: 150px;
   border-right: 1px solid var(--primary-dark-pink);
 }
 
-tr td:nth-child(2) {
+tr td {
   padding-left: 20px;
   margin-left: 10px;
 }
@@ -68,36 +75,55 @@ tr:nth-child(even) td:nth-child(even) {
   margin-bottom: 100px;
 }
 
-caption {
-  caption-side: top;
+.tab {
+  display: flex;
+  width: 75%;
+  margin-left: auto;
+  justify-content: space-between;
+  border-bottom: 2px solid var(--primary-grey);
 }
 
-caption button.bn:first-child {
+.tab button.bn:first-child {
   text-align: left;
 }
 
-caption button.bn:nth-child(3) {
+.tab button.bn:nth-child(3) {
   text-align: right;
 }
 
-caption button.bn {
+.tab button.bn {
   font-family: "Inter", sans-serif;
   font-weight: 500;
   border: none;
-  border-bottom: 2px solid var(--primary-grey);
   color: var(--primary-grey);
   border-radius: 0;
   background: none;
   font-size: 12px;
-  margin-bottom: 10px;
-  padding-bottom: 10px;
   min-width: 85px;
   max-width: 100px;
+  white-space: nowrap;
+  margin: 0;
 }
 
-caption button.bn:hover {
+.tab button.bn:hover {
   color: var(--primary-main-pink);
-  border-bottom: 2px solid var(--primary-main-pink);
+  /* border-bottom: 2px solid var(--primary-main-pink); */
+}
+
+button.bn.active {
+  color: var(--primary-main-pink);
+}
+
+@media (max-width: 768px) {
+  .schedule {
+    gap: 0;
+  }
+
+  .lt h4,
+  .lt h5,
+  .lt p {
+    text-align: center;
+  }
 }
 
 @media (min-width: 425px) {
@@ -113,32 +139,46 @@ caption button.bn:hover {
     padding: 5px;
   }
 
-  caption {
-    width: 100%;
+  .tab {
+    /* width: 100%; */
     text-align: center;
   }
 
-  caption button.bn {
-    max-width: 128px;
+  .tab button.bn {
     font-size: 12px;
     text-align: center;
   }
 }
 
-@media (min-width: 600px) {
+@media (min-width: 768px) {
   .schedule {
-    grid-template-columns: minmax(320px, 1fr) 2fr;
+    grid-template-columns: minmax(300px, 1fr) 2fr;
     grid-template-rows: 1fr;
     grid-template-areas: "left right";
     margin: 25px;
     max-width: 100%;
+    gap: 1.25rem;
   }
-  caption {
+  .tab {
     width: 100%;
   }
-  caption button.bn {
-    max-width: 90px;
+  .tab button.bn {
+    max-width: 100%;
     font-size: 14px;
+  }
+
+  .lt h5 {
+    font-size: 1.5rem;
+  }
+
+  .lt p {
+    width: 50%;
+  }
+
+  .lt h4,
+  .lt h5,
+  .lt p {
+    text-align: left;
   }
 }
 
@@ -156,8 +196,7 @@ caption button.bn:hover {
     grid-template-columns: minmax(400px, 1fr) 1fr;
     margin: 2rem auto;
   }
-  caption button.bn {
-    max-width: 160px;
+  .tab button.bn {
     font-size: 14px;
   }
 }
@@ -166,9 +205,14 @@ caption button.bn:hover {
   .schedule {
     margin: 2rem auto;
     max-width: 80%;
+    gap: 3rem;
   }
 
-  caption {
+  .lt p {
+    width: 90%;
+  }
+
+  .tab {
     display: flex;
   }
 
@@ -177,9 +221,9 @@ caption button.bn:hover {
     flex-direction: column;
   }
 
-  caption button.bn {
-    min-width: 150px;
-    max-width: 250px;
+  .tab button.bn {
+    /* min-width: 150px;
+    max-width: 250px; */
     font-size: 14px;
   }
 }

@@ -1,10 +1,10 @@
 import { Home } from "../Home/Home";
 import { Attendees } from "../Attendees/Attendees";
 import { About } from "../About/About";
-// import { Schedule } from "../Schedule/Schedule";
+import { Schedule } from "../Schedule/Schedule";
 import { Speakers } from "../Speakers/Speakers";
 import { Sponsors } from "../Sponsors/Sponsors";
-import Hackathon from "../Hackathon/Hackathon";
+// import Hackathon from "../Hackathon/Hackathon";
 import { Tag } from "../../components/Tag/Tag";
 
 import "./Main.css";
@@ -25,9 +25,9 @@ const Main = ({isShown, handleClick}) => {
 
           <About />
           <Speakers handleClick={handleClick}/>
-          <Hackathon />
+          {/* <Hackathon /> */}
 
-          {/* <Schedule /> */}
+          <Schedule />
           <Sponsors />
         </>
       )}
