@@ -62,10 +62,10 @@ const Nav = ({ setIsShown }) => {
             <a className="nav-item" href="#speakers">
               Speakers
             </a>
-            {/* <a className="nav-item" href="#schedules">Schedule</a> */}
-            <a className="nav-item" href="#hackathon">
+            <a className="nav-item" href="#schedules">Schedule</a>
+            {/* <a className="nav-item" href="#hackathon">
               Hackathon
-            </a>
+            </a> */}
           </ScrollspyNav>
           <div className="nav-extra">
             <a

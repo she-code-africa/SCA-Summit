@@ -13,6 +13,7 @@ import koromone from "../assets/image/Koromone-Koroye.jpg";
 import doyin from "../assets/image/Dedoyin-Ajayi.png";
 import chika from "../assets/image/Chika_Uluocha.jpg";
 import chidinma from "../assets/image/chidinma.JPG";
+import ada from "../assets/image/Ada.jpg";
 export const speakers = [
   {
     name: "Odunayo Eweniyi",
@@ -27,6 +28,13 @@ export const speakers = [
     pic: ashley,
     role: "Keynote Speaker",
     bio: "Ashley Immanuel is co-founder and Chief Operating Officer of Semicolon, a company that is solving the problem of youth unemployment in Africa by building tech-focused talent and businesses. Ashley coordinates Semicolon’s approach to delivering innovative solutions related to education, talent management, and venture-building. Ashley has built her career around helping organizations and ecosystems achieve outcomes that positively affect people’s lives. She has more than 15 years of experience delivering and managing impact-focused work in both the United States of America and Nigeria. Prior to joining Semicolon, Ashley was Chief Executive Officer of EFInA (Enhancing Financial Innovation & Access), a non-profit that drives inclusive finance in Nigeria through research, advocacy, capacity building, and innovation. In this role, Ashley supervised leading research and engagement on financial sector innovation in Nigeria and oversaw the delivery of a multi-million-dollar Innovation Fund. She also managed engagement with EFInA’s funding partners, including the Bill & Melinda Gates Foundation and UK AID. Ashley started her career in management consulting with IBM Global Business Services. She holds a Bachelor’s degree in Sociology from Duke University.",
+  },
+  {
+    name: "Ada Nduka Oyom",
+    title: "Founder, She Code Africa",
+    pic: ada,
+    role: "‎ ",
+    bio: "Ada is the Founder of She Code Africa (SCA), a non-profit organisation focused on empowering young girls and women in Africa through technical skills, She founded SCA in 2016 and has since impacted over 17,000 women members across 20+ African countries with her team, while championing gender diversity in tech through it. She started out as a self taught Software developer in the university and has since become involved in several other organisations within Africa’s technology sphere. Her expertise in Developer relations and staunch advocacy for developers within Africa has earned her roles in several top organisations globally including her current engagement as the Ecosystem community manager for Sub-saharan Africa with Google. Ada is also actively involved in advocating for open source in Africa, hence co-founded ‘Open Source Community Africa’, one of the largest communities for open-source enthusiasts, advocates and experts across Africa. She was also the voice behind the tech podcast Forloop Pod where she hosted technical talks and interviews with experts and individuals on their tech journey. She continues to volunteer her time as a technical and career mentor under several mentoring programs to help more people grow in tech, she’s currently a Global Youth Ambassador for Their world, and has been awarded as one of Ytech 100 honourees by the Future awards Africa 2019, Top 50 TechWomen of Lagos by TechCabal, Role model award winner in the Booking.com Tech Playmaker awards 2020, Top 10 women making change through Education across the world, via the 2021 Women Of the World (WOW) Hope Brigade exhibition, Developer Advocate of the year (2021) by HackerNoon and most recently awarded as an Honouree on the '100 most inspiring Women In Nigeria' by Leading Ladies Africa",
   },
   {
     name: "Esther Olamoyegun",
@@ -55,6 +63,13 @@ export const speakers = [
     pic: folashade,
     role: "Moderator",
     bio: "Folasade Daini is a brand storyteller for Tech Startups.A former Veterinary doctor, Folasade transitioned into tech as a content marketer in 2020. She has since gone on to work for local and international startups in the AI, Data science, investment, crypto payment and blockchain intelligence space. Folasade is also a Content creator, YouTuber, wife and mom to star girl Rereloluwa.",
+  },
+  {
+    name: "Karen Chukwu",
+    title: "Managing Partner, Katwig & Dale",
+    pic: karen,
+    role: "Legal Backup for Women in Tech",
+    bio: "Karen Chukwu is a Tech & IP Lawyer and certified Project Manager. She is the Founder and Managing Partner of Katwig & Dale, a women-led technology and digital-driven African law firm supporting individuals, Startups, investors and tech-based businesses to grow Africa’s Economy. She earned her Bachelor’s Degree in Law from the University of Hertfordshire where she graduated the youngest from the UH Law School. She obtained a joint masters in Law in Information Technology Law and Intellectual Property Law from the University of East Anglia Norwich as a recognised and awarded scholar and is a qualified Barrister & Solicitor of the Supreme Court of Nigeria. She is passionate about career and personal growth, women empowerment and feminine well-being. She is the Founder of Katwig Kare Foundation, a non-profit organisation supporting Nigerian women through their wellness journey. When she isn’t working, you’d find her going on a long-distance run, trying out a new bottle of wine or falling asleep in cinemas.",
   },
   {
     name: "Oluebube Princess Egbuna",
@@ -94,13 +109,6 @@ export const speakers = [
     bio: "Elizabeth Okaome is an advocate for women in tech. She has been a community manager/builder in the  tech ecosystem for 6 years. Her passion for grooming women in tech has made her volunteer for some women in tech organizations including a She Code Africa. She is the founder of Empower Her Community, a community that grooms females in tech skills, mentors and pairs them with opportunities. Empower Her Community was founded in 2021 and currently has over 2500 women from over 20 countries. Elizabeth is currently Developer Relations Manager at a Unicorn.",
   },
 
-  {
-    name: "Karen Chukwu",
-    title: "Managing Partner, Katwig & Dale",
-    pic: karen,
-    role: "Legal Backup for Women in Tech",
-    bio: "Karen Chukwu is a Tech & IP Lawyer and certified Project Manager. She is the Founder and Managing Partner of Katwig & Dale, a women-led technology and digital-driven African law firm supporting individuals, Startups, investors and tech-based businesses to grow Africa’s Economy. She earned her Bachelor’s Degree in Law from the University of Hertfordshire where she graduated the youngest from the UH Law School. She obtained a joint masters in Law in Information Technology Law and Intellectual Property Law from the University of East Anglia Norwich as a recognised and awarded scholar and is a qualified Barrister & Solicitor of the Supreme Court of Nigeria. She is passionate about career and personal growth, women empowerment and feminine well-being. She is the Founder of Katwig Kare Foundation, a non-profit organisation supporting Nigerian women through their wellness journey. When she isn’t working, you’d find her going on a long-distance run, trying out a new bottle of wine or falling asleep in cinemas.",
-  },
   {
     name: "Dedoyin Ajayi",
     title: "Psychotherapist & Mental Health Expert",

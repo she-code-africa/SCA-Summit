@@ -5,6 +5,7 @@ import womenTechmakers from "../../assets/image/Women-Techmakers.png";
 import oseq from "../../assets/image/OSEQ-logo.png";
 import zaycodes from "../../assets/image/Zaycodes-white.jpg";
 import yellowCard from "../../assets/image/yellowcard-logo.png";
+import wiicreate from "../../assets/image/WiiCreate.png";
 
 export const Sponsors = () => {
   return (
@@ -30,10 +31,17 @@ export const Sponsors = () => {
       <p>SILVER SPONSORS</p>
       <div>
         <img src={outreachy} alt="outreachy-logo" />
-      </div>   
+      </div>
       <p>BRONZE SPONSORS</p>
       <div>
         <img src={womenTechmakers} alt="women-techmakers-logo" />
+      </div>
+
+      <div>
+        <h3>PARTNERS</h3>
+        <div>
+          <img src={wiicreate} alt="wiicreate-logo" />
+        </div>
       </div>
     </section>
   );
