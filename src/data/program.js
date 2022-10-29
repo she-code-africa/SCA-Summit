@@ -26,7 +26,7 @@ export const dayOne = [
   },
   {
     duration: "10:35 - 11:10am",
-    programme: "Panel Session 1 + buffer 5",
+    programme: "Panel Session 1",
     summary:
       "Kusimama Nje: On Employability, Career Growth, and Standing Out in the Tech Space",
   },
