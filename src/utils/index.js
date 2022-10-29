@@ -14,6 +14,10 @@ import doyin from "../assets/image/Dedoyin-Ajayi.png";
 import chika from "../assets/image/Chika_Uluocha.jpg";
 import chidinma from "../assets/image/chidinma.JPG";
 import ada from "../assets/image/Ada.jpg";
+import ogo from "../assets/image/Ogochukwu_Umeokafor.jpg";
+import ngozi from "../assets/image/Ngozi_Chukwu.jpeg";
+import chiazagom from "../assets/image/Chiazagom_Anisiebo.jpg";
+
 export const speakers = [
   {
     name: "Odunayo Eweniyi",
@@ -74,13 +78,33 @@ export const speakers = [
     bio: "Karen Chukwu is a Tech & IP Lawyer and certified Project Manager. She is the Founder and Managing Partner of Katwig & Dale, a women-led technology and digital-driven African law firm supporting individuals, Startups, investors and tech-based businesses to grow Africa’s Economy. She earned her Bachelor’s Degree in Law from the University of Hertfordshire where she graduated the youngest from the UH Law School. She obtained a joint masters in Law in Information Technology Law and Intellectual Property Law from the University of East Anglia Norwich as a recognised and awarded scholar and is a qualified Barrister & Solicitor of the Supreme Court of Nigeria. She is passionate about career and personal growth, women empowerment and feminine well-being. She is the Founder of Katwig Kare Foundation, a non-profit organisation supporting Nigerian women through their wellness journey. When she isn’t working, you’d find her going on a long-distance run, trying out a new bottle of wine or falling asleep in cinemas.",
   },
   {
+    name: "Ngozi Chukwu",
+    title: "Writer, Big Cabal Media",
+    pic: ngozi,
+    role: "Panelist",
+    bio: "Ngozi Chukwu is a Newsletter Writer at Big Cabal Media, the parent company of Zikoko and TechCabal. They are premier African digital media publications creating delightful and insightful stories about Africa’s people and its growing tech ecosystem, respectively.Ngozi contributes to TechCabal’s daily newsletter—TC Daily. She solely writes TC Weekender, a TechCabal weekly newsletter. Ngozi also writes original stories for TechCabal’s website. She is especially interested in stories that advocate against discrimination in Africa’s emerging tech ecosystem. When Ngozi isn’t working, she is a binge-watching The Office or mentally swimming in her admiration of digital art, food and her friends.",
+  },
+  {
+    name: "Chiazagom Anisiebo",
+    title: "Talent Management Associate, Big Cabal Media",
+    pic: chiazagom,
+    role: "Panelist",
+    bio: "Chiazagom Anisiebo is a Talent Management Associate at Big Cabal Media. Big Cabal Media (BCM) is an African digital media publication creating high-quality media brands and original content with global reach and impact; and also the parent company to TechCabal and Zikoko. Chiazagom helps with people-related activities and issues at the Cabal. She helps the company to recruit top talent across the globe and ensures the employees stay engaged at all times. When Chiazagom isn’t working, she is a creative who enjoys writing short stories, vlogging unpublished videos, curating outfits, and watching Korean entertainment.",
+  },
+  {
     name: "Oluebube Princess Egbuna",
     title: "Engineering Lead, Well Beyond",
     pic: princess,
     role: "Panelist",
     bio: "Oluebube is a Software Engineer with over 7 years of professional experience. She currently works at WellBeyond, where she leads the engineering team. Apart from her day-to-day as an engineer, she considers herself a product of communities and so, is deeply involved in a lot of community work in the tech space. When she is not in the ‘zone’, she enjoys cooking and spending time with her husband and kids.",
   },
-
+  {
+    name: "Ogochukwu Umeokafor",
+    title: "Director of Product Management, Yellow Card",
+    pic: ogo,
+    role: "Panelist",
+    bio: "Ogochukwu is currently the director, product management at yellow card with over 13 years experience building, managing and deploying customer facing and API based tech products. She started off her career at Interswitch where she managed various products spanning across automated collections & disbursement solutions, Quickteller VAS services, agency banking solutions and many others.",
+  },
   {
     name: "Esther Adebayo",
     title: "Technical Recruiter, Descagon",
