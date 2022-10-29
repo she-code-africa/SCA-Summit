@@ -62,19 +62,21 @@ const Nav = ({ setIsShown }) => {
             <a className="nav-item" href="#speakers">
               Speakers
             </a>
-            <a className="nav-item" href="#schedules">Schedule</a>
+            <a className="nav-item" href="#schedules">
+              Schedule
+            </a>
             {/* <a className="nav-item" href="#hackathon">
               Hackathon
             </a> */}
           </ScrollspyNav>
-          <div className="nav-extra">
+          {/* <div className="nav-extra">
             <a
               href="https://forms.gle/Qc8LaVQhGEvsQzps9"
               className={colorChange || toggle ? "speaker-link" : ""}
             >
               Become A Volunteer
             </a>
-          </div>
+          </div> */}
         </nav>
       </div>
     </div>
