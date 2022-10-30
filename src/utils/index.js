@@ -17,7 +17,7 @@ import ada from "../assets/image/Ada.jpg";
 import ogo from "../assets/image/Ogochukwu_Umeokafor.jpg";
 import ngozi from "../assets/image/Ngozi_Chukwu.jpeg";
 import chiazagom from "../assets/image/Chiazagom_Anisiebo.jpg";
-
+import zoe from "../assets/image/Adebola_zoe.jpg";
 export const speakers = [
   {
     name: "Odunayo Eweniyi",
@@ -90,6 +90,13 @@ export const speakers = [
     pic: chiazagom,
     role: "Panelist",
     bio: "Chiazagom Anisiebo is a Talent Management Associate at Big Cabal Media. Big Cabal Media (BCM) is an African digital media publication creating high-quality media brands and original content with global reach and impact; and also the parent company to TechCabal and Zikoko. Chiazagom helps with people-related activities and issues at the Cabal. She helps the company to recruit top talent across the globe and ensures the employees stay engaged at all times. When Chiazagom isn’t working, she is a creative who enjoys writing short stories, vlogging unpublished videos, curating outfits, and watching Korean entertainment.",
+  },
+  {
+    name: "Adebola Zoe Williams",
+    title: "Brand Storyteller, Moni",
+    pic: zoe,
+    role: "Moderator",
+    bio: "Adebola Williams (also known as AWZ) is pioneering Brand Storytelling as a managerial role in the startup space. She’s currently the Brand Storyteller at Moni and she’s building a community of Brand Storytellers ready to take on the global market.",
   },
   {
     name: "Oluebube Princess Egbuna",
