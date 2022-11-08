@@ -12,7 +12,7 @@ import oreoluwa from "../assets/image/Oreoluwa-Lesi.jpeg";
 import koromone from "../assets/image/Koromone-Koroye.jpg";
 import doyin from "../assets/image/Dedoyin-Ajayi.png";
 import chika from "../assets/image/Chika_Uluocha.jpg";
-import chidinma from "../assets/image/chidinma.JPG";
+import chidimma from "../assets/image/chidinma.JPG";
 import ada from "../assets/image/Ada.jpg";
 import ogo from "../assets/image/Ogochukwu_Umeokafor.jpg";
 import ngozi from "../assets/image/Ngozi_Chukwu.jpeg";
@@ -157,10 +157,10 @@ export const speakers = [
     bio: "Paloma is a developer, technical content creator, and technical community manager and has experience growing and building developer communities from the ground up. She is passionate about blockchain technology and its applications and does a lot of work to onboard, educate and support developers in that space through community initiatives, technical content, mentorship, and courses. ",
   },
   {
-    name: "Chidinma Nwanya",
+    name: "Chidimma Nwanya",
     title: "Software Engineer",
     role: "Implementing Web Accessibility",
-    pic: chidinma,
+    pic: chidimma,
     bio: "Chidimma is a Frontend Engineer. She has a bachelor’s degree in Computer Engineering from the University of Lagos, and just recently completed her master's degree in Computer Science from Middlesex University, London where she researched web developers' knowledge on web accessibility in developing countries. Asides from tech, she creates YouTube videos on weight loss and lifestyle. She enjoys going to the gym and reading books on property investment.",
   },
 ];
