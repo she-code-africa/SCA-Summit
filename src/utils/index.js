@@ -114,7 +114,7 @@ export const speakers = [
   },
   {
     name: "Esther Adebayo",
-    title: "Technical Recruiter, Descagon",
+    title: "Technical Recruiter",
     pic: adebayo,
     role: "Panelist",
     bio: "Esther Adebayo is a Technical recruiter who works to provide technical talents to companies globally. She is passionate about getting more talents into technical roles in Africa. She started as a product & customer engagement officer before transitioning full time into tech as a recruiter. She’s also a content creator & youtuber who uses her channel to tech-related tips for newbies and lifestyle generally.",

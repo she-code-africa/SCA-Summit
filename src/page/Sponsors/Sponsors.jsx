@@ -6,6 +6,7 @@ import oseq from "../../assets/image/OSEQ-logo.png";
 import zaycodes from "../../assets/image/Zaycodes-white.jpg";
 import yellowCard from "../../assets/image/yellowcard-logo.png";
 import wiicreate from "../../assets/image/WiiCreate.png";
+import shuttler from "../../assets/image/shuttler.png";
 
 export const Sponsors = () => {
   return (
@@ -17,13 +18,7 @@ export const Sponsors = () => {
         <img src={oseq} alt="OSEQ-logo" />
         <img src={zaycodes} alt="zaycodes-logo" />
       </div>
-      {/* <p>PREMIUM SPONSORS</p>
-      <div>
-        <img src={google} alt="google-logo" />
-        <img src={tetra} alt="tetra-logo" />
-        <img src={google} alt="google-logo" />
-        <img src={tetra} alt="tetra-logo" />
-      </div> */}
+
       <p>GOLD SPONSORS</p>
       <div>
         <img src={yellowCard} alt="yellowcard-logo" />
@@ -41,6 +36,9 @@ export const Sponsors = () => {
         <h3>PARTNERS</h3>
         <div>
           <img src={wiicreate} alt="wiicreate-logo" />
+        </div>
+        <div>
+          <img src={shuttler} alt="shuttler-logo" />
         </div>
       </div>
     </section>
