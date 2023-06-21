@@ -1,129 +1,44 @@
-/* lll */
-:root {
-  --primary-main-pink: #b70569;
-  --primary-dark-pink: #6d033f;
-  --primary-light-pink: #f0cde1;
-  --secondary-main-black: #1a1a1a;
-  --primary-black: #0000;
-  --primary-lighter-pink: #f0cde14d;
-  --primary-very-light-pink: #f7e6f04d;
-  --primary-white: #ffffff;
-  --primary-grey: #707070;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;700&display=swap");
+
+@layer utilities {
+  @variants responsive {
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+    .no-scrollbar {
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width: none; /* Firefox */
+    }
+  }
 }
 
-* {
+body {
   margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  font-family: "roobert-regularregular", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-
-.App {
-  text-align: center;
-  font-family: "Inter", sans-serif;
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
 }
 
-.pink {
-  color: var(--primary-main-pink);
+footer {
+  font-family: "Libre Franklin", sans-serif;
 }
 
-@media (max-width: 1024px) {
-  .wp {
-    max-width: 960px;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  }
-
-  caption button.bn {
-    width: 200px;
-  }
-}
-
-@media (max-width: 768px) {
-  .wp {
-    max-width: 700px;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  }
-
-  .ig {
-    height: 250px;
-    width: 300px;
-  }
-
-  caption button.bn {
-    width: 130px;
-    font-size: 16px;
-  }
-}
-
-@media (max-width: 425px) {
-  .about {
-    margin: 60px;
-  }
-
-  .about h3 {
-    margin: 10px 10px;
-  }
-
-  .wp {
-    max-width: 350px;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  }
-
-  .ig {
-    height: 250px;
-    width: 320px;
-  }
-
-  table {
-    width: 100%;
-    font-size: 12px;
-    text-align: justify;
-    margin-top: 20px;
-  }
-
-  table td,
-  table th {
-    height: 20px;
-  }
-
-  tr td:nth-child(1) {
-    width: 120px;
-    padding: 10px;
-    margin-right: 0;
-  }
-
-  tr td:nth-child(2) {
-    padding-left: 10px;
-    margin-left: 5px;
-  }
-
-  tr:nth-child(even) td:nth-child(even) {
-    color: var(--primary-grey);
-    margin-bottom: 100px;
-  }
-}
-
-@media (max-width: 320px) {
-  .about {
-    margin: 30px;
-  }
-
-  .about h3 {
-    margin: 10px 10px;
-  }
-
-  .wp {
-    max-width: 250px;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  }
-
-  .ig {
-    height: 220px;
-    width: 280px;
-  }
-
-  caption button.bn {
-    width: 80px;
-    font-size: 12px;
-  }
+@font-face {
+  font-family: "roobert-regularregular";
+  src: url("./assets/fonts/roobert/roobert-regular-webfont.woff2")
+      format("woff2"),
+    url("./assets/fonts/roobert/roobert-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
