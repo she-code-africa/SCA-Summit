@@ -32,8 +32,8 @@ const Nav = () => {
           </li>
           <li>
             <ul className="flex flex-col md:flex-row mt-8 md:mt-0 gap-6 md:gap-4 items-center">
-              <li>Schedule</li>
-              <li>Speakers</li>
+              {/* <li>Schedule</li>
+              <li>Speakers</li> */}
               <li>Become a Sponsor</li>
               <li>Partner With Us</li>
               <li className="ml-2">
