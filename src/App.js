@@ -1,31 +1,14 @@
-import { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Nav from "./components/Nav/Nav";
-import Main from "./page/Main/Main";
-import Footer from "./components/Footer/Footer";
+import Home from "./pages/Main";
 
-const App = () => {
-  const [isShown, setIsShown] = useState(false);
-
-  const handleClick = () => {
-    setIsShown(true);
-  };
+function App() {
   return (
-    <>
-      <BrowserRouter>
-        <Nav setIsShown={setIsShown}/>
-
-        <Routes>
-          <Route
-            index
-            element={<Main isShown={isShown} handleClick={handleClick} />}
-          ></Route>
-        </Routes>
-
-        <Footer />
-      </BrowserRouter>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />}></Route>
+      </Routes>
+    </BrowserRouter>
   );
-};
+}
 
 export default App;
