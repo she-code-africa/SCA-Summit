@@ -17,10 +17,16 @@ const About = () => {
             Connecting & Empowering Women in Tech across Africa
           </h3>
           <p>
-            SCA is a non-profit organization focused on empowering Diam eget
-            ullamcorper at elementum risus turpis. Ullam corper maece nas proin
-            elit aenean. Maecenas eniven enatis egestas at. Massa felis ipsum
-            tellus consectetur
+            The SCA Summit stands as the premier assembly of African women in
+            the technology field, aiming to bring together women from diverse
+            backgrounds in Nigeria and neighbouring African Countries for a
+            hybrid summit experience. Our objective is to gather a remarkable
+            number of 2,000 women participants. By creating a secure
+            environment, we aspire to foster a vibrant atmosphere where these
+            women can engage in empowering discussions, receive valuable
+            insights about various tech skills and careers, while also forging
+            connections with influential women in the tech industry and
+            partnering companies.
           </p>
           <div className="my-2 md:my-4 flex gap-2 items-center md:gap-3 lg:gap-6">
             <a
@@ -29,7 +35,10 @@ const About = () => {
             >
               Register Now!
             </a>
-            <a href="/" className="flex items-center gap-1">
+            <a
+              href="https://drive.google.com/drive/folders/1tRQkG3jzcST71OOZqlT5_binwsdUQdhm"
+              className="flex items-center gap-1"
+            >
               View Past Events <RxArrowTopRight color="#B70569" />
             </a>
           </div>
