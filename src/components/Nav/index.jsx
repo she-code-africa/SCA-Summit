@@ -32,10 +32,18 @@ const Nav = () => {
           </li>
           <li>
             <ul className="flex flex-col md:flex-row mt-8 md:mt-0 gap-6 md:gap-4 items-center">
-              <li>Schedule</li>
-              <li>Speakers</li>
-              <li>Become a Sponsor</li>
-              <li>Partner With Us</li>
+              {/* <li>Schedule</li>
+              <li>Speakers</li> */}
+              <li>
+                <a href="https://drive.google.com/file/d/1rIW7CfMSNQUwCGppqWeDjm6C0hCC5tNE/view">
+                  Become a Sponsor
+                </a>
+              </li>
+              <li>
+                <a href="https://drive.google.com/file/d/1rIW7CfMSNQUwCGppqWeDjm6C0hCC5tNE/views">
+                  Partner With Us
+                </a>
+              </li>
               <li className="ml-2">
                 <a
                   className="bg-primary-pink rounded-3xl text-white py-3 px-8"

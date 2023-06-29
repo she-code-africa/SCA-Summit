@@ -4,6 +4,7 @@ import Footer from "../components/Footer";
 import Gallery from "../components/Gallery";
 import Hero from "../components/Hero";
 import About from "../components/About";
+import YTDisplay from "../components/YTDisplay";
 
 const Main = () => {
   return (
@@ -12,6 +13,7 @@ const Main = () => {
       <Hero />
       <About />
       <Gallery />
+      <YTDisplay />
       <Footer />
     </>
   );
