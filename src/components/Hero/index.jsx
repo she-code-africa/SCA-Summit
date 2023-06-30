@@ -19,13 +19,16 @@ const Hero = () => {
           </div>
           <div className="flex flex-col md:flex-row w-full md:w-auto gap-2 md:gap-6 items-center mb-8 md:md-0">
             <a
-              href="/"
+              href="https://drive.google.com/file/d/1rIW7CfMSNQUwCGppqWeDjm6C0hCC5tNE/view"
               className="bg-primary-pink px-8 py-2 rounded-3xl text-white"
             >
               Become A Sponsor
             </a>
 
-            <a href="/" className="flex items-center gap-1">
+            <a
+              href="https://tix.africa/discover/scasummit2"
+              className="flex items-center gap-1"
+            >
               Register to attend <RxArrowTopRight color="#B70569" />{" "}
             </a>
           </div>
@@ -38,7 +41,7 @@ const Hero = () => {
       <div className="flex flex-col md:flex-row font-bold uppercase py-8 md:py-12 lg:py-20 justify-center text-xl md:text-3xl lg:text-4xl gap-3 md:gap-6">
         <p className="flex items-center gap-2 justify-center">
           <img src={Calendar} alt="date" />
-          <span>23rd September, 2023</span>
+          <span>30th September, 2023</span>
         </p>
         <p className="flex items-center gap-2 justify-center">
           <img src={Location} alt="location" />
