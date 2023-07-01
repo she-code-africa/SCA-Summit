@@ -15,7 +15,7 @@ const Footer = () => {
                 Event Details
               </h2>
               <ul className="grid gap-2 text-sm md:text-base ">
-                <li>23rd September, 2023</li>
+                <li>30th September, 2023</li>
                 <li>
                   Have any questions, reach out to us at{" "}
                   <a

@@ -10,9 +10,9 @@ const Nav = () => {
   };
 
   return (
-    <div className="shadow-lg">
+    <div className="md:shadow-lg">
       <nav className="container mx-auto px-4 flex md:flex-row my-2 py-3 justify-between items-center gap-10 lg:gap-0">
-        <img src={Logo} alt="She Code Africa's Logo" />
+        <img src={Logo} alt="She Code Africa's Logo" className="md:w-12" />
         {!show && (
           <IoIosMenu
             size="1.5rem"
@@ -47,7 +47,7 @@ const Nav = () => {
               <li className="ml-2">
                 <a
                   className="bg-primary-pink rounded-3xl text-white py-3 px-8"
-                  href="/"
+                  href="https://tix.africa/discover/scasummit2"
                 >
                   Register now!
                 </a>
