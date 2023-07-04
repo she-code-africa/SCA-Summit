@@ -34,11 +34,24 @@ footer {
   font-family: "Libre Franklin", sans-serif;
 }
 
+.counter-container p {
+  font-family: "ds-digi", Arial, sans-serif;
+}
+
 @font-face {
   font-family: "roobert-regularregular";
   src: url("./assets/fonts/roobert/roobert-regular-webfont.woff2")
       format("woff2"),
     url("./assets/fonts/roobert/roobert-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ds-digi";
+  src: url("./assets/fonts/digital_number/ds-digi-webfont.woff2")
+      format("woff2"),
+    url("./assets/fonts/digital_number/ds-digi-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }

@@ -6,6 +6,7 @@ import sample4 from "../../assets/images/sample-img3.jpg";
 import sample6 from "../../assets/images/sample-img5.jpg";
 import sample7 from "../../assets/images/sample-img6.jpg";
 import sample8 from "../../assets/images/sample-img7.jpg";
+import sample9 from "../../assets/images/sample-img8.jpg";
 import { RxArrowTopRight } from "react-icons/rx";
 
 const Gallery = () => {
@@ -68,6 +69,13 @@ const Gallery = () => {
                 className="object-cover max-w-sm h-[265px] lg:h-[200px] rounded-xl lg:rounded-none lg:rounded-b-xl"
               />
             </div>
+          </div>
+          <div className="h-fit max-h-[415px] border-4 border-[#210D15] rounded-tr-3xl rounded-bl-3xl">
+            <img
+              alt="gallery"
+              src={sample9}
+              className="object-cover max-w-[300px] h-[265px] lg:h-[400px] rounded-tr-3xl rounded-bl-3xl -mx-px -mb-[2px] -mt-px"
+            />
           </div>
         </div>
 
