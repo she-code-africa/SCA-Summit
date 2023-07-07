@@ -16,6 +16,7 @@ const Footer = () => {
               </h2>
               <ul className="grid gap-2 text-sm md:text-base ">
                 <li>30th September, 2023</li>
+                <li>Queen's Park Event Centre</li>
                 <li>
                   Have any questions, reach out to us at{" "}
                   <a
