@@ -4,6 +4,7 @@ import Calendar from "../../assets/icons/calendar.svg";
 import Location from "../../assets/icons/location.svg";
 import { RxArrowTopRight } from "react-icons/rx";
 import CountdownTimer from "../CountdownTimer";
+import { BsClockFill } from "react-icons/bs";
 
 const Hero = () => {
   const eventDate = new Date("09/30/2023");
@@ -22,7 +23,7 @@ const Hero = () => {
             She Code Africa Summit 2023!
           </h1>
           <div className="border border-black px-2 lg:px-4 py-1 max-w-xs mx-auto md:mx-0 md:max-w-xl mt-3 mb-3 rounded-3xl">
-            <p className="font-medium text-sm md:text-lg lg:text-2xl">
+            <p className="font-medium text-xs md:text-lg lg:text-2xl">
               The Largest Women In Tech Summit in Africa
             </p>
           </div>
@@ -48,14 +49,18 @@ const Hero = () => {
       </section>
 
       <div className="py-8 md:py-12 lg:py-20 bg-primary-pink-opacity">
-        <div className="flex flex-col md:flex-row font-bold uppercase justify-center text-xl md:text-2xl gap-3 md:gap-6">
+        <div className="flex flex-col md:flex-row font-bold uppercase justify-center text-sm md:text-2xl gap-3 md:gap-6">
           <p className="flex items-center gap-2 justify-center">
-            <img src={Calendar} alt="date" />
+            <img src={Calendar} alt="date" className="w-6 md:w-auto" />
             <span>30th September, 2023</span>
           </p>
           <p className="flex items-center gap-2 justify-center">
-            <img src={Location} alt="location" />
-            <span>Lagos, Nigeria</span>
+            <img src={Location} alt="location" className="w-6 md:w-auto" />
+            <span>Queen's Park Event Centre, Lagos</span>
+          </p>
+          <p className="flex items-center gap-2 justify-center">
+            <BsClockFill color="#B70569" size="1.5rem" />
+            <span>9:00 am - 5:00 pm</span>
           </p>
         </div>
         <CountdownTimer targetDate={dateTimeAfterThreeDays} />
