@@ -9,9 +9,9 @@ const Nav = () => {
   };
 
   return (
-    <div className="md:shadow-lg">
-      <nav className="container mx-auto px-4 flex md:flex-row my-2 py-3 justify-between items-center gap-10 lg:gap-0">
-        <img src={Logo} alt="She Code Africa's Logo" className="md:w-12" />
+    <div className="md:shadow-lg fixed w-full bg-white mb-3 md:mb-16">
+      <nav className="container mx-auto px-4 flex md:flex-row my-0 py-3 justify-between items-center gap-10 lg:gap-0">
+        <img src={Logo} alt="She Code Africa's Logo" className="md:w-11" />
         {!show && (
           <IoIosMenu
             size="1.5rem"

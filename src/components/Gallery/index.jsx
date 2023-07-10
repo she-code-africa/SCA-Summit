@@ -21,7 +21,7 @@ const Gallery = () => {
             <img
               alt="gallery"
               src={sample2}
-              className="object-cover max-w-sm lg:h-[400px] rounded-[45px]"
+              className="object-cover max-w-sm 2xl:max-w-full lg:h-[400px] rounded-[45px]"
             />
           </div>
           <div className="flex flex-row lg:flex-col justify-between md:justify-normal md:max-h-[415px] gap-2">
@@ -29,14 +29,14 @@ const Gallery = () => {
               <img
                 alt="gallery"
                 src={sample3}
-                className="object-cover max-w-sm h-[265px] lg:h-[200px] rounded-2xl lg:rounded-none lg:rounded-t-xl"
+                className="object-cover max-w-sm 2xl:max-w-full h-[265px] lg:h-[200px] rounded-2xl lg:rounded-none lg:rounded-t-xl"
               />
             </div>
             <div className="border-4 rounded-3xl lg:rounded-none lg:rounded-b-3xl border-primary-pink h-fit">
               <img
                 alt="gallery"
                 src={sample4}
-                className="object-cover max-w-sm lg:w-full h-[265px] lg:h-[180px] rounded-2xl lg:rounded-none lg:rounded-b-2xl"
+                className="object-cover max-w-sm 2xl:max-w-full lg:w-full h-[265px] lg:h-[180px] rounded-2xl lg:rounded-none lg:rounded-b-2xl"
               />
             </div>
           </div>
@@ -44,14 +44,14 @@ const Gallery = () => {
             <img
               alt="gallery"
               src={sample}
-              className="object-cover max-w-[300px] h-[265px] lg:h-[400px] rounded-2xl rounded-bl-none -mx-px"
+              className="object-cover max-w-[300px] 2xl:max-w-full h-[265px] lg:h-[400px] rounded-2xl rounded-bl-none -mx-px"
             />
           </div>
           <div className="h-fit max-h-[415px] border-4 border-[#210D15] rounded-tr-3xl rounded-bl-3xl">
             <img
               alt="gallery"
               src={sample6}
-              className="object-cover max-w-[300px] h-[265px] lg:h-[400px] rounded-tr-3xl rounded-bl-3xl -mx-px -mb-[2px] -mt-px"
+              className="object-cover max-w-[300px] 2xl:max-w-full h-[265px] lg:h-[400px] rounded-tr-3xl rounded-bl-3xl -mx-px -mb-[2px] -mt-px"
             />
           </div>
           <div className="flex flex-row lg:flex-col justify-between md:justify-normal md:max-h-[415px] gap-2">
@@ -74,7 +74,7 @@ const Gallery = () => {
             <img
               alt="gallery"
               src={sample9}
-              className="object-cover max-w-[300px] h-[265px] lg:h-[400px] rounded-tr-3xl rounded-bl-3xl -mx-px -mb-[2px] -mt-px"
+              className="object-cover max-w-[300px] 2xl:max-w-full h-[265px] lg:h-[400px] rounded-tr-3xl rounded-bl-3xl -mx-px -mb-[2px] -mt-px"
             />
           </div>
         </div>

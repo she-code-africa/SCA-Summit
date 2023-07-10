@@ -16,7 +16,7 @@ const Hero = () => {
 
   const dateTimeAfterThreeDays = NOW_IN_MS + DAYS_IN_MS;
   return (
-    <div className="bg-primary-light-pink">
+    <div className="bg-primary-light-pink pt-8 md:pt-16 lg:pt-24">
       <section className="flex flex-col md:flex-row container mx-auto px-4 w-full md:gap-4 lg:gap-0 justify-between items-center py-8 md:py-16 lg:py-24">
         <div>
           <h1 className="text-4xl text-center md:text-start lg:text-7xl font-black md:max-w-2xl">
