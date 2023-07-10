@@ -6,7 +6,6 @@ const Nav = () => {
   const [show, setShow] = useState(false);
   const handleShow = () => {
     setShow(!show);
-    console.log(show);
   };
 
   return (
