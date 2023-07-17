@@ -22,7 +22,7 @@ const Hero = () => {
           <h1 className="text-4xl text-center md:text-start lg:text-7xl font-black md:max-w-2xl">
             She Code Africa Summit 2023!
           </h1>
-          <div className="border border-black px-2 lg:px-4 py-1 max-w-xs mx-auto md:mx-0 md:max-w-xl mt-3 mb-3 rounded-3xl">
+          <div className="border border-black px-2 lg:px-4 py-1 max-w-xs mx-auto md:mx-0 md:max-w-xl rounded-3xl my-3 md:my-5">
             <p className="font-medium text-xs md:text-lg lg:text-2xl">
               The Largest Women In Tech Summit in Africa
             </p>
@@ -49,7 +49,7 @@ const Hero = () => {
       </section>
 
       <div className="py-8 md:py-12 lg:py-20 bg-primary-pink-opacity">
-        <div className="flex flex-col md:flex-row font-bold uppercase justify-center text-sm md:text-2xl gap-3 md:gap-6">
+        <div className="flex flex-col md:flex-row font-bold uppercase justify-center text-sm md:text-base lg:text-2xl gap-3 md:gap-6">
           <p className="flex items-center gap-2 justify-center">
             <img src={Calendar} alt="date" className="w-6 md:w-auto" />
             <span>30th September, 2023</span>

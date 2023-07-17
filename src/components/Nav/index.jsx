@@ -31,8 +31,13 @@ const Nav = () => {
           </li>
           <li>
             <ul className="flex flex-col md:flex-row mt-8 md:mt-0 gap-6 md:gap-4 items-center">
-              {/* <li>Schedule</li>
-              <li>Speakers</li> */}
+              {/* <li>Schedule</li> */}
+              <li>
+                {" "}
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSc7C02lAPDXrSdGjhi_-B1ilHblLoGU03T4KXIcI2nfcMy10A/viewform?pli=1 ">
+                  Become a Speaker
+                </a>
+              </li>
               <li>
                 <a href="https://drive.google.com/file/d/1rIW7CfMSNQUwCGppqWeDjm6C0hCC5tNE/view">
                   Become a Sponsor
