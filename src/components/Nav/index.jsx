@@ -9,7 +9,7 @@ const Nav = () => {
   };
 
   return (
-    <div className="md:shadow-lg fixed w-full bg-white mb-3 md:mb-16">
+    <div className="md:shadow-lg fixed w-full bg-white mb-3 md:mb-16 z-[1000] opacity-90">
       <nav className="container mx-auto px-4 flex md:flex-row my-0 py-3 justify-between items-center gap-10 lg:gap-0">
         <img src={Logo} alt="She Code Africa's Logo" className="md:w-11" />
         {!show && (
