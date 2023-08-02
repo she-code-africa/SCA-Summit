@@ -38,6 +38,30 @@ footer {
   font-family: "ds-digi", Arial, sans-serif;
 }
 
+.hero {
+  background: radial-gradient(
+    126.96% 275.84% at 90.24% 16.36%,
+    #b70569 0%,
+    rgba(183, 5, 105, 0.12) 0.01%,
+    rgba(183, 5, 105, 0.08) 19.27%,
+    rgba(183, 5, 105, 0.165605) 30.73%,
+    rgba(183, 5, 105, 0) 81.77%,
+    rgba(183, 5, 105, 0) 100%
+  );
+}
+
+.hero h1 {
+  font-family: "grillmaster", Arial, sans-serif;
+}
+
+.hero-img {
+  background-image: url(./assets/images/hero-img-bg.svg);
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  min-height: 330px;
+}
+
 @font-face {
   font-family: "roobert-regularregular";
   src: url("./assets/fonts/roobert/roobert-regular-webfont.woff2")
@@ -53,5 +77,13 @@ footer {
       format("woff2"),
     url("./assets/fonts/digital_number/ds-digi-webfont.woff") format("woff");
   font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "grillmaster";
+  src: url("./assets/fonts/grill_master/Fontspring-DEMO-grillmaster_expanded_007_extra_bold.otf")
+    format("opentype");
+  font-weight: bolder;
   font-style: normal;
 }
