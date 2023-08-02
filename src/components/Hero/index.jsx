@@ -47,7 +47,7 @@ const Hero = () => {
             <div className="flex flex-col md:flex-row w-full md:mt-4 md:w-auto gap-2 md:gap-6 items-center mb-8 md:md-0">
               <a
                 href="https://tix.africa/discover/scasummit2"
-                className="bg-primary-pink px-8 py-2 md:py-4 rounded-[30px] text-white"
+                className="bg-primary-pink px-8 py-2 md:py-4 rounded-[30px] text-white hover:bg-primary-light-pink hover:text-primary-pink hover:border border-primary-pink"
               >
                 Register Now!
               </a>

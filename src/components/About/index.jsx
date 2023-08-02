@@ -39,7 +39,7 @@ const About = () => {
           <div className="my-2 md:my-4 flex gap-2 items-center md:gap-3 lg:gap-6">
             <a
               href="https://tix.africa/discover/scasummit2"
-              className="bg-primary-pink px-4 md:px-8 py-2 rounded-3xl text-white"
+              className="bg-primary-pink px-4 md:px-8 py-4 rounded-3xl text-white hover:bg-primary-light-pink hover:text-primary-pink hover:border border-primary-pink"
             >
               Register Now!
             </a>
