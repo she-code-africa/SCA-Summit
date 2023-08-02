@@ -5,6 +5,7 @@ import Gallery from "../components/Gallery";
 import Hero from "../components/Hero";
 import About from "../components/About";
 import YTDisplay from "../components/YTDisplay";
+import Speakers from "../components/Speakers";
 
 const Main = () => {
   return (
@@ -12,6 +13,7 @@ const Main = () => {
       <Nav />
       <Hero />
       <About />
+      <Speakers />
       <Gallery />
       <YTDisplay />
       <Footer />

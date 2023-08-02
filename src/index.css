@@ -62,6 +62,10 @@ footer {
   min-height: 330px;
 }
 
+.speaker-bg {
+  background-image: url(./assets/images/speaker-bg-frame.svg);
+}
+
 @font-face {
   font-family: "roobert-regularregular";
   src: url("./assets/fonts/roobert/roobert-regular-webfont.woff2")
