@@ -25,9 +25,9 @@ const Speakers = () => {
     );
   };
   return (
-    <section className="bg-primary-light-pink">
+    <section className="bg-primary-light-pink py-8 sm:py-16 lg:py-24">
       <div className="container mx-auto p-4">
-        <h1 className="uppercase text-primary-pink font-bold">
+        <h1 className="uppercase text-xs sm:text-base text-primary-pink font-bold">
           ~MEET OUR SPEAKERS FOR SCA SUMMIT 2023~
         </h1>
         <div className="flex justify-between items-center">

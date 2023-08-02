@@ -10,7 +10,7 @@ const Schedule = () => {
         <h1 className="text-primary-pink text-xs md:text-base uppercase font-bold">
           ~WHAT TO EXPECT AT SCA SUMMIT 2023?~
         </h1>
-        <div className="grid  sm:grid-cols-2">
+        <div className="grid sm:grid-cols-2">
           <div className="absolute left-0 top-16 md:top-72 lg:top-[30rem] w-1/6 sm:w-full">
             <img src={squiggly2} alt="" />
           </div>
