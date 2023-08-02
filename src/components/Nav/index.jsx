@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Logo from "../../assets/images/logo.svg";
 import { IoIosMenu, IoIosClose } from "react-icons/io";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const Nav = () => {
   const [show, setShow] = useState(false);
@@ -31,26 +32,25 @@ const Nav = () => {
           </li>
           <li>
             <ul className="flex flex-col md:flex-row mt-8 md:mt-0 gap-6 md:gap-4 items-center">
-              {/* <li>Schedule</li> */}
-              <li>
-                {" "}
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSc7C02lAPDXrSdGjhi_-B1ilHblLoGU03T4KXIcI2nfcMy10A/viewform?pli=1 ">
-                  Become a Speaker
-                </a>
+              <li className="hover:cursor-pointer hover:text-primary-pink">
+                <AnchorLink href="#schedule">Schedule</AnchorLink>
               </li>
-              <li>
+              <li className="hover:cursor-pointer hover:text-primary-pink">
+                <AnchorLink href="#speakers">Speakers</AnchorLink>
+              </li>
+              <li className="hover:text-primary-pink">
                 <a href="https://drive.google.com/file/d/1rIW7CfMSNQUwCGppqWeDjm6C0hCC5tNE/view">
                   Become a Sponsor
                 </a>
               </li>
-              <li>
+              <li className="hover:text-primary-pink">
                 <a href="https://drive.google.com/file/d/1rIW7CfMSNQUwCGppqWeDjm6C0hCC5tNE/views">
                   Partner With Us
                 </a>
               </li>
               <li className="ml-2">
                 <a
-                  className="bg-primary-pink rounded-3xl text-white py-3 px-8"
+                  className="bg-primary-pink rounded-3xl text-white py-3 px-8 hover:bg-white hover:text-primary-pink hover:border border-primary-pink"
                   href="https://tix.africa/discover/scasummit2"
                 >
                   Register now!

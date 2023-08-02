@@ -5,7 +5,10 @@ import dot from "../../assets/images/dot.svg";
 
 const Schedule = () => {
   return (
-    <section className="bg-primary-light-pink py-8 md:py-16 lg:py-36 relative">
+    <section
+      id="schedule"
+      className="bg-primary-light-pink py-8 md:py-16 lg:py-36 relative"
+    >
       <div className="container mx-auto px-2">
         <h1 className="text-primary-pink text-xs md:text-base uppercase font-bold">
           ~WHAT TO EXPECT AT SCA SUMMIT 2023?~

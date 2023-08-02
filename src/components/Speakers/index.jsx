@@ -1,5 +1,5 @@
 import React from "react";
-// import { RxArrowTopRight } from "react-icons/rx";
+import { RxArrowTopRight } from "react-icons/rx";
 import ada from "../../assets/images/ada.svg";
 import odun from "../../assets/images/odun.svg";
 
@@ -7,6 +7,7 @@ const Speakers = () => {
   const SpeakerCard = ({ img, name, bgColor, title, role, color }) => {
     return (
       <div
+        id="speakers"
         className={`${bgColor} speaker-bg bg-repeat border-2 border-black rounded-tr-[50px] rounded-bl-[50px] bg-primary-pink flex-grow min-w-fit flex flex-col justify-end`}
       >
         <div className="-mb-8 block relative">
@@ -37,6 +38,14 @@ const Speakers = () => {
           {/* <a href="#" className="flex items-center gap-1">
             View All Speakers <RxArrowTopRight color="#B70569" />
           </a> */}
+
+          <a
+            className="flex items-center gap-1"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSc7C02lAPDXrSdGjhi_-B1ilHblLoGU03T4KXIcI2nfcMy10A/viewform?pli=1 "
+          >
+            Become a Speaker
+            <RxArrowTopRight color="#B70569" />
+          </a>
         </div>
         <div className="my-6 flex gap-6 justify-center overflow-scroll md:overflow-hidden w-full">
           <SpeakerCard
