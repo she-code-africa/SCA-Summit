@@ -68,7 +68,7 @@ const Hero = () => {
           </div>
         </section>
         <div className="">
-          <img src={HeroImg} alt="hero" className="w-full" />
+          <img src={HeroImg} alt="SCA Summit 2022" className="w-full" />
         </div>
       </div>
       <div className="bg-primary-light-pink pb-8 md:pb-16 lg:pb-32">
