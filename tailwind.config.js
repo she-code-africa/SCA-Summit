@@ -13,6 +13,18 @@ module.exports = {
         "linear-gradient2": "linear-gradient(180deg, #B70569 0%, #210D15 100%)",
         "primary-brown": "#BF2828",
       },
+      gridTemplateRows: {
+        layout: "minmax(65px, 100px) 1fr 400px",
+      },
+      fontSize: {
+        "56px": "56px",
+      },
+      rotate: {
+        84: "84deg",
+      },
+      inset: {
+        100: "28rem",
+      },
     },
   },
   plugins: [],

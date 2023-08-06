@@ -21,7 +21,7 @@ const Hero = () => {
 
   const dateTimeAfterThreeDays = NOW_IN_MS + DAYS_IN_MS;
   return (
-    <div className="hero pt-8 md:pt-16">
+    <div className="hero sm:pt-8">
       <div className="relative mt-8 pb-8 md:pb-16 lg:pb-32">
         <div className="absolute top-10 md:top-28 left-1">
           <img src={squiggly} alt="squiggly" className=" w-12 md:w-auto" />
