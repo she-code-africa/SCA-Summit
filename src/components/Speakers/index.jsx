@@ -14,10 +14,10 @@ const Speakers = () => {
           <img src={img} alt={name} className="mx-auto mt-6" />
         </div>
         <div className="bg-white border-2 border-white rounded-tr-[50px] rounded-bl-[50px] w-11/12 px-5 py-3 z-50 flex flex-col relative">
-          <p className="md:text-xl lg:text-2xl text-[#210D15] font-bold">
+          <p className=" md:text-xl lg:text-2xl text-[#210D15] font-bold">
             {name}
           </p>
-          <p className="text-sm font-medium text-[#210D15] opacity-80">
+          <p className="text-xs sm:text-sm font-medium text-[#210D15] opacity-80">
             {title}
           </p>
           <p className={`${color} font-bold`}>{role}</p>
@@ -47,7 +47,7 @@ const Speakers = () => {
             <RxArrowTopRight color="#B70569" />
           </a>
         </div>
-        <div className="my-6 flex gap-6 justify-center overflow-scroll md:overflow-hidden w-full">
+        <div className="my-6 flex gap-6 sm:justify-center overflow-x-scroll md:overflow-hidden w-full">
           <SpeakerCard
             img={ada}
             name="Ada Nduka Oyom"
