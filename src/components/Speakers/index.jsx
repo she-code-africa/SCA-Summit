@@ -2,13 +2,15 @@ import React from "react";
 import { RxArrowTopRight } from "react-icons/rx";
 import ada from "../../assets/images/ada.svg";
 import odun from "../../assets/images/odun.svg";
+import { speakers } from "../../utils";
 
 const Speakers = () => {
-  const SpeakerCard = ({ img, name, bgColor, title, role, color }) => {
+  const SpeakerCard = ({ details }) => {
+    const { img, name, title, role } = details;
     return (
       <div
         id="speakers"
-        className={`${bgColor} speaker-bg bg-repeat border-2 border-black rounded-tr-[50px] rounded-bl-[50px] flex-grow min-w-fit flex flex-col justify-end`}
+        className="speaker-bg bg-repeat border-2 border-black rounded-tr-[50px] rounded-bl-[50px] flex-grow min-w-fit flex flex-col justify-end odd:bg-primary-pink even:bg-primary-brown odd:text-primary-pink even:text-primary-brown"
       >
         <div className="-mb-8 block relative">
           <img src={img} alt={name} className="mx-auto mt-6" />
@@ -18,9 +20,9 @@ const Speakers = () => {
             {name}
           </p>
           <p className="text-xs sm:text-sm font-medium text-[#210D15] opacity-80">
-            {title}
+            {role}
           </p>
-          <p className={`${color} font-bold`}>{role}</p>
+          <p className="font-bold">{title}</p>
         </div>
       </div>
     );
@@ -48,23 +50,9 @@ const Speakers = () => {
           </a>
         </div>
         <div className="my-6 flex gap-6 sm:justify-center overflow-x-scroll md:overflow-hidden w-full">
-          <SpeakerCard
-            img={ada}
-            name="Ada Nduka Oyom"
-            title="Founder, She Code Africa"
-            role="Keynote Speaker"
-            bgColor="bg-primary-pink"
-            color="text-primary-pink"
-          />
-
-          <SpeakerCard
-            img={odun}
-            name="Odunayo Eweniyi"
-            title="COO & Co-founder, PiggyVest"
-            role="Keynote Speaker"
-            bgColor="bg-primary-brown"
-            color="text-primary-brown"
-          />
+          {speakers.map((speaker, index) => (
+            <SpeakerCard details={speaker} key={index} />
+          ))}
         </div>
       </div>
     </section>
