@@ -6,7 +6,7 @@ import dot from "../../assets/images/dot.svg";
 
 const About = () => {
   return (
-    <div className="bg-primary-light-pink relative">
+    <div className="relative">
       <div className="grid grid-cols-1 md:grid-cols-2 container mx-auto px-4 w-full items-center py-12 md:py-16 lg:py-32 gap-4 md:gap-8 lg:gap-16">
         <div className="absolute left-0 top-6 md:top-[28rem] w-2/12 sm:w-1/12">
           <img src={squiggly2} alt="" />

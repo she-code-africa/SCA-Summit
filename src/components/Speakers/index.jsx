@@ -8,7 +8,7 @@ const Speakers = () => {
     return (
       <div
         id="speakers"
-        className={`${bgColor} speaker-bg bg-repeat border-2 border-black rounded-tr-[50px] rounded-bl-[50px] bg-primary-pink flex-grow min-w-fit flex flex-col justify-end`}
+        className={`${bgColor} speaker-bg bg-repeat border-2 border-black rounded-tr-[50px] rounded-bl-[50px] flex-grow min-w-fit flex flex-col justify-end`}
       >
         <div className="-mb-8 block relative">
           <img src={img} alt={name} className="mx-auto mt-6" />
@@ -26,12 +26,12 @@ const Speakers = () => {
     );
   };
   return (
-    <section className="bg-primary-light-pink py-8 sm:py-16 lg:py-24">
+    <section className="py-8 sm:py-16 lg:py-24">
       <div className="container mx-auto p-4">
         <h1 className="uppercase text-xs sm:text-base text-primary-pink font-bold">
           ~MEET OUR SPEAKERS FOR SCA SUMMIT 2023~
         </h1>
-        <div className="flex justify-between items-center">
+        <div className="flex flex-col sm:flex-row justify-between sm:items-center my-2">
           <h2 className="text-xl md:text-2xl lg:text-4xl font-bold">
             Prestigious Speakers
           </h2>
