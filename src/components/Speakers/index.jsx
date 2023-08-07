@@ -1,7 +1,5 @@
 import React from "react";
 import { RxArrowTopRight } from "react-icons/rx";
-import ada from "../../assets/images/ada.svg";
-import odun from "../../assets/images/odun.svg";
 import { speakers } from "../../utils";
 
 const Speakers = () => {
@@ -42,14 +40,14 @@ const Speakers = () => {
           </a> */}
 
           <a
-            className="flex items-center gap-1"
+            className="flex items-center gap-1 transition ease-in delay-75 duration-300 hover:scale-110"
             href="https://docs.google.com/forms/d/e/1FAIpQLSc7C02lAPDXrSdGjhi_-B1ilHblLoGU03T4KXIcI2nfcMy10A/viewform?pli=1 "
           >
             Become a Speaker
             <RxArrowTopRight color="#B70569" />
           </a>
         </div>
-        <div className="my-6 flex gap-6 sm:justify-center overflow-x-scroll md:overflow-hidden w-full">
+        <div className="my-6 sm:my-9 flex gap-6 sm:justify-center overflow-x-scroll md:overflow-hidden w-full">
           {speakers.map((speaker, index) => (
             <SpeakerCard details={speaker} key={index} />
           ))}

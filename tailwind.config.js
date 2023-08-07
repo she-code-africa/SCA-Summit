@@ -25,6 +25,13 @@ module.exports = {
       inset: {
         100: "28rem",
       },
+      borderRadius: {
+        "30px": "30px",
+      },
+      spacing: {
+        3.5: "14px",
+        4.5: "18px",
+      },
     },
   },
   plugins: [],

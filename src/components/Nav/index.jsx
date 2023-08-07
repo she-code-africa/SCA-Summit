@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Logo from "../../assets/images/logo.svg";
 import { IoIosMenu, IoIosClose } from "react-icons/io";
 import AnchorLink from "react-anchor-link-smooth-scroll";
+import { Link } from "react-router-dom";
 
 const Nav = () => {
   const [show, setShow] = useState(false);
@@ -12,7 +13,9 @@ const Nav = () => {
   return (
     <nav className="md:shadow-lg fixed w-full bg-white mb-3 md:mb-16 z-[1000] opacity-90">
       <div className="container mx-auto px-4 flex md:flex-row my-0 py-3 justify-between items-center gap-10 lg:gap-0">
-        <img src={Logo} alt="She Code Africa's Logo" className="md:w-11" />
+        <Link to="/">
+          <img src={Logo} alt="She Code Africa's Logo" className="md:w-11" />
+        </Link>
         {!show && (
           <IoIosMenu
             size="1.5rem"
@@ -32,25 +35,25 @@ const Nav = () => {
           </li>
           <li>
             <ul className="flex flex-col md:flex-row mt-8 md:mt-0 gap-6 md:gap-4 items-center">
-              <li className="hover:cursor-pointer hover:text-primary-pink">
+              <li className="transition ease-in delay-75 duration-300 hover:cursor-pointer hover:text-primary-pink">
                 <AnchorLink href="#schedule">Schedule</AnchorLink>
               </li>
-              <li className="hover:cursor-pointer hover:text-primary-pink">
+              <li className="transition ease-in delay-75 duration-300 hover:cursor-pointer hover:text-primary-pink">
                 <AnchorLink href="#speakers">Speakers</AnchorLink>
               </li>
-              <li className="hover:text-primary-pink">
+              <li className="transition ease-in delay-75 duration-300 hover:text-primary-pink">
                 <a href="https://drive.google.com/file/d/1rIW7CfMSNQUwCGppqWeDjm6C0hCC5tNE/view">
                   Become a Sponsor
                 </a>
               </li>
-              <li className="hover:text-primary-pink">
+              <li className="transition ease-in delay-75 duration-300 hover:text-primary-pink">
                 <a href="https://drive.google.com/file/d/1rIW7CfMSNQUwCGppqWeDjm6C0hCC5tNE/views">
                   Partner With Us
                 </a>
               </li>
               <li className="ml-2">
                 <a
-                  className="bg-primary-pink rounded-3xl text-white py-3 px-8 hover:bg-white hover:text-primary-pink hover:border border-primary-pink"
+                  className="bg-primary-pink rounded-30px text-white py-3.5 px-8 hover:bg-white hover:text-primary-pink border border-primary-pink transition ease-in delay-75 duration-300"
                   href="https://tix.africa/discover/scasummit2"
                 >
                   Register now!

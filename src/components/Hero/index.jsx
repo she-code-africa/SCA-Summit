@@ -47,14 +47,14 @@ const Hero = () => {
             <div className="flex flex-col md:flex-row w-full md:mt-4 md:w-auto gap-2 md:gap-6 items-center mb-8 md:md-0">
               <a
                 href="https://tix.africa/discover/scasummit2"
-                className="bg-primary-pink px-8 py-2 md:py-4 rounded-[30px] text-white hover:bg-primary-light-pink hover:text-primary-pink hover:border border-primary-pink"
+                className="bg-primary-pink px-8 py-2 md:py-3.5 rounded-30px text-white hover:bg-primary-light-pink hover:text-primary-pink hover:border border-primary-pink transition ease-in delay-75 duration-300"
               >
                 Register Now!
               </a>
 
               <a
                 href="https://drive.google.com/drive/folders/1tRQkG3jzcST71OOZqlT5_binwsdUQdhm"
-                className="flex items-center gap-1"
+                className="flex items-center gap-1 transition ease-in delay-75 duration-300 hover:scale-110"
               >
                 View Past Events <RxArrowTopRight color="#B70569" />
               </a>

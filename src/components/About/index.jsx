@@ -39,13 +39,13 @@ const About = () => {
           <div className="my-2 md:my-4 flex gap-2 items-center md:gap-3 lg:gap-6">
             <a
               href="https://tix.africa/discover/scasummit2"
-              className="bg-primary-pink px-4 md:px-8 py-4 rounded-3xl text-white hover:bg-primary-light-pink hover:text-primary-pink hover:border border-primary-pink"
+              className="bg-primary-pink px-4 md:px-8 py-3.5 rounded-30px text-white hover:bg-primary-light-pink hover:text-primary-pink hover:border border-primary-pink transition ease-in delay-75 duration-300"
             >
               Register Now!
             </a>
             <a
               href="https://drive.google.com/drive/folders/1tRQkG3jzcST71OOZqlT5_binwsdUQdhm"
-              className="flex items-center gap-1"
+              className="flex items-center gap-1 transition ease-in delay-75 duration-300 hover:scale-110"
             >
               View Past Events <RxArrowTopRight color="#B70569" />
             </a>

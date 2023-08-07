@@ -82,7 +82,7 @@ const Gallery = () => {
         <div className="justify-self-end mt-4 pr-4 md:pr-8 lg:pr-12">
           <a
             href="https://drive.google.com/drive/folders/1tRQkG3jzcST71OOZqlT5_binwsdUQdhm"
-            className="flex items-center gap-1"
+            className="flex items-center gap-1 transition ease-in delay-75 duration-300 hover:scale-110"
           >
             View All Pictures <RxArrowTopRight color="#B70569" />
           </a>
