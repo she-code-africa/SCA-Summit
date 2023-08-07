@@ -7,7 +7,7 @@ import sample6 from "../../assets/images/sample-img5.jpg";
 import sample7 from "../../assets/images/sample-img6.jpg";
 import sample8 from "../../assets/images/sample-img7.jpg";
 import sample9 from "../../assets/images/sample-img8.jpg";
-import { RxArrowTopRight } from "react-icons/rx";
+import { IconAnchor } from "../Anchor";
 
 const Gallery = () => {
   return (
@@ -80,12 +80,10 @@ const Gallery = () => {
         </div>
 
         <div className="justify-self-end mt-4 pr-4 md:pr-8 lg:pr-12">
-          <a
-            href="https://drive.google.com/drive/folders/1tRQkG3jzcST71OOZqlT5_binwsdUQdhm"
-            className="flex items-center gap-1 transition ease-in delay-75 duration-300 hover:scale-110"
-          >
-            View All Pictures <RxArrowTopRight color="#B70569" />
-          </a>
+          <IconAnchor
+            text="View All Pictures"
+            link="https://drive.google.com/drive/folders/1tRQkG3jzcST71OOZqlT5_binwsdUQdhm"
+          />
         </div>
       </div>
     </div>

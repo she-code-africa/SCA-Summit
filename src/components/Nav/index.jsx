@@ -3,6 +3,7 @@ import Logo from "../../assets/images/logo.svg";
 import { IoIosMenu, IoIosClose } from "react-icons/io";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import { Link } from "react-router-dom";
+import { SolidAnchor } from "../Anchor";
 
 const Nav = () => {
   const [show, setShow] = useState(false);
@@ -52,12 +53,7 @@ const Nav = () => {
                 </a>
               </li>
               <li className="ml-2">
-                <a
-                  className="bg-primary-pink rounded-30px text-white py-3.5 px-8 hover:bg-white hover:text-primary-pink border border-primary-pink transition ease-in delay-75 duration-300"
-                  href="https://tix.africa/discover/scasummit2"
-                >
-                  Register now!
-                </a>
+                <SolidAnchor text="Register now!" />
               </li>
             </ul>
           </li>

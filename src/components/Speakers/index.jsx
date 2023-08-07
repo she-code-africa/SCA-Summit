@@ -1,6 +1,6 @@
 import React from "react";
-import { RxArrowTopRight } from "react-icons/rx";
 import { speakers } from "../../utils";
+import { IconAnchor } from "../Anchor";
 
 const Speakers = () => {
   const SpeakerCard = ({ details }) => {
@@ -38,14 +38,10 @@ const Speakers = () => {
           {/* <a href="#" className="flex items-center gap-1">
             View All Speakers <RxArrowTopRight color="#B70569" />
           </a> */}
-
-          <a
-            className="flex items-center gap-1 transition ease-in delay-75 duration-300 hover:scale-110"
-            href="https://docs.google.com/forms/d/e/1FAIpQLSc7C02lAPDXrSdGjhi_-B1ilHblLoGU03T4KXIcI2nfcMy10A/viewform?pli=1 "
-          >
-            Become a Speaker
-            <RxArrowTopRight color="#B70569" />
-          </a>
+          <IconAnchor
+            text="Become a Speaker"
+            link="https://docs.google.com/forms/d/e/1FAIpQLSc7C02lAPDXrSdGjhi_-B1ilHblLoGU03T4KXIcI2nfcMy10A/viewform?pli=1 "
+          />
         </div>
         <div className="my-6 sm:my-9 flex gap-6 sm:justify-center overflow-x-scroll md:overflow-hidden w-full">
           {speakers.map((speaker, index) => (
