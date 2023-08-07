@@ -3,7 +3,7 @@ import Gallery from "../components/Gallery";
 import Hero from "../components/Hero";
 import About from "../components/About";
 import YTDisplay from "../components/YTDisplay";
-import Speakers from "../components/Speakers";
+// import Speakers from "../components/Speakers";
 import Schedule from "../components/Schedule";
 
 const Main = () => {
@@ -11,7 +11,7 @@ const Main = () => {
     <>
       <Hero />
       <About />
-      <Speakers />
+      {/* <Speakers /> */}
       <Schedule />
       <Gallery />
       <YTDisplay />

@@ -39,9 +39,9 @@ const Nav = () => {
               <li className="transition ease-in delay-75 duration-300 hover:cursor-pointer hover:text-primary-pink">
                 <AnchorLink href="#schedule">Schedule</AnchorLink>
               </li>
-              <li className="transition ease-in delay-75 duration-300 hover:cursor-pointer hover:text-primary-pink">
+              {/* <li className="transition ease-in delay-75 duration-300 hover:cursor-pointer hover:text-primary-pink">
                 <AnchorLink href="#speakers">Speakers</AnchorLink>
-              </li>
+              </li> */}
               <li className="transition ease-in delay-75 duration-300 hover:text-primary-pink">
                 <a href="https://drive.google.com/file/d/1rIW7CfMSNQUwCGppqWeDjm6C0hCC5tNE/view">
                   Become a Sponsor
