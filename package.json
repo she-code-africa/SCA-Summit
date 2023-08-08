@@ -11,7 +11,9 @@
     "express-favicon": "^2.0.4",
     "path": "^0.12.7",
     "react": "^18.2.0",
+    "react-anchor-link-smooth-scroll": "^1.0.12",
     "react-dom": "^18.2.0",
+    "react-fast-marquee": "^1.6.0",
     "react-icons": "^4.10.1",
     "react-router-dom": "^6.13.0",
     "react-scripts": "5.0.1",
@@ -19,7 +21,7 @@
   },
   "scripts": {
     "build": "node --max_old_space_size=2560 node_modules/.bin/react-scripts build",
-    "devstart": "react-scripts start",
+    "dev": "react-scripts start",
     "start": "node --max_old_space_size=2560 server.js",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

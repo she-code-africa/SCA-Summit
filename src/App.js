@@ -1,6 +1,9 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Main";
 import { useEffect } from "react";
+import NotFound from "./pages/NotFound";
+import Layout from "./components/Layout";
+import Register from "./pages/Register";
 
 function App() {
   useEffect(() => {
@@ -15,7 +18,11 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />}></Route>
+        <Route element={<Layout />}>
+          <Route path="/" element={<Home />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="*" element={<NotFound />} />
+        </Route>
       </Routes>
     </BrowserRouter>
   );

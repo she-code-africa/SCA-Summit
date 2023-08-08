@@ -1,15 +1,23 @@
 import React from "react";
 import AboutImg from "../../assets/images/about-image.png";
-import { RxArrowTopRight } from "react-icons/rx";
+import squiggly2 from "../../assets/images/squiggly2.svg";
+import dot from "../../assets/images/dot.svg";
+import { IconAnchor, SolidAnchor } from "../Anchor";
 
 const About = () => {
   return (
-    <div className="bg-primary-light-pink">
-      <div className="grid grid-cols-1 md:grid-cols-2 container mx-auto px-4 w-full items-center py-12 md:py-16 lg:py-24 gap-4 md:gap-8 lg:gap-16">
+    <div className="relative">
+      <div className="grid grid-cols-1 md:grid-cols-2 container mx-auto px-4 w-full items-center py-12 md:py-16 lg:py-32 gap-4 md:gap-8 lg:gap-16">
+        <div className="absolute left-0 top-6 md:top-[28rem] w-2/12 sm:w-1/12">
+          <img src={squiggly2} alt="" />
+        </div>
         <div className="justify-self-start">
           <img src={AboutImg} alt="speaker & participants" />
         </div>
-        <div className=" md:max-w-lg justify-self-center mt-2 md:mt-0">
+        <div className=" md:max-w-lg justify-self-center mt-4 md:mt-0">
+          <div className="absolute right-40 md:right-72 top-56 md:top-24">
+            <img src={dot} alt="" />
+          </div>
           <h4 className="uppercase text-primary-pink font-bold text-xs md:text-base">
             ~ About she code africa ~
           </h4>
@@ -29,18 +37,14 @@ const About = () => {
             partnering companies.
           </p>
           <div className="my-2 md:my-4 flex gap-2 items-center md:gap-3 lg:gap-6">
-            <a
-              href="https://tix.africa/discover/scasummit2"
-              className="bg-primary-pink px-4 md:px-8 py-2 rounded-3xl text-white"
-            >
-              Register Now!
-            </a>
-            <a
-              href="https://drive.google.com/drive/folders/1tRQkG3jzcST71OOZqlT5_binwsdUQdhm"
-              className="flex items-center gap-1"
-            >
-              View Past Events <RxArrowTopRight color="#B70569" />
-            </a>
+            <SolidAnchor
+              text="Register Now!"
+              link="https://tix.africa/discover/scasummit2"
+            />
+            <IconAnchor
+              text="View Past Events"
+              link="https://drive.google.com/drive/folders/1tRQkG3jzcST71OOZqlT5_binwsdUQdhm"
+            />
           </div>
         </div>
       </div>
