@@ -1,5 +1,5 @@
 import React from "react";
-import HeroImg from "../../assets/images/hero-image.png";
+import HeroImg from "../../assets/images/hero-img.png";
 import Calendar from "../../assets/icons/calendar.svg";
 import Location from "../../assets/icons/location.svg";
 import CountdownTimer from "../CountdownTimer";
