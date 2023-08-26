@@ -53,7 +53,10 @@ const Nav = () => {
                 </a>
               </li>
               <li className="ml-2">
-                <SolidAnchor text="Register now!" />
+                <SolidAnchor
+                  text="Register now!"
+                  link="https://tix.africa/discover/scasummit2"
+                />
               </li>
             </ul>
           </li>

@@ -10,6 +10,7 @@ import triangle from "../../assets/images/triangle.svg";
 import wavy from "../../assets/images/wavy.svg";
 import { Marquee } from "../Marquee";
 import { IconAnchor, SolidAnchor } from "../Anchor";
+import { RxArrowTopRight } from "react-icons/rx";
 
 const Hero = () => {
   const eventDate = new Date("09/30/2023");
@@ -86,6 +87,15 @@ const Hero = () => {
           </p>
         </div>
         <CountdownTimer targetDate={dateTimeAfterThreeDays} />
+        <div className="flex justify-center pt-6 md:pt-10">
+          <a
+            href="https://goo.gl/maps/muLewUCd1HUnTAzHA"
+            className="bg-primary-pink rounded-30px text-white py-3.5 px-8 hover:bg-primary-light-pink hover:text-primary-pink hover:cursor-pointer border border-primary-pink transition ease-in delay-75 duration-300 flex items-center gap-1"
+          >
+            View Event Location on Google Map
+            <RxArrowTopRight className="hover:text-primary-pink text-white" />
+          </a>
+        </div>
       </div>
     </div>
   );
