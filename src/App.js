@@ -4,6 +4,8 @@ import { useEffect } from "react";
 import NotFound from "./pages/NotFound";
 import Layout from "./components/Layout";
 import Register from "./pages/Register";
+import Speakers from "./pages/Speakers";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   useEffect(() => {
@@ -22,8 +24,10 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/register" element={<Register />} />
           <Route path="*" element={<NotFound />} />
+          <Route path="/speakers" element={<Speakers />} />
         </Route>
       </Routes>
+      <ScrollToTop />
     </BrowserRouter>
   );
 }
