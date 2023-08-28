@@ -39,10 +39,9 @@ export const speakers = [
     bio: "Bridget Iyere is a product manager with over 4 years of experience building products users love. Her expertise cuts across the Govtech, Political & Tech Consulting and Edtech sectors. She is currently the Product Lead at eLimu - an EdTech startup building fun accessible education for curious kids in Africa.   Bridget possesses unique leadership qualities which she leverages in fostering strong communication and collaboration in teams and with stakeholders. She is a first-class graduate of Microbiology from Benson Idahosa University.",
     session_title: "Building Digital Products for Kids",
   },
-
   {
     name: "Loveline Kasomo",
-    role: "Team Lead, Networks & Comms, Access Bank",
+    role: "Team Lead, Networks & Communication Management, Access Bank",
     title: "Speaker",
     img: loveline,
     bio: "Loveline is an IT leader with over 14 years of experience in Network Engineering, Operations, IT Security, and Customer/Stakeholder Management. Her experience is gleaned across several top-tier digitally-led companies across the Technology and Financial industries and she has spent the last 7 years developing innovative solutions and strategies to drive operational excellence within the organizations she has worked, by setting up, managing and leading cross-functional teams to achieve digital transformation, revenue growth, cost savings and an enhanced overall productivity for the businesses. She currently leads the Networks & Communications Mgt Team at Access Bank. Loveline is very passionate about knowledge sharing and mentorship, she loves to read and research and also swim for leisure. She is married with children.",
@@ -82,7 +81,6 @@ export const speakers = [
     session_title:
       "A Real Assessment of Gender Equality in the African Tech Industry",
   },
-
   {
     name: "Oreoluwa Lesi",
     role: "Executive Director, W.TEC",
@@ -151,6 +149,61 @@ export const speakers = [
     title: "Panelist",
     img: placeholder,
     bio: "",
+    session_title:
+      "Cultivating Digital Leadership: Skills for Success in the Tech Industry ",
+  },
+];
+
+export const firstPageSpeakers = [
+  {
+    name: "Ada Nduka Oyom",
+    role: "Founder, She Code Africa",
+    title: "Keynote Speaker",
+    img: ada,
+    bio: "Ada is the Founder of She Code Africa (SCA), a non-profit organisation focused on empowering young girls and women in Africa through technical skills, She founded SCA in 2016 and has since impacted over 17,000 women members across 20+ African countries with her team, while championing gender diversity in tech through it. She started out as a self taught Software developer in the university and has since become involved in several other organisations within Africa’s technology sphere. Her expertise in Developer relations and staunch advocacy for developers within Africa has earned her roles in several top organisations globally including her current engagement as the Ecosystem community manager for Sub-saharan Africa with Google. Ada is also actively involved in advocating for open source in Africa, hence co-founded ‘Open Source Community Africa’, one of the largest communities for open-source enthusiasts, advocates and experts across Africa. She was also the voice behind the tech podcast Forloop Pod where she hosted technical talks and interviews with experts and individuals on their tech journey. She continues to volunteer her time as a technical and career mentor under several mentoring programs to help more people grow in tech, she’s currently a Global Youth Ambassador for Their world, and has been awarded as one of Ytech 100 honourees by the Future awards Africa 2019, Top 50 TechWomen of Lagos by TechCabal, Role model award winner in the Booking.com Tech Playmaker awards 2020, Top 10 women making change through Education across the world, via the 2021 Women Of the World (WOW) Hope Brigade exhibition, Developer Advocate of the year (2021) by HackerNoon and most recently awarded as an Honouree on the '100 most inspiring Women In Nigeria' by Leading Ladies Africa",
+    session_title: "",
+  },
+  {
+    name: "Odunayo Eweniyi",
+    role: "COO & Co-founder, PiggyVest",
+    title: "Keynote Speaker",
+    img: odun,
+    bio: "Odunayo Eweniyi is the co-founder & Chief Operations Officer, PiggyVest, the largest digital savings and micro-investment platform in Nigeria. She previously co-founded pushcv.com, one of the foremost job sites in Africa with the largest database of pre-screened candidates. She has 8 years’ experience in Business Analysis and Operations. She’s an award winning fintech entrepreneur who is working for diversity equity and inclusion in fintech and technology as a whole.In January 2021, Odunayo cofounded First Check Africa, a female-led angel fund that invests “ridiculously early” in women in African tech to make it easier for them to raise venture-backed capital and invest in technology startups.She is a board member at Village Capital, the most active supporter of impact-driven, seed-stage entrepreneurs in the world. She was featured on Bloomberg Business Weekly’s 2020 Bloomberg50 list, an annual list of innovators, entrepreneurs, and leaders who have changed the global business landscape over the past year.In 2022, she was selected as a Bloomberg New Economy Catalyst; and she won the Forbes Africa Technology and Innovation award.",
+    session_title: "",
+  },
+  {
+    name: "Chiazagom Anisiebo ",
+    role: "HR Generalist",
+    title: "Moderator",
+    img: chiazagom,
+    bio: "Chiazagom Anisiebo is an HR Generalist with 3+ years of experience in HR, with 2 of those years in the tech industry. She is passionate about using data and analytics to improve HR practices and create a more equitable workplace. She is also a strong advocate for women in tech. She has led engagement initiatives that have increased the representation of women in the tech workforce, driving diversity and inclusion. Chiazagom Anisiebo graduated from the University of Lagos, Nigeria, where she majored in Business Administration. She is also a certified Strategic HR Analyst and is soon to be internationally certified.",
+    session_title:
+      "A Real Assessment of Gender Equality in the African Tech Industry",
+  },
+  {
+    name: "Ngozi Chukwu",
+    role: "Reporter, TechCabal",
+    title: "Moderator",
+    img: ngozi,
+    bio: "Ngozi Chukwu is a Reporter at TechCabal. You can catch her punny humour in TechCabal’s daily newsletter, TC Daily. Before joining TechCabal, Ngozi worked as a communications specialist for NGOs, social entrepreneurs, and social innovation-driven programmes like TEDxAbakiliki and TEDxBellsTech. She also taught English at a school, where she pioneered a newsletter to close the gap created by the COVID-19 pandemic between parents and teachers. ",
+    session_title:
+      "Cultivating Digital Leadership: Skills for Success in the Tech Industry ",
+  },
+  {
+    name: "Ruth Ikegah",
+    role: "Open Source Program Manager, Technical Writer, & GitHub Star",
+    title: "Panelist",
+    img: ruth,
+    bio: "Ruth Ikegah is an Open Source Program Manager, Technical Writer, and GitHub Star. She currently works as an Open Source Consultant at Bitergia and serves as the Community Lead at CHAOSS Africa, a community that focuses on improving the health of Open Source software, contributions, and communities across the continent. ",
+    session_title:
+      "A Real Assessment of Gender Equality in the African Tech Industry",
+  },
+  {
+    name: "Ifeoma Nwobu ",
+    role: "Co-founder & COO, Sendstack",
+    title: "Panelist",
+    img: ifeoma,
+    bio: "Ifeoma Nwobu is a business development and operations strategist with multi-industry experience. Currently the co-founder & COO of Sendstack, a company building logistics infrastructure for Africa, she is making remarkable contributions to developing the brand and business into a force to be reckoned with in the logistics industry. With a degree in Politics from the University of Lagos, Ifeoma’s interests lie at the intersection of business, politics and technology. She is a 2x founder who is passionate about creating cultural influence & building impactful solutions that accelerate global economic development starting from Africa. She loves to write, shop and read self-help books in her time outside of work.",
     session_title:
       "Cultivating Digital Leadership: Skills for Success in the Tech Industry ",
   },
