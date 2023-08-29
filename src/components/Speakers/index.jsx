@@ -28,7 +28,7 @@ export const SpeakerCard = ({ details }) => {
         <div className="-mb-8 block relative">
           <img src={img} alt={name} className="mx-auto mt-6 max-h-[265px]" />
         </div>
-        <div className="bg-white border-2 border-white rounded-tr-[50px] rounded-bl-[50px] w-11/12 px-5 pt-3 pb-1 z-50 flex flex-col relative min-h-[120px]">
+        <div className="bg-white border-2 border-white rounded-tr-[50px] rounded-bl-[50px] w-11/12 px-5 pt-3 pb-3 md:pb-1 z-50 flex flex-col relative md:min-h-[120px]">
           <p className=" md:text-xl lg:text-2xl text-[#210D15] font-bold">
             {name}
           </p>

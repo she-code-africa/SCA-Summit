@@ -2,8 +2,23 @@ import React from "react";
 import schedImg from "../../assets/images/schedule-img.jpg";
 import squiggly2 from "../../assets/images/squiggly2.svg";
 import dot from "../../assets/images/dot.svg";
+import { AccordionContainer, AccordionItem } from "../Accordion";
 
 const Schedule = () => {
+  const PanelItems = () => {
+    return (
+      <ul className="flex-col flex gap-1 list-disc marker:text-primary-pink">
+        <li>
+          How Far? – A Real Assessment of Gender Equality in the African Tech
+          Industry
+        </li>
+        <li>
+          Cultivating Digital Leadership: Skills for Success in the Tech
+          Industry{" "}
+        </li>
+      </ul>
+    );
+  };
   return (
     <section
       id="schedule"
@@ -17,12 +32,11 @@ const Schedule = () => {
           <div className="absolute left-0 top-16 md:top-72 lg:top-[30rem] w-1/6 sm:w-full">
             <img src={squiggly2} alt="" />
           </div>
-          <div className="my-5 md:my-8 lg:my-12 ml-4 order-2 sm:order-1">
-            <ul className="flex-col flex gap-3 font-bold text-xl md:text-2xl lg:text-4xl list-disc marker:text-primary-pink">
-              <li>Panel Sessions</li>
-              <li>WorkShops</li>
-              <li>Fun & Games</li>
-            </ul>
+          <div className="my-6 order-2 sm:order-1">
+            <AccordionContainer className="flex flex-col gap-y-2">
+              <AccordionItem title="Panel Sessions" content={<PanelItems />} />
+              <AccordionItem title="Fun & Games" />
+            </AccordionContainer>
           </div>
           <div className="absolute right-96 top-24 md:top-32">
             <img src={dot} alt="" />

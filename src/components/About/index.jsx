@@ -36,7 +36,7 @@ const About = () => {
             connections with influential women in the tech industry and
             partnering companies.
           </p>
-          <div className="my-2 md:my-4 flex gap-2 items-center md:gap-3 lg:gap-6">
+          <div className="my-4 md:my-4 flex gap-5 items-center md:gap-3 lg:gap-6">
             <SolidAnchor
               text="Register Now!"
               link="https://tix.africa/discover/scasummit2"

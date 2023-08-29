@@ -45,7 +45,7 @@ const Hero = () => {
                 The Largest Women In Tech Summit in Africa.
               </p>
             </div>
-            <div className="flex flex-col md:flex-row w-full md:mt-4 md:w-auto gap-2 md:gap-6 items-center mb-8 md:md-0">
+            <div className="flex flex-col md:flex-row w-full mt-1 md:mt-4 md:w-auto gap-2 md:gap-6 items-center mb-8 md:md-0">
               <SolidAnchor
                 text="Register Now!"
                 link="https://tix.africa/discover/scasummit2"
@@ -90,7 +90,7 @@ const Hero = () => {
         <div className="flex justify-center pt-6 md:pt-10">
           <a
             href="https://goo.gl/maps/muLewUCd1HUnTAzHA"
-            className="bg-primary-pink rounded-30px text-white py-3.5 px-8 hover:bg-primary-light-pink hover:text-primary-pink hover:cursor-pointer border border-primary-pink transition ease-in delay-75 duration-300 flex items-center gap-1"
+            className="bg-primary-pink rounded-30px text-white py-3.5 px-8 hover:bg-primary-light-pink hover:text-primary-pink hover:cursor-pointer border border-primary-pink transition ease-in delay-75 duration-300 flex items-center gap-1 text-sm md:text-base"
           >
             View Event Location on Google Map
             <RxArrowTopRight className="hover:text-primary-pink text-white" />
