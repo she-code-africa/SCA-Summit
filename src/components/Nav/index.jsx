@@ -35,7 +35,7 @@ const Nav = () => {
             <IoIosClose size="1.5rem" color="#B70569" />
           </li>
           <li>
-            <ul className="flex flex-col md:flex-row mt-8 md:mt-0 gap-6 md:gap-4 items-center">
+            <ul className="flex flex-col md:flex-row mt-8 md:mt-0 gap-6 md:gap-4 lg:gap-7 items-center text-base md:text-xs lg:text-base">
               <li className="transition ease-in delay-75 duration-300 hover:cursor-pointer hover:text-primary-pink">
                 <AnchorLink href="#schedule">Schedule</AnchorLink>
               </li>
@@ -57,7 +57,7 @@ const Nav = () => {
                   Partner With Us
                 </a>
               </li>
-              <li className="ml-2">
+              <li className="ml-1">
                 <SolidAnchor
                   text="Register now!"
                   link="https://tix.africa/discover/scasummit2"
