@@ -12,30 +12,30 @@ const Nav = () => {
   };
 
   return (
-    <nav className="md:shadow-lg fixed w-full bg-white mb-3 md:mb-16 z-[1000] opacity-90">
-      <div className="container mx-auto px-4 flex md:flex-row my-0 py-3 justify-between items-center gap-10 lg:gap-0">
+    <nav className="lg:shadow-lg fixed w-full bg-white mb-3 lg:mb-16 z-[1000] opacity-90">
+      <div className="container mx-auto px-4 flex lg:flex-row my-0 py-3 justify-between items-center gap-10 lg:gap-0">
         <Link to="/">
-          <img src={Logo} alt="She Code Africa's Logo" className="md:w-11" />
+          <img src={Logo} alt="She Code Africa's Logo" className="lg:w-11" />
         </Link>
         {!show && (
           <IoIosMenu
             size="1.5rem"
             color="#B70569"
             onClick={handleShow}
-            className="md:hidden"
+            className="lg:hidden"
           />
         )}
 
         <ul
           className={` ${
-            show ? "md:flex" : "hidden md:flex"
-          } flex h-screen md:h-auto bg-white top-0 bottom-0 absolute right-0 md:relative flex-col md:flex-row gap-0 md:gap-5 lg:gap-0 md:justify-between items-center w-2/3 md:w-auto`}
+            show ? "lg:flex" : "hidden lg:flex"
+          } flex h-screen lg:h-auto bg-white top-0 bottom-0 absolute right-0 lg:relative flex-col lg:flex-row gap-0 lg:gap-0 lg:justify-between items-center w-2/3 lg:w-auto`}
         >
-          <li className="md:hidden self-end mt-2 mr-4" onClick={handleShow}>
+          <li className="lg:hidden self-end mt-2 mr-4" onClick={handleShow}>
             <IoIosClose size="1.5rem" color="#B70569" />
           </li>
           <li>
-            <ul className="flex flex-col md:flex-row mt-8 md:mt-0 gap-6 md:gap-4 lg:gap-7 items-center text-base md:text-xs lg:text-base">
+            <ul className="flex flex-col lg:flex-row mt-8 lg:mt-0 gap-6 lg:gap-7 items-center text-base md:text-xs xl:text-base">
               <li className="transition ease-in delay-75 duration-300 hover:cursor-pointer hover:text-primary-pink">
                 <AnchorLink href="#schedule">Schedule</AnchorLink>
               </li>
@@ -45,6 +45,11 @@ const Nav = () => {
               <li className="transition ease-in delay-75 duration-300 hover:cursor-pointer hover:text-primary-pink">
                 <a href=" https://docs.google.com/forms/d/15HvuCPBGCbFikyUXamnsBBkjMg8sXrDkexhP43npLgg/edit ">
                   Become a Volunteer
+                </a>
+              </li>
+              <li className="transition ease-in delay-75 duration-300 hover:cursor-pointer hover:text-primary-pink">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSerwjok2g4mpF4D_5ewzkoSyHcc4Bk99765H39wbHxm9TvUXA/viewform?usp=pp_url">
+                  Job Readiness Workshop
                 </a>
               </li>
               <li className="transition ease-in delay-75 duration-300 hover:text-primary-pink">
