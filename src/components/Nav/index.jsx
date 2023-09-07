@@ -49,7 +49,7 @@ const Nav = () => {
               </li>
               <li className="transition ease-in delay-75 duration-300 hover:cursor-pointer hover:text-primary-pink">
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLSerwjok2g4mpF4D_5ewzkoSyHcc4Bk99765H39wbHxm9TvUXA/viewform?usp=pp_url">
-                  Job Readiness Workshop
+                  Career Boost Workshop
                 </a>
               </li>
               <li className="transition ease-in delay-75 duration-300 hover:text-primary-pink">
