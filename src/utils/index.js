@@ -1,4 +1,4 @@
-import ada from "../assets/images/ada.svg";
+import ada from "../assets/images/Ada-nduka.png";
 import bri from "../assets/images/bridget.png";
 import ifeoma from "../assets/images/ifeoma.png";
 import chiazagom from "../assets/images/chiazagom.png";
@@ -11,12 +11,13 @@ import omotayo from "../assets/images/omotayo.png";
 import ngozi from "../assets/images/ngozi.png";
 import koromone from "../assets/images/koromone.png";
 import seun from "../assets/images/seun.png";
-import placeholder from "../assets/images/placeholder.png";
 import jola from "../assets/images/mojolaoluwa_aderemi-makinde.png";
 import adetutu from "../assets/images/adetutu_laditan.png";
 import chidera from "../assets/images/chidera-nnedu.png";
 import teniloluwa from "../assets/images/sogbesan_teniloluwa.png";
 import joynels from "../assets/images/joynels.png";
+import daniela from "../assets/images/daniela.png";
+import uddoh from "../assets/images/ifeoma_uddoh.png";
 
 export const speakers = [
   {
@@ -116,7 +117,7 @@ export const speakers = [
     name: "Daniela Uzosike",
     role: "Systems Administrator at Moniepoint INC",
     title: "Speaker",
-    img: placeholder,
+    img: daniela,
     bio: "Daniela Uzosike is a Systems Administrator at Moniepoint INC and fellow of CyberGirls, CyberSafe Foundation, a leading organisation for digital development in Africa. A fervent advocate for continuous learning, Daniela holds multiple industry certifications, including CompTIA Network+, ISC² Certified in Cybersecurity (CC), and Microsoft AZ-900. Her diverse skill set encompasses Cloud Security, DevSecOps, Network security architecture and Penetration Testing making her a versatile asset in any cybersecurity endeavor",
     session_title:
       "The Anatomy of a Phishing Attack - Safeguarding Your Digital Identity",
@@ -169,7 +170,7 @@ export const speakers = [
     name: "Ifeoma Uddoh",
     role: "Founder, Shecluded ",
     title: "Panelist",
-    img: placeholder,
+    img: uddoh,
     bio: "Ifeoma Uddoh is the founder of Shecluded, the first neo-bank FinTech focused on women. Since its launch in 2019, Shecluded has become a UK Tech Hub company (2020). Her career experience spans over a decade in Strategy Consulting and Operations for companies such as PwC, IROKO Partners Ltd., among other notable technology companies. She has notable experience in funding women, analytics, technology startups, and products. She has a BSc in Industrial Mathematics from the Federal University of Technology, Owerri Nigeria and an MSc in Management Science and Operations Research from the University of Lancaster, UK. As a result of her hands-on experience with gender-lens financing, Ifeoma has been featured on several entrepreneurship panels and masterclasses hosted by First Bank, EDC, FinTech Asia, Global Entrepreneurship Week, John Hopkins University, Tekedia Institute, Alliance for Women etc.",
     session_title:
       "How Far? – A Real Assessment of Gender Equality in the African Tech Industry",
@@ -236,15 +237,6 @@ export const firstPageSpeakers = [
     title: "Panelist",
     img: koromone,
     bio: "Koromone (KAY) is a poet, brand manager, and communications specialist who has worked with several iconic brands from her first internship with EBONY to her previous role as Managing Editor of TechCabal. Koromone currently serves as co-founder and chief brand officer at Jamit.",
-    session_title:
-      "Cultivating Digital Leadership: Skills for Success in the Tech Industry ",
-  },
-  {
-    name: "Adetutu Laditan",
-    role: "Senior Product Marketing Manager, Google ",
-    title: "Panelist",
-    img: placeholder,
-    bio: "",
     session_title:
       "Cultivating Digital Leadership: Skills for Success in the Tech Industry ",
   },
