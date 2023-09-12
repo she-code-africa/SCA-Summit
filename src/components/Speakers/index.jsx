@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { firstPageSpeakers as speakers } from "../../utils";
+import { speakers } from "../../utils";
 import { Link } from "react-router-dom";
 import { RxArrowTopRight } from "react-icons/rx";
 import Modal from "../Modal";
@@ -29,9 +29,7 @@ export const SpeakerCard = ({ details }) => {
           <img src={img} alt={name} className="mx-auto mt-6 max-h-[265px]" />
         </div>
         <div className="bg-white border-2 border-white rounded-tr-[50px] rounded-bl-[50px] w-11/12 px-5 pt-3 pb-3 md:pb-1 z-50 flex flex-col relative md:min-h-[120px]">
-          <p className=" md:text-xl lg:text-2xl text-[#210D15] font-bold">
-            {name}
-          </p>
+          <p className=" md:text-xl text-[#210D15] font-bold">{name}</p>
           <p className="text-xs sm:text-sm font-medium text-[#210D15] opacity-80">
             {role}
           </p>
