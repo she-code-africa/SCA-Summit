@@ -6,6 +6,7 @@ import Layout from "./components/Layout";
 import Register from "./pages/Register";
 import Speakers from "./pages/Speakers";
 import ScrollToTop from "./components/ScrollToTop";
+import Schedule from "./pages/Schedule";
 
 function App() {
   useEffect(() => {
@@ -23,8 +24,9 @@ function App() {
         <Route element={<Layout />}>
           <Route path="/" element={<Home />} />
           <Route path="/register" element={<Register />} />
-          <Route path="*" element={<NotFound />} />
           <Route path="/speakers" element={<Speakers />} />
+          <Route path="/schedule" element={<Schedule />} />
+          <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
       <ScrollToTop />
