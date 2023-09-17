@@ -6,7 +6,7 @@ const Modal = ({ isOpen, onClose, children }) => {
       {isOpen ? (
         <div className="fixed inset-0 flex items-center justify-center z-[1001]">
           <div className="fixed inset-0 bg-black opacity-50"></div>
-          <div className="bg-white py-4 px-4 md:px-8 rounded-lg shadow-md z-10 max-w-lg lg:max-w-2xl mx-2">
+          <div className="modal-bg py-4 px-4 md:px-8 rounded-[40px] shadow-md z-10 max-w-lg lg:max-w-4xl mx-2">
             <div className="flex justify-end">
               <button
                 className="hover:text-primary-pink text-gray-700"

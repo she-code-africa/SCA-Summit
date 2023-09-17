@@ -10,7 +10,7 @@ const Schedule = () => {
     <>
       <div className="hero sm:pt-8 min-h-[600px] flex justify-center items-center">
         <div className="text-center">
-          <h1 className=" text-5xl lg:text-[64px] font-extrabold">Schedule</h1>
+          <h1 className=" text-4xl lg:text-[64px] font-extrabold">Schedule</h1>
           <p className="uppercase text-primary-pink font-semibold text-sm sm:text-base lg:text-[18px]">
             Dive into a Day of Inspiration and Learning
           </p>
@@ -36,7 +36,7 @@ const Schedule = () => {
       <img
         src={gearFull}
         alt=""
-        className="absolute left-0 top-[20%]  sm:top-[15%] w-16 h-16 sm:w-32 sm:h-32 lg:w-auto lg:h-auto"
+        className="absolute -left-8 top-[20%]  sm:top-[15%] w-16 h-16 sm:w-32 sm:h-32 lg:w-auto lg:h-auto"
       />
     </>
   );

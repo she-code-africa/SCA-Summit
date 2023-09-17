@@ -25,10 +25,10 @@ const Hero = () => {
     <div className="hero sm:pt-8">
       <div className="relative mt-8 pb-8 md:pb-16 lg:pb-32">
         <div className="absolute top-10 md:top-28 left-1">
-          <img src={squiggly} alt="squiggly" className=" w-12 md:w-auto" />
+          <img src={squiggly} alt="" className=" w-12 md:w-auto" />
         </div>
         <div className="absolute right-6 md:right-96 top-32">
-          <img src={triangle} alt="illustration-triangle" />
+          <img src={triangle} alt="" />
         </div>
         <section className="flex flex-col container mx-auto px-4 w-full md:gap-4 lg:gap-0 justify-between items-center py-8 md:pt-16 lg:pt-32">
           <div className="mt-12 md:mt-6 flex flex-col items-center">
