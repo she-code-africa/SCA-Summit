@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Logo from "../../assets/images/logo.svg";
 import { IoIosMenu, IoIosClose } from "react-icons/io";
-import AnchorLink from "react-anchor-link-smooth-scroll";
 import { Link } from "react-router-dom";
 import { SolidAnchor } from "../Anchor";
 
@@ -37,10 +36,10 @@ const Nav = () => {
           <li>
             <ul className="flex flex-col lg:flex-row mt-8 lg:mt-0 gap-6 lg:gap-7 items-center text-base md:text-xs xl:text-base">
               <li className="transition ease-in delay-75 duration-300 hover:cursor-pointer hover:text-primary-pink">
-                <AnchorLink href="#schedule">Schedule</AnchorLink>
+                <a href="/#schedule">Schedule</a>
               </li>
               <li className="transition ease-in delay-75 duration-300 hover:cursor-pointer hover:text-primary-pink">
-                <AnchorLink href="#speakers">Speakers</AnchorLink>
+                <a href="/#speakers">Speakers</a>
               </li>
               <li className="transition ease-in delay-75 duration-300 hover:cursor-pointer hover:text-primary-pink">
                 <a href=" https://docs.google.com/forms/d/15HvuCPBGCbFikyUXamnsBBkjMg8sXrDkexhP43npLgg/edit ">
