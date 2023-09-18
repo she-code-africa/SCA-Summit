@@ -19,6 +19,15 @@ import joynels from "../assets/images/joynels.png";
 import daniela from "../assets/images/daniela.png";
 import uddoh from "../assets/images/ifeoma_uddoh.png";
 
+//pARTNERS AND sPONSORS
+import gold from "../assets/images/gold-orchid.webp";
+import axa from "../assets/images/axa.jpg";
+import gwg from "../assets/images/gwg.png";
+import wiicreate from "../assets/images/wiicreate.svg";
+import ruby from "../assets/images/ruby-creatives.png";
+import propel from "../assets/images/propel.png";
+import icp from "../assets/images/icp.png";
+
 export const speakers = [
   {
     name: "Ada Nduka Oyom",
@@ -285,5 +294,43 @@ export const speakers = [
       instagram: "https://instagram.com/ifbnw?igshid=MzRlODBiNWFlZA",
       twitter: "https://twitter.com/ifbnw?t=M1oKaNgC4FOQL8ZJY7AhbA&s=09",
     },
+  },
+];
+
+export const partners = [
+  {
+    name: "Gold Orchid",
+    type: "support",
+    image: gold,
+  },
+  {
+    name: "Axa Mansard",
+    type: "support",
+    image: axa,
+  },
+  {
+    name: "Grow with Google",
+    type: "support",
+    image: gwg,
+  },
+  {
+    name: "Wiicreate",
+    type: "support",
+    image: wiicreate,
+  },
+  {
+    name: "Ruby Creatives",
+    type: "support",
+    image: ruby,
+  },
+  {
+    name: "Propel",
+    type: "bronze",
+    image: propel,
+  },
+  {
+    name: "ICP",
+    type: "platinum",
+    image: icp,
   },
 ];
