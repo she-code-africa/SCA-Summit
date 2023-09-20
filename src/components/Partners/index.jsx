@@ -21,7 +21,7 @@ const Partners = () => {
             {platinum.map(({ name, image }) => {
               return (
                 <img
-                  className="max-w-[19rem] lg:max-w-xl"
+                  className="max-w-[14rem] lg:max-w-xl"
                   src={image}
                   alt={name}
                 />
@@ -38,7 +38,7 @@ const Partners = () => {
             {bronze.map(({ name, image }) => {
               return (
                 <img
-                  className="max-w-[15rem] lg:max-w-[18rem]"
+                  className="max-w-[12rem] lg:max-w-[18rem]"
                   src={image}
                   alt={name}
                 />
