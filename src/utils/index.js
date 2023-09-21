@@ -27,7 +27,7 @@ import wiicreate from "../assets/images/wiicreate.svg";
 import ruby from "../assets/images/ruby-creatives.png";
 import propel from "../assets/images/propel.png";
 import icp from "../assets/images/icp.png";
-
+import buckhill from "../assets/images/buckhill.png";
 export const speakers = [
   {
     name: "Ada Nduka Oyom",
@@ -327,6 +327,11 @@ export const partners = [
     name: "Propel",
     type: "bronze",
     image: propel,
+  },
+  {
+    name: "BuckHill",
+    type: "bronze",
+    image: buckhill,
   },
   {
     name: "ICP",

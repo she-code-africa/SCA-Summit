@@ -4,7 +4,6 @@ import { partners } from "../../utils";
 const Partners = () => {
   const platinum = partners.filter((partner) => partner.type === "platinum");
   const bronze = partners.filter((partner) => partner.type === "bronze");
-
   const support = partners.filter((partner) => partner.type === "support");
 
   return (
@@ -17,7 +16,7 @@ const Partners = () => {
           <h4 className="uppercase my-4 text-sm text-[#210D15] font-bold">
             Platinum Sponsors
           </h4>
-          <div className="flex mt-4">
+          <div className="flex mt-4 gap-4 lg:gap-8 items-center lg:flex-wrap max-lg:overflow-x-scroll">
             {platinum.map(({ name, image }) => {
               return <img className="max-w-[300px]" src={image} alt={name} />;
             })}
@@ -28,7 +27,7 @@ const Partners = () => {
           <h4 className="uppercase my-4 text-sm text-[#210D15] font-bold">
             Bronze Sponsors
           </h4>
-          <div className="flex mt-4">
+          <div className="flex mt-4 gap-4 lg:gap-8 lg:flex-wrap max-lg:overflow-x-scroll">
             {bronze.map(({ name, image }) => {
               return <img className="max-w-[150px]" src={image} alt={name} />;
             })}
@@ -39,7 +38,7 @@ const Partners = () => {
           <h4 className="uppercase my-4 text-sm text-[#210D15] font-bold">
             Partners
           </h4>
-          <div className="flex mt-4 gap-4 lg:gap-8 justify-between lg:flex-wrap max-lg:overflow-x-scroll">
+          <div className="flex mt-4 gap-4 lg:gap-8 justify-between lg:flex-wrap max-lg:overflow-x-scroll items-center">
             {support.map(({ name, image }) => {
               return (
                 <img
