@@ -48,7 +48,7 @@ const Schedule = () => {
           <div className="absolute right-96 top-24 md:top-32">
             <img src={dot} alt="" />
           </div>
-          <div className="rounded-3xl mt-8 sm:mt-10 md:mt-0 border-4 md:border-8 border-primary-pink sm:rotate-12 order-1 sm:order-2 max-w-full sm:max-w-[22rem] lg:max-w-lg 2xl:max-w-full h-fit ">
+          <div className="rounded-3xl mt-8 sm:mt-10 md:mt-0 border-4 md:border-8 border-primary-pink sm:rotate-12 order-1 sm:order-2 max-w-full sm:max-w-[22rem] lg:max-w-[29rem] 2xl:max-w-full h-fit ">
             <img src={schedImg} alt="Panel Session" className="rounded-2xl" />
           </div>
           <div className="absolute rotate-90 right-0 top-96 w-1/6 sm:w-auto sm:top-72 order-3">

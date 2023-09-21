@@ -5,6 +5,7 @@ import About from "../components/About";
 import YTDisplay from "../components/YTDisplay";
 import Speakers from "../components/Speakers";
 import Schedule from "../components/Schedule";
+import Partners from "../components/Partners";
 
 const Main = () => {
   return (
@@ -13,6 +14,7 @@ const Main = () => {
       <About />
       <Speakers />
       <Schedule />
+      <Partners />
       <Gallery />
       <YTDisplay />
     </>

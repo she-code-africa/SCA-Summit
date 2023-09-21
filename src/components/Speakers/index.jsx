@@ -5,6 +5,8 @@ import { RxArrowTopRight } from "react-icons/rx";
 import Modal from "../Modal";
 import squiggly2 from "../../assets/images/squiggly2.svg";
 import dot from "../../assets/images/dot.svg";
+import { PiLinkedinLogoFill, PiInstagramLogoBold } from "react-icons/pi";
+import { LuTwitter } from "react-icons/lu";
 
 export const SpeakerCard = ({ details }) => {
   const [modalOpen, setModalOpen] = useState(false);
@@ -17,23 +19,30 @@ export const SpeakerCard = ({ details }) => {
     setModalOpen(false);
   };
 
-  const { img, name, title, role, bio, session_title } = details;
+  const { img, name, title, role, bio, session_title, socials } = details;
+  const { instagram, linkedin, twitter } = socials;
   return (
     <>
       <div
         id="speakers"
-        className="speaker-bg bg-repeat border-2 border-black rounded-tr-[50px] rounded-bl-[50px] flex-grow md:min-w-fit flex flex-col justify-end odd:bg-primary-pink even:bg-primary-brown odd:text-primary-pink even:text-primary-brown min-w-[350px]"
+        className="speaker-bg bg-repeat border-[3px] border-black rounded-t-[30px] flex-grow md:min-w-fit flex flex-col justify-end odd:bg-primary-pink even:bg-primary-brown odd:text-primary-pink even:text-primary-brown min-w-[350px] hover:cursor-pointer group"
         onClick={openModal}
       >
-        <div className="-mb-8 block relative">
-          <img src={img} alt={name} className="mx-auto mt-6 max-h-[265px]" />
+        <div className="-mb-8 block relative group-hover:scale-110 transition-transform duration-300 ease-in-out">
+          <img
+            src={img}
+            alt={name}
+            className={`${
+              name === "Ada Nduka Oyom" && "scale-125 -translate-y-10"
+            } mx-auto mt-6 max-w-[190px] max-h-[250px]`}
+          />
         </div>
-        <div className="bg-white border-2 border-white rounded-tr-[50px] rounded-bl-[50px] w-11/12 px-5 pt-3 pb-3 md:pb-1 z-50 flex flex-col relative md:min-h-[120px]">
-          <p className=" md:text-xl text-[#210D15] font-bold">{name}</p>
-          <p className="text-xs sm:text-sm font-medium text-[#210D15] opacity-80">
+        <div className="bg-white border-2 border-white clip-path-curve w-full text-center px-5 pt-3 pb-3 md:pb-1 z-50 flex flex-col relative md:min-h-[120px] justify-center">
+          <p className=" md:text-lg text-[#210D15] font-bold">{name}</p>
+          <p className="text-xs sm:text-[13px] font-medium text-[#210D15] opacity-80 line-clamp-2 max-w-[280px] mx-auto">
             {role}
           </p>
-          <p className="font-bold">{title}</p>
+          <p className="font-bold ">{title}</p>
         </div>
       </div>
       <Modal isOpen={modalOpen} onClose={closeModal}>
@@ -42,24 +51,51 @@ export const SpeakerCard = ({ details }) => {
             <img src={squiggly2} alt="" />
           </div>
           <div className="mb-6">
-            <p className=" md:text-xl lg:text-2xl text-primary-pink font-bold">
+            <p className=" md:text-xl lg:text-2xl xl:text-3xl text-primary-pink font-bold speaker-name">
               {name}
             </p>
             <p className="text-xs sm:text-sm font-medium text-[#210D15] opacity-80">
               {role}
             </p>
-            <p className="font-bold text-[inherit]">
+            <p className="font-bold text-[inherit] text-xs md:text-base lg:text-lg xl:text-2xl">
               {title} - {session_title}
             </p>
           </div>
-          <div className="max-h-[500px] overflow-y-scroll no-scrollbar">
-            {bio}
+          <div className="max-h-[250px] overflow-y-scroll no-scrollbar ">
+            <p className="leading-8 text-sm md:text-base">{bio}</p>
             <div className="absolute -left-5 top-56">
               <img src={dot} alt="" />
             </div>
             <div className="absolute -right-4 bottom-12">
               <img src={dot} alt="" />
             </div>
+          </div>
+
+          <div className="mt-3 mb-1 flex items-center gap-2">
+            {linkedin && (
+              <a
+                href={linkedin}
+                className=" w-8 h-8 md:w-11 md:h-11 bg-primary-pink rounded-full inline-flex justify-center items-center"
+              >
+                <PiLinkedinLogoFill className="text-white w-4 h-4 md:w-7 md:h-7" />
+              </a>
+            )}
+            {instagram && (
+              <a
+                href={instagram}
+                className=" w-8 h-8 md:w-11 md:h-11 bg-primary-pink rounded-full inline-flex justify-center items-center"
+              >
+                <PiInstagramLogoBold className="text-white w-4 h-4 md:w-7 md:h-7" />
+              </a>
+            )}
+            {twitter && (
+              <a
+                href={twitter}
+                className=" w-8 h-8 md:w-11 md:h-11 bg-primary-pink rounded-full inline-flex justify-center items-center"
+              >
+                <LuTwitter className="text-white w-4 h-4 md:w-7 md:h-7" />
+              </a>
+            )}
           </div>
         </div>
       </Modal>

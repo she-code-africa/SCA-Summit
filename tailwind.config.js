@@ -33,6 +33,9 @@ module.exports = {
         4.5: "18px",
       },
     },
+    clipPath: {
+      curve: "ellipse(50% 100% at 50% 100%)",
+    },
   },
-  plugins: [],
+  plugins: [require("tailwind-clip-path")],
 };
