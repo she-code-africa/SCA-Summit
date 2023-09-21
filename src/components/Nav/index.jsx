@@ -42,8 +42,8 @@ const Nav = () => {
                 <a href="/#speakers">Speakers</a>
               </li>
               <li className="transition ease-in delay-75 duration-300 hover:cursor-pointer hover:text-primary-pink">
-                <a href=" https://docs.google.com/forms/d/15HvuCPBGCbFikyUXamnsBBkjMg8sXrDkexhP43npLgg/edit ">
-                  Become a Volunteer
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSc3xMFAR2qZMFCkfncca2AIn6JyuVpayubLogvrCWsjobEUSQ/viewform?usp=pp_url">
+                  Transport Registration
                 </a>
               </li>
               <li className="transition ease-in delay-75 duration-300 hover:cursor-pointer hover:text-primary-pink">
