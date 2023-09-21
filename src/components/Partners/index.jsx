@@ -19,13 +19,7 @@ const Partners = () => {
           </h4>
           <div className="flex mt-4">
             {platinum.map(({ name, image }) => {
-              return (
-                <img
-                  className="max-w-[14rem] lg:max-w-xl"
-                  src={image}
-                  alt={name}
-                />
-              );
+              return <img className="max-w-[300px]" src={image} alt={name} />;
             })}
           </div>
         </div>
@@ -36,13 +30,7 @@ const Partners = () => {
           </h4>
           <div className="flex mt-4">
             {bronze.map(({ name, image }) => {
-              return (
-                <img
-                  className="max-w-[12rem] lg:max-w-[18rem]"
-                  src={image}
-                  alt={name}
-                />
-              );
+              return <img className="max-w-[150px]" src={image} alt={name} />;
             })}
           </div>
         </div>
@@ -54,7 +42,11 @@ const Partners = () => {
           <div className="flex mt-4 gap-4 lg:gap-8 justify-between lg:flex-wrap max-lg:overflow-x-scroll">
             {support.map(({ name, image }) => {
               return (
-                <img className="w-[150px] h-[150px]" src={image} alt={name} />
+                <img
+                  className="h-[100px] max-w-[200px]"
+                  src={image}
+                  alt={name}
+                />
               );
             })}
           </div>
