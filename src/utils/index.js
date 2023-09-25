@@ -18,6 +18,7 @@ import teniloluwa from "../assets/images/sogbesan_teniloluwa.png";
 import joynels from "../assets/images/joynels.png";
 import daniela from "../assets/images/daniela.png";
 import uddoh from "../assets/images/ifeoma_uddoh.png";
+import yvonne from "../assets/images/yvonne.png";
 
 //pARTNERS AND sPONSORS
 import gold from "../assets/images/gold-orchid.webp";
@@ -81,6 +82,7 @@ export const speakers = [
       linkedin: "https://www.linkedin.com/in/marketingexpertiseseunbd",
     },
   },
+
   {
     name: "Oreoluwa Lesi",
     role: "Executive Director, W.TEC",
@@ -118,6 +120,20 @@ export const speakers = [
     session_title: "Building a Career in Network Engineering",
     speaker_type: "keynote",
     socials: {},
+  },
+  {
+    name: "Yvonne Kagondu",
+    role: "Executive Director, W.TEC",
+    title: "Speaker",
+    img: yvonne,
+    bio: "Yvonne Kagondu is a Kenyan Blockchain expert,mentor, and speaker. She plays a key role in promoting the adoption of Blockchain and Web3 inKenya, and East Africa as a whole, through pioneeringeducation and mentorship programs,as well asthrough empowering youth and women andencouraging them to venture into blockchain. Herefforts have earned her recognition as a key player inthe African Blockchain and Web 3 ecosystem. ",
+    session_title: "Understanding ICP",
+    speaker_type: "keynote",
+    socials: {
+      linkedin:
+        "https://www.linkedin.com/in/yvonne-kagondu/?originalSubdomain=ke",
+      twitter: "https://twitter.com/kagondu_yvonne",
+    },
   },
   {
     name: "Alison Eyo",

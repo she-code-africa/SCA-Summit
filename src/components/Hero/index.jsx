@@ -13,14 +13,11 @@ import { IconAnchor, SolidAnchor } from "../Anchor";
 import { RxArrowTopRight } from "react-icons/rx";
 
 const Hero = () => {
-  const eventDate = new Date("09/30/2023");
-  const currentDate = new Date();
-  const Difference_In_time = eventDate.getTime() - currentDate.getTime();
-  const Difference_In_Days = Difference_In_time / (1000 * 3600 * 24);
-  const DAYS_IN_MS = Difference_In_Days * 24 * 60 * 60 * 1000;
-  const NOW_IN_MS = currentDate.getTime();
+  const eventDate = new Date("09/30/2023 09:00:00");
+  // Calculate the time three days after the event date
+  const daysInMs = 1 * 24 * 60 * 60 * 1000;
+  const dateTimeAfterThreeDays = eventDate.getTime() + daysInMs;
 
-  const dateTimeAfterThreeDays = NOW_IN_MS + DAYS_IN_MS;
   return (
     <div className="hero sm:pt-8">
       <div className="relative mt-8 pb-8 md:pb-16 lg:pb-32">
