@@ -11,8 +11,15 @@ import curves from "../assets/images/curved-line.svg";
 import arrowDown from "../assets/icons/arrow-down.svg";
 
 const Speakers = () => {
+  const host = speakers.filter((speaker) => speaker.speaker_type === "host");
   const keynote = speakers.filter(
     (speaker) => speaker.speaker_type === "keynote"
+  );
+  const lightning = speakers.filter(
+    (speaker) => speaker.speaker_type === "lightning"
+  );
+  const expert = speakers.filter(
+    (speaker) => speaker.speaker_type === "expert"
   );
   const firstPanel = speakers.filter(
     (speaker) => speaker.speaker_type === "panel 1"
@@ -40,7 +47,7 @@ const Speakers = () => {
             <span className="text-primary-pink">{subtitle}</span>
           </p>
         )}
-        <div className="my-6 sm:my-9 flex md:grid md:grid-rows-2 md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-10 sm:justify-center overflow-x-scroll md:overflow-hidden w-full no-scrollbar">
+        <div className="my-6 sm:my-9 flex md:grid md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-10 sm:justify-center overflow-x-scroll md:overflow-hidden w-full no-scrollbar">
           {items.map((speaker, index) => (
             <SpeakerCard details={speaker} key={index} />
           ))}
@@ -64,7 +71,7 @@ const Speakers = () => {
             <img src={wavy} alt="" className="mx-auto opacity-10" />
           </h1>
           <p className="uppercase text-primary-pink font-semibold text-sm sm:text-base lg:text-[18px] mt-3 mb-1.5">
-            10 Speakers and 10 Panelists
+            2 Keynote Speakers, 10 Speakers and 10 Panelists
           </p>
           <p className="max-w-2xl leading-7 text-sm sm:text-base lg:text-[18px] font-medium text-[#210D15]">
             Meet our accomplished speakers shaping the summit with their
@@ -100,8 +107,11 @@ const Speakers = () => {
       <Marquee />
 
       <section className="py-8 sm:py-16 lg:py-24">
-        <div className="container mx-auto p-4 flex flex-col gap-16 md:gap-32">
+        <div className="container mx-auto p-4 flex flex-col gap-16 md:gap-24">
+          <Section title="Host" items={host} />
           <Section title="Keynote Speakers" items={keynote} />
+          <Section title="Lightning Speakers" items={lightning} />
+          <Section title="Expert Session Speakers" items={expert} />
           <Section
             title="First Panel Session Speakers"
             subtitle="A Real Assessment of Gender Equality in the African Tech Industry"

@@ -19,6 +19,8 @@ import joynels from "../assets/images/joynels.png";
 import daniela from "../assets/images/daniela.png";
 import uddoh from "../assets/images/ifeoma_uddoh.png";
 import yvonne from "../assets/images/yvonne.png";
+import prudence from "../assets/images/prudence.png";
+import deborah from "../assets/images/deborah.png";
 
 //pARTNERS AND sPONSORS
 import gold from "../assets/images/gold-orchid.webp";
@@ -112,13 +114,31 @@ export const speakers = [
     },
   },
   {
+    name: "Prudence Ngwenya",
+    role: "Director, AUC Women Gender and Youth Directorate ",
+    title: "Keynote Speaker",
+    img: prudence,
+    bio: "Ms. Prudence Ngwenya is the Director of the Women, Gender and Youth Director. Her main responsibilities include leading and providing strategic guidance on the AUC’s mandate on Women and Youth Development while providing strategic oversight on the implementations of programs within her Directorate. She leads the African Union’s agenda to unleash the potential of women and youth by striving for gender and youth parity across African countries, enabling development through strategic partnerships while fostering meaningful engagement with all of the stakeholders in the women, gender and youth development landscape. The task involves maintaining a robust, innovative and results oriented AUC Gender and Youth Programme aligned to key AU frameworks such as Agenda 2063.",
+    speaker_type: "keynote",
+    socials: {},
+  },
+  {
+    name: "Deborah Oguike",
+    role: "PR & Communications Analyst, Creator, and Events Host",
+    title: "Host",
+    img: deborah,
+    bio: "Deborah Oguike, widely recognized as Debbie The Media Girl, is an enthusiastic and dynamic Master of Ceremonies and a versatile media personality. Her remarkable talent for shaping and sparking meaningful conversations elevates every event she hosts, leaving a lasting impact. With an extensive background spanning over four years in public speaking, she has skillfully presided over a diverse range of occasions, including conferences, seminars, concerts, weddings, book presentations, charity openings, art exhibitions, and virtual gatherings. Deborah is also a sought-after moderator, contributing her expertise to numerous panel discussions. Her clients consistently praise her for her graceful, engaging, energetic and unwaveringly professional approach. Although she’s not in active practice, Deborah holds her LL.B from the University of Lagos & was called to the Nigerian Bar in 2021. She wears another hat as a PR & Communications Strategist at a venture capital firm. When she’s not developing communication strategies, Debbie can be found dancing her heart out at social events & creating fun & exciting content on her social media.",
+    speaker_type: "host",
+    socials: {},
+  },
+  {
     name: "Loveline Kasomo",
     role: "Team Lead, Networks & Communication Management, Access Bank",
     title: "Speaker",
     img: loveline,
     bio: "Loveline is an IT leader with over 14 years of experience in Network Engineering, Operations, IT Security, and Customer/Stakeholder Management. Her experience is gleaned across several top-tier digitally-led companies across the Technology and Financial industries and she has spent the last 7 years developing innovative solutions and strategies to drive operational excellence within the organizations she has worked, by setting up, managing and leading cross-functional teams to achieve digital transformation, revenue growth, cost savings and an enhanced overall productivity for the businesses. She currently leads the Networks & Communications Mgt Team at Access Bank. Loveline is very passionate about knowledge sharing and mentorship, she loves to read and research and also swim for leisure. She is married with children.",
     session_title: "Building a Career in Network Engineering",
-    speaker_type: "keynote",
+    speaker_type: "lightning",
     socials: {},
   },
   {
@@ -128,7 +148,7 @@ export const speakers = [
     img: yvonne,
     bio: "Yvonne Kagondu is a Kenyan Blockchain expert,mentor, and speaker. She plays a key role in promoting the adoption of Blockchain and Web3 inKenya, and East Africa as a whole, through pioneeringeducation and mentorship programs,as well asthrough empowering youth and women andencouraging them to venture into blockchain. Herefforts have earned her recognition as a key player inthe African Blockchain and Web 3 ecosystem. ",
     session_title: "Understanding ICP",
-    speaker_type: "keynote",
+    speaker_type: "expert",
     socials: {
       linkedin:
         "https://www.linkedin.com/in/yvonne-kagondu/?originalSubdomain=ke",
@@ -142,7 +162,7 @@ export const speakers = [
     img: alison,
     bio: "Alison is a user advocate focused on delivering strategic and meaningful user experiences. She lives to make stuff, solve problems, ship fast, and impact billions of lives. While being fascinated with all aspects of User Experience design, she specializes in ideation, storytelling, and visual design. She is obsessed with diving into why and how people use things and furthering those experiences to make them memorable.",
     session_title: "The Role of Microinteractions in UX Design",
-    speaker_type: "keynote",
+    speaker_type: "lightning",
     socials: {
       twitter: "https://twitter.com/thealisoneyo",
       instagram: "https://www.instagram.com/thealisoneyo/",
@@ -157,7 +177,7 @@ export const speakers = [
     bio: "Teniloluwa is a Google-certified data analyst and technical writer dedicated to transforming data into valuable insights for businesses. With a passion for learning and sharing knowledge, she actively volunteers with non-profit organizations to contribute her expertise to worthy causes.",
     session_title:
       "From Beneficiary to Data Analyst: A Story of Gratitude, Growth, and the Power of Community",
-    speaker_type: "keynote",
+    speaker_type: "lightning",
     socials: {
       linkedin: "https://www.linkedin.com/in/sogbesanteni/",
     },
@@ -169,7 +189,7 @@ export const speakers = [
     img: bri,
     bio: "Bridget Iyere is a product manager with over 4 years of experience building products users love. Her expertise cuts across the Govtech, Political & Tech Consulting and Edtech sectors. She is currently the Product Lead at eLimu - an EdTech startup building fun accessible education for curious kids in Africa.   Bridget possesses unique leadership qualities which she leverages in fostering strong communication and collaboration in teams and with stakeholders. She is a first-class graduate of Microbiology from Benson Idahosa University.",
     session_title: "Building Digital Products for Kids",
-    speaker_type: "keynote",
+    speaker_type: "expert",
     socials: {
       linkedin: "https://www.linkedin.com/in/bridget-iyere-083398112/",
       twitter: "https://twitter.com/biyere4",
@@ -182,7 +202,7 @@ export const speakers = [
     img: chidera,
     bio: "Chidera is a public speaker, student researcher, nutritionist, and public health enthusiast. She is passionate about integrating machine learning into healthtech.",
     session_title: "Revolutionizing Health Tech with Machine Learning",
-    speaker_type: "keynote",
+    speaker_type: "expert",
     socials: {
       linkedin: "https://www.linkedin.com/in/chidera-nnedu-036279261",
     },
@@ -195,7 +215,7 @@ export const speakers = [
     bio: "Daniela Uzosike is a Systems Administrator at Moniepoint INC and fellow of CyberGirls, CyberSafe Foundation, a leading organisation for digital development in Africa. A fervent advocate for continuous learning, Daniela holds multiple industry certifications, including CompTIA Network+, ISC² Certified in Cybersecurity (CC), and Microsoft AZ-900. Her diverse skill set encompasses Cloud Security, DevSecOps, Network security architecture and Penetration Testing making her a versatile asset in any cybersecurity endeavor",
     session_title:
       "The Anatomy of a Phishing Attack - Safeguarding Your Digital Identity",
-    speaker_type: "keynote",
+    speaker_type: "expert",
     socials: {
       linkedin: "https://www.linkedin.com/in/daniela-uzosike",
     },
@@ -207,7 +227,7 @@ export const speakers = [
     img: joynels,
     bio: "Joynels Ogbogu is a Content Executive at Sterling and the Co-Founder of UX Writers Africa.",
     session_title: "Harnessing AI to Improve your Work as a Writer in Tech",
-    speaker_type: "keynote",
+    speaker_type: "expert",
     socials: {
       linkedin: "https://www.linkedin.com/in/joynels-ogbogu",
     },
@@ -219,7 +239,7 @@ export const speakers = [
     img: temi,
     bio: "Temilola Adeyemi is an award-winning financial expert. She is a first-class graduate of Browen University, Nigeria. Temilola is an associate member of the Chartered Institute of Bankers of Nigeria (CIBN) and an Associate Chartered Stockbroker (ACS). She’s a Senior Research Associate at MoneyAfrica where she has successfully led numerous projects, including training over 10,000 African women on financial literacy, writing over 100 finance articles, training over 500 business owners on business finance, creating portfolios for over 100 individuals and couples, and participating in several speaking engagements, both corporate and community-based. ",
     session_title: "Financial Mastery for Women in Tech",
-    speaker_type: "keynote",
+    speaker_type: "expert",
     socials: {
       linkedin: "https://www.linkedin.com/in/temilola-adeyemi-c/",
     },
