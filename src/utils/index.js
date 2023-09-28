@@ -103,12 +103,12 @@ export const speakers = [
   {
     name: "Koromone (KAY) ",
     role: "Chief Brand Officer, Jamit",
-    title: "Moderator",
+    title: "Panelist",
     img: koromone,
     bio: "Koromone (KAY) is a poet, brand manager, and communications specialist who has worked with several iconic brands from her first internship with EBONY to her previous role as Managing Editor of TechCabal. Koromone currently serves as co-founder and chief brand officer at Jamit.",
     session_title:
       "Cultivating Digital Leadership: Skills for Success in the Tech Industry ",
-    speaker_type: "panel 1",
+    speaker_type: "panel 2",
     socials: {
       linkedin: "https://www.linkedin.com/in/koromone-asabe-yobaere-4409237b/",
     },
