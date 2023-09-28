@@ -108,7 +108,7 @@ export const speakers = [
     bio: "Koromone (KAY) is a poet, brand manager, and communications specialist who has worked with several iconic brands from her first internship with EBONY to her previous role as Managing Editor of TechCabal. Koromone currently serves as co-founder and chief brand officer at Jamit.",
     session_title:
       "Cultivating Digital Leadership: Skills for Success in the Tech Industry ",
-    speaker_type: "panel 1",
+    speaker_type: "panel 2",
     socials: {
       linkedin: "https://www.linkedin.com/in/koromone-asabe-yobaere-4409237b/",
     },
@@ -143,7 +143,7 @@ export const speakers = [
   },
   {
     name: "Yvonne Kagondu",
-    role: "Executive Director, W.TEC",
+    role: "Founder, Kenya Blockchain Ladies & Co-founder, ICP Hub East Africa",
     title: "Speaker",
     img: yvonne,
     bio: "Yvonne Kagondu is a Kenyan Blockchain expert,mentor, and speaker. She plays a key role in promoting the adoption of Blockchain and Web3 inKenya, and East Africa as a whole, through pioneeringeducation and mentorship programs,as well asthrough empowering youth and women andencouraging them to venture into blockchain. Herefforts have earned her recognition as a key player inthe African Blockchain and Web 3 ecosystem. ",
