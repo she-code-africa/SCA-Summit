@@ -14,10 +14,7 @@ import { RxArrowTopRight } from "react-icons/rx";
 
 const Hero = () => {
   const eventDate = new Date("09/30/2023 09:00:00");
-  // Calculate the time three days after the event date
-  const daysInMs = 1 * 24 * 60 * 60 * 1000;
-  const dateTimeAfterThreeDays = eventDate.getTime() + daysInMs;
-
+  const dateTimeAfterThreeDays = new Date(eventDate.getTime() + 60 * 60 * 1000);
   return (
     <div className="hero sm:pt-8">
       <div className="relative mt-8 pb-8 md:pb-16 lg:pb-32">
