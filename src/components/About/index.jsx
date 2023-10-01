@@ -2,7 +2,7 @@ import React from "react";
 import AboutImg from "../../assets/images/about-image.png";
 import squiggly2 from "../../assets/images/squiggly2.svg";
 import dot from "../../assets/images/dot.svg";
-import { IconAnchor, SolidAnchor } from "../Anchor";
+import { IconAnchor } from "../Anchor";
 
 const About = () => {
   return (
@@ -37,10 +37,10 @@ const About = () => {
             partnering companies.
           </p>
           <div className="my-4 md:my-4 flex gap-5 items-center md:gap-3 lg:gap-6">
-            <SolidAnchor
+            {/* <SolidAnchor
               text="Register Now!"
               link="https://tix.africa/discover/scasummit2"
-            />
+            /> */}
             <IconAnchor
               text="View Past Events"
               link="https://drive.google.com/drive/folders/1tRQkG3jzcST71OOZqlT5_binwsdUQdhm"

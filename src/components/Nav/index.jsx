@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import Logo from "../../assets/images/logo.svg";
 import { IoIosMenu, IoIosClose } from "react-icons/io";
 import { Link } from "react-router-dom";
-import { SolidAnchor } from "../Anchor";
 
 const Nav = () => {
   const [show, setShow] = useState(false);
@@ -61,12 +60,12 @@ const Nav = () => {
                   Partner With Us
                 </a>
               </li>
-              <li className="ml-1">
+              {/* <li className="ml-1">
                 <SolidAnchor
                   text="Register now!"
                   link="https://tix.africa/discover/scasummit2"
                 />
-              </li>
+              </li> */}
             </ul>
           </li>
         </ul>
