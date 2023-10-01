@@ -9,7 +9,7 @@ import squirl from "../../assets/images/squirl.svg";
 import triangle from "../../assets/images/triangle.svg";
 import wavy from "../../assets/images/wavy.svg";
 import { Marquee } from "../Marquee";
-import { IconAnchor, SolidAnchor } from "../Anchor";
+import { IconAnchor } from "../Anchor";
 import { RxArrowTopRight } from "react-icons/rx";
 
 const Hero = () => {
@@ -40,10 +40,10 @@ const Hero = () => {
               </p>
             </div>
             <div className="flex flex-col md:flex-row w-full mt-1 md:mt-4 md:w-auto gap-2 md:gap-6 items-center mb-8 md:md-0">
-              <SolidAnchor
+              {/* <SolidAnchor
                 text="Register Now!"
                 link="https://tix.africa/discover/scasummit2"
-              />
+              /> */}
               <IconAnchor
                 text="View Past Events"
                 link="https://drive.google.com/drive/folders/1tRQkG3jzcST71OOZqlT5_binwsdUQdhm"
