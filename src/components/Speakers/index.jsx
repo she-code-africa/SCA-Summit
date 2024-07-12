@@ -106,27 +106,31 @@ export const SpeakerCard = ({ details }) => {
 const Speakers = () => {
   return (
     <section className="py-8 sm:py-16 lg:py-24">
-      <div className="container mx-auto p-4">
-        <h1 className="uppercase text-xs sm:text-base text-primary-pink font-bold">
-          ~MEET OUR SPEAKERS FOR SCA SUMMIT 2023~
+      <div className="container mx-auto p-4" id="speakers">
+        <h1 className="uppercase text-xs sm:text-base text-primary-pink font-bold oswald-font text-center">
+          ~MEET OUR SPEAKERS FOR SCA SUMMIT 2024~
         </h1>
-        <div className="flex flex-col sm:flex-row justify-between sm:items-center my-2">
-          <h2 className="text-xl md:text-2xl lg:text-4xl font-bold">
+        <div className="flex flex-col sm:flex-row justify-center sm:items-center my-2">
+          <h2 className="text-xl md:text-2xl lg:text-4xl font-bold mullish-font text-center">
             Prestigious Speakers
           </h2>
-          <Link
+
+          {/* <Link
             to="speakers"
             className="flex items-center gap-1 transition ease-in delay-75 duration-300 hover:scale-110"
           >
             View All Speakers
             <RxArrowTopRight color="#B70569" />
-          </Link>
+          </Link> */}
         </div>
-        <div className="my-6 sm:my-9 flex md:grid md:grid-rows-2 md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-10 sm:justify-center overflow-x-scroll md:overflow-hidden w-full no-scrollbar">
-          {speakers.slice(0, 6).map((speaker, index) => (
+        <p className="text-primary-pink capitalize text-center my-10 font-semibold text-3xl md:text-4xl">
+          coming soon!
+        </p>
+        {/* <div className="my-6 sm:my-9 flex md:grid md:grid-rows-2 md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-10 sm:justify-center overflow-x-scroll md:overflow-hidden w-full no-scrollbar"> */}
+        {/* {speakers.slice(0, 6).map((speaker, index) => (
             <SpeakerCard details={speaker} key={index} />
-          ))}
-        </div>
+          ))} */}
+        {/* </div> */}
       </div>
     </section>
   );

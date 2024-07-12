@@ -1,92 +1,65 @@
 import React from "react";
-import sample from "../../assets/images/gallery-sample.jpg";
-import sample2 from "../../assets/images/sample-img.jpg";
-import sample3 from "../../assets/images/sample-img2.jpg";
-import sample4 from "../../assets/images/sample-img3.jpg";
-import sample6 from "../../assets/images/sample-img5.jpg";
-import sample7 from "../../assets/images/sample-img6.jpg";
-import sample8 from "../../assets/images/sample-img7.jpg";
-import sample9 from "../../assets/images/sample-img8.jpg";
-import { IconAnchor } from "../Anchor";
+import { FaArrowRight } from "react-icons/fa6";
+import { Link } from "react-router-dom";
+import image1 from "../../assets/images/2024/highlights/image-1.png";
+import image2 from "../../assets/images/2024/highlights/Image-2.png";
+import image3 from "../../assets/images/2024/highlights/Image-3.png";
+import image4 from "../../assets/images/2024/highlights/Image-4.png";
+import image5 from "../../assets/images/2024/highlights/Image-5.png";
 
 const Gallery = () => {
   return (
-    <div className="bg-primary-light-pink">
+    <section className="bg-[rgba(252,230,242,1)] my-28 squiggles">
       <div className="py-8 md:py-16 lg:py-24 grid">
-        <h3 className="uppercase text-center text-primary-pink md:text-2xl font-bold">
-          ~SCA SUMMIT 2022 HIGHLIGHTS~
+        <h3 className="uppercase text-center text-primary-pink md:text-2xl font-bold oswald-font">
+          ~SCA SUMMIT 2023 HIGHLIGHTS~
         </h3>
-        <div className="flex gap-4 overflow-x-scroll no-scrollbar mt-8">
-          <div className="h-fit max-h-[280px] md:max-h-[415px] border-4 -mx-3 rounded-[50px] border-primary-pink">
-            <img
-              alt="sca summit 2022 attendees"
-              src={sample2}
-              className="object-cover max-w-sm 2xl:max-w-full lg:h-[400px] rounded-[45px]"
-            />
+
+        <div className="py-10 mt-5 flex flex-nowrap overflow-x-scroll no-scrollbar gap-7 w-full 2xl:max-w-[1200px] 2xl:mx-auto">
+          <figure className="w-it shrink-0">
+            <img src={image1} alt="figureone" />
+          </figure>
+
+          <div className="shrink-0 flex flex-col gap-8">
+            <figure className="w-fit">
+              <img src={image2} alt="figuretwo" />
+            </figure>
+
+            <figure className="w-fit">
+              <img src={image3} alt="figurethree" />
+            </figure>
           </div>
-          <div className="flex flex-row lg:flex-col justify-between md:justify-normal md:max-h-[415px] gap-2">
-            <div className="border-4 border-[#210D15] rounded-3xl lg:rounded-none lg:rounded-t-3xl max-h-[280px] md:max-h-full">
-              <img
-                alt="sca summit 2022 attendees"
-                src={sample3}
-                className="object-cover max-w-sm 2xl:max-w-full h-[265px] lg:h-[200px] rounded-2xl lg:rounded-none lg:rounded-t-xl"
-              />
-            </div>
-            <div className="border-4 rounded-3xl lg:rounded-none lg:rounded-b-3xl border-primary-pink h-fit">
-              <img
-                alt="sca summit 2022 attendees"
-                src={sample4}
-                className="object-cover max-w-sm 2xl:max-w-full lg:w-full h-[265px] lg:h-[180px] rounded-2xl lg:rounded-none lg:rounded-b-2xl"
-              />
-            </div>
-          </div>
-          <div className="h-fit max-h-[350px] md:max-h-[415px] border-4 border-primary-pink rounded-3xl rounded-bl-none">
-            <img
-              alt="sca summit 2022 attendees"
-              src={sample}
-              className="object-cover max-w-[300px] 2xl:max-w-full h-[265px] lg:h-[400px] rounded-2xl rounded-bl-none -mx-px"
-            />
-          </div>
-          <div className="h-fit max-h-[415px] border-4 border-[#210D15] rounded-tr-3xl rounded-bl-3xl">
-            <img
-              alt="sca summit 2022 attendees"
-              src={sample6}
-              className="object-cover max-w-[300px] 2xl:max-w-full h-[265px] lg:h-[400px] rounded-tr-3xl rounded-bl-3xl -mx-px -mb-[2px] -mt-px"
-            />
-          </div>
-          <div className="flex flex-row lg:flex-col justify-between md:justify-normal md:max-h-[415px] gap-2">
-            <div className="border-4 border-primary-pink rounded-3xl lg:rounded-none lg:rounded-t-3xl max-h-[280px] md:max-h-full">
-              <img
-                alt="sca summit 2022 attendees"
-                src={sample7}
-                className="object-cover max-w-sm lg:w-full h-[265px] lg:h-[180px] rounded-2xl lg:rounded-none lg:rounded-t-xl "
-              />
-            </div>
-            <div className="border-4 border-[#210D15] h-fit rounded-2xl lg:rounded-none lg:rounded-b-2xl">
-              <img
-                alt="gallery"
-                src={sample8}
-                className="object-cover max-w-sm h-[265px] lg:h-[200px] rounded-xl lg:rounded-none lg:rounded-b-xl"
-              />
-            </div>
-          </div>
-          <div className="h-fit max-h-[415px] border-4 border-[#210D15] rounded-tr-3xl rounded-bl-3xl">
-            <img
-              alt="gallery"
-              src={sample9}
-              className="object-cover max-w-[300px] 2xl:max-w-full h-[265px] lg:h-[400px] rounded-tr-3xl rounded-bl-3xl -mx-px -mb-[2px] -mt-px"
-            />
-          </div>
+
+          <figure className="w-it shrink-0">
+            <img src={image4} alt="figurefour" />
+          </figure>
+
+          <figure className="w-it shrink-0">
+            <img src={image5} alt="figurefive" />
+          </figure>
         </div>
 
-        <div className="justify-self-end mt-4 pr-4 md:pr-8 lg:pr-12">
-          <IconAnchor
-            text="View All Pictures"
-            link="https://drive.google.com/drive/folders/1tRQkG3jzcST71OOZqlT5_binwsdUQdhm"
-          />
+        <div className="w-[90%] xl:w-full xl:max-w-[1200px] mx-auto flex flex-col md:flex-row justify-center items-center gap-5">
+          <div className="flex mullish-font">
+            <Link
+              to="https://drive.google.com/drive/folders/1tRQkG3jzcST71OOZqlT5_binwsdUQdhm"
+              className="bg-primary-pink text-white text-sm py-2 px-4 md:py-4 md:px-8 md:text-base rounded-30px border-2 border-primary-pink transition-all hover:bg-transparent hover:text-primary-pink flex items-center justify-center gap-2"
+            >
+              View Past Events <FaArrowRight />
+            </Link>
+          </div>
+
+          <div className="flex mullish-font">
+            <Link
+              to="https://drive.google.com/file/d/1rIW7CfMSNQUwCGppqWeDjm6C0hCC5tNE/view"
+              className="hover:bg-primary-pink hover:text-white text-sm py-2 px-4 md:py-4 md:px-8 md:text-base rounded-30px transition-all bg-transparent text-sealBrown flex items-center justify-center gap-2"
+            >
+              Become a Sponsor
+            </Link>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

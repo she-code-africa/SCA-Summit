@@ -2,7 +2,7 @@ import RMarquee from "react-fast-marquee";
 
 export const Marquee = () => {
   const Msg = () => {
-    return <p>#SCASUMMIT'23</p>;
+    return <p>#SCASUMMIT'24</p>;
   };
   return (
     <RMarquee gradient={false} speed={31}>

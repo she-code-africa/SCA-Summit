@@ -12,6 +12,10 @@ module.exports = {
           "linear-gradient(180deg, #B70569 17.71%, #210D15 81.77%)",
         "linear-gradient2": "linear-gradient(180deg, #B70569 0%, #210D15 100%)",
         "primary-brown": "#BF2828",
+        sealBrown: "#210D15",
+      },
+      screens: {
+        "2xl": "1400px",
       },
       gridTemplateRows: {
         layout: "minmax(65px, 100px) 1fr 400px",

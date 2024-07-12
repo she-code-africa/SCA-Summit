@@ -9,15 +9,15 @@ import Partners from "../components/Partners";
 
 const Main = () => {
   return (
-    <>
+    <main className="emboss-bg">
       <Hero />
       <About />
       <Speakers />
       <Schedule />
-      <Partners />
+      {/* <Partners /> */}
       <Gallery />
       <YTDisplay />
-    </>
+    </main>
   );
 };
 

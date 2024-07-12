@@ -1,74 +1,68 @@
 import React, { useState } from "react";
 import Logo from "../../assets/images/logo.svg";
 import { IoIosMenu, IoIosClose } from "react-icons/io";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+import { navLinks } from "../../utils";
 
 const Nav = () => {
   const [show, setShow] = useState(false);
   const handleShow = () => {
     setShow(!show);
   };
+  const { pathname, hash } = useLocation();
 
   return (
-    <nav className="lg:shadow-lg fixed w-full bg-white mb-3 lg:mb-16 z-[1000] opacity-90">
-      <div className="container mx-auto px-4 flex lg:flex-row my-0 py-3 justify-between items-center gap-10 lg:gap-0">
-        <Link to="/">
-          <img src={Logo} alt="She Code Africa's Logo" className="lg:w-11" />
-        </Link>
-        {!show && (
+    <nav className="bg-white fixed py-5 right-0 left-0 z-[100] shadow-lg mullish-font text-sealBrown">
+      <div className="w-[90%] mx-auto xl:max-w-[1200px] xl:w-full flex items-center gap-5 justify-between">
+        {/* logo and menu icon */}
+        <div className="flex items-center justify-between gap-10 w-full lg:w-fit">
+          <Link to="/">
+            <img src={Logo} alt="She Code Africa's Logo" className="lg:w-11" />
+          </Link>
+
           <IoIosMenu
             size="1.5rem"
             color="#B70569"
             onClick={handleShow}
             className="lg:hidden"
           />
-        )}
+        </div>
 
-        <ul
-          className={` ${
-            show ? "lg:flex" : "hidden lg:flex"
-          } flex h-screen lg:h-auto bg-white top-0 bottom-0 absolute right-0 lg:relative flex-col lg:flex-row gap-0 lg:gap-0 lg:justify-between items-center w-2/3 lg:w-auto`}
+        <div
+          className={`nav-menu-mobile ${
+            show && "active"
+          } lg:flex lg:justify-end lg:items-center`}
         >
-          <li className="lg:hidden self-end mt-2 mr-4" onClick={handleShow}>
-            <IoIosClose size="1.5rem" color="#B70569" />
-          </li>
-          <li>
-            <ul className="flex flex-col lg:flex-row mt-8 lg:mt-0 gap-6 lg:gap-7 items-center text-base md:text-xs xl:text-base">
-              <li className="transition ease-in delay-75 duration-300 hover:cursor-pointer hover:text-primary-pink">
-                <a href="/#schedule">Schedule</a>
-              </li>
-              <li className="transition ease-in delay-75 duration-300 hover:cursor-pointer hover:text-primary-pink">
-                <a href="/#speakers">Speakers</a>
-              </li>
-              <li className="transition ease-in delay-75 duration-300 hover:cursor-pointer hover:text-primary-pink">
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSc3xMFAR2qZMFCkfncca2AIn6JyuVpayubLogvrCWsjobEUSQ/viewform?usp=pp_url">
-                  Transport Registration
-                </a>
-              </li>
-              <li className="transition ease-in delay-75 duration-300 hover:cursor-pointer hover:text-primary-pink">
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSerwjok2g4mpF4D_5ewzkoSyHcc4Bk99765H39wbHxm9TvUXA/viewform?usp=pp_url">
-                  Career Boost Workshop
-                </a>
-              </li>
-              <li className="transition ease-in delay-75 duration-300 hover:text-primary-pink">
-                <a href="https://drive.google.com/file/d/1rIW7CfMSNQUwCGppqWeDjm6C0hCC5tNE/view">
-                  Become a Sponsor
-                </a>
-              </li>
-              <li className="transition ease-in delay-75 duration-300 hover:text-primary-pink">
-                <a href="https://drive.google.com/file/d/1rIW7CfMSNQUwCGppqWeDjm6C0hCC5tNE/views">
-                  Partner With Us
-                </a>
-              </li>
-              {/* <li className="ml-1">
-                <SolidAnchor
-                  text="Register now!"
-                  link="https://tix.africa/discover/scasummit2"
-                />
-              </li> */}
-            </ul>
-          </li>
-        </ul>
+          <div className="flex lg:hidden justify-end py-5">
+            <IoIosClose size="40px" color="#B70569" onClick={handleShow} />
+          </div>
+          <ul className="flex flex-col lg:flex-row gap-10 items-center w-[90%] mx-auto lg:w-full lg:mx-0 my-5 lg:my-0">
+            {navLinks.map((link, i) => {
+              return i === 4 ? (
+                <li className="lg:ml-10">
+                  <Link
+                    to={link.url}
+                    className="bg-primary-pink text-white py-4 px-8 text-base rounded-30px border-2 border-primary-pink transition-all hover:bg-transparent hover:text-primary-pink"
+                  >
+                    {link.pathname}
+                  </Link>
+                </li>
+              ) : (
+                <li
+                  className={`text-base font-semibold capitalize transition hover:text-primary-pink ${
+                    (pathname.includes(link.pathname) ||
+                      hash
+                        .toLowerCase()
+                        .includes(link.pathname.toLowerCase())) &&
+                    "text-primary-pink"
+                  }`}
+                >
+                  <a href={link.url}>{link.pathname}</a>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
       </div>
     </nav>
   );

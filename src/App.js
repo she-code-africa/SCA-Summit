@@ -7,6 +7,7 @@ import Register from "./pages/Register";
 import Speakers from "./pages/Speakers";
 import ScrollToTop from "./components/ScrollToTop";
 import Schedule from "./pages/Schedule";
+import "./App.css";
 
 function App() {
   useEffect(() => {

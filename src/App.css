@@ -1,38 +1,114 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.emboss-bg {
+  background-image: url("./assets/images/2024/emboss2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.mullish-font {
+  font-family: "Mulish", sans-serif;
+}
+
+.oswald-font {
+  font-family: "Oswald", sans-serif;
+}
+
+.vector-bgs {
+  background: url("./assets/images/2024/Union.png");
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: 200px;
+}
+
+.angle-bg {
+  background: url("./assets/images/2024/sub-angle.png"),
+    url("./assets/images/2024/subangle.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position: center, 350px 300px;
+}
+
+.double-angle {
+  background: url("./assets/images/2024/doubleTriangle.png");
+  background-repeat: no-repeat;
+  background-position: 20px top;
+  background-size: 130px;
+}
+.custom-list::before {
+  content: "";
+  display: inline-flex;
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+.custom-list-one::before {
+  background-image: url("./assets/images/2024/custome-list-one.png");
+}
+.custom-list-two::before {
+  background-image: url("./assets/images/2024/Subtract.png");
+}
+
+.custom-list-three::before {
+  background-image: url("./assets/images/2024/cl-three.png");
+}
+
+.custom-list-four::before {
+  background-image: url("./assets/images/2024/cl-4.png");
+}
+
+.custom-list-five::before {
+  background-image: url("./assets/images/2024/cl-5.png");
+}
+
+.custom-list-six::before {
+  background-image: url("./assets/images/2024/cl-6.png");
+}
+
+.squiggles {
+  background-image: url("./assets/images/2024/highlight-squiggle.png"),
+    url("./assets/images/2024/highlight-angle.png");
+  background-position: left 80px, center 100px;
+  background-repeat: no-repeat, no-repeat;
+}
+
+.wave-bg {
+  background-image: url("./assets/images/2024/wave.png");
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 1023px) {
+  .nav-menu-mobile {
+    display: block;
+    position: fixed;
+    background: white;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+    max-width: 350px;
+    padding: 0 20px;
+    transform: translateX(500px);
+    transition: 0.5s linear;
+    /* z-index: 300; */
+  }
+
+  .active {
+    transform: translateX(0);
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (min-width: 1024px) {
+  .vector-bgs {
+    background-size: auto;
   }
-  to {
-    transform: rotate(360deg);
+
+  .squiggles {
+    background-position: left 140px, 500px 170px;
   }
 }

@@ -2,6 +2,7 @@ import React from "react";
 import Logo from "../../assets/images/logo.svg";
 
 const Footer = () => {
+  const date = new Date();
   return (
     <footer>
       <div className="bg-secondary-light-pink py-8 md:py-16 lg:py-24">
@@ -15,8 +16,8 @@ const Footer = () => {
                 Event Details
               </h2>
               <ul className="grid gap-2 text-sm md:text-base ">
-                <li>30th September, 2023</li>
-                <li>Queen's Park Event Centre</li>
+                <li>21st September, 2024</li>
+                {/* <li>Queen's Park Event Centre</li> */}
                 <li>
                   Have any questions, reach out to us at{" "}
                   <a
@@ -63,7 +64,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="bg-black text-center text-white py-4 md:py-6">
-        <p>All right reserved. She Code Africa &copy; 2023</p>
+        <p>All right reserved. She Code Africa &copy; {date.getFullYear()}</p>
       </div>
     </footer>
   );
