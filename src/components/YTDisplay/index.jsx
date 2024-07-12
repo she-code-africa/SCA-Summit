@@ -19,7 +19,7 @@ const YTDisplay = () => {
               className="rounded-b-2xl w-full"
               width="100%"
               height="100%"
-              src="https://www.youtube.com/embed/HAF7X4MoYkQ?&autoplay=1&mute=1"
+              src="https://www.youtube.com/embed/7cVi1Oz49u4?si=4_MjEuxvDrwCMea2?&autoplay=1&mute=1"
               title="YouTube video player"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen
