@@ -379,7 +379,7 @@ export const partners = [
 export const navLinks = [
   {
     pathname: "register",
-    url: "#",
+    url: "/register",
   },
   {
     pathname: "Schedule",

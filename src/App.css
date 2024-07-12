@@ -20,10 +20,11 @@
 }
 
 .vector-bgs {
-  background: url("./assets/images/2024/Union.png");
-  background-position: top left;
-  background-repeat: no-repeat;
-  background-size: 200px;
+  background: url("./assets/images/2024/Union.png"),
+    url("./assets/images/2024/ray.png");
+  background-position: top left, center;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 200px, auto;
 }
 
 .angle-bg {

@@ -14,11 +14,11 @@ const Main = () => {
       <Hero />
       <About />
       <section className="w-full bg-[rgba(252,230,242,1)] squiggly text-center">
-        <div className="py-16 theme-bg">
-          <h4 className="uppercase text-primary-pink font-bold text-xs md:text-base oswald-font">
+        <div className="py-16 theme-bg ">
+          <h4 className="uppercase text-primary-pink font-bold text-xs md:text-base oswald-font w-[90%] mx-auto">
             ~ sca summit 2024 theme ~
           </h4>
-          <div className="w-full max-w-[900px] mt-3 mx-auto">
+          <div className="w-[90%] max-w-[900px] mt-3 mx-auto">
             <h3 className="uppercase oswald-font text-2xl md:text-4xl lg:text-5xl font-semibold justify-center items-center flex gap-1">
               <span>
                 <img
