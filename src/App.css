@@ -82,6 +82,17 @@
   background-repeat: no-repeat;
 }
 
+.squiggly {
+  background-image: url("./assets/images/2024/spring2.png");
+  background-size: contain;
+}
+
+.theme-bg {
+  background-image: url("./assets/images/2024/highlight-squiggle.png");
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+
 @media screen and (max-width: 1023px) {
   .nav-menu-mobile {
     display: block;
