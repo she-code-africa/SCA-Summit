@@ -1,59 +1,43 @@
 import React from "react";
-import schedImg from "../../assets/images/schedule-img.jpg";
-import squiggly2 from "../../assets/images/squiggly2.svg";
-import dot from "../../assets/images/dot.svg";
-import { SolidAnchor } from "../Anchor";
+import scheduleImage from "../../assets/images/2024/schedule-img.png";
 
 const Schedule = () => {
   return (
     <section
+      className="w-full my-28 py-5 relative overflow-hidden"
       id="schedule"
-      className="bg-primary-light-pink py-8 md:py-16 lg:py-36 relative"
     >
-      <div className="container mx-auto px-2">
-        <h1 className="text-primary-pink text-xs md:text-base uppercase font-bold">
-          ~WHAT TO EXPECT AT SCA SUMMIT 2023?~
-        </h1>
-        <div className="grid sm:grid-cols-2 lg:gap-12">
-          <div className="absolute left-0 top-16 md:top-72 lg:top-[30rem] w-1/6 sm:w-full">
-            <img src={squiggly2} alt="" />
-          </div>
-          <div className="my-6 order-2 sm:order-1">
-            <ul className="flex-col flex gap-1 list-disc text-sm lg:text-lg font-medium marker:text-primary-pink max-w-xl pl-5">
-              <li>
-                Insightful keynote speeches, technical workshops & lightning
-                talks.
+      <div className="w-[90%] mx-auto xl:max-w-[1200px] xl:w-full">
+        <div className="flex w-full flex-col-reverse lg:flex-row gap-20 lg:items-center lg:justify-between py-5">
+          <article className="w-full lg:max-w-[550px]">
+            <h4 className="uppercase text-primary-pink font-bold text-xs md:text-base oswald-font">
+              ~ WHAT TO EXPECT AT SCA SUMMIT 2024? ~
+            </h4>
+            <ul className=" mullish-font text-black text-sm md:text-base leading-[2] md:leading-[2] mt-4 flex flex-col gap-4">
+              <li className="capitalize text-base md:text-xl font-semibold custom-list-one relative custom-list">
+                keynote presentation
               </li>
-
-              <li>
-                Engaging panel sessions covering various topics in technology –
-                <ul>
-                  <li>
-                    Diversity, Equity, and Inclusion (DEI), Employability, Skill
-                    Building, and Growth, Engineering, No Code in Tech,
-                    Community,
-                  </li>
-                </ul>
+              <li className="capitalize text-base md:text-xl font-semibold custom-list custom-list-two">
+                workshops
               </li>
-
-              <li>Award show</li>
-              <li>Free headshot opportunities</li>
-              <li>Fun and games and many more!</li>
+              <li className="capitalize text-base md:text-xl font-semibold custom-list custom-list-three">
+                talks
+              </li>
+              <li className="capitalize text-base md:text-xl font-semibold custom-list custom-list-four">
+                panel sessions
+              </li>
+              <li className="capitalize text-base md:text-xl font-semibold custom-list custom-list-five">
+                exhibitions
+              </li>
+              <li className="text-base md:text-xl font-semibold custom-list custom-list-six">
+                Awards and Scholarship
+              </li>
             </ul>
-            <div className="mt-6">
-              <SolidAnchor text="View Full Schedule" link="/schedule" />
-            </div>
-          </div>
+          </article>
 
-          <div className="absolute right-96 top-24 md:top-32">
-            <img src={dot} alt="" />
-          </div>
-          <div className="rounded-3xl mt-8 sm:mt-10 md:mt-0 border-4 md:border-8 border-primary-pink sm:rotate-12 order-1 sm:order-2 max-w-full sm:max-w-[22rem] lg:max-w-[29rem] 2xl:max-w-full h-fit ">
-            <img src={schedImg} alt="Panel Session" className="rounded-2xl" />
-          </div>
-          <div className="absolute rotate-90 right-0 top-96 w-1/6 sm:w-auto sm:top-72 order-3">
-            <img src={squiggly2} alt="" />
-          </div>
+          <figure className="w-full max-w-[567px] double-angle">
+            <img src={scheduleImage} alt="about-pic" />
+          </figure>
         </div>
       </div>
     </section>

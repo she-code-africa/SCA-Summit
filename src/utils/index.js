@@ -375,3 +375,26 @@ export const partners = [
     image: icp,
   },
 ];
+
+export const navLinks = [
+  {
+    pathname: "register",
+    url: "/register",
+  },
+  {
+    pathname: "Schedule",
+    url: "/#schedule",
+  },
+  {
+    pathname: "speakers",
+    url: "/#speakers",
+  },
+  {
+    pathname: "partner with us",
+    url: "https://drive.google.com/file/d/1rIW7CfMSNQUwCGppqWeDjm6C0hCC5tNE/views",
+  },
+  {
+    pathname: "Become a Sponsor",
+    url: "https://drive.google.com/file/d/1rIW7CfMSNQUwCGppqWeDjm6C0hCC5tNE/view",
+  },
+];

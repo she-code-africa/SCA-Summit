@@ -40,19 +40,29 @@ footer {
 
 .hero {
   background: radial-gradient(
-    126.96% 275.84% at 90.24% 16.36%,
-    #b70569 0%,
-    rgba(183, 5, 105, 0.12) 0.01%,
-    rgba(183, 5, 105, 0.08) 19.27%,
-    rgba(183, 5, 105, 0.165605) 30.73%,
-    rgba(183, 5, 105, 0) 81.77%,
-    rgba(183, 5, 105, 0) 100%
-  );
+      126.96% 275.84% at 90.24% 16.36%,
+      #b70569 0%,
+      rgba(183, 5, 105, 0.12) 0.01%,
+      rgba(183, 5, 105, 0.08) 19.27%,
+      rgba(183, 5, 105, 0.165605) 30.73%,
+      rgba(183, 5, 105, 0) 81.77%,
+      rgba(183, 5, 105, 0) 100%
+    ),
+    url("./assets/images/2024/spring.png");
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: auto, 200px;
 }
 
-.hero h1 {
-  font-family: "grillmaster", Arial, sans-serif;
+@media screen and (min-width: 1024px) {
+  .hero {
+    background-size: auto, auto;
+  }
 }
+
+/* .hero h1 {
+  font-family: "grillmaster", Arial, sans-serif;
+} */
 
 .hero-img {
   background-image: url(./assets/images/hero-img-bg.svg);
@@ -104,3 +114,13 @@ footer {
   font-weight: bolder;
   font-style: normal;
 }
+
+/* font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal; */
+
+/* font-family: "Mulish", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal; */
