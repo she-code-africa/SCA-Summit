@@ -23,7 +23,7 @@ const Register = () => {
   return (
     <>
       <section className="hero sm:pt-2 oswald-font w-full text-sealBrown ">
-        <div className="relative  w-full vector-bgs">
+        <div className="relative  w-full ray-bgs">
           <div className="emboss-bg mt-8 sm:pt-8 pb-8 md:pb-16 lg:pb-32">
             <section className="flex flex-col w-[90%] mx-auto xl:max-w-[1200px] min-h-screen xl:w-full items-center justify-center">
               <img
