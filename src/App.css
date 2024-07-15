@@ -20,6 +20,13 @@
 }
 
 .vector-bgs {
+  background: url("./assets/images/2024/Union.png");
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: 200px;
+}
+
+.ray-bgs {
   background: url("./assets/images/2024/Union.png"),
     url("./assets/images/2024/ray.png");
   background-position: top left, center;
