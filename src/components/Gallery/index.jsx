@@ -42,7 +42,7 @@ const Gallery = () => {
         <div className="w-[90%] xl:w-full xl:max-w-[1200px] mx-auto flex flex-col md:flex-row justify-center items-center gap-5">
           <div className="flex mullish-font">
             <Link
-              to="https://drive.google.com/drive/folders/1tRQkG3jzcST71OOZqlT5_binwsdUQdhm"
+              to="https://drive.google.com/drive/folders/10IRWEzS27V79iuUcf66fJm6O8HYWbkRq?usp=sharing"
               className="bg-primary-pink text-white text-sm py-2 px-4 md:py-4 md:px-8 md:text-base rounded-30px border-2 border-primary-pink transition-all hover:bg-transparent hover:text-primary-pink flex items-center justify-center gap-2"
             >
               View Past Events <FaArrowRight />
@@ -51,7 +51,7 @@ const Gallery = () => {
 
           <div className="flex mullish-font">
             <Link
-              to="https://drive.google.com/file/d/1rIW7CfMSNQUwCGppqWeDjm6C0hCC5tNE/view"
+              to="https://drive.google.com/file/d/1reGFKanrc8VlXB0JdRlpwHhDSfIM4vUU/view?usp=sharing"
               className="hover:bg-primary-pink hover:text-white text-sm py-2 px-4 md:py-4 md:px-8 md:text-base rounded-30px transition-all bg-transparent text-sealBrown flex items-center justify-center gap-2"
             >
               Become a Sponsor
