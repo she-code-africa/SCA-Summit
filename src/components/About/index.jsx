@@ -53,7 +53,7 @@ const About = () => {
             <div className="flex gap-2 items-center my-4">
               <div className="flex w-full mullish-font">
                 <Link
-                  to="#"
+                  to="https://drive.google.com/file/d/1reGFKanrc8VlXB0JdRlpwHhDSfIM4vUU/view?usp=sharing"
                   className="bg-primary-pink text-white text-sm py-2 px-4 md:py-4 md:px-8 md:text-base rounded-30px border-2 border-primary-pink transition-all hover:bg-transparent hover:text-primary-pink"
                 >
                   Become a Sponsor
@@ -62,7 +62,7 @@ const About = () => {
               <div className="w-full">
                 <IconAnchor
                   text="View Past Events"
-                  link="https://drive.google.com/drive/folders/1tRQkG3jzcST71OOZqlT5_binwsdUQdhm"
+                  link="https://drive.google.com/drive/folders/10IRWEzS27V79iuUcf66fJm6O8HYWbkRq?usp=sharing"
                 />
               </div>
             </div>
