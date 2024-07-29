@@ -378,8 +378,8 @@ export const partners = [
 
 export const navLinks = [
   {
-    pathname: "register",
-    url: "/register",
+    pathname: "register now",
+    url: "https://tix.africa/scasummit3",
   },
   // {
   //   pathname: "Schedule",
