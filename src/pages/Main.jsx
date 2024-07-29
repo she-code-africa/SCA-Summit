@@ -3,9 +3,9 @@ import Gallery from "../components/Gallery";
 import Hero from "../components/Hero";
 import About from "../components/About";
 import YTDisplay from "../components/YTDisplay";
-import Speakers from "../components/Speakers";
+// import Speakers from "../components/Speakers";
 import Schedule from "../components/Schedule";
-import Partners from "../components/Partners";
+// import Partners from "../components/Partners";
 import themeUnion from "../assets/images/2024/theme-union.png";
 
 const Main = () => {
