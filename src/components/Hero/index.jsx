@@ -51,7 +51,7 @@ const Hero = () => {
 
             <div className="flex w-full justify-center mullish-font my-4">
               <Link
-                to="#"
+                to="https://tix.africa/scasummit3"
                 className="bg-primary-pink text-white text-sm py-2 px-4 md:py-4 md:px-8 md:text-base rounded-30px border-2 border-primary-pink transition-all hover:bg-transparent hover:text-primary-pink"
               >
                 Get your early bird ticket now!
