@@ -39,7 +39,7 @@ const Nav = () => {
           <ul className="flex flex-col lg:flex-row gap-10 items-center w-[90%] mx-auto lg:w-full lg:mx-0 my-5 lg:my-0">
             {navLinks.map((link, i) => {
               return i === 4 ? (
-                <li className="lg:ml-10">
+                <li className="lg:ml-10" key={i}>
                   <Link
                     to={link.url}
                     className="bg-primary-pink text-white py-4 px-8 text-base rounded-30px border-2 border-primary-pink transition-all hover:bg-transparent hover:text-primary-pink"
@@ -56,6 +56,7 @@ const Nav = () => {
                         .includes(link.pathname.toLowerCase())) &&
                     "text-primary-pink"
                   }`}
+                  key={i}
                 >
                   <a href={link.url}>{link.pathname}</a>
                 </li>

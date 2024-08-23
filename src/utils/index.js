@@ -31,6 +31,13 @@ import ruby from "../assets/images/ruby-creatives.png";
 import propel from "../assets/images/propel.png";
 import icp from "../assets/images/icp.png";
 import buckhill from "../assets/images/buckhill.png";
+
+//images
+import nextGen from "../assets/images/2024/tickets/Next-Gen.png";
+import sparkTicket from "../assets/images/2024/tickets/sparkTicket.png";
+import ascend from "../assets/images/2024/tickets/ascend.png";
+import traiblazer from "../assets/images/2024/tickets/trailblazer.png";
+
 export const speakers = [
   {
     name: "Ada Nduka Oyom",
@@ -397,4 +404,72 @@ export const navLinks = [
   //   pathname: "Become a Sponsor",
   //   url: "https://drive.google.com/file/d/1rIW7CfMSNQUwCGppqWeDjm6C0hCC5tNE/view",
   // },
+];
+
+export const ticketsDetails = [
+  {
+    ticketImage: nextGen,
+    modalDetails: {
+      heading: "Next Gen",
+      subTitle: "Ideal for University Students",
+      ticketBg: "nextGenBg",
+      ticketPrice: 4000,
+      description:
+        "This ticket grants you exclusive access to all sessions in Breakout Room A (designed specifically to equip you with the knowledge and skills you need at this stage of your career), all non-breakout sessions, and a chance to win an internship opportunity with our esteemed partner.",
+      perks: [
+        "All day summit access",
+        "Internship slots with our partners",
+        "Hands-on workshop",
+      ],
+    },
+  },
+  {
+    ticketImage: sparkTicket,
+    modalDetails: {
+      heading: "Spark",
+      subTitle: "Ideal for Entry-level Andy Pre-Mid-Level Professionals.",
+      ticketBg: "sparkTicketBg",
+      ticketPrice: 6000,
+      description:
+        "This ticket grants you exclusive access to all sessions in Breakout Room A (designed specifically to equip you with the knowledge and skills you need at this stage of your career), all non-breakout sessions, and a chance to win an internship opportunity with our esteemed partner.",
+      perks: [
+        "All day summit access",
+        "Internship slots with our partners",
+        "Hands-on workshop",
+      ],
+    },
+  },
+  {
+    ticketImage: ascend,
+    modalDetails: {
+      heading: "Ascend",
+      subTitle: "Ideal for Mid-Level Professionals.",
+      ticketBg: "ascendBg",
+      ticketPrice: 8500,
+      description:
+        "This ticket grants you exclusive access to all sessions in Breakout Room A (designed specifically to equip you with the knowledge and skills you need at this stage of your career), all non-breakout sessions, and a chance to win an internship opportunity with our esteemed partner.",
+      perks: [
+        "All day summit access",
+        "Internship slots with our partners",
+        "Hands-on workshop",
+      ],
+    },
+  },
+  {
+    ticketImage: traiblazer,
+    modalDetails: {
+      heading: "Trailblazer",
+      subTitle:
+        "Ideal for Senior-level Professionals (C-level, founders and CEOs)",
+      ticketBg: "trailblazerBg",
+      ticketPrice: 20000,
+      description:
+        "This ticket grants you exclusive access to all sessions in Breakout Room A (designed specifically to equip you with the knowledge and skills you need at this stage of your career), all non-breakout sessions, and a chance to win an internship opportunity with our esteemed partner.",
+      perks: [
+        "All day summit access",
+        "Internship slots with our partners",
+        "Hands-on workshop",
+      ],
+    },
+  },
 ];

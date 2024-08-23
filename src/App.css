@@ -19,6 +19,10 @@
   font-family: "Oswald", sans-serif;
 }
 
+.bigShouldersText {
+  font-family: "Big Shoulders Text", sans-serif;
+}
+
 .vector-bgs {
   background: url("./assets/images/2024/Union.png");
   background-position: top left;
@@ -101,6 +105,32 @@
   background-repeat: no-repeat;
 }
 
+.ticket-section-bg {
+  background: url("./assets/images/2024/spring2.png");
+}
+
+.footer-bg {
+  background-image: url("./assets/images/2024/ticket-section-footer.png");
+  background-repeat: no-repeat;
+}
+.starBg {
+  background-image: url("./assets/images/2024/tickets/Star.png");
+  background-repeat: no-repeat;
+}
+
+.textGradient {
+  background: linear-gradient(rgba(183, 5, 105, 1), rgba(81, 2, 46, 1));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 480px) {
+  .ticketDetail {
+    flex-direction: column;
+  }
+}
+
 @media screen and (max-width: 1023px) {
   .nav-menu-mobile {
     display: block;
@@ -129,5 +159,33 @@
 
   .squiggles {
     background-position: left 140px, 500px 170px;
+  }
+
+  .nextGenBg {
+    background-image: url("./assets/images/2024/tickets/nextGenBg.png");
+    background-repeat: no-repeat;
+    /* background-size: contain; */
+    background-position: bottom left;
+  }
+
+  .sparkTicketBg {
+    background-image: url("./assets/images/2024/tickets/sparkBg.png");
+    background-repeat: no-repeat;
+    /* background-size: contain; */
+    background-position: bottom left;
+  }
+
+  .ascendBg {
+    background-image: url("./assets/images/2024/tickets/ascendBg.png");
+    background-repeat: no-repeat;
+    /* background-size: contain; */
+    background-position: bottom left;
+  }
+
+  .trailblazerBg {
+    background-image: url("./assets/images/2024/tickets/trailblazerBg.png");
+    background-repeat: no-repeat;
+    /* background-size: contain; */
+    background-position: bottom left;
   }
 }

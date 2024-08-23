@@ -115,22 +115,22 @@ const Speakers = () => {
             Prestigious Speakers
           </h2>
 
-          {/* <Link
+          <Link
             to="speakers"
             className="flex items-center gap-1 transition ease-in delay-75 duration-300 hover:scale-110"
           >
             View All Speakers
             <RxArrowTopRight color="#B70569" />
-          </Link> */}
+          </Link>
         </div>
         <p className="text-primary-pink capitalize text-center my-10 font-semibold text-3xl md:text-4xl">
           coming soon!
         </p>
-        {/* <div className="my-6 sm:my-9 flex md:grid md:grid-rows-2 md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-10 sm:justify-center overflow-x-scroll md:overflow-hidden w-full no-scrollbar"> */}
-        {/* {speakers.slice(0, 6).map((speaker, index) => (
+        <div className="my-6 sm:my-9 flex md:grid md:grid-rows-2 md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-10 sm:justify-center overflow-x-scroll md:overflow-hidden w-full no-scrollbar">
+          {speakers.slice(0, 6).map((speaker, index) => (
             <SpeakerCard details={speaker} key={index} />
-          ))} */}
-        {/* </div> */}
+          ))}
+        </div>
       </div>
     </section>
   );
