@@ -7,6 +7,7 @@ import YTDisplay from "../components/YTDisplay";
 import Schedule from "../components/Schedule";
 // import Partners from "../components/Partners";
 import themeUnion from "../assets/images/2024/theme-union.png";
+import TicketsSection from "../components/tickets-section";
 
 const Main = () => {
   return (
@@ -37,6 +38,7 @@ const Main = () => {
       </section>
       {/* <Speakers /> */}
       <Schedule />
+      <TicketsSection />
       {/* <Partners /> */}
       <Gallery />
       <YTDisplay />
