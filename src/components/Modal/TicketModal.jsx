@@ -51,7 +51,7 @@ const TicketModal = ({ details, closeModal, isOpen }) => {
                   </div>
                 </div>
 
-                <div className="w-full flex flex-col lg:flex-row justify-between gap-4 lg:px-6 pt-10  lg:mt-10">
+                <div className="w-full flex flex-col lg:flex-row justify-between gap-4 lg:px-6 pt-10 lg:mt-10">
                   <div className="max-w-[400px] w-full">
                     <div className=" h-full flex justify-start sm:justify-center items-end px-6 sm:px-0">
                       <h3 className="textGradient text-5xl sm:text-6xl font-bold bigShouldersText lg:pt-5">
