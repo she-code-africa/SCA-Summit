@@ -413,14 +413,9 @@ export const ticketsDetails = [
       heading: "Next Gen",
       subTitle: "Ideal for University Students",
       ticketBg: "nextGenBg",
-      ticketPrice: 4000,
+      ticketPrice: 5000,
       description:
-        "This ticket grants you exclusive access to all sessions in Breakout Room A (designed specifically to equip you with the knowledge and skills you need at this stage of your career), all non-breakout sessions, and a chance to win an internship opportunity with our esteemed partner.",
-      perks: [
-        "All day summit access",
-        "Internship slots with our partners",
-        "Hands-on workshop",
-      ],
+        "This ticket grants you exclusive access to tailored breakout sessions, where you'll learn about starting and building a thriving tech career in the AI era and get a hands-on introduction to the possibilities of open source and how to start. It also includes entry to all non-breakout sessions, including the star-studded and insightful panel discussion, keynote speeches, and more. Plus, you’ll have a chance to win an internship with one of our esteemed partners.",
     },
   },
   {
@@ -429,14 +424,9 @@ export const ticketsDetails = [
       heading: "Spark",
       subTitle: "Ideal for Entry-level Andy Pre-Mid-Level Professionals.",
       ticketBg: "sparkTicketBg",
-      ticketPrice: 6000,
+      ticketPrice: 7500,
       description:
-        "This ticket grants you exclusive access to all sessions in Breakout Room A (designed specifically to equip you with the knowledge and skills you need at this stage of your career), all non-breakout sessions, and a chance to win an internship opportunity with our esteemed partner.",
-      perks: [
-        "All day summit access",
-        "Internship slots with our partners",
-        "Hands-on workshop",
-      ],
+        "This ticket grants you exclusive access to tailored breakout sessions, where you'll learn about starting and building a thriving tech career in the AI era and get a hands-on introduction to the possibilities of open source and how to start. It also includes entry to all non-breakout sessions, including the star-studded and insightful panel discussion, keynote speeches, and more. Plus, you’ll have a chance to win an internship with one of our esteemed partners.",
     },
   },
   {
@@ -445,14 +435,9 @@ export const ticketsDetails = [
       heading: "Ascend",
       subTitle: "Ideal for Mid-Level Professionals.",
       ticketBg: "ascendBg",
-      ticketPrice: 8500,
+      ticketPrice: 10000,
       description:
-        "This ticket grants you exclusive access to all sessions in Breakout Room A (designed specifically to equip you with the knowledge and skills you need at this stage of your career), all non-breakout sessions, and a chance to win an internship opportunity with our esteemed partner.",
-      perks: [
-        "All day summit access",
-        "Internship slots with our partners",
-        "Hands-on workshop",
-      ],
+        "This ticket grants you exclusive access to a breakout session featuring a fireside chat with Adaeze Sokan [Program Lead, Digital Economy, MasterCard Foundation]. Adaeze will share valuable insights and real-life experiences on navigating this phase of your career. You'll learn how to grow deeper in your career, carve a niche for yourself, master your craft, and become a specialist. Benefit from Adaeze's firsthand experience in moving from mid to C-level and achieving excellence. Plus, you'll have the opportunity to ask Adaeze your key questions directly! This ticket also includes entry to all non-breakout sessions, including the star-studded and insightful panel discussion, keynote speeches, and more. ",
     },
   },
   {
@@ -462,14 +447,9 @@ export const ticketsDetails = [
       subTitle:
         "Ideal for Senior-level Professionals (C-level, founders and CEOs)",
       ticketBg: "trailblazerBg",
-      ticketPrice: 20000,
+      ticketPrice: 22500,
       description:
-        "This ticket grants you exclusive access to all sessions in Breakout Room A (designed specifically to equip you with the knowledge and skills you need at this stage of your career), all non-breakout sessions, and a chance to win an internship opportunity with our esteemed partner.",
-      perks: [
-        "All day summit access",
-        "Internship slots with our partners",
-        "Hands-on workshop",
-      ],
+        "Unlock the secrets to startup success with this exclusive ticket! Attend The Investor’s Blueprint: Strategic Growth for Tech Startups, a masterclass session led by Yewande Adewusi, Chief Operating Officer at Alitheia Capital. Learn directly from an investor about the essential elements of a thriving startup strategy. Plus, get the chance to ask Yewande your specific questions and tailor her advice to your unique startup. Enjoy access to all non-breakout sessions as well, including panel discussions, keynote speeches, and opportunities to network with other founders and industry leaders.",
     },
   },
 ];

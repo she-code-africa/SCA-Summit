@@ -29,7 +29,7 @@ const TicketModal = ({ details, closeModal, isOpen }) => {
                 </div>
               </div>
 
-              <section className="w-full pt-5">
+              <section className="w-full pt-10">
                 <div className="px-6 flex justify-between flex-row sm:items-end gap-4 w-full ticketDetail">
                   <article className="w-fit">
                     <h3 className="bigShouldersText font-bold text-xl md:text-3xl lg:text-[40px] textGradient">
@@ -51,17 +51,17 @@ const TicketModal = ({ details, closeModal, isOpen }) => {
                   </div>
                 </div>
 
-                <div className="w-full flex flex-col lg:flex-row justify-between gap-4 lg:px-6 pt-10">
+                <div className="w-full flex flex-col lg:flex-row justify-between gap-4 lg:px-6 pt-10 lg:mt-10">
                   <div className="max-w-[400px] w-full">
                     <div className=" h-full flex justify-start sm:justify-center items-end px-6 sm:px-0">
-                      <h3 className="textGradient text-5xl sm:text-6xl font-bold bigShouldersText lg:mb-5">
+                      <h3 className="textGradient text-5xl sm:text-6xl font-bold bigShouldersText lg:pt-5">
                         N{ticketPrice}
                       </h3>
                     </div>
                   </div>
 
                   <div className="w-full px-6 pt-5 lg:px-0 lg:pt-0">
-                    <p className="text-base font-semibold leading-relaxed">
+                    <p className="text-base font-semibold leading-[2]">
                       This ticket grants you exclusive access to all sessions in
                       Breakout Room A (designed specifically to equip you with
                       the knowledge and skills you need at this stage of your
@@ -69,7 +69,7 @@ const TicketModal = ({ details, closeModal, isOpen }) => {
                       internship opportunity with our esteemed partner.
                     </p>
 
-                    <h3 className="text-base text-primary-pink leading-normal font-bold mt-2">
+                    {/* <h3 className="text-base text-primary-pink leading-normal font-bold mt-2">
                       Perks
                     </h3>
                     <ul className="w-full list-disc list-inside">
@@ -82,7 +82,7 @@ const TicketModal = ({ details, closeModal, isOpen }) => {
                       <li className="font-semibold text-base py-1">
                         Hands-on workshop
                       </li>
-                    </ul>
+                    </ul> */}
                   </div>
                 </div>
               </section>
