@@ -1,5 +1,5 @@
 import React from "react";
-import HeroImg from "../../assets/images/hero-img.png";
+// import HeroImg from "../../assets/images/hero-img.png";
 import heroRing from "../../assets/images/2024/hero-ring.png";
 import polygon from "../../assets/images/2024/polygon.png";
 import innerPolygon from "../../assets/images/2024/inner-polygon.png";
@@ -12,9 +12,26 @@ import heroImg from "../../assets/images/2024/heroIMG.png";
 const Hero = () => {
   // const eventDate = new Date("09/30/2023 09:00:00");
   // const dateTimeAfterThreeDays = new Date(eventDate.getTime() + 60 * 60 * 1000);
+
   return (
     <section className="hero sm:pt-8 oswald-font w-full text-sealBrown">
-      <div className="relative mt-8 pb-8 md:pb-16 lg:pb-32 w-full pt-16 lg:pt-20 vector-bgs">
+      <div className="relative mt-8 pb-8 md:pb-16 lg:pb-32 w-full pt-28 lg:pt-32 vector-bgs">
+        <div className="absolute -top-1 sm:-top-8 md:-top-10 lg:-top-6 bg-primary-pink text-white left-0 right-0 pt-8 md:pt-6 pb-3">
+          <div className="w-[90%] mx-auto flex justify-center">
+            <h3 className="text-base mullish-font text-center">
+              SHE CODE AFRICA SUMMIT 2024.{" "}
+              <a
+                href="https://shecodeafrica.org/events"
+                target="_blank"
+                className="text-white underline"
+                rel="noreferrer"
+              >
+                View more events
+              </a>{" "}
+            </h3>
+          </div>
+        </div>
+
         <section className="flex flex-col justify-between w-[90%] mx-auto xl:max-w-[1200px] xl:w-full items-center">
           <div className="w-full mullish-font relative flex justify-center my-4">
             <p className="text-center text-sm md:text-base">

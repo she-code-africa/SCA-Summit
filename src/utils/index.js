@@ -388,6 +388,10 @@ export const navLinks = [
     pathname: "register now",
     url: "https://tix.africa/scasummit3",
   },
+  {
+    pathname: "events",
+    url: "https://shecodeafrica.org/events",
+  },
   // {
   //   pathname: "Schedule",
   //   url: "/#schedule",

@@ -3,16 +3,17 @@ import { FaTimes } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const TicketModal = ({ details, closeModal, isOpen }) => {
-  const { ticketBg, heading, subTitle, ticketPrice } = details;
+  const { ticketBg, heading, subTitle, ticketPrice, description } = details;
+
   return (
     <>
       {isOpen && (
         <section
-          className={`fixed top-0 bottom-0 left-0 right-0 bg-[rgba(0,0,0,0.2)] backdrop-blur-sm z-[110]  mullish-font text-[rgba(32,32,32,1)] `}
+          className={`fixed top-0 bottom-0 left-0 right-0 bg-[rgba(0,0,0,0.2)] backdrop-blur-sm z-[110]  mullish-font text-[rgba(32,32,32,1)] py-5`}
         >
           <div className="flex justify-center items-center py-4 w-full h-full">
             <div
-              className={`w-[90%] mx-auto  md:max-w-[822px] bg-[rgba(253,242,247,1)] border border-[rgba(224,215,220,1)] rounded-2xl pt-6 min-h-[570px] pb-6 lg:pb-0 ${ticketBg}`}
+              className={`w-[90%] mx-auto  md:max-w-[822px] bg-[rgba(253,242,247,1)] border border-[rgba(224,215,220,1)] rounded-2xl pt-6 min-h-[570px] pb-6 lg:pb-0 my-5 ${ticketBg}`}
             >
               <div className="px-6 border-b pb-6 border-b-[rgba(224,215,220,1)] flex justify-between items-center">
                 <h3 className="capitalize font-bold md:text-base">
@@ -29,10 +30,10 @@ const TicketModal = ({ details, closeModal, isOpen }) => {
                 </div>
               </div>
 
-              <section className="w-full pt-10">
+              <section className="w-full pt-5 lg:pt-10">
                 <div className="px-6 flex justify-between flex-row sm:items-end gap-4 w-full ticketDetail">
                   <article className="w-fit">
-                    <h3 className="bigShouldersText font-bold text-xl md:text-3xl lg:text-[40px] textGradient">
+                    <h3 className="bigShouldersText font-bold text-lg sm:text-xl md:text-3xl lg:text-[40px] textGradient">
                       {heading}
                     </h3>
 
@@ -51,22 +52,20 @@ const TicketModal = ({ details, closeModal, isOpen }) => {
                   </div>
                 </div>
 
-                <div className="w-full flex flex-col lg:flex-row justify-between gap-4 lg:px-6 pt-10 lg:mt-10">
+                <div className="w-full flex flex-col lg:flex-row justify-between gap-4 lg:px-6 lg:mt-5 lg:items-start py-5">
                   <div className="max-w-[400px] w-full">
-                    <div className=" h-full flex justify-start sm:justify-center items-end px-6 sm:px-0">
+                    <div
+                      className={`h-full flex justify-start sm:justify-center items-end px-6 sm:px-0 lg:mt-[160px]`}
+                    >
                       <h3 className="textGradient text-5xl sm:text-6xl font-bold bigShouldersText lg:pt-5">
                         N{ticketPrice}
                       </h3>
                     </div>
                   </div>
 
-                  <div className="w-full px-6 pt-5 lg:px-0 lg:pt-0">
-                    <p className="text-base font-semibold leading-[2]">
-                      This ticket grants you exclusive access to all sessions in
-                      Breakout Room A (designed specifically to equip you with
-                      the knowledge and skills you need at this stage of your
-                      career), all non-breakout sessions, and a chance to win an
-                      internship opportunity with our esteemed partner.
+                  <div className="w-full px-6 pt-3 lg:px-0 lg:pt-0 h-[275px] overflow-x-auto lg:h-auto">
+                    <p className="text-sm md:text-base font-semibold leading-normal">
+                      {description}
                     </p>
 
                     {/* <h3 className="text-base text-primary-pink leading-normal font-bold mt-2">
