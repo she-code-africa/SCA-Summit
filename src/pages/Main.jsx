@@ -11,7 +11,7 @@ import TicketsSection from "../components/tickets-section";
 
 const Main = () => {
   return (
-    <main className="emboss-bg">
+    <main className="emboss-bg overflow-hidden">
       <Hero />
       <About />
       <section className="w-full bg-[rgba(252,230,242,1)] squiggly text-center">
