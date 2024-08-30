@@ -26,7 +26,7 @@ const Hero = () => {
                 className="text-white underline"
                 rel="noreferrer"
               >
-                View more events
+                View our upcoming Pre-summit events.
               </a>{" "}
             </h3>
           </div>
