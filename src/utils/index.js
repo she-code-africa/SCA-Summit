@@ -392,6 +392,10 @@ export const navLinks = [
     pathname: "events",
     url: "https://shecodeafrica.org/events",
   },
+  {
+    pathname: "volunteer",
+    url: "https://docs.google.com/forms/d/e/1FAIpQLSfieGp6WlWIrhD1yMebNmnURT43BrXpL4dHLr0zQoyrFRtqHQ/viewform?usp=pp_url",
+  },
   // {
   //   pathname: "Schedule",
   //   url: "/#schedule",
