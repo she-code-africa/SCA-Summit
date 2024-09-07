@@ -396,6 +396,10 @@ export const navLinks = [
     pathname: "volunteer",
     url: "https://docs.google.com/forms/d/e/1FAIpQLSfieGp6WlWIrhD1yMebNmnURT43BrXpL4dHLr0zQoyrFRtqHQ/viewform?usp=pp_url",
   },
+  {
+    pathname: "Laptop Scholarship",
+    url: "https://docs.google.com/forms/d/1mXDDgbutl2jjc3ssXWEaG-6ET9GAbvGzabDjG8Uj2C8/edit",
+  },
   // {
   //   pathname: "Schedule",
   //   url: "/#schedule",
