@@ -389,6 +389,14 @@ export const navLinks = [
     url: "https://tix.africa/scasummit3",
   },
   {
+    pathname: "speakers",
+    url: "/speakers",
+  },
+  {
+    pathname: "schedule",
+    url: "/schedule",
+  },
+  {
     pathname: "events",
     url: "https://shecodeafrica.org/events",
   },
