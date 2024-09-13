@@ -128,6 +128,11 @@
   -webkit-text-fill-color: transparent;
 }
 
+.speaker-modal-image {
+  background-image: url("./assets/images/2024/speakers/speakers-vector/bgimage.png");
+  background-repeat: no-repeat;
+}
+
 @media screen and (max-width: 480px) {
   .ticketDetail {
     flex-direction: column;

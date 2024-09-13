@@ -49,6 +49,7 @@ const SpeakersComponent = ({ heading, subHeading, details }) => {
             role={detail.role}
             speakerDetail={detail}
             handleOpenModal={handleOpenModal}
+            bg={detail.bg || ""}
           />
         ))}
         <SpeakersModal
