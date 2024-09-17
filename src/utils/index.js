@@ -397,6 +397,10 @@ export const navLinks = [
     url: "/schedule",
   },
   {
+    pathname: "D&I",
+    url: "/diversity-and-inclusion",
+  },
+  {
     pathname: "events",
     url: "https://shecodeafrica.org/events",
   },

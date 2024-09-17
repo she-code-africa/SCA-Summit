@@ -38,7 +38,7 @@ const About = () => {
             <h3 className="font-bold text-2xl md:text-3xl lg:text-4xl my-3 oswald-font">
               Connecting & Empowering Women in Tech across Africa
             </h3>
-            <p className=" mullish-font text-sealBrown text-sm md:text-base leading-[2] md:leading-[2]">
+            <p className="mullish-font text-sealBrown text-sm md:text-base leading-[2] md:leading-[2]">
               The SCA Summit stands as the premier assembly of African women in
               the technology field, aiming to bring together women from diverse
               backgrounds in Nigeria and neighbouring African Countries for a
