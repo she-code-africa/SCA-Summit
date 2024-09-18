@@ -8,6 +8,7 @@ import Speakers from "./pages/Speakers";
 import ScrollToTop from "./components/ScrollToTop";
 import Schedule from "./pages/Schedule";
 import "./App.css";
+import Diversity from "./pages/Diversity";
 
 function App() {
   useEffect(() => {
@@ -27,6 +28,7 @@ function App() {
           <Route path="/register" element={<Register />} />
           <Route path="/speakers" element={<Speakers />} />
           <Route path="/schedule" element={<Schedule />} />
+          <Route path="/diversity-and-inclusion" element={<Diversity />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
