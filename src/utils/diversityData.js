@@ -30,13 +30,46 @@ export const codeOfConduct = [
 export const infoCardData = [
   {
     heading: "Travel Funding",
-    paragraph:
-      "We understand the importance of access for attendees at our summit. While we're unable to sponsor travel from outside Lagos or Nigeria at this time, we're happy to offer free intra-state transportation to and from selected locations within Lagos. If you need a guide on how to locate the summit venue, you can find directions and hotel details on this document.If your organization is interested in supporting the participation of African women in this year's summit, we encourage you to reach out to Ann, our Partnership & Sponsorship Manager, at partnerships@shecodeafrica.org. Let's work together to champion women in African tech!",
+    paragraph: (
+      <>
+        We understand the importance of access for attendees at our summit.
+        While we're unable to sponsor travel from outside Lagos or Nigeria at
+        this time, we're happy to offer free intra-state transportation to and
+        from selected locations within Lagos. If you need a guide on how to
+        locate the summit venue, you can find directions and hotel details on{" "}
+        <a href="https://bit.ly/summit24-directions" className="underline">
+          this document
+        </a>
+        . If your organization is interested in supporting the participation of
+        African women in this year's summit, we encourage you to reach out to
+        Ann, our Partnership & Sponsorship Manager, at{" "}
+        <a href="mailto:partnerships@shecodeafrica.org" className="underline">
+          partnerships@shecodeafrica.org
+        </a>
+        . Let's work together to champion women in African tech!
+      </>
+    ),
   },
   {
     heading: "Diversity Access Tickets",
-    paragraph:
-      "In collaboration with CHAOSS Africa and BigCabal Media, we're thrilled to offer a limited number of diversity tickets to ensure participation from inspiring African women who might otherwise face financial barriers. Stay tuned for the announcement and application process on our social media platforms (@shecodeafrica). Does your organization believe in fostering inclusivity in tech? Partner with us by sponsoring diversity tickets for this year's summit. By doing so, you'll directly contribute to empowering African women and shaping the future of technology in Africa. To discuss sponsorship opportunities, reach out to Ann, our Partnership & Sponsorship Manager, at partnerships@shecodeafrica.org.",
+    paragraph: (
+      <>
+        In collaboration with CHAOSS Africa and BigCabal Media, we're thrilled
+        to offer a limited number of diversity tickets to ensure participation
+        from inspiring African women who might otherwise face financial
+        barriers. Stay tuned for the announcement and application process on our
+        social media platforms (@shecodeafrica). Does your organization believe
+        in fostering inclusivity in tech? Partner with us by sponsoring
+        diversity tickets for this year's summit. By doing so, you'll directly
+        contribute to empowering African women and shaping the future of
+        technology in Africa. To discuss sponsorship opportunities, reach out to
+        Ann, our Partnership & Sponsorship Manager, at{" "}
+        <a href="mailto:partnerships@shecodeafrica.org" className="underline">
+          partnerships@shecodeafrica.org
+        </a>
+        .
+      </>
+    ),
   },
   {
     heading: "Nursing Room and Child Care",
@@ -53,8 +86,19 @@ export const infoCardData = [
 export const accessibilityData = [
   {
     heading: "Venue Accessibility",
-    paragraph:
-      "We're committed to creating an inclusive experience.  While this year's venue may have some accessibility limitations, we're actively working to ensure all attendees can participate fully. If you have any mobility needs or require further accessibility information, please let us know in advance by contacting community@shecodeafrica.org or speaking to a volunteer at the summit site.",
+    paragraph: (
+      <>
+        We're committed to creating an inclusive experience.  While this year's
+        venue may have some accessibility limitations, we're actively working to
+        ensure all attendees can participate fully. If you have any mobility
+        needs or require further accessibility information, please let us know
+        in advance by contacting{" "}
+        <a href="mailto:community@shecodeafrica.org" className="underline">
+          community@shecodeafrica.org
+        </a>{" "}
+        or speaking to a volunteer at the summit site.
+      </>
+    ),
   },
   {
     heading: "Special Needs",
