@@ -13,7 +13,7 @@ export const scheduleData = [
   },
   {
     activity: "Welcome Address",
-    description: "Welcome Address by Sayomipe Solu & Mary-Blessing Okolie ",
+    description: "Welcome Address by Sayomipe Solu & Maryblessing Okolie ",
     time: "10:05AM - 10:15AM",
     venue: "",
   },
