@@ -8,6 +8,7 @@ import Schedule from "../components/Schedule";
 // import Partners from "../components/Partners";
 import themeUnion from "../assets/images/2024/theme-union.png";
 import TicketsSection from "../components/tickets-section";
+import PartnersComponent from "../components/2024/Partners/PartnersComponent";
 
 const Main = () => {
   return (
@@ -35,6 +36,10 @@ const Main = () => {
             </h3>
           </div>
         </div>
+      </section>
+
+      <section className="w-full">
+        <PartnersComponent />
       </section>
       {/* <Speakers /> */}
       <Schedule />
