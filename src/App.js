@@ -28,7 +28,7 @@ function App() {
           <Route path="/register" element={<Register />} />
           <Route path="/speakers" element={<Speakers />} />
           <Route path="/schedule" element={<Schedule />} />
-          <Route path="/diversity-and-inclusion" element={<Diversity />} />
+          <Route path="/diversity-and-inclusion-d&i" element={<Diversity />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
