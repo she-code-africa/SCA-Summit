@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../../assets/images/logo.svg";
+import Logo from "../../assets/images/new-logo/new-logo-footer.png";
 
 const Footer = () => {
   const date = new Date();
@@ -9,7 +9,11 @@ const Footer = () => {
         <div className="container mx-auto px-4">
           <div className="grid grid-col-2 md:grid-cols-4  gap-y-8 gap-x-8">
             <div className="col-span-full md:col-span-1">
-              <img src={Logo} alt="sca-logo" className="h-24 w-24" />
+              <img
+                src={Logo}
+                alt="sca-logo"
+                className="h-28 w-40 object-contain"
+              />
             </div>
             <div className="md:col-span-2">
               <h2 className="font-bold text-lg md:text-xl lg:text-3xl mb-3">
