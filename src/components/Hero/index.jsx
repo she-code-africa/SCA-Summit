@@ -16,7 +16,7 @@ const Hero = () => {
   return (
     <section className="hero sm:pt-8 oswald-font w-full text-sealBrown">
       <div className="relative mt-8 pb-8 md:pb-16 lg:pb-32 w-full pt-28 lg:pt-32 vector-bgs">
-        <div className="absolute -top-1 sm:-top-8 md:-top-10 lg:-top-6 bg-primary-pink text-white left-0 right-0 pt-8 md:pt-6 pb-3">
+        <div className="absolute top-6 sm:-top-8 md:-top-10 lg:-top-6 bg-primary-pink text-white left-0 right-0 pt-8 md:pt-6 pb-3">
           <div className="w-[90%] mx-auto flex justify-center">
             <h3 className="text-base mullish-font text-center">
               SHE CODE AFRICA SUMMIT 2024.{" "}
