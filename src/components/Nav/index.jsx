@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Logo from "../../assets/images/logo.svg";
+import Logo from "../../assets/images/new-logo/new-logo-header.png";
 import { IoIosMenu, IoIosClose } from "react-icons/io";
 import { Link, useLocation } from "react-router-dom";
 import { navLinks } from "../../utils";
@@ -17,7 +17,11 @@ const Nav = () => {
         {/* logo and menu icon */}
         <div className="flex items-center justify-between gap-10 w-full lg:w-fit">
           <Link to="/">
-            <img src={Logo} alt="She Code Africa's Logo" className="lg:w-11" />
+            <img
+              src={Logo}
+              alt="She Code Africa's Logo"
+              className="w-16 h-16 object-contain"
+            />
           </Link>
 
           <IoIosMenu
