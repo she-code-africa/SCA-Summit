@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faXTwitter,
@@ -49,24 +48,24 @@ export const Footer = () => {
                 <p className="text-black text-[clamp(24px,4vw,32px)] font-bold leading-[1.3]">
                   Get Involved
                 </p>
-                <Link
-                  to="/donate"
+                <a
+                  href="https://www.shecodeafrica.org/donate"
                   className="button-text block text-black mb-5 mt-8 hover:text-primary-main-pink focus:outline-none focus:ring focus:ring-tutu"
                 >
                   Donate To A Cause
-                </Link>
-                <Link
-                  to="/partner"
+                </a>
+                <a
+                  href="https://www.shecodeafrica.org/partner"
                   className="button-text block mb-5 text-black hover:text-primary-main-pink focus:outline-none focus:ring focus:ring-tutu"
                 >
                   Partner With Us
-                </Link>
-                <Link
-                  to="/chapters"
+                </a>
+                <a
+                  href="https://www.shecodeafrica.org/chapters"
                   className="button-text block mb-5 text-black hover:text-primary-main-pink focus:outline-none focus:ring focus:ring-tutu"
                 >
                   Start An S.C.A Chapter
-                </Link>
+                </a>
                 <a
                   href="https://summit.shecodeafrica.org/"
                   className="button-text block mb-5 text-black hover:text-primary-main-pink focus:outline-none focus:ring focus:ring-tutu"
@@ -82,36 +81,36 @@ export const Footer = () => {
                 <p className="text-black text-[clamp(24px,4vw,32px)] font-bold leading-[1.3]">
                   About Us
                 </p>
-                <Link
-                  to="/team"
+                <a
+                  href="https://www.shecodeafrica.org/team"
                   className="button-text block mb-5 hover:text-primary-main-pink mt-8 focus:outline-none focus:ring focus:ring-tutu"
                 >
                   Meet The Team
-                </Link>
-                <Link
-                  to="/faq"
+                </a>
+                <a
+                  href="https://www.shecodeafrica.org/faq"
                   className="button-text block mb-5 hover:text-primary-main-pink focus:outline-none focus:ring focus:ring-tutu"
                 >
                   FAQ
-                </Link>
-                <Link
-                  to="/code-of-conduct"
+                </a>
+                <a
+                  href="https://www.shecodeafrica.org/code-of-conduct"
                   className="button-text block mb-5 hover:text-primary-main-pink focus:outline-none focus:ring focus:ring-tutu"
                 >
                   Code of Conduct
-                </Link>
-                <Link
-                  to="/privacy"
+                </a>
+                <a
+                  href="https://www.shecodeafrica.org/privacy"
                   className="button-text block mb-5 hover:text-primary-main-pink focus:outline-none focus:ring focus:ring-tutu"
                 >
                   Privacy Policy
-                </Link>
-                <Link
-                  to="/terms"
+                </a>
+                <a
+                  href="https://www.shecodeafrica.org/terms"
                   className="button-text block mb-5 hover:text-primary-main-pink focus:outline-none focus:ring focus:ring-tutu"
                 >
                   Terms and Condition
-                </Link>
+                </a>
               </div>
 
               {/* Community */}
@@ -119,12 +118,12 @@ export const Footer = () => {
                 <p className="text-black text-[clamp(24px,4vw,32px)] font-bold leading-[1.3]">
                   Community
                 </p>
-                <Link
-                  to="/events"
+                <a
+                  href="https://www.shecodeafrica.org/events"
                   className="button-text block mb-5 text-black hover:text-primary-main-pink mt-8 focus:outline-none focus:ring focus:ring-tutu"
                 >
                   Upcoming Events
-                </Link>
+                </a>
                 <a
                   href="https://docs.google.com/forms/d/e/1FAIpQLSdf-x58pHMIS5-YCLQQniKQxlncwJrtb0F60uljpjnoZMIo2g/viewform"
                   target="_blank"
