@@ -4,7 +4,7 @@
 /* Thunder font - used for headers/titles */
 @font-face {
   font-family: "Thunder";
-  src: url("./assets/v2/fonts/Thunder-SemiBoldLC.ttf") format("truetype");
+  src: url("./assets/fonts/Thunder-SemiBoldLC.ttf") format("truetype");
   font-weight: 600; /* SemiBold */
   font-style: normal;
 }

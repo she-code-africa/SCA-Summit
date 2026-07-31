@@ -19,20 +19,20 @@ export function AboutHero() {
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
-          className="text-4xl sm:text-6xl md:text-7xl lg:text-[90px] font-black uppercase tracking-tighter text-white flex flex-wrap items-center justify-center gap-x-3 sm:gap-x-5 leading-none font-display"
+          className="hero-title font-black uppercase text-white flex flex-wrap items-center justify-center gap-x-3 sm:gap-x-5 leading-none font-display"
         >
-          <span className="relative inline-flex items-center justify-center select-none my-1 w-[1.6em] h-[1em] sm:w-[1.5em]">
+          <span className="relative inline-flex items-center justify-center select-none my-1 w-[1.6em] h-[1em] sm:w-[1em]">
             {/* Green flower (left-top) – using theme color sca-garden */}
             <FlowerPinwheel
               color="#E0F348" // sca-garden
-              className="absolute -top-3 sm:-top-1 -left-3 sm:left-2 w-8 h-8 sm:w-11 sm:h-11 md:w-12 md:h-12 z-20"
+              className="absolute -top-2 sm:-top-3 left-1 sm:left-2 w-8 h-8 sm:w-11 sm:h-11 md:w-12 md:h-12 z-20"
             />
             {/* Orange flower (right-bottom) – using theme color sca-apricote */}
             <FlowerPinwheel
               color="#FF8A3F" // sca-apricote
-              className="absolute -bottom-1 sm:bottom-0 right-0 sm:right-1 w-7 h-7 sm:w-9 sm:h-9 md:w-10 md:h-10 z-20"
+              className="absolute bottom-0 sm:bottom-6 right-3 sm:right-3 w-7 h-7 sm:w-9 sm:h-9 md:w-10 md:h-10 z-20"
             />
-            <span className="relative z-10 tracking-tighter">10</span>
+            <span className="relative z-10">10</span>
           </span>
 
           <span>years of dedication</span>
