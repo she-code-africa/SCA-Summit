@@ -1,9 +1,18 @@
-import { AboutHero } from '../components/AboutHero';
+import { AboutHero } from "../components/about/AboutHero";
+import { AboutSummit } from "../components/about/AboutSubmit";
+import { ThemeSection } from "../components/about/ThemeSection";
+import { WhyAttendSection } from '../components/about/WhyAttendSection';
+
 
 export default function AboutPage() {
   return (
     <div className="min-h-screen bg-white">
       <AboutHero />
+      <AboutSummit />
+      <ThemeSection />
+      <WhyAttendSection />
+
+      {/* ...next section... */}
       {/* Decadal Impact & Story Section */}
       <section className="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">

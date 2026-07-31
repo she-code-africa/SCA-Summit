@@ -63,8 +63,8 @@ export function Navbar() {
                 className={({ isActive }) =>
                   `flex items-center gap-1 text-base font-semibold transition-colors duration-150 ${
                     isActive
-                      ? "text-[#be0e69] font-bold"
-                      : "text-slate-700 hover:text-[#be0e69]"
+                      ? "text-primary-main-pink font-bold"
+                      : "text-secondary-main-black hover:text-primary-main-pink"
                   }`
                 }
               >
@@ -80,7 +80,7 @@ export function Navbar() {
                 )}
               </NavLink>
 
-              {/* Dropdown Menu — matches Figma card exactly */}
+              {/* Dropdown Menu */}
               {link.hasDropdown && (
                 <AnimatePresence>
                   {desktopDropdownOpen && (
@@ -103,12 +103,12 @@ export function Navbar() {
                             >
                               <Link
                                 to={item.path}
-                                className="flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-pink-50 transition-colors"
+                                className="flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-primary-very-light-pink transition-colors"
                               >
-                                <span className="flex items-center justify-center w-9 h-9 rounded-full bg-pink-200 text-[#e91e8c] shrink-0">
+                                <span className="flex items-center justify-center w-9 h-9 rounded-full bg-primary-light-pink text-primary-main-pink shrink-0">
                                   <Icon className="w-4 h-4" strokeWidth={2} />
                                 </span>
-                                <span className="text-sm font-semibold text-slate-800">
+                                <span className="text-sm font-semibold text-secondary-main-black">
                                   {item.name}
                                 </span>
                               </Link>
@@ -128,22 +128,23 @@ export function Navbar() {
         <div className="hidden sm:flex items-center space-x-4">
           <a
             href="#tickets"
-            className="px-8 py-4.5 rounded-lg bg-[#be0e69] hover:bg-[#a00956] text-white font-semibold text-sm transition shadow-sm hover:shadow"
+            className="px-8 py-4.5 rounded-lg bg-primary-main-pink hover:bg-primary-dark-pink text-white font-semibold text-sm transition shadow-sm hover:shadow"
           >
             Get Tickets
           </a>
           <a
             href="#sponsor"
-            className="px-8 py-4.5 rounded-lg border border-[#be0e69] text-[#be0e69] hover:bg-pink-50 font-semibold text-sm transition"
+            className="px-8 py-4.5 rounded-lg border border-primary-main-pink text-primary-main-pink hover:bg-primary-very-light-pink font-semibold text-sm transition"
           >
             Become a sponsor
           </a>
         </div>
+
         {/* Mobile menu toggle button */}
         <div className="flex lg:hidden">
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="p-2 rounded-lg text-slate-700 hover:bg-slate-100 focus:outline-none"
+            className="p-2 rounded-lg text-secondary-main-black hover:bg-primary-very-light-pink focus:outline-none"
             aria-label="Toggle menu"
           >
             <AnimatePresence mode="wait" initial={false}>
@@ -162,7 +163,7 @@ export function Navbar() {
                 <motion.span
                   key="menu"
                   initial={{ rotate: 90, opacity: 0 }}
-                  animate={{ rotate: 0, opacity: 1 }}
+                  animate={{ rotate: 1, opacity: 1 }}
                   exit={{ rotate: -90, opacity: 0 }}
                   transition={{ duration: 0.15 }}
                   className="flex"
@@ -191,7 +192,7 @@ export function Navbar() {
                   <div key={link.path}>
                     <button
                       onClick={() => setMobileAboutOpen(!mobileAboutOpen)}
-                      className="w-full flex items-center justify-between px-4 py-2.5 rounded-lg text-base font-semibold text-slate-700 hover:bg-slate-50"
+                      className="w-full flex items-center justify-between px-4 py-2.5 rounded-lg text-base font-semibold text-secondary-main-black hover:bg-primary-very-light-pink"
                     >
                       {link.name}
                       <motion.span
@@ -222,12 +223,12 @@ export function Navbar() {
                                   setIsOpen(false);
                                   setMobileAboutOpen(false);
                                 }}
-                                className="flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-pink-50 transition-colors"
+                                className="flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-primary-very-light-pink transition-colors"
                               >
-                                <span className="flex items-center justify-center w-9 h-9 rounded-full bg-pink-200 text-[#e91e8c] shrink-0">
+                                <span className="flex items-center justify-center w-9 h-9 rounded-full bg-primary-light-pink text-primary-main-pink shrink-0">
                                   <Icon className="w-4 h-4" strokeWidth={2} />
                                 </span>
-                                <span className="text-sm font-semibold text-slate-800">
+                                <span className="text-sm font-semibold text-secondary-main-black">
                                   {item.name}
                                 </span>
                               </Link>
@@ -245,8 +246,8 @@ export function Navbar() {
                     className={({ isActive }) =>
                       `block px-4 py-2.5 rounded-lg text-base font-semibold ${
                         isActive
-                          ? "bg-pink-50 text-[#be0e69]"
-                          : "text-slate-700 hover:bg-slate-50"
+                          ? "bg-primary-very-light-pink text-primary-main-pink"
+                          : "text-secondary-main-black hover:bg-primary-very-light-pink"
                       }`
                     }
                   >
@@ -258,13 +259,13 @@ export function Navbar() {
               <div className="pt-4 flex flex-col gap-2">
                 <a
                   href="#tickets"
-                  className="w-full text-center py-3 rounded-full bg-[#be0e69] text-white font-semibold text-sm"
+                  className="w-full text-center px-8 py-4.5 rounded-lg bg-primary-main-pink hover:bg-primary-dark-pink text-white font-semibold text-sm transition"
                 >
                   Get Tickets
                 </a>
                 <a
                   href="#sponsor"
-                  className="w-full text-center py-3 rounded-full border border-[#be0e69] text-[#be0e69] font-semibold text-sm"
+                  className="w-full text-center px-8 py-4.5 rounded-lg border border-primary-main-pink text-primary-main-pink hover:bg-primary-very-light-pink font-semibold text-sm transition"
                 >
                   Become a sponsor
                 </a>
