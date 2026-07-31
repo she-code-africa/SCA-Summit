@@ -6,7 +6,8 @@ import { LandingPage } from "./pages/LandingPage";
 import { SpeakersPage } from "./pages/SpeakersPage";
 import { SchedulePage } from "./pages/SchedulePage";
 import { AccessibilityPage } from "./pages/AccessibilityPage";
-import { AboutPage } from "./pages/AboutPage";
+import AboutPage from "./pages/AboutPage";
+import "./app.css";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
