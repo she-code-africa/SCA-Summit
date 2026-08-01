@@ -4,10 +4,11 @@ import { Navbar } from "./components/Navbar";
 import { Footer } from "./components/Footer";
 import { LandingPage } from "./pages/LandingPage";
 import { SpeakersPage } from "./pages/SpeakersPage";
-import { SchedulePage } from "./pages/SchedulePage";
+// import { SchedulePage } from "./pages/SchedulePage";
 import { AccessibilityPage } from "./pages/AccessibilityPage";
 import AboutPage from "./pages/AboutPage";
 import "./app.css";
+import SchedulePage from "./pages/SchedulePage";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -27,7 +28,7 @@ export default function App() {
           <Routes>
             <Route path="/" element={<LandingPage />} />
             <Route path="/speakers" element={<SpeakersPage />} />
-            <Route path="/schedule" element={<SchedulePage />} />
+            // <Route path="/schedule" element={<SchedulePage />} />
             <Route path="/accessibility" element={<AccessibilityPage />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="*" element={<LandingPage />} />

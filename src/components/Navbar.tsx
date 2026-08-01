@@ -12,10 +12,11 @@ import {
 } from "lucide-react";
 import navLogo from "../assets/nav-logo.png";
 
+// UPDATED PATH for "Get Involved" to target the section ID
 const aboutDropdownItems = [
-  { name: "About SCA", path: "/about", icon: LayoutGrid },
+  { name: "About SCA", path: "/about#about-sca", icon: LayoutGrid },
   { name: "Why attend", path: "/about#why-attend", icon: Sparkles },
-  { name: "Get Involved", path: "/get-involved", icon: Users },
+  { name: "Get Involved", path: "/about#get-involved", icon: Users },
   { name: "Accessibility", path: "/accessibility", icon: MessageCircleQuestion }
 ];
 
