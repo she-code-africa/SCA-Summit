@@ -1,8 +1,7 @@
 import { AboutHero } from "../components/about/AboutHero";
 import { AboutSummit } from "../components/about/AboutSubmit";
 import { ThemeSection } from "../components/about/ThemeSection";
-import { WhyAttendSection } from '../components/about/WhyAttendSection';
-
+import { WhyAttendSection } from "../components/about/WhyAttendSection";
 
 export default function AboutPage() {
   return (

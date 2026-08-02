@@ -1,58 +1,82 @@
+@import "tailwindcss";
+
 /* Google Fonts - body (Roboto) + optional Figtree */
 @import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900");
 
 /* Thunder font - used for headers/titles */
 @font-face {
   font-family: "Thunder";
-  src: url("./assets/v2/fonts/Thunder-SemiBoldLC.ttf") format("truetype");
+  src: url("./assets/fonts/Thunder-SemiBoldLC.ttf") format("truetype");
   font-weight: 600; /* SemiBold */
   font-style: normal;
 }
 
-@import "tailwindcss";
-
 @theme {
   /* ---- Colors ---- */
-  --color-primary-main-pink: #B70569;
-  --color-primary-dark-pink: #6D033F;
-  --color-primary-light-pink: #F0CDE1;
-  --color-secondary-main-black: #1A1A1A;
-  --color-primary-lighter-pink: #F0CDE14D;
-  --color-primary-very-light-pink: #F7E6F04D;
+  --color-primary-main-pink: #b70569;
+  --color-primary-dark-pink: #6d033f;
+  --color-primary-light-pink: #f0cde1;
+  --color-secondary-main-black: #1a1a1a;
+  --color-primary-lighter-pink: #f0cde14d;
+  --color-primary-very-light-pink: #f7e6f04d;
   --color-primary-gray: #707070;
-  --color-gainsboro: #E5E5E5;
-  --color-white-smoke: #F0F0F0;
+  --color-gainsboro: #e5e5e5;
+  --color-white-smoke: #f0f0f0;
   --color-mortar: #555;
-  --color-dark-blue: #2A254B;
-  --color-community-pink-bg: #FDC0E3;
+  --color-dark-blue: #2a254b;
+  --color-community-pink-bg: #fdc0e3;
   --color-primary-dark-brown: #260808;
-  --color-seal-brown: #210D15;
+  --color-seal-brown: #210d15;
   --color-grey-text: #808080;
   --color-neutral-250: #202020;
-  --color-cotton-candy: #FDC0E33D;
-  --color-tutu: #F9E8F1;
+  --color-cotton-candy: #fdc0e33d;
+  --color-tutu: #f9e8f1;
   --color-charcoal: #434343;
-  --color-floral-white: #FFF8EA;
-  --color-gamboge: #EEA30A;
-  --color-very-light-grey: #CFCFCF;
-  --color-lavendar-blush: #FFF7FC;
-  --color-gains: #D8D8D8;
-  --color-secondary-grape: #7D355D;
-  --color-primary-magenta: #B70569;
-  --color-secondary-velvet: #5C0335;
-  --color-sca-cloud: #F4EFEC;
-  --color-sca-garden: #BEE366;
-  --color-sca-zesty: #DDFF8F;
-  --color-sca-white: #FEFEFE;
-  --color-sca-bloom: #FF8FCE;
-  --color-sca-blush: #FFB8E0;
-  --color-sca-citrine: #FFF88F;
-  --color-sca-forest: #094A32;
-  --color-sca-apricote: #FF8A3F;
-  --color-sca-lavender: #C78FFF;
-  --color-pastel-pink: #FFEAF6;
+  --color-floral-white: #fff8ea;
+  --color-gamboge: #eea30a;
+  --color-very-light-grey: #cfcfcf;
+  --color-lavendar-blush: #fff7fc;
+  --color-gains: #d8d8d8;
+  --color-secondary-grape: #7d355d;
+  --color-primary-magenta: #b70569;
+  --color-secondary-velvet: #5c0335;
+  --color-sca-cloud: #f4efec;
+  --color-sca-garden: #bee366;
+  --color-sca-zesty: #ddff8f;
+  --color-sca-white: #fefefe;
+  --color-sca-bloom: #ff8fce;
+  --color-sca-blush: #ffb8e0;
+  --color-sca-citrine: #fff88f;
+  --color-sca-forest: #094a32;
+  --color-sca-apricote: #ff8a3f;
+  --color-sca-lavender: #c78fff;
+  --color-pastel-pink: #ffeaf6;
 
   /* ---- Typography ---- */
-  --font-sans: "Figtree", sans-serif;           /* body font */
-  --font-display: "Thunder", sans-serif;       /* for headings / titles */
+  --font-sans: "Figtree", sans-serif; /* body font */
+  --font-display: "Thunder", sans-serif; /* for headings / titles */
+
+  /* background image */
+  --background-image-homeHero: url("./assets/home/homeHeroBg.jpg");
+}
+
+@layer utilities {
+  /* wherever .sca-badge is currently defined */
+  .sca-badges {
+    border-radius: 999px;
+    border: 1.17px solid transparent;
+    -webkit-backdrop-filter: blur(16px) saturate(160%);
+    backdrop-filter: blur(4px) saturate(160%);
+
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.25),
+      0 4px 24px rgba(0, 0, 0, 0.25);
+
+    letter-spacing: 0.3px;
+    white-space: nowrap;
+  }
+}
+
+.b {
+  background-image: url("./assets/home/homeHeroBg.jpg");
 }
