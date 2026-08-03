@@ -124,9 +124,9 @@ const personas: Persona[] = [
     label: "Leaders",
     heading: "Leaders",
     description:
-      "The Summit brings you into the room with the people and conversations that matter.",
+      "Join senior leaders from across Africa's technology ecosystem to exchange ideas, strengthen partnerships, and explore the trends shaping the future of work and innovation",
     bgColor: "#F5FFDE",
-    strokeColor: "#FF8A3F", // This now perfectly matches the orange from your new SVG
+    strokeColor: "#FF8A3F",
     bullets: [
       "Engage in high-level conversations on leadership, innovation, AI, and digital transformation.",
       "Connect with executives, founders, investors, policymakers, and ecosystem leaders.",
