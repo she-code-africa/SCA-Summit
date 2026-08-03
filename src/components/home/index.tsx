@@ -1,5 +1,10 @@
 import { useCountdown } from "../../hooks/useCountdown";
+import { TicketsSection } from "../about/TicketsSection";
+import FaqSection from "./FaqSection";
 import HeroSection from "./HeroSection";
+import OurSponsors from "./OurSponsors";
+import SpeakersSection from "./Speakers";
+import WhatWeBuilt from "./WhatWeBuilt";
 import WhyAttend from "./WhyAttend";
 
 const HomePage = () => {
@@ -65,6 +70,11 @@ const HomePage = () => {
       </section>
 
       <WhyAttend />
+      <WhatWeBuilt />
+      <SpeakersSection />
+      <OurSponsors />
+      <TicketsSection />
+      <FaqSection />
     </div>
   );
 };

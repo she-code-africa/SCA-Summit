@@ -40,3 +40,22 @@ export const whyAttendTab = [
     value: "partner-showcase",
   },
 ];
+
+export const faqTab = [
+  {
+    label: "Accessibility",
+    value: "accessibility",
+  },
+  {
+    label: "Sponsorship",
+    value: "sponsorship",
+  },
+  {
+    label: "Registration & Tickets",
+    value: "registration-and-tickets",
+  },
+  {
+    label: "Get Involved",
+    value: "get-involved",
+  },
+];

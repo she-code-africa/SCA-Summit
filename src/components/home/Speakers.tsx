@@ -1,0 +1,65 @@
+import whyAttendImg2 from "../../assets/home/whyAttendImg2.png";
+
+const speakers = [
+  { name: "Speaker Name", title: "Speaker title" },
+  { name: "Speaker Name", title: "Speaker title" },
+  { name: "Speaker Name", title: "Speaker title" },
+  { name: "Speaker Name", title: "Speaker title" },
+  { name: "Speaker Name", title: "Speaker title" },
+  { name: "Speaker Name", title: "Speaker title" },
+  { name: "Speaker Name", title: "Speaker title" },
+  { name: "Speaker Name", title: "Speaker title" },
+];
+
+const SpeakersSection = () => {
+  // Duplicate the list so the track can loop seamlessly (0% -> -50%)
+  const marqueeSpeakers = [...speakers, ...speakers];
+
+  return (
+    <section className="bg-secondary-velvet w-full relative">
+      <div className="absolute inset-0 bg-homeSpeaker bg-cover bg-no-repeat"></div>
+      <div className="w-full py-25">
+        <article className="px-4 sm:px-6 lg:px-8 w-full">
+          <p className="max-w-fit mx-auto text-2xl rounded-[30px] px-7 py-4.25 bg-pastel-pink text-primary-magenta font-sans font-semibold capitalize text-center">
+            speakers
+          </p>
+
+          <h3 className="font-display text-sca-white text-[48px] sm:text-[56px] lg:text-[64px] w-full text-center">
+            Who's taking the stage?
+          </h3>
+        </article>
+
+        <section className="mt-11.5 w-full overflow-hidden group">
+          <div className="flex gap-7.5 w-max animate-marquee group-hover:[animation-play-state:paused]">
+            {marqueeSpeakers.map((speaker, i) => (
+              <div
+                className="shrink-0 w-full max-w-93.5 bg-sca-white border-2 border-primary-magenta rounded-[15.29px] p-5"
+                key={i}
+              >
+                <figure className="rounded-[15px] w-full h-62.25 overflow-hidden">
+                  <img
+                    src={whyAttendImg2}
+                    alt="speaker"
+                    className="object-cover w-full h-full"
+                  />
+                </figure>
+
+                <article className="mt-5 w-full">
+                  <h4 className="text-2xl font-sans font-bold text-primary-magenta">
+                    {speaker.name}
+                  </h4>
+
+                  <p className="text-xl text-black font-medium">
+                    {speaker.title}
+                  </p>
+                </article>
+              </div>
+            ))}
+          </div>
+        </section>
+      </div>
+    </section>
+  );
+};
+
+export default SpeakersSection;

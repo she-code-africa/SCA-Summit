@@ -7,6 +7,8 @@ import whyAttendImg3 from "../../assets/home/whyAttendImg2.jpg";
 import { whyAttendTab } from "../../utils/appData";
 import { tracks, whyAttendMediaContent } from "../../utils/whyAttend";
 import starTrophy from "../../assets/home/StarTrophy.png";
+import laptop from "../../assets/home/laptop.png";
+import bottle from "../../assets/home/bottle.png";
 
 type Props = {
   tab: string;
@@ -172,7 +174,17 @@ const AccessFundBlock = () => (
       </div>
     </article>
 
-    <div className="w-full bg-black text-white py-10 px-6">
+    <div className="w-full bg-black flex gap-8.5 text-white py-10 px-6">
+      {/*  */}
+      <div className="md:flex flex-col justify-between gap-10 xl:gap-20 hidden">
+        <figure className="w-[114.5px] h-[90.35px]">
+          <img src={laptop} alt="Laptop" className="object-contain" />
+        </figure>
+
+        <figure className="w-[52.53px] h-[124.5px] mx-auto ">
+          <img src={bottle} alt="Bottle" className="object-contain" />
+        </figure>
+      </div>
       <ul className="space-y-6">
         {giveaways.map((item) => (
           <li key={item} className="font-sans text-xl">
