@@ -8,7 +8,7 @@ import {
   MessageCircleQuestion,
   Menu,
   X,
-  ChevronDown
+  ChevronDown,
 } from "lucide-react";
 import navLogo from "../assets/nav-logo.png";
 
@@ -17,7 +17,11 @@ const aboutDropdownItems = [
   { name: "About SCA", path: "/about#about-sca", icon: LayoutGrid },
   { name: "Why attend", path: "/about#why-attend", icon: Sparkles },
   { name: "Get Involved", path: "/about#get-involved", icon: Users },
-  { name: "Accessibility", path: "/accessibility", icon: MessageCircleQuestion }
+  {
+    name: "Accessibility",
+    path: "/accessibility",
+    icon: MessageCircleQuestion,
+  },
 ];
 
 const navLinks = [
@@ -26,7 +30,7 @@ const navLinks = [
   { name: "Speakers", path: "/speakers" },
   { name: "Schedule", path: "/schedule" },
   { name: "Accessibility", path: "/accessibility" },
-  { name: "FAQs", path: "/faqs" }
+  { name: "FAQs", path: "/faqs" },
 ];
 
 export function Navbar() {
@@ -35,8 +39,9 @@ export function Navbar() {
   const [mobileAboutOpen, setMobileAboutOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-white border-b border-gray-100 shadow-xs">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-47.5 flex items-center justify-between">
+    <header className="sticky  top-0 z-50 bg-white border-b border-gray-100 shadow-xs">
+      {/* h-47.5 */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-auto py-6 flex items-center justify-between">
         {/* Brand Logo */}
         <Link to="/" className="flex items-center">
           <img
@@ -176,7 +181,6 @@ export function Navbar() {
           </button>
         </div>
       </div>
-
       {/* Mobile Drawer Navigation */}
       <AnimatePresence>
         {isOpen && (
@@ -254,7 +258,7 @@ export function Navbar() {
                   >
                     {link.name}
                   </NavLink>
-                )
+                ),
               )}
 
               <div className="pt-4 flex flex-col gap-2">
