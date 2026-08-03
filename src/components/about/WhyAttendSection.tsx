@@ -2,23 +2,25 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import attendeesPhoto from "../../assets/why-attend-photo.jpg";
 
-// --- Exact starburst path (reused from ThemeSection, stroke color now dynamic) ---
+// --- Replaced with the new starburst path ---
 const STARBURST_PATH =
-  "M272.146 15.9697C286.906 58.6775 310.31 81.8438 340.31 89.7441C370.314 97.6457 405.639 89.8701 442.985 73.8662C442.273 76.4141 441.601 78.9756 440.979 81.5508C430.865 123.075 437.328 157.355 456.529 183.556C473.809 207.135 500.993 223.61 534.23 233.155C501.64 256.667 479.245 285.033 472.242 316.354C465.239 347.679 473.851 380.932 501.134 413.816C497.696 413.551 494.252 413.364 490.803 413.257H490.804C448.489 411.626 416.466 423.392 394.917 446.577C375.718 467.233 365.41 496.34 362.958 531.388C350.02 517.333 336.863 506.206 321.965 498.583C303.789 489.283 283.385 485.379 258.241 487.247L257.872 487.274L257.511 487.356C237.668 491.837 222.961 497.981 209.969 507.031C200.349 513.732 191.811 521.931 182.899 531.937C182.835 490.304 168.748 458.007 143.954 437.428C119.288 416.954 84.8043 408.728 45.0098 413.63C53.1799 403.715 60.2411 392.892 66.0439 381.355L66.0615 381.32C83.1243 346.732 83.2353 315.39 70.6172 288.858C59.8759 266.273 40.165 247.703 15.0537 233.632C55.5873 224.343 85.9797 206.123 102.267 179.177C118.863 151.718 120.118 116.378 104.314 74.7705C140.573 91.6445 174.844 97.0461 204.212 87.7461C233.574 78.4479 256.909 54.8291 272.146 15.9697Z";
+  "M149.972 35.1494L151.89 36.7568L153.815 35.1572C165.328 25.5937 178.66 15.5354 190.9 6.0498C196.533 20.6309 201.956 35.7922 207.402 50.4912L208.241 52.7529L210.63 52.4199C225.629 50.3285 242.135 47.6642 257.146 46.2295C254.507 61.6466 251.946 77.0774 249.464 92.5205L249.088 94.8594L251.275 95.7676C265.77 101.785 280.304 107.711 294.873 113.547C285.166 124.422 273.455 139.325 264.638 149.951L263.084 151.824L264.597 153.73C274.252 165.903 283.918 178.691 293.704 191.04C287.061 193.624 280.291 196.126 273.475 198.634C265.377 201.613 257.212 204.607 249.188 207.751L246.97 208.619L247.313 210.977C249.576 226.504 251.758 242.042 253.864 257.592L207.287 249.495L204.802 249.062L203.949 251.437C199.261 264.496 191.924 281.38 186.097 295.088C174.115 285 162.086 274.97 150.009 264.998L148.166 263.478L146.271 264.933C133.823 274.494 121.423 284.12 109.072 293.808C106.795 287.238 104.256 280.49 101.698 273.752C98.6067 265.609 95.492 257.484 92.7402 249.602L91.9502 247.338L89.5674 247.61C81.2172 248.565 72.7638 249.734 64.3154 250.908C57.146 251.905 49.9802 252.904 42.8418 253.787C45.0306 238.389 48.0917 222.846 50.4561 207.161L50.8262 204.706L48.4834 203.884C35.3955 199.289 19.0635 192.098 5.10449 186.388C14.6245 175.672 26.7853 160.169 35.3037 149.907L36.8857 148.001L35.3135 146.087C29.9745 139.588 24.8063 132.854 19.5928 126.055C15.2116 120.341 10.7966 114.583 6.25488 108.928C20.4163 103.322 36.4725 97.7298 50.6436 92.5605L52.9307 91.7266L52.5859 89.3174C50.3501 73.689 48.2296 58.0439 46.2236 42.3838C53.2195 43.7024 60.2403 44.8975 67.2383 46.0928C75.6102 47.5227 83.9528 48.9564 92.2646 50.6201L94.5869 51.085L95.5781 48.9336C99.1361 41.2123 102.343 33.1279 105.527 25.085C108.228 18.2624 110.914 11.4688 113.811 4.85254L149.972 35.1494Z";
 
 function PersonaStarburst({ strokeColor }: { strokeColor: string }) {
   return (
     <div className="relative w-40 h-40 sm:w-48 sm:h-48 shrink-0">
-      <svg viewBox="0 0 547 547" className="absolute inset-0 w-full h-full">
+      {/* Updated viewBox to match the new 300x300 SVG */}
+      <svg viewBox="0 0 300 300" className="absolute inset-0 w-full h-full">
         <defs>
           <clipPath id="clip-why-attend-photo">
             <path d={STARBURST_PATH} />
           </clipPath>
         </defs>
+        {/* Updated image dimensions to match the 300x300 viewBox */}
         <image
           href={attendeesPhoto}
-          width="547"
-          height="547"
+          width="300"
+          height="300"
           preserveAspectRatio="xMidYMid slice"
           clipPath="url(#clip-why-attend-photo)"
         />
@@ -26,7 +28,7 @@ function PersonaStarburst({ strokeColor }: { strokeColor: string }) {
           d={STARBURST_PATH}
           fill="none"
           stroke={strokeColor}
-          strokeWidth="10"
+          strokeWidth="6" // Updated to exactly match your new SVG's stroke width
         />
       </svg>
     </div>
@@ -37,17 +39,20 @@ function PersonaStarburst({ strokeColor }: { strokeColor: string }) {
 function BulletIcon() {
   return (
     <svg
+      width="24"
+      height="24"
       viewBox="0 0 24 24"
-      className="w-5 h-5 shrink-0 mt-0.5"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      className="w-5 h-5 shrink-0 mt-0.5"
     >
-      <circle cx="12" cy="12" r="10" stroke="#be0e69" strokeWidth="1.5" />
       <path
-        d="M12 6V18M7 8.5L17 15.5M17 8.5L7 15.5"
-        stroke="#be0e69"
-        strokeWidth="1.5"
-        strokeLinecap="round"
+        d="M13.7617 0.00438234C14.0249 -0.0117519 14.289 0.0167217 14.5428 0.0888511C15.3589 0.328492 15.8155 0.972914 16.202 1.6814C16.356 1.65387 16.5106 1.62824 16.6654 1.60594C18.8015 1.30271 19.6959 2.27599 19.9757 4.30795C22.0525 4.43275 22.701 5.56404 22.0866 7.48639C22.2724 7.59221 22.4535 7.70657 22.6291 7.82852C24.3075 8.98259 24.0289 10.4095 22.9967 11.8924C24.3708 13.5851 24.1118 14.9143 22.2274 15.9706C22.8462 17.9527 22.1553 19.2876 19.996 19.4537C19.8051 21.7286 18.7491 22.3806 16.5835 21.9251C16.2313 22.7555 15.426 23.5636 14.5137 23.7198C13.5323 23.8878 12.7257 23.4816 11.9444 22.9411C11.3099 23.4189 10.947 23.6268 10.1764 23.7748C8.8617 23.8337 8.17772 23.1755 7.59429 22.0518C5.64441 22.8495 4.78839 22.0276 4.55336 20.1114C2.37865 20.0435 1.53444 18.8496 2.01896 16.7531C1.12049 16.327 0.291121 15.5245 0.13426 14.5067C-0.021083 13.4983 0.378113 12.7058 0.896462 11.8849C-0.585346 10.3127 -0.147634 8.98639 1.60298 7.99224C0.943373 5.89527 1.69746 4.6349 3.88911 4.32788C4.0362 2.26175 5.1568 1.27661 7.23133 1.89873C8.41052 -0.150789 9.97861 -0.541806 11.9316 0.849058C12.5821 0.367879 12.9691 0.14437 13.7617 0.00438234Z"
+        fill="#B70569"
+      />
+      <path
+        d="M11.8179 3.88593C12.2548 3.85794 12.7248 4.01928 13.0375 4.32867C13.6439 4.92801 13.5341 5.84387 13.5289 6.62353L13.5258 8.06659C14.2514 7.32489 15.4614 5.79831 16.4472 5.76462C16.8605 5.7537 17.2607 5.90936 17.5581 6.19645C17.8662 6.48924 18.0457 6.89212 18.0573 7.31683C18.0625 7.6063 17.987 7.89149 17.8392 8.14062C17.6052 8.53828 16.1842 9.88169 15.7619 10.3211L15.7915 10.3206C16.3342 10.3097 18.3509 10.2547 18.7939 10.3738C19.0482 10.4426 19.2804 10.5764 19.4679 10.7615C19.7653 11.0557 19.9336 11.4562 19.9359 11.8747C19.9407 12.2985 19.7745 12.7066 19.475 13.007C19.2801 13.1982 19.0384 13.3358 18.7741 13.4046C18.3495 13.5204 16.3497 13.4735 15.7621 13.473C16.723 14.4714 19.0435 16.0402 17.6161 17.5174C17.3191 17.8273 16.9106 18.0048 16.4818 18.0114C15.4877 18.0171 14.2824 16.4981 13.5241 15.7413C13.515 16.4526 13.5301 17.1967 13.5359 17.9085C13.5449 19.0046 13.1983 19.6486 12.0891 19.8934C12.0728 19.8939 12.0566 19.8944 12.0403 19.8944C9.85289 19.8778 10.3349 17.2512 10.343 15.7417C9.72206 16.3178 8.4482 17.9687 7.47474 18.0038C6.28616 18.0461 5.34466 16.7781 6.03424 15.6848C6.46413 15.0034 7.46629 14.1278 8.1028 13.4659C7.05666 13.4692 5.12386 13.7159 4.41037 13.0179C4.11131 12.7213 3.94263 12.318 3.9415 11.8966C3.93699 11.4742 4.10192 11.068 4.39932 10.7686C4.58265 10.5864 4.80971 10.454 5.05878 10.3852C5.54013 10.2514 7.4949 10.3045 8.10735 10.3092L6.78587 9.01092C5.98264 8.20753 5.29154 7.21955 6.31538 6.21258C6.60576 5.92501 6.99837 5.76414 7.4071 5.76509C7.66385 5.76889 7.91563 5.83628 8.13951 5.96203C8.60402 6.22872 9.91251 7.63144 10.3493 8.07845C10.3359 6.54286 9.86128 4.2053 11.8179 3.88593Z"
+        fill="#FEFEFE"
       />
     </svg>
   );
@@ -121,7 +126,7 @@ const personas: Persona[] = [
     description:
       "The Summit brings you into the room with the people and conversations that matter.",
     bgColor: "#F5FFDE",
-    strokeColor: "#FF8A3F",
+    strokeColor: "#FF8A3F", // This now perfectly matches the orange from your new SVG
     bullets: [
       "Engage in high-level conversations on leadership, innovation, AI, and digital transformation.",
       "Connect with executives, founders, investors, policymakers, and ecosystem leaders.",
@@ -147,10 +152,10 @@ export function WhyAttendSection() {
           transition={{ duration: 0.6, ease: "easeOut" }}
           className="text-center space-y-4 mb-10 sm:mb-14"
         >
-          <h2 className="font-sans font-semibold tracking-tighter uppercase text-4xl sm:text-[64px] section-header text-primary-main-pink">
+          <h2 className="font-display uppercase  section-header text-primary-main-pink">
             Why Attend
           </h2>
-          <p className="max-w-2xl mx-auto text-slate-700 text-base sm:text-lg leading-relaxed">
+          <p className="max-w-2xl mx-auto text-black text-lg sm:text-2xl leading-relaxed">
             Stay ahead in an ever-evolving industry by learning from experts,
             discovering emerging trends, and connecting with peers across
             Africa's technology ecosystem.
@@ -165,7 +170,7 @@ export function WhyAttendSection() {
               <button
                 key={persona.key}
                 onClick={() => setActiveKey(persona.key)}
-                className="relative px-5 sm:px-6 py-2.5 rounded-lg text-sm font-semibold transition-colors"
+                className="relative px-5 sm:px-6 py-2.5 rounded-lg text-base font-normal transition-colors"
               >
                 {isActive && (
                   <motion.span
@@ -205,10 +210,10 @@ export function WhyAttendSection() {
                 className="flex-1 min-w-0 -ml-8 sm:-ml-10 pl-12 sm:pl-16 pr-6 sm:pr-10 py-6 sm:py-8 rounded-r-2xl"
                 style={{ backgroundColor: active.bgColor }}
               >
-                <h3 className="font-bold text-2xl sm:text-3xl text-slate-900 mb-2">
+                <h3 className="font-bold text-2xl sm:text-3xl text-black mb-2">
                   {active.heading}
                 </h3>
-                <p className="text-slate-700 text-sm sm:text-base leading-relaxed">
+                <p className="text-black text-sm sm:text-base leading-relaxed">
                   {active.description}
                 </p>
               </div>
@@ -234,7 +239,7 @@ export function WhyAttendSection() {
                       transition: { duration: 0.35, ease: "easeOut" }
                     }
                   }}
-                  className="flex items-start gap-3 text-slate-800 text-base leading-relaxed"
+                  className="flex items-start gap-3 text-black text-base leading-relaxed"
                 >
                   <BulletIcon />
                   <span>{bullet}</span>

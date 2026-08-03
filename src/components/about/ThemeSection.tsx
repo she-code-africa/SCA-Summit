@@ -5,7 +5,7 @@ import audiencePhoto from "../../assets/audience.png";
 
 // --- Sparkle icon next to "THIS YEAR'S THEME" ---
 function Sparkle({
-  className = "w-4 h-4",
+  className = "w-8.75 h-9.5",
   color = "#be0e69"
 }: {
   className?: string;
@@ -14,12 +14,12 @@ function Sparkle({
   return (
     <svg
       className={className}
-      viewBox="0 0 24 24"
+      viewBox="0 0 35 38"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        d="M12 0L14 10L24 12L14 14L12 24L10 14L0 12L10 10L12 0Z"
+        d="M17.3688 0C17.8914 1.55155 18.1338 4.25584 18.3481 5.96069C18.7345 8.89801 19.0868 11.8405 19.4048 14.7877C21.0387 13.5177 22.4125 12.2356 24.1411 11.0084C24.5558 10.9032 24.9259 10.5427 25.2151 10.8568C23.8997 12.7844 22.5588 14.6914 21.193 16.5787C21.5527 16.6559 21.9126 16.713 22.2769 16.7616C26.1299 17.2701 29.9496 18.0515 33.8144 18.4564C34.2332 18.5008 34.5977 18.5695 35 18.7049C30.9313 19.5137 25.2574 20.2474 21.1293 20.7718C22.7994 22.99 24.8567 25.9662 26.3598 28.3229C24.2807 26.5657 21.5305 24.2883 19.3562 22.6231C19.1402 26.7592 18.2708 30.9629 17.8782 35.0915C17.8008 35.9046 17.6389 36.7356 17.3678 37.5C16.8454 32.4737 16.0972 27.624 15.5466 22.6009C13.8636 24.2132 10.6434 26.6661 8.74138 28.1706C9.13633 27.4125 10.1767 26.0212 10.6937 25.2737C11.736 23.7523 12.7698 22.2235 13.7951 20.6883C11.5624 20.5847 9.33247 20.184 7.12389 19.8467C4.73836 19.483 2.36672 19.206 0 18.7154C0.240453 18.6488 0.546681 18.5558 0.789399 18.523C5.12809 17.9299 9.43458 17.2162 13.7766 16.6273C12.3073 14.3795 10.0508 11.5853 8.77831 9.37748C9.41637 9.73918 10.7907 10.9117 11.4246 11.4242C12.7835 12.5229 14.1976 13.6385 15.513 14.7908C16.1177 9.83296 16.8314 4.97236 17.3688 0Z"
         fill={color}
       />
     </svg>
@@ -184,32 +184,32 @@ export function ThemeSection() {
   return (
     <section className="relative w-full bg-black text-white overflow-hidden py-20 sm:py-28">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
-        {/* Top: Theme heading + description */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start">
+        {/* UPDATED: Top section now uses flex so the h2 and p are in the same container and side-by-side */}
+        <div className="flex flex-col lg:flex-row items-start justify-between gap-10 lg:gap-16 w-full">
           <motion.div
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
-            className="space-y-3"
+            className="space-y-3 flex-1"
           >
             <motion.div
               custom={0}
               variants={fadeUp}
               className="flex items-center gap-2"
             >
-              <Sparkle className="w-3.5 h-3.5" color="#be0e69" />
-              <span className="text-xs sm:text-sm font-bold uppercase tracking-widest text-[#be0e69]">
+              <Sparkle className="w-8.75 h-9.5" color="#fb923c" />
+              <span className="text-xs sm:text-2xl font-semibold font-sans uppercase tracking-widest text-primary-magenta">
                 This Year's Theme
               </span>
-              <Sparkle className="w-3.5 h-3.5" color="#fb923c" />
+              <Sparkle className="w-8.75 h-9.5" color="#fb923c" />
             </motion.div>
 
             <motion.h2
               custom={0.1}
               variants={fadeUp}
-              className="font-condensed font-black uppercase text-3xl sm:text-4xl md:text-5xl leading-[1.05] tracking-tight"
+              className="font-condensed font-black font-display uppercase section-header"
             >
-              <span className="text-[#e6c640]">A Decade Of Impact:</span>
+              <span className="text-sca-citrine">A Decade Of Impact:</span>
               <br />
               <span className="text-white">
                 African Women Architecting the Digital Future
@@ -222,7 +222,7 @@ export function ThemeSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
-            className="text-slate-200 text-base sm:text-lg leading-relaxed lg:text-right"
+            className="text-white text-base sm:text-lg leading-relaxed lg:text-right font-sans flex-1 lg:max-w-lg"
           >
             This Summit marks a defining milestone as She Code Africa celebrates
             10 years of impact. Under the theme "A Decade of Impact: Women
