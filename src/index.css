@@ -56,3 +56,7 @@
   --font-sans: "Figtree", sans-serif;           /* body font */
   --font-display: "Thunder", sans-serif;       /* for headings / titles */
 }
+
+html {
+  scroll-behavior: smooth;
+}
