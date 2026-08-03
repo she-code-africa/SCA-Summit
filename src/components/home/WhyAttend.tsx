@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { motion, type Variants } from "framer-motion";
 import WhyAttendTabSection from "./WhyAttendTabSection";

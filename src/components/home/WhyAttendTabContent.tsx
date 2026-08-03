@@ -24,7 +24,7 @@ const images = {
 const ImageFigure = ({ src, value = "" }: { src: string; value?: string }) => (
   <div className="w-full md:block hidden ">
     <figure
-      className={`w-full max-w-127  ${value === "panel-sessions" || value === "networking" || value === "community-experience" ? "h-full" : "h-91"}`}
+      className={`w-full max-w-127  ${value === "panel-sessions" || value === "community-experience" ? "h-full" : "h-91"}`}
     >
       <img src={src} alt="why attend" className="object-cover w-full h-full" />
     </figure>
@@ -75,6 +75,88 @@ const MediaBlock = ({ value }: { value: string }) => {
       {imageSide === "right" && (
         <ImageFigure src={images[image]} value={value} />
       )}
+    </div>
+  );
+};
+
+const NetworkingBlock = () => {
+  const [expanded, setExpanded] = useState(false);
+
+  return (
+    <div className="w-full flex flex-col md:flex-row bg-sca-citrine">
+      <article className="w-full py-10 px-6 flex gap-5 items-start">
+        <span className="w-fit inline-block mt-4">
+          <SecondaryPattern2 />
+        </span>
+        <div className="w-full md:max-w-90.25 space-y-6">
+          <div>
+            <h3 className="text-primary-magenta flex items-center font-display font-semibold text-[40px]">
+              Networking
+            </h3>
+            <p className="mt-4 w-full text-lg font-sans">
+              Meet and connect with the people behind Africa's most exciting
+              ideas, companies, and communities. Build meaningful relationships
+              with your fellow professionals from across the continent. The
+              summit provides opportunities for attendees to connect with
+              students, professionals, founders, partners, community members,
+              and other participants through networking sessions scheduled
+              throughout the day.
+              {!expanded && (
+                <button
+                  type="button"
+                  onClick={() => setExpanded(true)}
+                  className="ml-2 text-primary-magenta font-semibold cursor-pointer"
+                >
+                  Read more
+                </button>
+              )}
+            </p>
+          </div>
+
+          {expanded && (
+            <>
+              <p className="w-full text-lg font-sans">
+                Networking experiences will include networking tables, sponsor
+                engagement, alumni interactions, and dedicated networking
+                breaks.
+              </p>
+
+              <button
+                type="button"
+                onClick={() => setExpanded(false)}
+                className="text-primary-magenta font-semibold cursor-pointer"
+              >
+                Read less
+              </button>
+            </>
+          )}
+        </div>
+      </article>
+
+      <div className="w-full flex flex-col">
+        <figure className="w-full h-91 md:h-auto md:flex-1">
+          <img
+            src={whyAttendImg1}
+            alt="Networking"
+            className="object-cover w-full h-full"
+          />
+        </figure>
+
+        {expanded && (
+          <div className="w-full bg-[#FFFDE0] py-10 px-6 space-y-4">
+            <p className="text-lg font-sans">
+              Eligible ticket holders will have access to the Hiring Room, where
+              participating organizations may conduct interviews, receive CV
+              submissions, and engage with prospective candidates.
+            </p>
+            <p className="text-lg font-sans">
+              Attendees will also be able to visit sponsor and partner booths to
+              learn more about organizations, products, services, and available
+              opportunities.
+            </p>
+          </div>
+        )}
+      </div>
     </div>
   );
 };
@@ -197,6 +279,7 @@ const AccessFundBlock = () => (
 );
 
 const customBlocks: Record<string, () => ReactNode> = {
+  networking: NetworkingBlock,
   "track-sessions": TrackSessionsBlock,
   awards: AwardsBlock,
   "access-fund-scholarships-giveaways": AccessFundBlock,
