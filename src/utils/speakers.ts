@@ -46,4 +46,28 @@ export const speakersData: Speaker[] = [
     image: speakerPlaceholder,
     category: "facilitators",
   },
+  {
+    id: "keynote-2",
+    name: "Speaker name",
+    role: "Keynote Speaker",
+    bio,
+    image: speakerPlaceholder,
+    category: "keynote-speakers",
+  },
+  {
+    id: "panelist-2",
+    name: "Speaker name",
+    role: "Panelist",
+    bio,
+    image: speakerPlaceholder,
+    category: "panelists",
+  },
+  {
+    id: "facilitator-2",
+    name: "Speaker name",
+    role: "Facilitator",
+    bio,
+    image: speakerPlaceholder,
+    category: "facilitators",
+  },
 ];
