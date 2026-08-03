@@ -52,15 +52,22 @@ const HeroSection = () => {
                 African Women Architecting the Digital Future
               </h1>
 
+              <p className="font-sans mt-7.5 text-2xl font-medium max-w-220.5 text-center text-sca-white mx-auto w-full">
+                The flagship summit of African women in tech; talent, builders,
+                leaders, and funders shaping the ecosystem.
+              </p>
+
               <div className="w-full max-w-280.5 mx-auto mt-4 xl:mt-8 flex justify-center flex-wrap gap-5">
                 {venueInfo.map(({ icon, label }, idx) => (
                   <span
                     className="flex py-2.5 px-6 gap-2.5 items-center justify-center bg-pastel-pink rounded-[20px]"
                     key={idx}
                   >
-                   {icon}
+                    {icon}
 
-                    <span className="whitespace-nowrap text-primary-magenta font-medium text-base font-sans">{label}</span>
+                    <span className="whitespace-nowrap text-primary-magenta font-medium text-base font-sans">
+                      {label}
+                    </span>
                   </span>
                 ))}
               </div>

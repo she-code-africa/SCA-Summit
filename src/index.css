@@ -56,6 +56,8 @@
   /* background image */
   --background-image-homeHero: url("./assets/home/homeHeroBg.jpg");
   --background-image-homeSpeaker: url("./assets/home/homeSpeakersBg.png");
+  --background-image-speakerHeroOne: url("./assets/speaker/speakerTopFlower.png");
+  --background-image-speakerHeroTwo: url("./assets/speaker/speakerBottomFlower.png");
 
   /* ---- Animation ---- */
   --animate-marquee: marquee 30s linear infinite;
@@ -97,10 +99,35 @@ body {
   background: transparent;
 }
 
-.b {
-  background-image: url("./assets/home/homeHeroBg.jpg");
-}
-
 html {
   scroll-behavior: smooth;
+}
+
+.flower-img {
+  background:
+    url("./assets/speaker/speakerTopFlower.png"),
+    url("./assets/speaker/speakerBottomFlower.png");
+  background-position:
+    top left,
+    bottom right;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 90px, 90px;
+}
+
+@media (min-width: 640px) {
+  .flower-img {
+    background-size: 112px, 112px;
+  }
+}
+
+@media (min-width: 992px) {
+  .flower-img {
+    background-size: 150px, 150px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .flower-img {
+    background-size: 223px, 223px;
+  }
 }

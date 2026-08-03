@@ -12,7 +12,7 @@ const HomePage = () => {
     new Date("2026-09-19T00:00:00Z"),
   );
   return (
-    <div className=" min-h-screen w-full">
+    <div className="min-h-screen w-full">
       <HeroSection />
 
       <section className="w-full bg-pastel-pink py-28.75">
