@@ -17,8 +17,10 @@ const WhyAttend = () => {
           </h3>
 
           <section className="w-full flex flex-col xl:flex-row gap-8 mt-10">
-            <WhyAttendTabSection setTab={setTab} tab={tab} />
-            <WhyAttendTabContent tab={tab} />
+            <div className="xl:sticky xl:top-10 xl:self-start">
+              <WhyAttendTabSection setTab={setTab} tab={tab} />
+            </div>
+            <WhyAttendTabContent tab={tab} setTab={setTab} />
           </section>
         </div>
       </div>

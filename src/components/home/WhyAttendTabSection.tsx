@@ -1,3 +1,5 @@
+
+
 import type { Dispatch, SetStateAction } from "react";
 import SecondaryPattern3 from "../../icons/SecondaryPattern3";
 import { whyAttendTab } from "../../utils/appData";
@@ -8,6 +10,13 @@ type Props = {
 };
 
 const WhyAttendTabSection = ({ setTab, tab }: Props) => {
+  const handleClick = (value: string) => {
+    setTab(value);
+    document
+      .getElementById(`tab-${value}`)
+      ?.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+
   return (
     <ul className="w-full flex xl:flex-col overflow-auto hide-scrollbar gap-6  xl:max-w-46.75">
       {whyAttendTab.map(({ label, value }, idx) => (
@@ -20,7 +29,7 @@ const WhyAttendTabSection = ({ setTab, tab }: Props) => {
           </span>
 
           <button
-            onClick={() => setTab(value)}
+            onClick={() => handleClick(value)}
             className={`inline-block cursor-pointer xl:text-left text-2xl sm:text-[28px] xl:text-[32px] font-display font-semibold ${tab === value ? "text-primary-magenta" : "text-[#8E8E93]"}`}
           >
             {label}

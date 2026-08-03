@@ -1,16 +1,15 @@
 export type MediaTabContent = {
   title: string;
   description: string;
- 
+  // Tailwind background class for this section
   bg: string;
- 
-  image: "img1" | "img2";
-  
+  // which of the two stock photos to use
+  image: "img1" | "img2" | "img3";
+  // which side the photo sits on at md+ widths
   imageSide: "left" | "right";
-
+  // only "networking" uses this today, but any tab can opt in
   readMore?: string;
 };
-
 
 export const whyAttendMediaContent: Record<string, MediaTabContent> = {
   keynotes: {
@@ -34,7 +33,7 @@ export const whyAttendMediaContent: Record<string, MediaTabContent> = {
     description:
       "Join the conversations featuring diverse voices from across Africa's tech ecosystem as they unpack the trends, opportunities, and challenges defining the next decade of African tech. The panel sessions will bring together speakers from different sectors to discuss topics related to technology, entrepreneurship, leadership, and innovation. Participants will have the opportunity to hear different perspectives and engage during Q&A sessions.",
     bg: "bg-sca-blush",
-    image: "img2",
+    image: "img3",
     imageSide: "left",
   },
   networking: {
@@ -51,7 +50,7 @@ export const whyAttendMediaContent: Record<string, MediaTabContent> = {
     title: "Learning & Engagement",
     description:
       "The summit includes opportunities to engage with speakers through keynote sessions, fireside chats, panel discussions, networking sessions, and audience Q&A.",
-    bg: "bg-sca-lime",
+    bg: "bg-sca-zesty",
     image: "img2",
     imageSide: "left",
   },
@@ -67,8 +66,30 @@ export const whyAttendMediaContent: Record<string, MediaTabContent> = {
     title: "Partner Showcase",
     description:
       "Sponsors and partners will have opportunities to engage with attendees through exhibition booths and spotlight sessions during the summit programme.",
-    bg: "bg-sca-lime",
+    bg: "bg-sca-zesty",
     image: "img2",
     imageSide: "left",
   },
 };
+
+export const tracks = [
+  {
+    title: "1. Scale Track",
+    description: "Conversations on leadership, visibility, and growth.",
+  },
+  {
+    title: "2. Capital Track",
+    description:
+      "Discussions on fundraising, investment, and access to capital.",
+  },
+  {
+    title: "3. Future Track",
+    description:
+      "Conversations on AI, digital infrastructure, and Africa's digital future.",
+  },
+  {
+    title: "4. Impact Track",
+    description:
+      "Stories from alumni, scholarship recipients, community members, and beneficiaries highlighting the impact of She Code Africa's programs.",
+  },
+];

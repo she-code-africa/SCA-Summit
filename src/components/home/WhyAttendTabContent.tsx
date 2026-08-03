@@ -1,100 +1,37 @@
-// import SecondaryPattern2 from "../../icons/SecondaryPattern2";
-// import whyAttendImg1 from "../../assets/home/whyAttendImg1.png";
-// import whyAttendImg2 from "../../assets/home/whyAttendImg2.png";
-
-// type Props = { tab: string };
-
-// const WhyAttendTabContent = ({ tab }: Props) => {
-//   return (
-//     <section className="w-full space-y-10">
-//       {/* 1st */}
-//       <div className="w-full flex bg-sca-blush">
-//         <article className="w-full py-10 px-6 flex gap-5 items-start">
-//           <span className="w-fit inline-block mt-4">
-//             <SecondaryPattern2 />
-//           </span>
-//           <div className="w-full md:max-w-90.25">
-//             <h3 className="text-primary-magenta flex items-center font-display font-semibold text-[40px]">
-//               Keynotes
-//             </h3>
-
-//             <p className="mt-4 w-full text-lg font-sans">
-//               Hear directly from globally recognised founders, executives,
-//               innovators and thought leaders as they share insights on
-//               leadership, innovation, and their experiences shaping the future
-//               od African technology.
-//             </p>
-//           </div>
-//         </article>
-//         <div className="w-full md:block hidden">
-//           <figure className="w-full max-w-127 h-91 ">
-//             <img
-//               src={whyAttendImg1}
-//               alt="why attend"
-//               className="object-cover w-full h-full"
-//             />
-//           </figure>
-//         </div>
-//       </div>
-
-//       {/* 2nd */}
-//       <div className="w-full flex bg-sca-citrine">
-//         <div className="w-full md:block hidden">
-//           <figure className="w-full max-w-127 h-91 ">
-//             <img
-//               src={whyAttendImg2}
-//               alt="why attend"
-//               className="object-cover w-full h-full"
-//             />
-//           </figure>
-//         </div>
-//         <article className="w-full py-10 px-6 flex gap-5 items-start">
-//           <span className="w-fit inline-block mt-4">
-//             <SecondaryPattern2 />
-//           </span>
-//           <div className="w-full md:max-w-90.25">
-//             <h3 className="text-primary-magenta flex items-center font-display font-semibold text-[40px]">
-//               Workshops
-//             </h3>
-
-//             <p className="mt-4 w-full text-lg font-sans">
-//               Move beyond inspiration with expert-led workshops that turn your
-//               ideas into action. Build practical, in-demand skills, and gain the
-//               tools needed to grow your career
-//             </p>
-//           </div>
-//         </article>
-//       </div>
-//     </section>
-//   );
-// };
-
-// export default WhyAttendTabContent;
-
-import { useState, type ReactNode } from "react";
+import { useEffect, useRef, useState } from "react";
+import type { Dispatch, ReactNode, SetStateAction } from "react";
 import SecondaryPattern2 from "../../icons/SecondaryPattern2";
 import whyAttendImg1 from "../../assets/home/whyAttendImg1.png";
 import whyAttendImg2 from "../../assets/home/whyAttendImg2.png";
-import { whyAttendMediaContent } from "../../utils/whyAttend";
+import whyAttendImg3 from "../../assets/home/whyAttendImg2.jpg";
+import { whyAttendTab } from "../../utils/appData";
+import { tracks, whyAttendMediaContent } from "../../utils/whyAttend";
+import starTrophy from "../../assets/home/StarTrophy.png";
 
-type Props = { tab: string };
+type Props = {
+  tab: string;
+  setTab: Dispatch<SetStateAction<string>>;
+};
 
 const images = {
   img1: whyAttendImg1,
   img2: whyAttendImg2,
+  img3: whyAttendImg3,
 };
 
-const ImageFigure = ({ src }: { src: string }) => (
-  <div className="w-full md:block hidden">
-    <figure className="w-full max-w-127 h-91">
+const ImageFigure = ({ src, value = "" }: { src: string; value?: string }) => (
+  <div className="w-full md:block hidden ">
+    <figure
+      className={`w-full max-w-127  ${value === "panel-sessions" || value === "networking" || value === "community-experience" ? "h-full" : "h-91"}`}
+    >
       <img src={src} alt="why attend" className="object-cover w-full h-full" />
     </figure>
   </div>
 );
 
-const MediaBlock = ({ tab }: { tab: string }) => {
+const MediaBlock = ({ value }: { value: string }) => {
   const [expanded, setExpanded] = useState(false);
-  const entry = whyAttendMediaContent[tab];
+  const entry = whyAttendMediaContent[value];
 
   if (!entry) return null;
 
@@ -102,7 +39,9 @@ const MediaBlock = ({ tab }: { tab: string }) => {
 
   return (
     <div className={`w-full flex ${bg}`}>
-      {imageSide === "left" && <ImageFigure src={images[image]} />}
+      {imageSide === "left" && (
+        <ImageFigure src={images[image]} value={value} />
+      )}
 
       <article className="w-full py-10 px-6 flex gap-5 items-start">
         <span className="w-fit inline-block mt-4">
@@ -131,35 +70,15 @@ const MediaBlock = ({ tab }: { tab: string }) => {
         </div>
       </article>
 
-      {imageSide === "right" && <ImageFigure src={images[image]} />}
+      {imageSide === "right" && (
+        <ImageFigure src={images[image]} value={value} />
+      )}
     </div>
   );
 };
 
-const tracks = [
-  {
-    title: "1. Scale Track",
-    description: "Conversations on leadership, visibility, and growth.",
-  },
-  {
-    title: "2. Capital Track",
-    description:
-      "Discussions on fundraising, investment, and access to capital.",
-  },
-  {
-    title: "3. Future Track",
-    description:
-      "Conversations on AI, digital infrastructure, and Africa's digital future.",
-  },
-  {
-    title: "4. Impact Track",
-    description:
-      "Stories from alumni, scholarship recipients, community members, and beneficiaries highlighting the impact of She Code Africa's programs.",
-  },
-];
-
 const TrackSessionsBlock = () => (
-  <div className="w-full flex bg-sca-lilac">
+  <div className="w-full flex md:flex-row flex-col bg-[#E7B8FF]">
     <article className="w-full py-10 px-6 flex gap-5 items-start">
       <span className="w-fit inline-block mt-4">
         <SecondaryPattern2 />
@@ -178,7 +97,7 @@ const TrackSessionsBlock = () => (
     <div className="w-full bg-black text-white py-10 px-6 space-y-6">
       {tracks.map(({ title, description }) => (
         <div key={title}>
-          <h4 className="font-display font-semibold text-xl">{title}</h4>
+          <h4 className="font-sans font-semibold text-xl">{title}</h4>
           <p className="mt-1 text-base font-sans text-white/80">
             {description}
           </p>
@@ -196,15 +115,14 @@ const awards = [
 ];
 
 const AwardsBlock = () => (
-  <div className="w-full flex bg-sca-citrine">
-    <div className="w-full bg-black text-white py-10 px-6 flex flex-col items-start gap-6">
-      {/* Swap for the actual trophy illustration asset */}
-      <span className="text-5xl" aria-hidden>
-        🏆
-      </span>
-      <ul className="space-y-3">
+  <div className="w-full flex flex-col-reverse md:flex-row bg-sca-citrine">
+    <div className="w-full bg-black text-white py-10 px-6 flex items-center gap-6">
+      <figure className="w-41 h-54.25 hidden md:block">
+        <img src={starTrophy} alt="Star Trophy" className="object-contain" />
+      </figure>
+      <ul className="space-y-6">
         {awards.map((award) => (
-          <li key={award} className="font-display font-semibold text-xl">
+          <li key={award} className="font-sans font-medium text-xl">
             {award}
           </li>
         ))}
@@ -238,7 +156,7 @@ const giveaways = [
 ];
 
 const AccessFundBlock = () => (
-  <div className="w-full flex bg-sca-lilac">
+  <div className="w-full flex flex-col md:flex-row bg-[#E7B8FF]">
     <article className="w-full py-10 px-6 flex gap-5 items-start">
       <span className="w-fit inline-block mt-4">
         <SecondaryPattern2 />
@@ -255,9 +173,9 @@ const AccessFundBlock = () => (
     </article>
 
     <div className="w-full bg-black text-white py-10 px-6">
-      <ul className="space-y-4">
+      <ul className="space-y-6">
         {giveaways.map((item) => (
-          <li key={item} className="font-sans text-lg">
+          <li key={item} className="font-sans text-xl">
             {item}
           </li>
         ))}
@@ -266,19 +184,57 @@ const AccessFundBlock = () => (
   </div>
 );
 
-// Tabs with a bespoke layout that doesn't fit the generic MediaBlock.
 const customBlocks: Record<string, () => ReactNode> = {
   "track-sessions": TrackSessionsBlock,
   awards: AwardsBlock,
   "access-fund-scholarships-giveaways": AccessFundBlock,
 };
 
-const WhyAttendTabContent = ({ tab }: Props) => {
-  const CustomBlock = customBlocks[tab];
+const WhyAttendTabContent = ({ setTab }: Props) => {
+  const sectionRefs = useRef<Record<string, HTMLDivElement | null>>({});
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const visible = entries.filter((entry) => entry.isIntersecting);
+        if (visible.length === 0) return;
+
+        const closest = visible.reduce((a, b) =>
+          a.boundingClientRect.top < b.boundingClientRect.top ? a : b,
+        );
+
+        const value = closest.target.getAttribute("data-tab-value");
+        if (value) setTab(value);
+      },
+
+      { rootMargin: "-40% 0px -50% 0px", threshold: 0 },
+    );
+
+    Object.values(sectionRefs.current).forEach((el) => {
+      if (el) observer.observe(el);
+    });
+
+    return () => observer.disconnect();
+  }, [setTab]);
 
   return (
-    <section className="w-full">
-      {CustomBlock ? <CustomBlock /> : <MediaBlock tab={tab} />}
+    <section className="w-full space-y-10">
+      {whyAttendTab.map(({ value }) => {
+        const CustomBlock = customBlocks[value];
+
+        return (
+          <div
+            key={value}
+            id={`tab-${value}`}
+            data-tab-value={value}
+            ref={(el) => {
+              sectionRefs.current[value] = el;
+            }}
+          >
+            {CustomBlock ? <CustomBlock /> : <MediaBlock value={value} />}
+          </div>
+        );
+      })}
     </section>
   );
 };
