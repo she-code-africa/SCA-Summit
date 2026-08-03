@@ -4,17 +4,16 @@ Welcome to the official repository for the SheCode Africa Summit 2026. This proj
 
 ## 👥 Volunteer Contributors & Page Ownership
 
-### Chidalu Anukam
-
-- Landing Page (/)
-- Speaker Page (/speakers)
-- Accessibility Page (/accessibility)
-
 ### Glory Okafor
 
 - Schedule Page (/schedule)
 - About Page (/about)
 - Accessibility Page (/accessibility)
+
+### Chidalu Anukam
+
+- Landing Page (/)
+- Speaker Page (/speakers)
 
 ## 🔗 Project Links
 
