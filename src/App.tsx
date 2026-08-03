@@ -22,9 +22,9 @@ export default function App() {
   return (
     <BrowserRouter>
       <ScrollToTop />
-      <div className="min-h-screen flex flex-col bg-white text-gray-900 font-sans antialiased">
+      <div className="min-h-screen flex flex-col bg-white text-gray-900  font-sans antialiased">
         <Navbar />
-        <main className="flex-grow">
+        <main className="grow">
           <Routes>
             <Route path="/" element={<LandingPage />} />
             <Route path="/speakers" element={<SpeakersPage />} />
