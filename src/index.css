@@ -90,3 +90,7 @@ body {
 .b {
   background-image: url("./assets/home/homeHeroBg.jpg");
 }
+
+html {
+  scroll-behavior: smooth;
+}
