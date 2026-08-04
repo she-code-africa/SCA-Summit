@@ -19,7 +19,7 @@ const cards: GetInvolvedCard[] = [
     description:
       "Support the flagship summit of African women in tech while connecting your organisation with a highly engaged community of technology professionals, emerging talent, founders and industry leaders.",
     ctaLabel: "Become a Sponsor",
-    ctaHref: "#sponsor",
+    ctaHref: " https://forms.gle/s6bhvvSeEXFWzT5Y7",
     bgColor: "#ffffff",
     ctaColor: "#B70569",
     size: "large"
@@ -30,7 +30,7 @@ const cards: GetInvolvedCard[] = [
     description:
       "Support the flagship summit of African women in tech while connecting your organisation with a highly engaged community of technology professionals, emerging talent, founders and industry leaders.",
     ctaLabel: "Exhibit your brand",
-    ctaHref: "#exhibit",
+    ctaHref: " https://forms.gle/s6bhvvSeEXFWzT5Y7",
     bgColor: "#FFEAF6",
     ctaColor: "#B70569",
     size: "large"
@@ -41,7 +41,7 @@ const cards: GetInvolvedCard[] = [
     description:
       "Support the flagship summit of African women in tech while connecting your organisation with a highly engaged community of technology",
     ctaLabel: "Become a Partner",
-    ctaHref: "#media-partner",
+    ctaHref: " https://forms.gle/s6bhvvSeEXFWzT5Y7",
     bgColor: "#FFFDDE",
     ctaColor: "#B70569",
     size: "small"
@@ -52,7 +52,7 @@ const cards: GetInvolvedCard[] = [
     description:
       "Support the flagship summit of African women in tech while connecting your organisation with a highly engaged community of technology",
     ctaLabel: "Become a Partner",
-    ctaHref: "#logistics-partner",
+    ctaHref: " https://forms.gle/s6bhvvSeEXFWzT5Y7",
     bgColor: "#F8EAFF",
     ctaColor: "#B70569",
     size: "small"
@@ -63,7 +63,7 @@ const cards: GetInvolvedCard[] = [
     description:
       "Support the flagship summit of African women in tech while connecting your organisation with a highly engaged community of technology",
     ctaLabel: "Partner with us",
-    ctaHref: "#diversity-ticket",
+    ctaHref: " https://forms.gle/s6bhvvSeEXFWzT5Y7",
     bgColor: "#FFFDDE",
     ctaColor: "#B70569",
     size: "small"
@@ -114,6 +114,8 @@ function GetInvolvedCardItem({
         <p className="text-black card-text flex-1 mb-6">{card.description}</p>
         <a
           href={card.ctaHref}
+          target="_blank"
+          rel="noopener noreferrer"
           className="inline-block self-start px-8 py-4.5 rounded-md text-white text-base font-semibold transition-colors hover:brightness-110"
           style={{ backgroundColor: card.ctaColor }}
         >

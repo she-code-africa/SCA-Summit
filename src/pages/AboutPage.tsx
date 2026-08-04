@@ -14,19 +14,16 @@ export default function AboutPage() {
   // --- SCROLL LOGIC FOR HASH ANCHORS ---
   useEffect(() => {
     if (hash) {
-      // Remove the '#' from the hash
       const elementId = hash.replace("#", "");
       const element = document.getElementById(elementId);
 
       if (element) {
-        // Add a small delay for the layout to settle, then scroll smoothly
         setTimeout(() => {
           element.scrollIntoView({ behavior: "smooth" });
         }, 100);
       }
     }
   }, [hash]);
-  // ---------------------------------------
 
   return (
     <div className="min-h-screen bg-white">
@@ -37,7 +34,6 @@ export default function AboutPage() {
       </section>
 
       <ThemeSection />
-      {/* Added scroll-mt-24 (approx 96px) to account for the sticky navbar height */}
       <section id="why-attend" className="scroll-mt-24">
         <WhyAttendSection />
       </section>

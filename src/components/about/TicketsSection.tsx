@@ -11,6 +11,11 @@ interface Ticket {
   alt: string;
 }
 
+const CHECKOUT_URL =
+  "https://tix.africa/discover/she-code-africa-summit-2026/checkout?step=tickets";
+const EVENT_PAGE_URL =
+  "https://tix.africa/discover/she-code-africa-summit-2026";
+
 const tickets: Ticket[] = [
   {
     key: "next-gen",
@@ -37,7 +42,7 @@ const tickets: Ticket[] = [
 export function TicketsSection() {
   return (
     <section className="relative w-full bg-black py-20 sm:py-28 overflow-hidden">
-      {/* Decorative wavy line background — SVG for crisp scaling at any size */}
+      {/* Decorative wavy line background */}
       <div
         className="absolute inset-0 opacity-60 pointer-events-none"
         style={{
@@ -57,7 +62,7 @@ export function TicketsSection() {
           transition={{ duration: 0.6, ease: "easeOut" }}
           className="text-center mb-10 sm:mb-14"
         >
-          <h2 className="font-display  uppercase section-header text-white tracking-tight mb-2">
+          <h2 className="font-display uppercase section-header text-white tracking-tight mb-2">
             Get your tickets
           </h2>
           <p className="text-slate-300 text-base sm:text-lg">
@@ -65,24 +70,30 @@ export function TicketsSection() {
           </p>
         </motion.div>
 
-        {/* Ticket grid — images carry all their own text */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6  sm:gap-x-8 sm:gap-y-12 mb-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-x-8 sm:gap-y-12 mb-16">
           {tickets.map((ticket, i) => (
-            <motion.img
+            <motion.a
               key={ticket.key}
-              src={ticket.image}
-              alt={ticket.alt}
+              href={CHECKOUT_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.3 }}
               whileHover={{ y: -6, scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
               transition={{ duration: 0.5, delay: i * 0.1, ease: "easeOut" }}
-              className="w-full h-auto rounded-xl shadow-xl object-cover"
-            />
+              className="block w-full"
+            >
+              <img
+                src={ticket.image}
+                alt={ticket.alt}
+                className="w-full h-auto rounded-xl shadow-xl object-cover"
+              />
+            </motion.a>
           ))}
         </div>
 
-        {/* CTA */}
         <motion.div
           initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -91,7 +102,9 @@ export function TicketsSection() {
           className="flex justify-center"
         >
           <motion.a
-            href="#buy-ticket"
+            href={EVENT_PAGE_URL} 
+            target="_blank"
+            rel="noopener noreferrer"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.96 }}
             className="px-9.75 py-4.25 rounded-lg bg-primary-magenta text-white font-semibold text-sm sm:text-base shadow-lg hover:bg-primary-dark-pink transition-colors"

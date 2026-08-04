@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import { motion, type Variants } from "framer-motion";
 import { useCountdown } from "../../hooks/useCountdown";
 import { TicketsSection } from "../about/TicketsSection";
@@ -10,7 +12,7 @@ import WhyAttend from "./WhyAttend";
 
 const countdownContainer: Variants = {
   hidden: {},
-  visible: { transition: { staggerChildren: 0.15 } },
+  visible: { transition: { staggerChildren: 0.15 } }
 };
 
 const countdownItem: Variants = {
@@ -18,14 +20,30 @@ const countdownItem: Variants = {
   visible: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.6, ease: "easeOut" },
-  },
+    transition: { duration: 0.6, ease: "easeOut" }
+  }
 };
 
 const HomePage = () => {
+  const { hash } = useLocation();
+
+  useEffect(() => {
+    if (hash) {
+      const elementId = hash.replace("#", "");
+      const element = document.getElementById(elementId);
+
+      if (element) {
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: "smooth" });
+        }, 100);
+      }
+    }
+  }, [hash]);
+
   const { days, hours, minutes, seconds } = useCountdown(
-    new Date("2026-09-19T00:00:00Z"),
+    new Date("2026-09-19T00:00:00Z")
   );
+
   return (
     <div className="min-h-screen w-full">
       <HeroSection />
@@ -105,8 +123,13 @@ const HomePage = () => {
       <WhatWeBuilt />
       <SpeakersSection />
       <OurSponsors />
-      <TicketsSection />
-      <FaqSection />
+
+      <section id="tickets" className="scroll-mt-24">
+        <TicketsSection />
+      </section>
+      <section id="faq-section" className="scroll-mt-24">
+        <FaqSection />
+      </section>
     </div>
   );
 };

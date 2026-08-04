@@ -1,8 +1,15 @@
+import { useState } from "react";
 import { motion } from "framer-motion";
 import whatWeBuilt from "../../assets/home/youtubePoster.jpg";
 import PlayButton from "../../icons/PlayButton";
 
 const WhatWeBuilt = () => {
+  const [isPlaying, setIsPlaying] = useState(false);
+
+  const handlePlayClick = () => {
+    setIsPlaying(true);
+  };
+
   return (
     <section className="w-full bg-pastel-pink py-25">
       <div className="w-full mx-auto max-w-314.5">
@@ -25,24 +32,37 @@ const WhatWeBuilt = () => {
         >
           <section className="px-6 py-6 md:px-12.5 bg-sca-white md:py-12.5 rounded-[30px]">
             <div className="w-full h-85.5 relative overflow-hidden rounded-[20px]">
-              <figure className="w-full h-full">
-                <img
-                  src={whatWeBuilt}
-                  alt="Youtube Poster"
-                  className="object-cover w-full h-full"
-                />
-              </figure>
+              {!isPlaying ? (
+                <>
+                  <figure className="w-full h-full">
+                    <img
+                      src={whatWeBuilt}
+                      alt="Youtube Poster"
+                      className="object-cover w-full h-full"
+                    />
+                  </figure>
 
-              <div className="absolute inset-0 bg-[#b00c68]/52 flex items-center justify-center">
-                <motion.button
-                  whileHover={{ scale: 1.1 }}
-                  whileTap={{ scale: 0.9 }}
-                  className="w-20.5 h-20.5 cursor-pointer"
-                  title="Play"
-                >
-                  <PlayButton />
-                </motion.button>
-              </div>
+                  <div className="absolute inset-0 bg-[#b00c68]/52 flex items-center justify-center">
+                    <motion.button
+                      whileHover={{ scale: 1.1 }}
+                      whileTap={{ scale: 0.9 }}
+                      className="w-20.5 h-20.5 cursor-pointer"
+                      title="Play"
+                      onClick={handlePlayClick}
+                    >
+                      <PlayButton />
+                    </motion.button>
+                  </div>
+                </>
+              ) : (
+                <iframe
+                  className="w-full h-full absolute inset-0"
+                  src="https://www.youtube.com/embed/j_oGekQqj34?autoplay=1&rel=0&mute=1"
+                  title="See What We Built Last Summit"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                />
+              )}
             </div>
           </section>
         </motion.div>
