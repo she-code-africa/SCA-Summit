@@ -187,7 +187,7 @@ export function WhyAttendSection() {
                   {persona.label}
                 </span>
                 {!isActive && (
-                  <span className="absolute inset-0 rounded-lg bg-sca-blush -z-0" />
+                  <span className="absolute inset-0 rounded-lg bg-sca-blush z-0" />
                 )}
               </button>
             );
