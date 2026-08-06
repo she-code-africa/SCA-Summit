@@ -1,5 +1,8 @@
 import speakerPlaceholder from "../assets/home/whyAttendImg2.png";
 
+import adesuwa from "../assets/speaker/speakers/Adesuwa-Okunbo-Rhodes.jpg";
+import dami from "../assets/speaker/speakers/Damilola-Teidi.jpeg";
+
 export type SpeakerCategory = "keynote-speakers" | "panelists" | "facilitators";
 
 export type Speaker = {
@@ -69,5 +72,32 @@ export const speakersData: Speaker[] = [
     bio,
     image: speakerPlaceholder,
     category: "facilitators",
+  },
+];
+
+export const speakers = [
+  {
+    id: "panelist-1",
+    name: "Adesuwa Okunbo Rhodes",
+    title: "Founder & Managing Partner, Aruwa Capital Management",
+    bio,
+    image: adesuwa,
+    category: "panelist",
+  },
+  {
+    id: "panelist-2",
+    name: "Damilola Teidi-Ayoola",
+    title: "Principal, Platform and Networks,  Ventures Platform Fund",
+    bio,
+    image: dami,
+    category: "panelist",
+  },
+  {
+    id: "panelist-2",
+    name: "Damilola Teidi-Ayoola",
+    title: "Principal, Platform and Networks,  Ventures Platform Fund",
+    bio,
+    image: dami,
+    category: "panelist",
   },
 ];

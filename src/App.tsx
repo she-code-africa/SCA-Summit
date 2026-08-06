@@ -7,7 +7,7 @@ import { SpeakersPage } from "./pages/SpeakersPage";
 // import { SchedulePage } from "./pages/SchedulePage";
 import { AccessibilityPage } from "./pages/AccessibilityPage";
 import AboutPage from "./pages/AboutPage";
-import "./app.css";
+import "./App.css";
 import SchedulePage from "./pages/SchedulePage";
 
 function ScrollToTop() {

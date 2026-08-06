@@ -1,16 +1,17 @@
 import { motion } from "framer-motion";
 import whyAttendImg2 from "../../assets/home/whyAttendImg2.png";
+import { speakers } from "../../utils/speakers";
 
-const speakers = [
-  { name: "Speaker Name", title: "Speaker title" },
-  { name: "Speaker Name", title: "Speaker title" },
-  { name: "Speaker Name", title: "Speaker title" },
-  { name: "Speaker Name", title: "Speaker title" },
-  { name: "Speaker Name", title: "Speaker title" },
-  { name: "Speaker Name", title: "Speaker title" },
-  { name: "Speaker Name", title: "Speaker title" },
-  { name: "Speaker Name", title: "Speaker title" },
-];
+// const speakers = [
+//   { name: "Speaker Name", title: "Speaker title" },
+//   { name: "Speaker Name", title: "Speaker title" },
+//   { name: "Speaker Name", title: "Speaker title" },
+//   { name: "Speaker Name", title: "Speaker title" },
+//   { name: "Speaker Name", title: "Speaker title" },
+//   { name: "Speaker Name", title: "Speaker title" },
+//   { name: "Speaker Name", title: "Speaker title" },
+//   { name: "Speaker Name", title: "Speaker title" },
+// ];
 
 const SpeakersSection = () => {
   // Duplicate the list so the track can loop seamlessly (0% -> -50%)
@@ -58,7 +59,7 @@ const SpeakersSection = () => {
               >
                 <figure className="rounded-[15px] w-full h-62.25 overflow-hidden">
                   <img
-                    src={whyAttendImg2}
+                    src={speaker.image}
                     alt="speaker"
                     className="object-cover w-full h-full"
                   />
