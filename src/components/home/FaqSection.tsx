@@ -49,7 +49,7 @@ const FaqSection = () => {
                 >
                   <article
                     className="w-full flex items-center gap-4 justify-between cursor-pointer"
-                    onClick={() => setOpenFaq((prev) => (isOpen ? "" : `${i}`))}
+                    onClick={() => setOpenFaq(isOpen ? "" : `${i}`)}
                   >
                     <h4 className="w-full text-[#211F1F] font-sans font-extrabold text-xl">
                       Title
