@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import whyAttendImg2 from "../../assets/home/whyAttendImg2.png";
+//import whyAttendImg2 from "../../assets/home/whyAttendImg2.png";
 import { speakers } from "../../utils/speakers";
 
 // const speakers = [
