@@ -2,6 +2,7 @@ import speakerPlaceholder from "../assets/home/whyAttendImg2.png";
 
 import adesuwa from "../assets/speaker/speakers/Adesuwa-Okunbo-Rhodes.jpg";
 import dami from "../assets/speaker/speakers/Damilola-Teidi.jpeg";
+import damiO from "../assets/speaker/speakers/Damilola-Olokesusi.jpg";
 
 export type SpeakerCategory = "keynote-speakers" | "panelists" | "facilitators";
 
@@ -97,7 +98,15 @@ export const speakers = [
     name: " Damilola Olokesusi",
     title: "Ceo/Co-Founder, Shuttlers",
     bio,
-    image: dami,
+    image: damiO,
+    category: "panelist",
+  },
+  {
+    id: "fireside-1",
+    name: " Damilola Olokesusi",
+    title: "Ceo/Co-Founder, Shuttlers",
+    bio,
+    image: damiO,
     category: "panelist",
   },
 ];

@@ -12,7 +12,7 @@ import WhyAttend from "./WhyAttend";
 
 const countdownContainer: Variants = {
   hidden: {},
-  visible: { transition: { staggerChildren: 0.15 } }
+  visible: { transition: { staggerChildren: 0.15 } },
 };
 
 const countdownItem: Variants = {
@@ -20,8 +20,8 @@ const countdownItem: Variants = {
   visible: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.6, ease: "easeOut" }
-  }
+    transition: { duration: 0.6, ease: "easeOut" },
+  },
 };
 
 const HomePage = () => {
@@ -41,7 +41,7 @@ const HomePage = () => {
   }, [hash]);
 
   const { days, hours, minutes, seconds } = useCountdown(
-    new Date("2026-09-19T00:00:00Z")
+    new Date("2026-09-19T00:00:00Z"),
   );
 
   return (

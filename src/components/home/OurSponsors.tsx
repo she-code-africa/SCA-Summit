@@ -8,6 +8,7 @@ import chaoss from "../../assets/home/chaoss.png";
 import myCover from "../../assets/home/myCover.png";
 import weTech from "../../assets/home/weTech.png";
 
+
 const gridContainer: Variants = {
   hidden: {},
   visible: { transition: { staggerChildren: 0.08 } },
