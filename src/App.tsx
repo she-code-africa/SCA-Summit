@@ -28,7 +28,7 @@ export default function App() {
           <Routes>
             <Route path="/" element={<LandingPage />} />
             <Route path="/speakers" element={<SpeakersPage />} />
-            // <Route path="/schedule" element={<SchedulePage />} />
+            <Route path="/schedule" element={<SchedulePage />} />
             <Route path="/accessibility" element={<AccessibilityPage />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="*" element={<LandingPage />} />

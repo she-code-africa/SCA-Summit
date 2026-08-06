@@ -93,9 +93,9 @@ export const speakers = [
     category: "panelist",
   },
   {
-    id: "panelist-2",
-    name: "Damilola Teidi-Ayoola",
-    title: "Principal, Platform and Networks,  Ventures Platform Fund",
+    id: "panelist-3",
+    name: " Damilola Olokesusi",
+    title: "Ceo/Co-Founder, Shuttlers",
     bio,
     image: dami,
     category: "panelist",
