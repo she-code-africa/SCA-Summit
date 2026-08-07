@@ -8,7 +8,6 @@ const FaqSection = () => {
   const [faq, setFaq] = useState("general-information");
   const [openFaq, setOpenFaq] = useState("");
 
-  // Reset open state when switching tabs
   useEffect(() => {
     setOpenFaq("");
   }, [faq]);
