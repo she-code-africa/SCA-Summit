@@ -3,7 +3,20 @@ import { motion } from "framer-motion";
 import { CONTENT_MAP, tabs } from "../../../data/codeOfConductData";
 import { AccordionItem } from "./AccordionItem";
 import FlowerPinwheel from "../../FlowerPinwheel";
+
 import codeOfConductImg from "../../../assets/code-of-conduct-photo.jpg";
+import attendanceSupportImg from "../../../assets/attendance-support-photo.jpg";
+import accessibilityImg from "../../../assets/accessibility-photo.jpg";
+import firstAidImg from "../../../assets/first-aid-photo.jpg";
+import helpConcernsImg from "../../../assets/help-concerns-photo.jpg";
+
+const tabImages: Record<string, string> = {
+  "code-of-conduct": codeOfConductImg,
+  "attendance-support": attendanceSupportImg,
+  "accessibility": accessibilityImg,
+  "first-aid": firstAidImg,
+  "help-concerns": helpConcernsImg,
+};
 
 export function CodeOfConductSection() {
   const [activeTab, setActiveTab] = useState("code-of-conduct");
@@ -82,7 +95,6 @@ export function CodeOfConductSection() {
               {activeContent.title}
             </h2>
 
-            {/* Static Intro for Code of Conduct (Exact custom classes restored) */}
             {activeTab === "code-of-conduct" && (
               <div className="space-y-6">
                 <p className="text-black description-light">
@@ -128,7 +140,6 @@ export function CodeOfConductSection() {
               </div>
             )}
 
-            {/* Fallback for First Aid (No accordions) */}
             {activeTab === "first-aid" && (
               <div className="space-y-6">
                 <p className="text-black description-light">
@@ -164,13 +175,13 @@ export function CodeOfConductSection() {
 
           {/* Right Column - Image Frame */}
           <motion.div
+            key={`img-${activeTab}`} 
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.7, ease: "easeOut" }}
             className="relative"
           >
-            {/* Pinwheel accent */}
             <motion.div
               initial={{ opacity: 0, rotate: -20, scale: 0.7 }}
               whileInView={{ opacity: 1, rotate: 0, scale: 1 }}
@@ -184,11 +195,10 @@ export function CodeOfConductSection() {
               />
             </motion.div>
 
-            {/* Image frame with exact corner curves from your design */}
             <div className="relative border-[6px] sm:border-6 border-secondary-velvet overflow-hidden rounded-tl-none rounded-tr-[25px] rounded-br-none rounded-bl-[25px] sm:rounded-tr-[50px] sm:rounded-br-none sm:rounded-bl-[50px]">
               <img
-                src={codeOfConductImg}
-                alt="Attendee at the She Code Africa Summit"
+                src={tabImages[activeTab]}  
+                alt="She Code Africa Summit"
                 className="w-full h-full object-cover aspect-484/581"
               />
             </div>

@@ -6,7 +6,7 @@ import audiencePhoto from "../../assets/audience.png";
 // --- Sparkle icon next to "THIS YEAR'S THEME" ---
 function Sparkle({
   className = "w-8.75 h-9.5",
-  color = "#be0e69",
+  color = "#be0e69"
 }: {
   className?: string;
   color?: string;
@@ -29,7 +29,7 @@ function Sparkle({
 // --- Exact wavy background path, reusable with a fill color prop ---
 function WavyBanner({
   fill,
-  className = "",
+  className = ""
 }: {
   fill: string;
   className?: string;
@@ -57,7 +57,7 @@ const STARBURST_PATH =
 function StarburstFrame({
   photo,
   alt,
-  className = "",
+  className = ""
 }: {
   photo: string;
   alt: string;
@@ -97,7 +97,7 @@ const SCALLOP_YELLOW_PATH =
 function ScallopFrame({
   photo,
   alt,
-  className = "",
+  className = ""
 }: {
   photo: string;
   alt: string;
@@ -134,7 +134,7 @@ function ScallopFrame({
 function StarburstFrameOrange({
   photo,
   alt,
-  className = "",
+  className = ""
 }: {
   photo: string;
   alt: string;
@@ -175,7 +175,7 @@ function MobileThemeCard({
   textColor,
   bg,
   photo,
-  alt,
+  alt
 }: {
   title: string;
   titleColor: string;
@@ -186,10 +186,7 @@ function MobileThemeCard({
   alt: string;
 }) {
   return (
-    <div
-      className="w-full overflow-hidden"
-      style={{ backgroundColor: bg }}
-    >
+    <div className="w-full overflow-hidden" style={{ backgroundColor: bg }}>
       <figure className="w-full h-56 sm:h-64">
         <img src={photo} alt={alt} className="w-full h-full object-cover" />
       </figure>
@@ -202,7 +199,7 @@ function MobileThemeCard({
           {title}
         </h3>
         <p
-          className="font-medium leading-relaxed break-words"
+          className="font-medium leading-relaxed wrap-break-word"
           style={{ color: textColor }}
         >
           {description}
@@ -218,8 +215,8 @@ const fadeUp = {
     ({
       opacity: 1,
       y: 0,
-      transition: { duration: 0.6, delay, ease: "easeOut" },
-    }) as const,
+      transition: { duration: 0.6, delay, ease: "easeOut" }
+    }) as const
 };
 
 export function ThemeSection() {
@@ -249,7 +246,7 @@ export function ThemeSection() {
             <motion.h2
               custom={0.1}
               variants={fadeUp}
-              className="font-display font-black font-display uppercase section-header"
+              className="font-display font-black section-header"
             >
               <span className="text-sca-citrine">A Decade Of Impact:</span>
               <br />
@@ -264,7 +261,7 @@ export function ThemeSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
-            className="text-white text-base sm:text-lg leading-relaxed lg:text-right font-sans flex-1 lg:max-w-lg break-words"
+            className="text-white text-base sm:text-lg leading-relaxed lg:text-right font-sans flex-1 lg:max-w-lg wrap-break-word"
           >
             This Summit marks a defining milestone as She Code Africa celebrates
             10 years of impact. Under the theme "A Decade of Impact: Women
@@ -277,7 +274,7 @@ export function ThemeSection() {
       </div>
 
       {/* --- WRAPPER TO PREVENT OVERLAPPING --- */}
-      <div className="flex flex-col gap-10 md:gap-[100px] lg:gap-[150px] mt-12">
+      <div className="flex flex-col gap-10 md:gap-25 lg:gap-37.5 mt-12">
         {/* Mission */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -300,17 +297,17 @@ export function ThemeSection() {
           </div>
 
           {/* Desktop: wavy banner + starburst frame, anchored flush LEFT */}
-          <div className="hidden md:flex relative w-screen h-auto min-h-[240px] sm:min-h-[280px] lg:h-[353px] overflow-visible items-center">
+          <div className="hidden md:flex relative w-screen h-auto min-h-60 sm:min-h-70 lg:h-88.25 overflow-visible items-center">
             <WavyBanner
               fill="#f5c4e8"
-              className="left-0 lg:w-[896.6px] lg:h-[353px]"
+              className="left-0 lg:w-[896.6px] lg:h-88.25"
             />
             <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row md:justify-between items-center">
-              <div className="md:w-[55%] space-y-3 break-words px-2 sm:px-4">
-                <h3 className="font-display font-black text-2xl sm:text-3xl text-[#7a1256]">
+              <div className="md:w-[55%] space-y-3 wrap-break-word px-2 sm:px-4">
+                <h3 className="font-display font-black text-2xl sm:text-3xl text-primary-magenta">
                   Mission
                 </h3>
-                <p className="text-slate-800 font-medium leading-relaxed max-w-md break-words">
+                <p className="text-black font-medium leading-relaxed max-w-md wrap-break-word">
                   We are on a mission to equip African girls and women with
                   access to technology and digital skills training, bridging the
                   gender gap and fostering economic independence.
@@ -323,8 +320,8 @@ export function ThemeSection() {
                   -right-2 -top-3
                   sm:-right-4 sm:-top-5
                   md:-right-5 md:-top-7
-                  lg:-right-5 lg:-top-7.5
-                  w-44 h-44 sm:w-56 sm:h-56 lg:w-[546px] lg:h-[546px] z-20"
+                  lg:right-45 lg:-top-5
+                  w-44 h-44 sm:w-56 sm:h-56 lg:w-136.5 lg:h-136.5 z-20"
               />
             </div>
           </div>
@@ -352,27 +349,27 @@ export function ThemeSection() {
           </div>
 
           {/* Desktop: wavy banner MIRRORED + scallop frame, anchored flush RIGHT */}
-          <div className="hidden md:flex relative w-screen h-auto min-h-[240px] sm:min-h-[280px] lg:h-[353px] overflow-visible items-center">
+          <div className="hidden md:flex relative w-screen h-auto min-h-60 sm:min-h-70 lg:h-88.25 overflow-visible items-center">
             <WavyBanner
               fill="#fb7a4a"
-              className="scale-x-[-1] right-0 lg:w-[896.6px] lg:h-[353px]"
+              className="scale-x-[-1] right-0 lg:w-[896.6px] lg:h-88.25"
             />
-            <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row md:justify-between items-center">
+            <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row md:justify-between items-center self-stretch">
               <ScallopFrame
                 photo={visionPhoto}
                 alt="Vision attendees"
                 className="absolute 
-                -left-2 -top-3
-                sm:-left-4 sm:-top-5
-                md:-left-5 md:-top-7
-                lg:-left-5 lg:-top-7.5
-                w-44 h-44 sm:w-56 sm:h-56 lg:w-[546px] lg:h-[546px] z-20"
+        -left-2 -top-3
+        sm:-left-4 sm:-top-5
+        md:-left-5 md:-top-7
+        lg:left-56 lg:-top-5
+        w-44 h-44 sm:w-56 sm:h-56 lg:w-136.5 lg:h-136.5 z-20"
               />
-              <div className="md:w-[55%] md:ml-auto space-y-3 break-words px-2 sm:px-4">
+              <div className="md:w-[55%] md:ml-64 space-y-3 wrap-break-word px-2 sm:mx-4">
                 <h3 className="font-display font-black text-2xl sm:text-3xl text-[#6b0e40]">
                   Vision
                 </h3>
-                <p className="text-white font-medium leading-relaxed max-w-md break-words">
+                <p className="text-white font-medium leading-relaxed max-w-md wrap-break-word">
                   We envision an Africa where women are equally represented
                   across all career roles and levels in Technology.
                 </p>
@@ -403,17 +400,17 @@ export function ThemeSection() {
           </div>
 
           {/* Desktop: wavy banner + orange starburst frame, anchored flush LEFT */}
-          <div className="hidden md:flex relative w-screen h-auto min-h-[240px] sm:min-h-[280px] lg:h-[353px] overflow-visible items-center">
+          <div className="hidden md:flex relative w-screen h-auto min-h-60 sm:min-h-70 lg:h-88.25 overflow-visible items-center">
             <WavyBanner
               fill="#4d8b7c"
-              className="left-0 lg:w-[896.6px] lg:h-[353px]"
+              className="left-0 lg:w-[896.6px] lg:h-88.25"
             />
             <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row md:justify-between items-center">
-              <div className="md:w-[55%] space-y-3 break-words px-2 sm:px-4">
+              <div className="md:w-[55%] space-y-3 wrap-break-word px-2 sm:px-4">
                 <h3 className="font-display font-black text-2xl sm:text-3xl text-[#e6c640]">
                   Target audience
                 </h3>
-                <p className="text-white font-medium leading-relaxed max-w-md break-words">
+                <p className="text-white font-medium leading-relaxed max-w-md wrap-break-word">
                   The She Code Africa Summit welcomes individuals and
                   organisations from across the technology and innovation
                   ecosystem.
@@ -423,11 +420,11 @@ export function ThemeSection() {
                 photo={audiencePhoto}
                 alt="Target audience speaker"
                 className="absolute 
-                right-[-10px] bottom-[-45px]
-                sm:right-[-15px] sm:bottom-[-20px]
-                md:right-[-20px] md:bottom-[-25px]
-                lg:right-[-20px] lg:bottom-[-30px]
-                w-44 h-44 sm:w-56 sm:h-56 lg:w-[546px] lg:h-[546px] z-20"
+                -right-2.5 -bottom-11.25
+                sm:-right-3.75 sm:-bottom-5
+                md:-right-5 md:-bottom-6.25
+                  lg:right-45 lg:-top-5
+                w-44 h-44 sm:w-56 sm:h-56 lg:w-136.5 lg:h-136.5 z-20"
               />
             </div>
           </div>

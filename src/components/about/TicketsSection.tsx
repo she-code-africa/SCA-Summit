@@ -62,7 +62,7 @@ export function TicketsSection() {
           transition={{ duration: 0.6, ease: "easeOut" }}
           className="text-center mb-10 sm:mb-14"
         >
-          <h2 className="font-display uppercase section-header text-white tracking-tight mb-2">
+          <h2 className="font-display section-header text-white tracking-tight mb-2">
             Get your tickets
           </h2>
           <p className="text-slate-300 text-base sm:text-lg">

@@ -1,24 +1,34 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import attendeesPhoto from "../../assets/why-attend-photo.jpg";
 
-// --- Replaced with the new starburst path ---
+// --- Import the different images (adjust paths to your files) ---
+import studentsPhoto from "../../assets/why-attend-students.jpg";
+import professionalsPhoto from "../../assets/why-attend-professionals.jpg";
+import foundersPhoto from "../../assets/why-attend-founders.jpg";
+import leadersPhoto from "../../assets/why-attend-leaders.jpg";
+
+// --- Starburst SVG path (unchanged) ---
 const STARBURST_PATH =
   "M149.972 35.1494L151.89 36.7568L153.815 35.1572C165.328 25.5937 178.66 15.5354 190.9 6.0498C196.533 20.6309 201.956 35.7922 207.402 50.4912L208.241 52.7529L210.63 52.4199C225.629 50.3285 242.135 47.6642 257.146 46.2295C254.507 61.6466 251.946 77.0774 249.464 92.5205L249.088 94.8594L251.275 95.7676C265.77 101.785 280.304 107.711 294.873 113.547C285.166 124.422 273.455 139.325 264.638 149.951L263.084 151.824L264.597 153.73C274.252 165.903 283.918 178.691 293.704 191.04C287.061 193.624 280.291 196.126 273.475 198.634C265.377 201.613 257.212 204.607 249.188 207.751L246.97 208.619L247.313 210.977C249.576 226.504 251.758 242.042 253.864 257.592L207.287 249.495L204.802 249.062L203.949 251.437C199.261 264.496 191.924 281.38 186.097 295.088C174.115 285 162.086 274.97 150.009 264.998L148.166 263.478L146.271 264.933C133.823 274.494 121.423 284.12 109.072 293.808C106.795 287.238 104.256 280.49 101.698 273.752C98.6067 265.609 95.492 257.484 92.7402 249.602L91.9502 247.338L89.5674 247.61C81.2172 248.565 72.7638 249.734 64.3154 250.908C57.146 251.905 49.9802 252.904 42.8418 253.787C45.0306 238.389 48.0917 222.846 50.4561 207.161L50.8262 204.706L48.4834 203.884C35.3955 199.289 19.0635 192.098 5.10449 186.388C14.6245 175.672 26.7853 160.169 35.3037 149.907L36.8857 148.001L35.3135 146.087C29.9745 139.588 24.8063 132.854 19.5928 126.055C15.2116 120.341 10.7966 114.583 6.25488 108.928C20.4163 103.322 36.4725 97.7298 50.6436 92.5605L52.9307 91.7266L52.5859 89.3174C50.3501 73.689 48.2296 58.0439 46.2236 42.3838C53.2195 43.7024 60.2403 44.8975 67.2383 46.0928C75.6102 47.5227 83.9528 48.9564 92.2646 50.6201L94.5869 51.085L95.5781 48.9336C99.1361 41.2123 102.343 33.1279 105.527 25.085C108.228 18.2624 110.914 11.4688 113.811 4.85254L149.972 35.1494Z";
 
-function PersonaStarburst({ strokeColor }: { strokeColor: string }) {
+// --- PersonaStarburst now accepts an imageSrc prop ---
+function PersonaStarburst({
+  imageSrc,
+  strokeColor
+}: {
+  imageSrc: string;
+  strokeColor: string;
+}) {
   return (
     <div className="relative w-40 h-40 sm:w-48 sm:h-48 shrink-0">
-      {/* Updated viewBox to match the new 300x300 SVG */}
       <svg viewBox="0 0 300 300" className="absolute inset-0 w-full h-full">
         <defs>
           <clipPath id="clip-why-attend-photo">
             <path d={STARBURST_PATH} />
           </clipPath>
         </defs>
-        {/* Updated image dimensions to match the 300x300 viewBox */}
         <image
-          href={attendeesPhoto}
+          href={imageSrc} // dynamic image
           width="300"
           height="300"
           preserveAspectRatio="xMidYMid slice"
@@ -28,14 +38,14 @@ function PersonaStarburst({ strokeColor }: { strokeColor: string }) {
           d={STARBURST_PATH}
           fill="none"
           stroke={strokeColor}
-          strokeWidth="6" // Updated to exactly match your new SVG's stroke width
+          strokeWidth="6"
         />
       </svg>
     </div>
   );
 }
 
-// --- Small asterisk-in-circle bullet icon ---
+// --- BulletIcon (unchanged) ---
 function BulletIcon() {
   return (
     <svg
@@ -58,6 +68,7 @@ function BulletIcon() {
   );
 }
 
+// --- Persona type updated to include photo ---
 interface Persona {
   key: string;
   label: string;
@@ -66,6 +77,7 @@ interface Persona {
   bgColor: string;
   strokeColor: string;
   bullets: string[];
+  photo: string; // new field
 }
 
 const personas: Persona[] = [
@@ -77,6 +89,7 @@ const personas: Persona[] = [
       "The She Code Africa Summit offers you the unique opportunity to:",
     bgColor: "#FFEAF6",
     strokeColor: "#094A32",
+    photo: studentsPhoto, 
     bullets: [
       "Learn from founders, executives, and industry leaders through keynote sessions.",
       "Build practical, in-demand skills during expert-led workshops.",
@@ -94,6 +107,7 @@ const personas: Persona[] = [
       "The Summit is designed for professionals looking to grow their careers, expand their network, and stay ahead in a rapidly evolving industry.",
     bgColor: "#FFFDDE",
     strokeColor: "#9865FF",
+    photo: professionalsPhoto, 
     bullets: [
       "Gain fresh perspectives from global leaders building, leading, and influencing the technology ecosystem.",
       "Strengthen your technical and professional skills through practical workshops.",
@@ -111,6 +125,7 @@ const personas: Persona[] = [
       "The Summit brings you into the room with the people and conversations that matter.",
     bgColor: "#E6DBE1",
     strokeColor: "#FFF88F",
+    photo: foundersPhoto, 
     bullets: [
       "Learn directly from founders who have successfully built and grown companies.",
       "Explore fundraising, investment, and access to capital through the Capital Track.",
@@ -127,6 +142,7 @@ const personas: Persona[] = [
       "Join senior leaders from across Africa's technology ecosystem to exchange ideas, strengthen partnerships, and explore the trends shaping the future of work and innovation",
     bgColor: "#F5FFDE",
     strokeColor: "#FF8A3F",
+    photo: leadersPhoto, 
     bullets: [
       "Engage in high-level conversations on leadership, innovation, AI, and digital transformation.",
       "Connect with executives, founders, investors, policymakers, and ecosystem leaders.",
@@ -152,7 +168,7 @@ export function WhyAttendSection() {
           transition={{ duration: 0.6, ease: "easeOut" }}
           className="text-center space-y-4 mb-10 sm:mb-14"
         >
-          <h2 className="font-display uppercase  section-header text-primary-main-pink">
+          <h2 className="font-display section-header text-primary-main-pink">
             Why Attend
           </h2>
           <p className="max-w-2xl mx-auto text-black text-lg sm:text-2xl leading-relaxed">
@@ -162,27 +178,25 @@ export function WhyAttendSection() {
           </p>
         </motion.div>
 
-        {/* Tab pills */}
-        <div className="flex flex-wrap justify-center sm:justify-start gap-3 mb-10">
+        {/* Tab navigation */}
+        <div className="flex flex-wrap gap-3 mb-12 sm:mb-16">
           {personas.map((persona) => {
             const isActive = persona.key === activeKey;
             return (
               <button
                 key={persona.key}
                 onClick={() => setActiveKey(persona.key)}
-                className="relative sm:px-8 py-4.5 rounded-lg text-base font-normal transition-colors"
+                className="relative px-5 sm:px-8 py-4.5 rounded-lg text-sm font-semibold whitespace-nowrap transition-colors"
               >
                 {isActive && (
                   <motion.span
-                    layoutId="activeTabBg"
-                    className="absolute inset-0 rounded-lg bg-primary-main-pink"
+                    layoutId="conductTabBg"
+                    className="absolute inset-0 rounded-lg bg-primary-magenta"
                     transition={{ type: "spring", stiffness: 400, damping: 32 }}
                   />
                 )}
                 <span
-                  className={`relative z-10 ${
-                    isActive ? "text-white" : "text-secondary-velvet"
-                  }`}
+                  className={`relative z-10 ${isActive ? "text-white" : "text-secondary-velvet"}`}
                 >
                   {persona.label}
                 </span>
@@ -194,7 +208,6 @@ export function WhyAttendSection() {
           })}
         </div>
 
-        {/* Content card — crossfades on tab switch */}
         <AnimatePresence mode="wait">
           <motion.div
             key={active.key}
@@ -205,7 +218,10 @@ export function WhyAttendSection() {
           >
             {/* Starburst image + colored info bar */}
             <div className="flex items-center mb-10">
-              <PersonaStarburst strokeColor={active.strokeColor} />
+              <PersonaStarburst
+                imageSrc={active.photo}
+                strokeColor={active.strokeColor}
+              />
               <div
                 className="flex-1 min-w-0 -ml-8 sm:-ml-10 pl-12 sm:pl-16 pr-6 sm:pr-10 py-6 sm:py-8 rounded-r-2xl"
                 style={{ backgroundColor: active.bgColor }}
@@ -219,7 +235,6 @@ export function WhyAttendSection() {
               </div>
             </div>
 
-            {/* Bullet list — staggered entrance */}
             <motion.ul
               initial="hidden"
               animate="visible"
