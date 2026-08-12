@@ -106,15 +106,24 @@ const HomePage = () => {
 
           <motion.div
             variants={countdownItem}
-            className="flex justify-center items-center mt-10 w-full"
+            className="flex justify-center items-center gap-2.5 flex-wrap xl:flex-nowrap mt-10 w-full"
           >
             <motion.a
               href="#tickets"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.96 }}
-              className="px-8 py-4.5 rounded-lg bg-primary-main-pink hover:bg-primary-dark-pink text-white font-semibold text-sm transition shadow-sm hover:shadow"
+              className="px-8 py-4.5 rounded-lg w-full flex items-center justify-center max-w-59.25 bg-primary-main-pink border border-primary-magenta hover:bg-primary-dark-pink text-white font-normal text-base transition shadow-sm hover:shadow"
             >
               Get Tickets
+            </motion.a>
+
+            <motion.a
+              href="#sponsors"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.96 }}
+              className="px-8 py-4.5 rounded-lg  w-full flex items-center justify-center max-w-59.25 bg-sca-white border border-primary-magenta hover:bg-primary-dark-pink text-primary-magenta hover:text-white font-normal text-base transition shadow-sm hover:shadow"
+            >
+              Talk to partnerships
             </motion.a>
           </motion.div>
         </motion.div>
@@ -123,7 +132,9 @@ const HomePage = () => {
       <WhyAttend />
       <WhatWeBuilt />
       <SpeakersSection />
-      <OurSponsors />
+      <div id="sponsors">
+        <OurSponsors />
+      </div>
       <EventVenue />
 
       <section id="tickets" className="scroll-mt-24">

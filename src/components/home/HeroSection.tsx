@@ -68,7 +68,7 @@ const HeroSection = () => {
               {/* badge */}
               <motion.div
                 variants={heroItem}
-                className="max-w-fit mx-auto bg-primary-magenta/10 text-sca-white sca-badges overflow-hidden"
+                className="max-w-fit mx-auto mt-10 xl:mt-0 text-sca-white sca-badges overflow-hidden"
               >
                 <span className="flex py-2 px-2.5 xl:py-4 xl:px-5 gap-2 items-center justify-center">
                   <FlowerVector className="text-sca-white size-3 sm:size-5.25" />
@@ -97,7 +97,7 @@ const HeroSection = () => {
 
               <motion.div
                 variants={heroItem}
-                className="w-full max-w-280.5 mx-auto mt-4 xl:mt-8 flex justify-center flex-wrap gap-5"
+                className="w-full py-5 xl:py-0 max-w-280.5 mx-auto mt-4 xl:mt-8 flex justify-center flex-wrap gap-5"
               >
                 {venueInfo.map(({ icon, label }, idx) => (
                   <span
@@ -106,7 +106,7 @@ const HeroSection = () => {
                   >
                     {icon}
 
-                    <span className="whitespace-nowrap text-primary-magenta font-medium text-base font-sans">
+                    <span className=" text-primary-magenta font-medium text-sm sm:text-base font-sans">
                       {label}
                     </span>
                   </span>

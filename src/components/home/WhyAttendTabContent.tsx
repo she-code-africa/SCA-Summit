@@ -29,9 +29,9 @@ const images = {
 };
 
 const ImageFigure = ({ src, value = "" }: { src: string; value?: string }) => (
-  <div className="w-full md:block hidden ">
+  <div className="w-full block ">
     <figure
-      className={`w-full max-w-127  ${value === "panel-sessions" || value === "community-experience" ? "h-full" : "h-91"}`}
+      className={`w-full xl:max-w-127  ${value === "panel-sessions" || value === "community-experience" ? "h-full" : "h-91"}`}
     >
       <img src={src} alt="why attend" className="object-cover w-full h-full" />
     </figure>
@@ -47,7 +47,9 @@ const MediaBlock = ({ value }: { value: string }) => {
   const { title, description, bg, image, imageSide, readMore } = entry;
 
   return (
-    <div className={`w-full flex ${bg}`}>
+    <div
+      className={`w-full flex ${imageSide === "left" ? "flex-col-reverse" : "flex-col"} md:flex-row ${bg}`}
+    >
       {imageSide === "left" && (
         <ImageFigure src={images[image]} value={value} />
       )}

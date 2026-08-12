@@ -20,23 +20,23 @@ const tickets: Ticket[] = [
   {
     key: "next-gen",
     image: ticketNextGen,
-    alt: "Next Gen ticket — Lagos, Nigeria, Sept 19 2026"
+    alt: "Next Gen ticket — Lagos, Nigeria, Sept 19 2026",
   },
   {
     key: "community-builder",
     image: ticketCommunityBuilder,
-    alt: "Community Builder ticket — Lagos, Nigeria, Sept 19 2026"
+    alt: "Community Builder ticket — Lagos, Nigeria, Sept 19 2026",
   },
   {
     key: "impact-leader",
     image: ticketImpactLeader,
-    alt: "Impact Leader ticket — Lagos, Nigeria, Sept 19 2026"
+    alt: "Impact Leader ticket — Lagos, Nigeria, Sept 19 2026",
   },
   {
     key: "impact-architect",
     image: ticketImpactArchitect,
-    alt: "Impact Architect ticket — Lagos, Nigeria, Sept 19 2026"
-  }
+    alt: "Impact Architect ticket — Lagos, Nigeria, Sept 19 2026",
+  },
 ];
 
 export function TicketsSection() {
@@ -49,7 +49,7 @@ export function TicketsSection() {
           backgroundImage: `url(${wavyBg})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
-          backgroundRepeat: "no-repeat"
+          backgroundRepeat: "no-repeat",
         }}
       />
 
@@ -65,8 +65,11 @@ export function TicketsSection() {
           <h2 className="font-display section-header text-white tracking-tight mb-2">
             Get your tickets
           </h2>
-          <p className="text-slate-300 text-base sm:text-lg">
-            Get your tickets
+          <p className="text-sca-white text-xl sm:text-2xl max-w-237.5 mx-auto text-center">
+            Come solo or bring your people. We’ve got{" "}
+            <span className="text-sca-citrine">individual and group</span>
+            tickets, so whether it’s your team, your colleagues, or your
+            favorite people, there’s a ticket option for you.
           </p>
         </motion.div>
 
@@ -102,7 +105,7 @@ export function TicketsSection() {
           className="flex justify-center"
         >
           <motion.a
-            href={EVENT_PAGE_URL} 
+            href={EVENT_PAGE_URL}
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ scale: 1.05 }}
