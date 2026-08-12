@@ -6,7 +6,7 @@ export function ScheduleHero() {
   return (
     <div className="relative">
       {/* Hero Section */}
-      <section className="relative w-full h-[280px] sm:h-[340px] md:h-[400px] overflow-hidden">
+      <section className="relative w-full h-70 sm:h-85 md:h-100 overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{ backgroundImage: `url(${scheduleHeroImg})` }}
@@ -23,10 +23,10 @@ export function ScheduleHero() {
           transition={{ duration: 0.6, ease: "easeOut" }}
           className="relative z-10 h-full flex flex-col items-center justify-center text-center px-4"
         >
-          <p className="text-white/90 text-sm sm:text-base tracking-wide mb-2">
+          <p className="font-medium text-white/90 text-base sm:text-2xl tracking-wide mb-2">
             Agenda - at - glance
           </p>
-          <h1 className="font-display hero-title uppercase text-white ">
+          <h1 className="font-display hero-title  text-white ">
             Conference Agenda
           </h1>
         </motion.div>
@@ -38,9 +38,9 @@ export function ScheduleHero() {
         animate={{ opacity: 1, scale: 1, rotate: 0 }}
         transition={{ duration: 0.6, delay: 0.3, ease: "easeOut" }}
         className="absolute z-20 pointer-events-none
-                   top-[220px] right-4 w-24 h-28
-                   sm:top-[270px] sm:right-10 sm:w-32 sm:h-36
-                   md:top-[320px] md:right-16 md:w-[269px] md:h-[305px]"
+        top-55 right-4 w-24 h-28
+        sm:top-67.5:right-10 sm:w-32 sm:h-36
+        md:top-80 md:right-16 md:w-67.25 md:h-76.25"
       >
         <FlowerDecoration className="w-full h-full" />
       </motion.div>

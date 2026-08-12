@@ -1,5 +1,10 @@
 import { motion } from "framer-motion";
-import involvedPhoto from "../../assets/get-involved-photo.png";
+
+import sponsorPhoto from "../../assets/get-involved-sponsor.jpg";
+import brandPhoto from "../../assets/get-involved-brand.jpg";
+import mediaPhoto from "../../assets/get-involved-media.jpg";
+import logisticsPhoto from "../../assets/get-involved-logistics.jpg";
+import diversityPhoto from "../../assets/get-involved-diversity.jpg";
 
 interface GetInvolvedCard {
   key: string;
@@ -10,6 +15,7 @@ interface GetInvolvedCard {
   bgColor: string;
   ctaColor: string;
   size: "large" | "small";
+  image: string;
 }
 
 const cards: GetInvolvedCard[] = [
@@ -22,7 +28,8 @@ const cards: GetInvolvedCard[] = [
     ctaHref: " https://forms.gle/s6bhvvSeEXFWzT5Y7",
     bgColor: "#ffffff",
     ctaColor: "#B70569",
-    size: "large"
+    size: "large",
+    image: sponsorPhoto
   },
   {
     key: "brand",
@@ -33,7 +40,8 @@ const cards: GetInvolvedCard[] = [
     ctaHref: " https://forms.gle/s6bhvvSeEXFWzT5Y7",
     bgColor: "#FFEAF6",
     ctaColor: "#B70569",
-    size: "large"
+    size: "large",
+    image: brandPhoto
   },
   {
     key: "media",
@@ -44,7 +52,8 @@ const cards: GetInvolvedCard[] = [
     ctaHref: " https://forms.gle/s6bhvvSeEXFWzT5Y7",
     bgColor: "#FFFDDE",
     ctaColor: "#B70569",
-    size: "small"
+    size: "small",
+    image: mediaPhoto
   },
   {
     key: "logistics",
@@ -55,7 +64,8 @@ const cards: GetInvolvedCard[] = [
     ctaHref: " https://forms.gle/s6bhvvSeEXFWzT5Y7",
     bgColor: "#F8EAFF",
     ctaColor: "#B70569",
-    size: "small"
+    size: "small",
+    image: logisticsPhoto
   },
   {
     key: "diversity",
@@ -66,7 +76,8 @@ const cards: GetInvolvedCard[] = [
     ctaHref: " https://forms.gle/s6bhvvSeEXFWzT5Y7",
     bgColor: "#FFFDDE",
     ctaColor: "#B70569",
-    size: "small"
+    size: "small",
+    image: diversityPhoto
   }
 ];
 
@@ -96,16 +107,16 @@ function GetInvolvedCardItem({
       viewport={{ once: true, amount: 0.2 }}
       whileHover={{ y: -6 }}
       transition={{ type: "spring", stiffness: 300, damping: 20 }}
-      className="rounded-xl overflow-hidden shadow-lg flex flex-col h-full  p-4 sm:p-6 gap-8"
+      className="rounded-xl overflow-hidden shadow-lg flex flex-col h-full p-4 sm:p-6 gap-8"
       style={{ backgroundColor: card.bgColor }}
     >
       <div
         className={`w-full overflow-hidden ${card.size === "large" ? "aspect-700/610" : "aspect-4/5 sm:aspect-699/400"}`}
       >
         <img
-          src={involvedPhoto}
+          src={card.image} 
           alt={card.title}
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover scale-115 transition-transform duration-300 ease-in-out hover:scale-120"
         />
       </div>
 
@@ -133,7 +144,6 @@ export function GetInvolvedSection() {
   return (
     <section className="relative w-full bg-secondary-velvet py-20 sm:py-28">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Heading */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -141,7 +151,7 @@ export function GetInvolvedSection() {
           transition={{ duration: 0.6, ease: "easeOut" }}
           className="text-center space-y-4 mb-14 sm:mb-16"
         >
-          <h2 className="font-display hero-title uppercase text-white ">
+          <h2 className="font-display hero-title text-white">
             Get Involved
           </h2>
           <p className="max-w-4xl mx-auto text-white text-lg sm:text-2xl leading-relaxed">
@@ -151,14 +161,12 @@ export function GetInvolvedSection() {
           </p>
         </motion.div>
 
-        {/* Top row — 2 large cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 mb-6 sm:mb-8">
           {largeCards.map((card, i) => (
             <GetInvolvedCardItem key={card.key} card={card} delay={i * 0.1} />
           ))}
         </div>
 
-        {/* Bottom row — 3 small cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {smallCards.map((card, i) => (
             <GetInvolvedCardItem

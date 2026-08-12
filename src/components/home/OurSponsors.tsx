@@ -1,6 +1,6 @@
 import { motion, type Variants } from "framer-motion";
 import googleImg from "../../assets/home/dawfd.png";
-import techCabal from "../../assets/home/techCabal.png";
+import techCabal from "../../assets/home/techcabal.png";
 import propel from "../../assets/home/propel.png";
 import osca from "../../assets/home/osca.png";
 import zaycodes from "../../assets/home/zaycodes.png";

@@ -57,7 +57,7 @@ export function AboutSummit() {
           <motion.h2
             custom={0.1}
             variants={fadeUp}
-            className="font-display font-black uppercase section-header text-primary-main-pink tracking-tighter"
+            className="font-display font-black section-header text-primary-main-pink "
           >
             Ten Years of Building What Didn't Exist For Us.
           </motion.h2>

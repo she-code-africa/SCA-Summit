@@ -31,7 +31,7 @@ export function BossOnBoardSection() {
           <p className="description-text mb-2">
             Want to go to SCA Summit 2026?
           </p>
-          <h2 className="font-display section-header uppercase text-3xl sm:text-4xl md:text-5xl text-primary-magenta tracking-tight">
+          <h2 className="font-display section-header text-3xl sm:text-4xl md:text-5xl text-primary-magenta tracking-tight">
             Let's Get Your Boss on Board
           </h2>
         </motion.div>
