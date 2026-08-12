@@ -1,3 +1,4 @@
+"use client";
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { faqTab } from "../../utils/appData";
@@ -20,15 +21,15 @@ const FaqSection = () => {
         >
           Frequently Asked Questions
         </motion.h3>
-        <div className="w-full flex flex-col xl:flex-row gap-16 mt-10">
-          <ul className="w-full xl:max-w-63 flex gap-3 overflow-auto hide-scrollbar items-center xl:flex-col xl:items-start">
+        <div className="w-full flex flex-col xl:flex-row gap-8 xl:gap-16 mt-10">
+          <ul className="w-full xl:max-w-63 flex gap-3 overflow-auto hide-scrollbar items-center xl:flex-col xl:items-start xl:sticky xl:top-40 xl:self-start">
             {faqTab.map((item) => (
               <li
                 className="font-sans shrink-0 xl:shrink-[unset]"
                 key={item.value}
               >
                 <button
-                  className={`font-semibold cursor-pointer  text-2xl ${item.value === faq ? "text-primary-magenta" : "text-black"}`}
+                  className={`font-semibold cursor-pointer text-lg xl:text-2xl ${item.value === faq ? "text-primary-magenta" : "text-black"}`}
                   title={item.label}
                   onClick={() => setFaq(item.value)}
                 >

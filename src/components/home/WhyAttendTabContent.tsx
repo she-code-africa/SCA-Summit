@@ -1,14 +1,18 @@
 import { useEffect, useRef, useState } from "react";
 import type { Dispatch, ReactNode, SetStateAction } from "react";
 import SecondaryPattern2 from "../../icons/SecondaryPattern2";
-import whyAttendImg1 from "../../assets/home/whyAttendImg1.png";
-import whyAttendImg2 from "../../assets/home/whyAttendImg2.png";
-import whyAttendImg3 from "../../assets/home/whyAttendImg2.jpg";
+import keynoteImg from "../../assets/home/keynoteImg.jpg";
+import workshops from "../../assets/home/workshops.jpg";
+import learning from "../../assets/home/learning.jpg";
+import panelSessions from "../../assets/home/panelSession.jpg";
+import networking from "../../assets/home/networking.jpg";
 import { whyAttendTab } from "../../utils/appData";
 import { tracks, whyAttendMediaContent } from "../../utils/whyAttend";
 import starTrophy from "../../assets/home/StarTrophy.png";
 import laptop from "../../assets/home/laptop.png";
 import bottle from "../../assets/home/bottle.png";
+import community from "../../assets/home/community.jpg";
+import partner from "../../assets/home/partner.jpg";
 
 type Props = {
   tab: string;
@@ -16,9 +20,12 @@ type Props = {
 };
 
 const images = {
-  img1: whyAttendImg1,
-  img2: whyAttendImg2,
-  img3: whyAttendImg3,
+  img1: keynoteImg,
+  img2: workshops,
+  img3: panelSessions,
+  img4: learning,
+  img5: community,
+  img6: partner,
 };
 
 const ImageFigure = ({ src, value = "" }: { src: string; value?: string }) => (
@@ -136,7 +143,7 @@ const NetworkingBlock = () => {
       <div className="w-full flex flex-col">
         <figure className="w-full h-91 md:h-auto md:flex-1">
           <img
-            src={whyAttendImg1}
+            src={networking}
             alt="Networking"
             className="object-cover w-full h-full"
           />
