@@ -1,3 +1,4 @@
+"use client";
 import { motion, type Variants } from "framer-motion";
 import heroImage from "../../assets/home/homeHeroBg.jpg";
 import FlowerVector from "../../icons/FlowerVector";
@@ -29,7 +30,7 @@ const HeroSection = () => {
     },
     {
       icon: <MapPin className="text-primary-magenta" />,
-      label: "Lagos, Nigeria",
+      label: "Celebr8 Centre HQ, Vori Close, Ikeja , Lagos, Nigeria",
     },
     {
       icon: <Globe className="text-primary-magenta" />,
@@ -39,9 +40,9 @@ const HeroSection = () => {
   return (
     <section className="w-full">
       <div className="w-full  bg-cover bg-no-repeat">
-        <div className="relative min-h-screen bg-[#B70569]">
+        <div className="relative min-h-[110vh] ">
           {/* ABSOLUTE POSITIONED IMAGE */}
-          <figure className="absolute top-0 left-0 w-full h-full mix-blend-multiply">
+          <figure className="absolute top-0 left-0 w-full h-full">
             <img
               src={heroImage}
               rel="preload"
@@ -51,7 +52,13 @@ const HeroSection = () => {
             />
           </figure>
 
-          <div className="w-full bg-black/40 min-h-200 flex items-center justify-center relative">
+          {/* PINK TINT — multiplies over the photo */}
+          <div className="absolute top-0 left-0 w-full h-full bg-primary-magenta mix-blend-multiply" />
+
+          {/* BLACK DARKEN — flat overlay for text contrast */}
+          <div className="absolute top-0 left-0 bg-[#00000059] w-full h-full" />
+
+          <div className="w-full  min-h-[110vh] flex items-center justify-center relative">
             <motion.article
               initial="hidden"
               animate="visible"

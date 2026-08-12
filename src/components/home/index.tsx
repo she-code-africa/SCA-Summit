@@ -9,6 +9,7 @@ import OurSponsors from "./OurSponsors";
 import SpeakersSection from "./Speakers";
 import WhatWeBuilt from "./WhatWeBuilt";
 import WhyAttend from "./WhyAttend";
+import EventVenue from "./EventVenue";
 
 const countdownContainer: Variants = {
   hidden: {},
@@ -123,6 +124,7 @@ const HomePage = () => {
       <WhatWeBuilt />
       <SpeakersSection />
       <OurSponsors />
+      <EventVenue />
 
       <section id="tickets" className="scroll-mt-24">
         <TicketsSection />

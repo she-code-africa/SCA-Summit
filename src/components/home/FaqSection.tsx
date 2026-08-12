@@ -26,8 +26,8 @@ const FaqSection = () => {
         >
           Frequently Asked Questions
         </motion.h3>
-        <div className="w-full flex flex-col xl:flex-row gap-16 mt-10">
-          <ul className="w-full xl:max-w-63 flex gap-3 overflow-auto hide-scrollbar items-center xl:flex-col xl:items-start">
+        <div className="w-full flex flex-col xl:flex-row gap-8 xl:gap-16 mt-10">
+          <ul className="w-full xl:max-w-63 flex gap-3 overflow-auto hide-scrollbar items-center xl:flex-col xl:items-start xl:sticky xl:top-40 xl:self-start">
             {faqTab.map((item) => (
               <li
                 className="font-sans shrink-0 xl:shrink-[unset]"
