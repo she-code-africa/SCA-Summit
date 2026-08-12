@@ -8,7 +8,6 @@ import chaoss from "../../assets/home/chaoss.png";
 import myCover from "../../assets/home/myCover.png";
 import weTech from "../../assets/home/weTech.png";
 
-
 const gridContainer: Variants = {
   hidden: {},
   visible: { transition: { staggerChildren: 0.08 } },
@@ -44,7 +43,7 @@ const OurSponsors = () => {
           transition={{ duration: 0.6, ease: "easeOut" }}
           className="font-display text-primary-magenta text-[48px] sm:text-[56px] lg:text-[64px] w-full text-center"
         >
-          Our Past Sponsors
+          Our Past Sponsors & Partners
         </motion.h3>
 
         <motion.section
@@ -68,6 +67,15 @@ const OurSponsors = () => {
             </motion.div>
           ))}
         </motion.section>
+
+        <div className="flex justify-center items-center w-full mt-10">
+          <a
+            href="https://drive.google.com/file/d/1pZxpSxCmeiPC6sYWyuVNPPlzI30NRdfc/view"
+            className="px-8 py-4.5 w-full max-w-56.5 text-base flex items-center justify-center rounded-lg bg-primary-main-pink hover:bg-primary-dark-pink text-white transition shadow-sm hover:shadow"
+          >
+            View Partnership Deck
+          </a>
+        </div>
       </div>
     </section>
   );
