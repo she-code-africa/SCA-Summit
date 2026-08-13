@@ -67,7 +67,7 @@ export function TicketsSection() {
           </h2>
           <p className="text-sca-white text-xl sm:text-2xl max-w-237.5 mx-auto text-center">
             Come solo or bring your people. We’ve got{" "}
-            <span className="text-sca-citrine">individual and group</span>
+            <span className="text-sca-citrine">individual and group</span>{" "}
             tickets, so whether it’s your team, your colleagues, or your
             favorite people, there’s a ticket option for you.
           </p>
