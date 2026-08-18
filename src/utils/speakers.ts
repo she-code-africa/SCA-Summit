@@ -4,6 +4,7 @@ import damiO from "../assets/speaker/speakers/damiO.png";
 import adeife from "../assets/speaker/speakers/adeife.png";
 import ada from "../assets/speaker/speakers/ada.png";
 import favourO from "../assets/speaker/speakers/favourO.png";
+import rachel from "../assets/speaker/speakers/rachel.png";
 
 export type SpeakerCategory = "keynote-speakers" | "panelists" | "facilitators";
 
@@ -18,7 +19,7 @@ export const speakers = [
   {
     id: "keynote-1",
     name: "Ada Nduka Oyom",
-    title: "Founder, She Code Africa",
+    title: "Founder & Executive Director, She Code Africa",
     bio: [
       "Ada Nduka Oyom is the visionary founder and Executive Director of She Code Africa, a pan-African nonprofit that has impacted over 65,000 women across the continent.",
       "With over a decade of experience, her expertise extends beyond non-profit leadership. Ada has built and scaled initiatives that reached over 500,000 developers across EMEA, securing six-figure investments and forging strategic partnerships with global brands like Google, HP, and FedEx. She also co-founded Open Source Community Africa, now home to over 5,000 contributors, and serves as a Non-executive director on a U.S. non-profit board shaping AI ethics and policy.",
@@ -52,8 +53,19 @@ export const speakers = [
   },
   {
     id: "panelist-3",
+    name: "Rachel Onoja",
+    title: "VP of Learning & Market Dev, ChipMango",
+    bio: [
+      " Rachael Onoja is VP of Learning & Market Development at ChipMango, where she leads talent and market strategy at the intersection of technology, workforce development, and Africa's growing digital economy. Over the past decade, she has designed learning, talent development, and career growth programmes across organisations including AltSchool Africa, Andela, Decagon and European consulates, working close to the frontlines of how Africa builds, trains, and retains the talent powering its digital infrastructure. ",
+    ],
+    image: rachel,
+    category: "panelists",
+    bg: "#FFFDDE",
+  },
+  {
+    id: "panelist-4",
     name: "Damilola Olokesusi",
-    title: "Ceo/Co-Founder, Shuttlers",
+    title: "CEO / Co-Founder, Shuttlers",
     bio: [
       "Damilola Olokesusi is the Co-founder and CEO of Shuttlers, Nigeria's leading technology-driven shared mobility startup. With a bachelor's degree in Chemical Engineering from the University of Lagos, Damilola brings extensive experience in Process Engineering to her role. Her passion for addressing socio-economic challenges in her community led to the founding of Shuttlers, a company dedicated to transforming urban mobility.",
     ],
@@ -62,7 +74,7 @@ export const speakers = [
     bg: "#F8EAFF",
   },
   {
-    id: "panelist-4",
+    id: "panelist-5",
     name: "Adeife Adeoye",
     title: "Founder, Creator and MBA Student",
     bio: [

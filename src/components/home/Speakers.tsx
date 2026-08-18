@@ -1,17 +1,6 @@
 import { motion } from "framer-motion";
-//import whyAttendImg2 from "../../assets/home/whyAttendImg2.png";
 import { speakers } from "../../utils/speakers";
 
-// const speakers = [
-//   { name: "Speaker Name", title: "Speaker title" },
-//   { name: "Speaker Name", title: "Speaker title" },
-//   { name: "Speaker Name", title: "Speaker title" },
-//   { name: "Speaker Name", title: "Speaker title" },
-//   { name: "Speaker Name", title: "Speaker title" },
-//   { name: "Speaker Name", title: "Speaker title" },
-//   { name: "Speaker Name", title: "Speaker title" },
-//   { name: "Speaker Name", title: "Speaker title" },
-// ];
 
 const SpeakersSection = () => {
   // Duplicate the list so the track can loop seamlessly (0% -> -50%)
@@ -55,7 +44,7 @@ const SpeakersSection = () => {
             {marqueeSpeakers.map((speaker, i) => (
               <div
                 className="shrink-0 w-full max-w-93.5 bg-sca-white border-2 border-primary-magenta rounded-[15.29px] p-5"
-                key={i}
+                key={speaker.id}
               >
                 <figure className="rounded-[15px] w-full h-62.25 overflow-hidden">
                   <img
