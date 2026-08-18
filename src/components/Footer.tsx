@@ -55,7 +55,7 @@ export const Footer = () => {
                   Get your ticket
                 </a>
                 <a
-                  href="https://forms.gle/s6bhvvSeEXFWzT5Y7"
+                  href="/about#get-involved"
                   className="button-text block mb-5 text-black hover:text-primary-main-pink focus:outline-none focus:ring focus:ring-tutu"
                 >
                   Become a sponsor

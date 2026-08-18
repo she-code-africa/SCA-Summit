@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, type Dispatch, type SetStateAction } from "react";
 import { motion } from "framer-motion";
 import { CONTENT_MAP, tabs } from "../../../data/codeOfConductData";
 import { AccordionItem } from "./AccordionItem";
@@ -13,15 +13,20 @@ import helpConcernsImg from "../../../assets/help-concerns-photo.jpg";
 const tabImages: Record<string, string> = {
   "code-of-conduct": codeOfConductImg,
   "attendance-support": attendanceSupportImg,
-  "accessibility": accessibilityImg,
+  accessibility: accessibilityImg,
   "first-aid": firstAidImg,
   "help-concerns": helpConcernsImg,
 };
 
-export function CodeOfConductSection() {
-  const [activeTab, setActiveTab] = useState("code-of-conduct");
+export function CodeOfConductSection({
+  activeTab,
+  setActiveTab,
+}: {
+  setActiveTab: Dispatch<SetStateAction<string>>;
+  activeTab: string;
+}) {
   const [openAccordions, setOpenAccordions] = useState<Record<string, boolean>>(
-    {}
+    {},
   );
 
   const handleTabChange = (key: string) => {
@@ -42,7 +47,7 @@ export function CodeOfConductSection() {
   const toggleAccordion = (key: string) => {
     setOpenAccordions((prev) => ({
       ...prev,
-      [key]: !prev[key]
+      [key]: !prev[key],
     }));
   };
 
@@ -59,7 +64,7 @@ export function CodeOfConductSection() {
               <button
                 key={tab.key}
                 onClick={() => handleTabChange(tab.key)}
-                className="relative px-5 sm:px-8 py-4.5 rounded-lg text-sm font-semibold whitespace-nowrap transition-colors"
+                className="relative cursor-pointer px-5 sm:px-8 py-4.5 rounded-lg text-sm font-semibold whitespace-nowrap transition-colors"
               >
                 {isActive && (
                   <motion.span
@@ -96,8 +101,8 @@ export function CodeOfConductSection() {
             </h2>
 
             {activeTab === "code-of-conduct" && (
-              <div className="space-y-6">
-                <p className="text-black description-light">
+              <div className="space-y-6 ">
+                <p className="text-seal-brown description-light font-medium! text-xl sm:text-sxl ">
                   She Code Africa is committed to maintaining safe, respectful,
                   inclusive, and empowering spaces for everyone attending the
                   Summit. By registering for the Summit, all participants
@@ -107,10 +112,10 @@ export function CodeOfConductSection() {
                 </p>
 
                 <div className="space-y-3">
-                  <p className="text-black description-text">
+                  <p className="text-seal-brown font-bold! description-text">
                     We expect everyone to:
                   </p>
-                  <ul className="space-y-2 text-black description-light list-disc list-outside pl-5">
+                  <ul className="space-y-1 text-black description-light list-disc list-outside pl-9 font-medium!">
                     <li>Treat every participant with dignity and respect.</li>
                     <li>Use inclusive and non-discriminatory language.</li>
                     <li>Respect personal boundaries and privacy.</li>
@@ -123,7 +128,7 @@ export function CodeOfConductSection() {
                   </ul>
                 </div>
 
-                <p className="text-black description-light">
+                <p className="text-seal-brown font-medium! description-light">
                   Any violation of the Code of Conduct may result in removal
                   from the Summit without refund and, where appropriate,
                   referral to the relevant authorities. If you experience or
@@ -142,13 +147,13 @@ export function CodeOfConductSection() {
 
             {activeTab === "first-aid" && (
               <div className="space-y-6">
-                <p className="text-black description-light">
+                <p className="text-seal-brown font-medium! description-light">
                   If you require first aid or medical assistance during the
                   Summit, please notify the nearest volunteer or organizing team
                   member immediately. They will guide you to the appropriate
                   support available on-site.
                 </p>
-                <p className="text-black description-light">
+                <p className="text-seal-brown font-medium! description-light">
                   In the event of an emergency, you may also contact the
                   appropriate emergency services by dialing{" "}
                   <span className="font-semibold">767</span> or{" "}
@@ -175,7 +180,7 @@ export function CodeOfConductSection() {
 
           {/* Right Column - Image Frame */}
           <motion.div
-            key={`img-${activeTab}`} 
+            key={`img-${activeTab}`}
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true, amount: 0.3 }}
@@ -197,7 +202,7 @@ export function CodeOfConductSection() {
 
             <div className="relative border-[6px] sm:border-6 border-secondary-velvet overflow-hidden rounded-tl-none rounded-tr-[25px] rounded-br-none rounded-bl-[25px] sm:rounded-tr-[50px] sm:rounded-br-none sm:rounded-bl-[50px]">
               <img
-                src={tabImages[activeTab]}  
+                src={tabImages[activeTab]}
                 alt="She Code Africa Summit"
                 className="w-full h-full object-cover aspect-484/581"
               />
