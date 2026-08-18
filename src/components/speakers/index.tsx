@@ -1,20 +1,14 @@
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { speakersData, speakersTab } from "../../utils/speakers";
+import { speakers, speakersTab } from "../../utils/speakers";
 import SpeakersHero from "./SpeakersHero";
 
 const SpeakersComponent = () => {
-  const bgColors = [
-    "bg-[#FFFDDE]",
-    "bg-[#FFEAF6]",
-    "bg-[#F8EAFF]",
-    "bg-[#F5FFDE]",
-  ];
   const [tabs, setTabs] = useState("all");
   const filteredSpeakers =
     tabs === "all"
-      ? speakersData
-      : speakersData.filter((speaker) => speaker.category === tabs);
+      ? speakers
+      : speakers.filter((speaker) => speaker.category === tabs);
 
   return (
     <div className="min-h-screen w-full">
@@ -37,10 +31,8 @@ const SpeakersComponent = () => {
           </div>
 
           <section className="w-full space-y-10 mt-11">
-         
             <AnimatePresence mode="popLayout">
               {filteredSpeakers.map((data, i) => {
-                const colorIndex = i % bgColors.length;
                 const isReversed = (i + 1) % 2 === 0;
 
                 return (
@@ -55,7 +47,8 @@ const SpeakersComponent = () => {
                       ease: "easeOut",
                       delay: i * 0.06,
                     }}
-                    className={`${bgColors[colorIndex]} w-full   flex ${isReversed ? "flex-col sm:flex-row-reverse" : "flex-col sm:flex-row"}`}
+                    style={{ background: data.bg }}
+                    className={`w-full   flex ${isReversed ? "flex-col sm:flex-row-reverse" : "flex-col sm:flex-row"}`}
                   >
                     <figure className="h-90 sm:h-auto w-full xl:max-w-99.5">
                       <img
@@ -68,13 +61,24 @@ const SpeakersComponent = () => {
                     <article
                       className={`py-6  md:py-8.5 space-y-6 w-full xl:max-w-182.25 ${isReversed ? "pl-6 md:pl-0 pr-6 md:pr-14.25" : "px-6 md:px-14.25"}`}
                     >
-                      <h4 className="text-black font-bold text-[32px] font-sans">
-                        {data.name}
-                      </h4>
+                      <div className="w-full">
+                        <h4 className="text-black font-bold text-[32px] font-sans">
+                          {data.name}
+                        </h4>
 
-                      <p className="text-lg font-sans font-medium">
-                        {data.bio}
-                      </p>
+                        <p className="font-sans mt-1 text-2xl text-black">
+                          {data.title}
+                        </p>
+                      </div>
+
+                      {data.bio.map((data, i) => (
+                        <p
+                          className="text-lg font-sans font-medium text-black"
+                          key={i}
+                        >
+                          {data}
+                        </p>
+                      ))}
                     </article>
                   </motion.div>
                 );
