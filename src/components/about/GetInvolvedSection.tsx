@@ -23,7 +23,7 @@ const cards: GetInvolvedCard[] = [
     key: "sponsor",
     title: "Sponsor SCA Summit 2026",
     description:
-      "Support the flagship summit of African women in tech while connecting your organisation with a highly engaged community of technology professionals, emerging talent, founders and industry leaders.",
+      "As a sponsor, you'll have the opportunity to increase brand visibility before, during and after the Summit, connect with top technology talent across Africa, showcase your products, services or initiatives, demonstrate your commitment to diversity, inclusion and innovation, and contribute to building a more inclusive technology ecosystem.",
     ctaLabel: "Become a Sponsor",
     ctaHref: " https://forms.gle/s6bhvvSeEXFWzT5Y7",
     bgColor: "#ffffff",
@@ -35,7 +35,7 @@ const cards: GetInvolvedCard[] = [
     key: "brand",
     title: "Showcase your Brand",
     description:
-      "Support the flagship summit of African women in tech while connecting your organisation with a highly engaged community of technology professionals, emerging talent, founders and industry leaders.",
+      "Showcase your products, services or innovations to a vibrant audience of technology professionals, founders, students and decision-makers. Exhibiting at the Summit provides an opportunity to engage directly with attendees, generate leads and increase brand awareness.",
     ctaLabel: "Exhibit your brand",
     ctaHref: " https://forms.gle/s6bhvvSeEXFWzT5Y7",
     bgColor: "#FFEAF6",
@@ -47,7 +47,7 @@ const cards: GetInvolvedCard[] = [
     key: "media",
     title: "Media Partner",
     description:
-      "Support the flagship summit of African women in tech while connecting your organisation with a highly engaged community of technology",
+      "Partner with us to spotlight the voices, ideas and innovations emerging from Africa's largest gathering of women in technology. If you're a media organisation, publication, content creator or storyteller passionate about technology, innovation and impact, we'd love to work with you to share these stories with the world",
     ctaLabel: "Become a Partner",
     ctaHref: " https://forms.gle/s6bhvvSeEXFWzT5Y7",
     bgColor: "#FFFDDE",
@@ -59,7 +59,7 @@ const cards: GetInvolvedCard[] = [
     key: "logistics",
     title: "Logistics Partner",
     description:
-      "Support the flagship summit of African women in tech while connecting your organisation with a highly engaged community of technology",
+      "Every great Summit experience is made possible through collaboration. \nIf your organisation provides event, hospitality, transportation, production, catering, technology or other event support services, we'd love to explore how we can work together to deliver an exceptional experience for our attendees.",
     ctaLabel: "Become a Partner",
     ctaHref: " https://forms.gle/s6bhvvSeEXFWzT5Y7",
     bgColor: "#F8EAFF",
@@ -71,7 +71,7 @@ const cards: GetInvolvedCard[] = [
     key: "diversity",
     title: "Diversity ticket Partner",
     description:
-      "Support the flagship summit of African women in tech while connecting your organisation with a highly engaged community of technology",
+      "Help make the Summit accessible to more women across our community. \nBy sponsoring an attendee, you're creating an opportunity for someone to learn, connect, and be part of one of Africa's biggest gatherings for women in technology.",
     ctaLabel: "Partner with us",
     ctaHref: " https://forms.gle/s6bhvvSeEXFWzT5Y7",
     bgColor: "#FFFDDE",
@@ -152,7 +152,7 @@ export function GetInvolvedSection() {
           className="text-center space-y-4 mb-14 sm:mb-16"
         >
           <h2 className="font-display hero-title text-white">Get Involved</h2>
-          <p className="max-w-4xl mx-auto text-white text-lg sm:text-2xl leading-relaxed">
+          <p className="max-w-4xl mx-auto text-white text-lg font-semibold sm:text-2xl leading-relaxed">
             There's more than one way to show up, sponsor, exhibit, partner on
             media or logistics, or fund a ticket for someone who couldn't
             otherwise attend.

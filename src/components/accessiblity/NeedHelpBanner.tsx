@@ -7,11 +7,11 @@ const fadeUp = {
     ({
       opacity: 1,
       y: 0,
-      transition: { duration: 0.6, delay, ease: "easeOut" }
-    }) as const
+      transition: { duration: 0.6, delay, ease: "easeOut" },
+    }) as const,
 };
 
-export function NeedHelpBanner() {
+export function NeedHelpBanner({ activeTab }: { activeTab: string }) {
   return (
     <section className="relative w-full bg-primary-magenta overflow-hidden py-16 sm:py-20 md:py-24">
       {/* Background PNG - fill the whole screen and sit behind text */}
@@ -29,9 +29,11 @@ export function NeedHelpBanner() {
           viewport={{ once: true, amount: 0.4 }}
           custom={0}
           variants={fadeUp}
-          className="font-display section-header text-white "
+          className="font-display section-header text-sca-white "
         >
-          Need Help? Let Us Know
+          {activeTab === "code-of-conduct"
+            ? "Need Help? Let Us Know"
+            : "Have a feedback?"}
         </motion.h2>
 
         <motion.p
@@ -40,7 +42,7 @@ export function NeedHelpBanner() {
           viewport={{ once: true, amount: 0.4 }}
           custom={0.2}
           variants={fadeUp}
-          className="mt-6 text-white description-text max-w-6xl mx-auto"
+          className="mt-6 text-sca-white description-text font-medium! max-w-6xl mx-auto"
         >
           We're constantly striving to create a truly inclusive and welcoming
           environment for all attendees. Your feedback is invaluable in helping
@@ -49,7 +51,7 @@ export function NeedHelpBanner() {
           thoughts with our Community Team at{" "}
           <a
             href="mailto:community@shecodeafrica.org"
-            className="text-white font-semibold no-underline hover:no-underline transition-colors"
+            className="text-sca-white font-semibold no-underline hover:no-underline transition-colors"
           >
             community@shecodeafrica.org
           </a>

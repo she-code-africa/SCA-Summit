@@ -139,7 +139,7 @@ export function Navbar() {
             Get Tickets
           </a>
           <a
-            href=" https://forms.gle/s6bhvvSeEXFWzT5Y7"
+            href="/about#get-involved"
             className="px-8 py-4.5 rounded-lg border border-primary-main-pink text-primary-main-pink hover:bg-primary-very-light-pink font-semibold text-sm transition"
           >
             Become a sponsor
@@ -258,7 +258,7 @@ export function Navbar() {
                   >
                     {link.name}
                   </NavLink>
-                )
+                ),
               )}
 
               <div className="pt-4 flex flex-col gap-2">
