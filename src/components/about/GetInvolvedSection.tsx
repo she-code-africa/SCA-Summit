@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 
 import sponsorPhoto from "../../assets/get-involved-sponsor.jpg";
-import brandPhoto from "../../assets/get-involved-brand.jpg";
+import brandPhoto from "../../assets/showBrand.jpg";
 import mediaPhoto from "../../assets/get-involved-media.jpg";
 import logisticsPhoto from "../../assets/get-involved-logistics.jpg";
 import diversityPhoto from "../../assets/get-involved-diversity.jpg";
@@ -29,7 +29,7 @@ const cards: GetInvolvedCard[] = [
     bgColor: "#ffffff",
     ctaColor: "#B70569",
     size: "large",
-    image: sponsorPhoto
+    image: sponsorPhoto,
   },
   {
     key: "brand",
@@ -41,7 +41,7 @@ const cards: GetInvolvedCard[] = [
     bgColor: "#FFEAF6",
     ctaColor: "#B70569",
     size: "large",
-    image: brandPhoto
+    image: brandPhoto,
   },
   {
     key: "media",
@@ -53,7 +53,7 @@ const cards: GetInvolvedCard[] = [
     bgColor: "#FFFDDE",
     ctaColor: "#B70569",
     size: "small",
-    image: mediaPhoto
+    image: mediaPhoto,
   },
   {
     key: "logistics",
@@ -65,7 +65,7 @@ const cards: GetInvolvedCard[] = [
     bgColor: "#F8EAFF",
     ctaColor: "#B70569",
     size: "small",
-    image: logisticsPhoto
+    image: logisticsPhoto,
   },
   {
     key: "diversity",
@@ -77,8 +77,8 @@ const cards: GetInvolvedCard[] = [
     bgColor: "#FFFDDE",
     ctaColor: "#B70569",
     size: "small",
-    image: diversityPhoto
-  }
+    image: diversityPhoto,
+  },
 ];
 
 const cardVariants = {
@@ -87,13 +87,13 @@ const cardVariants = {
     ({
       opacity: 1,
       y: 0,
-      transition: { duration: 0.55, delay, ease: "easeOut" }
-    }) as const
+      transition: { duration: 0.55, delay, ease: "easeOut" },
+    }) as const,
 };
 
 function GetInvolvedCardItem({
   card,
-  delay
+  delay,
 }: {
   card: GetInvolvedCard;
   delay: number;
@@ -114,7 +114,7 @@ function GetInvolvedCardItem({
         className={`w-full overflow-hidden ${card.size === "large" ? "aspect-700/610" : "aspect-4/5 sm:aspect-699/400"}`}
       >
         <img
-          src={card.image} 
+          src={card.image}
           alt={card.title}
           className="w-full h-full object-cover scale-115 transition-transform duration-300 ease-in-out hover:scale-120"
         />
@@ -151,9 +151,7 @@ export function GetInvolvedSection() {
           transition={{ duration: 0.6, ease: "easeOut" }}
           className="text-center space-y-4 mb-14 sm:mb-16"
         >
-          <h2 className="font-display hero-title text-white">
-            Get Involved
-          </h2>
+          <h2 className="font-display hero-title text-white">Get Involved</h2>
           <p className="max-w-4xl mx-auto text-white text-lg sm:text-2xl leading-relaxed">
             There's more than one way to show up, sponsor, exhibit, partner on
             media or logistics, or fund a ticket for someone who couldn't
