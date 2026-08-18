@@ -52,7 +52,7 @@ export function Navbar() {
         </Link>
 
         {/* Desktop Navigation Links */}
-        <nav className="hidden lg:flex items-center space-x-8">
+        <nav className="hidden xl:flex items-center space-x-8">
           {navLinks.map((link) => (
             <div
               key={link.path}
@@ -147,7 +147,7 @@ export function Navbar() {
         </div>
 
         {/* Mobile menu toggle button */}
-        <div className="flex lg:hidden">
+        <div className="flex xl:hidden">
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="p-2 rounded-lg text-secondary-main-black hover:bg-primary-very-light-pink focus:outline-none"
@@ -189,7 +189,7 @@ export function Navbar() {
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.25, ease: "easeInOut" }}
-            className="lg:hidden border-t border-gray-100 bg-white overflow-hidden"
+            className="xl:hidden border-t border-gray-100 bg-white overflow-hidden"
           >
             <div className="px-4 pt-4 pb-6 space-y-1">
               {navLinks.map((link) =>
