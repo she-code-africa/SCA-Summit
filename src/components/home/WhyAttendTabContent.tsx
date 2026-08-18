@@ -241,10 +241,9 @@ const AwardsBlock = () => (
 );
 
 const giveaways = [
-  "Laptops giveaway",
-  "Scholarships",
-  "Partner-sponsored giveaways",
-  "Updates on the She Code Africa Access Fund and other initiatives",
+  "Scholarships such as Professional courses, Brand new Laptops",
+  "Partner-sponsored offerings",
+  "She Code Africa Access Fund Launch and other initiatives",
   "Branded souvenir giveaways",
 ];
 
