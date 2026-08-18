@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import bossPhoto from "../../assets/get-your-boss-on-board1.jpg";
+import bossPhoto from "../../assets/about-summit.jpg";
 
 // function WhiteStarAccent({ className = "" }: { className?: string }) {
 //   return (
