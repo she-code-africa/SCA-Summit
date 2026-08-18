@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import summitSpeakerImg from "../../assets/summit-speaker.png"; // swap to your actual asset name
+import summitSpeakerImg from "../../assets/summit-about.jpg"; // swap to your actual asset name
 import FlowerPinwheel from "../FlowerPinwheel";
 
 const fadeUp = {
