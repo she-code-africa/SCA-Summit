@@ -261,11 +261,11 @@ export function ThemeSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
-            className="text-white text-base sm:text-lg leading-relaxed lg:text-right font-sans flex-1 lg:max-w-lg wrap-break-word"
+            className="text-white text-base sm:text-lg leading-relaxed lg:text-right font-sans flex-1 lg:max-w-147 wrap-break-word"
           >
             This Summit marks a defining milestone as She Code Africa celebrates
-            10 years of impact. Under the theme "A Decade of Impact: Women
-            Architecting Africa's Digital Future," this edition will reflect on
+            10 years of impact. Under the theme "A Decade of Impact: African
+            Women Architecting the Digital Future," this edition will reflect on
             a decade of equipping African women in technology while setting the
             agenda for the next decade of innovation, leadership, and inclusive
             growth across the continent.
@@ -395,7 +395,7 @@ export function ThemeSection() {
               bg="#4d8b7c"
               photo={audiencePhoto}
               alt="Target audience speaker"
-              description="The She Code Africa Summit welcomes individuals and organisations from across the technology and innovation ecosystem."
+              description="The She Code Africa Summit welcomes women and organisations from across the technology and innovation ecosystem."
             />
           </div>
 
@@ -411,9 +411,8 @@ export function ThemeSection() {
                   Target audience
                 </h3>
                 <p className="text-white font-medium leading-relaxed max-w-md wrap-break-word">
-                  The She Code Africa Summit welcomes individuals and
-                  organisations from across the technology and innovation
-                  ecosystem.
+                  The She Code Africa Summit welcomes women and organisations
+                  from across the technology and innovation ecosystem.
                 </p>
               </div>
               <StarburstFrameOrange
