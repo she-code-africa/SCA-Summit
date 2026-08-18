@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import { speakers } from "../../utils/speakers";
 
-
 const SpeakersSection = () => {
   // Duplicate the list so the track can loop seamlessly (0% -> -50%)
   const marqueeSpeakers = [...speakers, ...speakers];
@@ -44,7 +43,7 @@ const SpeakersSection = () => {
             {marqueeSpeakers.map((speaker, i) => (
               <div
                 className="shrink-0 w-full max-w-93.5 bg-sca-white border-2 border-primary-magenta rounded-[15.29px] p-5"
-                key={speaker.id}
+                key={i}
               >
                 <figure className="rounded-[15px] w-full h-62.25 overflow-hidden">
                   <img

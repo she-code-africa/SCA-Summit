@@ -48,7 +48,7 @@ const SpeakersComponent = () => {
                       delay: i * 0.06,
                     }}
                     style={{ background: data.bg }}
-                    className={`w-full   flex ${isReversed ? "flex-col sm:flex-row-reverse" : "flex-col sm:flex-row"}`}
+                    className={`w-full  flex ${isReversed ? "flex-col sm:flex-row-reverse" : "flex-col sm:flex-row"}`}
                   >
                     <figure className="h-90 sm:h-auto w-full xl:max-w-99.5">
                       <img
@@ -59,7 +59,7 @@ const SpeakersComponent = () => {
                     </figure>
 
                     <article
-                      className={`py-6  md:py-8.5 space-y-6 w-full xl:max-w-182.25 ${isReversed ? "pl-6 md:pl-0 pr-6 md:pr-14.25" : "px-6 md:px-14.25"}`}
+                      className={`py-6  md:py-8.5 space-y-6 w-full xl:max-w-182.25 ${isReversed ? "pl-6 xl:pl-0 pr-6 md:pr-14.25" : "px-6 md:px-14.25"}`}
                     >
                       <div className="w-full">
                         <h4 className="text-black font-bold text-[32px] font-sans">
