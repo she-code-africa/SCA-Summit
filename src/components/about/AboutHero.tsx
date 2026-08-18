@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import aboutHero from "../../assets/about-hero.png";
+import aboutHero from "../../assets/about-hero.jpg";
 import FlowerPinwheel from "../FlowerPinwheel";
 
 export function AboutHero() {
@@ -11,7 +11,7 @@ export function AboutHero() {
       />
 
       {/* Color wash using theme colors */}
-      <div className="absolute inset-0 bg-gradient-to-r from-primary-dark-pink/80 via-secondary-velvet/70 to-seal-brown/85" />
+      <div className="absolute inset-0 bg-linear-to-r from-primary-dark-pink/80 via-secondary-velvet/70 to-seal-brown/85" />
 
       <div className="relative max-w-7xl mx-auto px-4 text-center z-10 space-y-2">
         <motion.h1

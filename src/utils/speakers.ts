@@ -14,16 +14,16 @@ export const speakersTab: { key: string; label: string }[] = [
   { key: "facilitators", label: "Facilitators" },
 ];
 
-const bio = [
-  "Dr. Lena Chen is a pioneering force in sustainable technology and a passionate advocate for women in leadership roles. As CEO of GreenGrid Innovations, she has successfully scaled solutions that reduce carbon footprints while driving economic growth. Her keynote, 'Leading with Purpose: Innovating for a Sustainable Tomorrow,' will explore how ethical leadership and cutting-edge design can shape a more responsible tech industry. Attendees will gain actionable insights on fostering innovation, building resilient teams, and championing diversity to create impactful change within their organizations.",
-];
-
 export const speakers = [
   {
     id: "keynote-1",
     name: "Ada Nduka Oyom",
     title: "Founder, She Code Africa",
-    bio,
+    bio: [
+      "Ada Nduka Oyom is the visionary founder and Executive Director of She Code Africa, a pan-African nonprofit that has impacted over 65,000 women across the continent.",
+      "With over a decade of experience, her expertise extends beyond non-profit leadership. Ada has built and scaled initiatives that reached over 500,000 developers across EMEA, securing six-figure investments and forging strategic partnerships with global brands like Google, HP, and FedEx. She also co-founded Open Source Community Africa, now home to over 5,000 contributors, and serves as a Non-executive director on a U.S. non-profit board shaping AI ethics and policy.",
+      "Her transformative work has been recognized by Forbes, the African Union, Google, and UNICEF Nigeria, among others.",
+    ],
     image: ada,
     category: "keynote-speakers",
     bg: "#FFFDDE",
