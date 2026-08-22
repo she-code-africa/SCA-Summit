@@ -2,8 +2,8 @@ import { motion } from "framer-motion";
 
 import sponsorPhoto from "../../assets/get-involved-sponsor.jpg";
 import brandPhoto from "../../assets/showBrand.jpg";
-import mediaPhoto from "../../assets/get-involved-media.jpg";
-import logisticsPhoto from "../../assets/get-involved-logistics.jpg";
+import mediaPhoto from "../../assets/get-involved-media.png";
+import logisticsPhoto from "../../assets/get-involved-logistics.png";
 import diversityPhoto from "../../assets/get-involved-diversity.jpg";
 
 interface GetInvolvedCard {
@@ -111,12 +111,12 @@ function GetInvolvedCardItem({
       style={{ backgroundColor: card.bgColor }}
     >
       <div
-        className={`w-full overflow-hidden ${card.size === "large" ? "aspect-700/610" : "aspect-4/5 sm:aspect-699/400"}`}
+        className={`w-full overflow-hidden h-90 ${card.size === "large" ? "aspect-700/610" : "aspect-4/5 sm:aspect-699/400"}`}
       >
         <img
           src={card.image}
           alt={card.title}
-          className="w-full h-full object-cover scale-115 transition-transform duration-300 ease-in-out hover:scale-120"
+          className="w-full h-full object-cover  transition-transform duration-300 ease-in-out hover:scale-120"
         />
       </div>
 

@@ -7,6 +7,12 @@ import zaycodes from "../../assets/home/zaycodes.png";
 import chaoss from "../../assets/home/chaoss.png";
 import myCover from "../../assets/home/myCover.png";
 import weTech from "../../assets/home/weTech.png";
+import wtm from "../../assets/home/wtm.png";
+import yellowCard from "../../assets/home/yellowCard.png";
+import outreachy from "../../assets/home/Outreachy.png";
+import wiicreate from "../../assets/home/wiicreate.png";
+import osfe from "../../assets/home/osfe.png";
+import axa from "../../assets/home/axa.png";
 
 const gridContainer: Variants = {
   hidden: {},
@@ -32,6 +38,12 @@ const OurSponsors = () => {
     chaoss,
     myCover,
     weTech,
+    wtm,
+    yellowCard,
+    outreachy,
+    wiicreate,
+    osfe,
+    axa,
   ];
   return (
     <section className="w-full bg-sca-white">
@@ -51,12 +63,12 @@ const OurSponsors = () => {
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
           variants={gridContainer}
-          className="mt-10 w-full grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-x-6 gap-y-4"
+          className="mt-10 w-full flex flex-wrap justify-center gap-x-6 gap-y-4"
         >
           {partners.map((img, i) => (
             <motion.div
               variants={gridItem}
-              className="rounded-lg flex items-center justify-center bg-sca-white border border-[#E9E1E6] h-[99.29px] w-full "
+              className="rounded-lg flex items-center justify-center bg-sca-white border border-[#E9E1E6] h-[99.29px] w-full sm:w-[calc(50%-0.75rem)] xl:w-[calc(25%-1.125rem)] sm:max-w-72.25"
               key={i}
             >
               <img
