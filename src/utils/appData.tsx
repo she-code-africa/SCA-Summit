@@ -1,24 +1,24 @@
 export const faqTab = [
   {
     label: "General Information",
-    value: "general-information"
+    value: "general-information",
   },
   {
     label: "Accessibility",
-    value: "accessibility"
+    value: "accessibility",
   },
   {
     label: "Sponsorship",
-    value: "sponsorship"
+    value: "sponsorship",
   },
   {
     label: "Registration & Tickets",
-    value: "registration-and-tickets"
+    value: "registration-and-tickets",
   },
   {
     label: "Get Involved",
-    value: "get-involved"
-  }
+    value: "get-involved",
+  },
 ];
 
 export const faqData: Record<
@@ -41,7 +41,7 @@ export const faqData: Record<
           from across Africa for a day of learning, networking, collaboration,
           and celebration.
         </>
-      )
+      ),
     },
     {
       question: "When and where will the Summit take place?",
@@ -54,7 +54,7 @@ export const faqData: Record<
           <strong>Venue:</strong> Celebr8 Centre HQ, Vori Close, Acme Road,
           Ikeja, Lagos, Nigeria
         </>
-      )
+      ),
     },
     {
       question: "Who should attend?",
@@ -73,30 +73,48 @@ export const faqData: Record<
           <li>Tech executives and leaders</li>
           <li>Anyone passionate about advancing women in technology</li>
         </ul>
-      )
+      ),
     },
     {
       question: "Will sessions be recorded?",
       answer:
-        "Yes. Selected keynote sessions and panel discussions will be recorded and published on our YouTube channel."
+        "Yes. Selected keynote sessions and panel discussions will be recorded and published on our YouTube channel.",
     },
     {
       question: "How can I stay updated?",
       answer:
-        "Join our newsletter and follow She Code Africa across our social media platforms for the latest announcements, speaker reveals, ticket updates, and Summit news."
-    }
+        "Join our newsletter and follow She Code Africa across our social media platforms for the latest announcements, speaker reveals, ticket updates, and Summit news.",
+    },
+
+    {
+      question: "What is the dress code this year?",
+      answer: (
+        <>
+          <p>
+            This year, as we celebrate our 10th anniversary, we invite you to
+            dress like the Celebrant, AKA The Birthday Girl! Think of owambe and
+            aso ebi styles, statement pieces, and everything extravagant. Bring
+            your boldest, most festive outfits, incorporating a touch of PINK!
+          </p>
+          <p className="mt-5">
+            We're celebrating a significant milestone, and we expect your attire
+            to match the energy of the occasion!
+          </p>
+        </>
+      ),
+    },
   ],
   accessibility: [
     {
       question: "Will there be childcare (daycare)?",
       answer:
-        "Yes. A dedicated daycare space will be available for parents attending the Summit. More information, including registration requirements, will be shared closer to the event."
+        "Yes. A dedicated daycare space will be available for parents attending the Summit. More information, including registration requirements, will be shared closer to the event.",
     },
     {
       question: "Will transportation be provided?",
       answer:
-        "She Code Africa plans to provide transportation support from selected locations in Lagos. Routes and pickup information will be communicated to registered attendees ahead of the Summit."
-    }
+        "She Code Africa plans to provide transportation support from selected locations in Lagos. Routes and pickup information will be communicated to registered attendees ahead of the Summit.",
+    },
   ],
   sponsorship: [
     {
@@ -114,14 +132,14 @@ export const faqData: Record<
           </a>{" "}
           for more information.
         </>
-      )
-    }
+      ),
+    },
   ],
   "registration-and-tickets": [
     {
       question: "Is the Summit free?",
       answer:
-        "The Summit is a ticketed event. Multiple ticket categories are available to suit different attendees' needs and experiences."
+        "The Summit is a ticketed event. Multiple ticket categories are available to suit different attendees' needs and experiences.",
     },
     {
       question: "What is included in my ticket?",
@@ -141,7 +159,7 @@ export const faqData: Record<
           </ul>
           Full details will be available on the Tickets page.
         </>
-      )
+      ),
     },
     {
       question: "How do I purchase a ticket?",
@@ -159,21 +177,21 @@ export const faqData: Record<
           . Once payment is successful, you'll receive a confirmation email with
           your ticket details and next steps.
         </>
-      )
+      ),
     },
     {
       question: "Will there be virtual access?",
       answer:
-        "Yes. Virtual access will be available through a paid virtual ticket. Details about pricing and access will be announced soon."
-    }
+        "Yes. Virtual access will be available through a paid virtual ticket. Details about pricing and access will be announced soon.",
+    },
   ],
   "get-involved": [
     {
       question: "Can I volunteer?",
       answer:
-        "Yes. Volunteer applications will open ahead of the Summit. Visit the Get Involved page for updates."
-    }
-  ]
+        "Yes. Volunteer applications will open ahead of the Summit. Visit the Get Involved page for updates.",
+    },
+  ],
 };
 
 export const whyAttendTab = [
@@ -187,7 +205,7 @@ export const whyAttendTab = [
   { label: "Awards", value: "awards" },
   {
     label: "Access fund, scholarships & Giveaways",
-    value: "access-fund-scholarships-giveaways"
+    value: "access-fund-scholarships-giveaways",
   },
-  { label: "Partner showcase", value: "partner-showcase" }
+  { label: "Partner showcase", value: "partner-showcase" },
 ];

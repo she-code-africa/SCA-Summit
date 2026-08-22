@@ -10,6 +10,7 @@ import AboutPage from "./pages/AboutPage";
 import "./App.css";
 import SchedulePage from "./pages/SchedulePage";
 import PageLoader from "./components/loader/PageLoader";
+import TermsAndCondition from "./pages/TermsAndCondition";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -33,6 +34,7 @@ export default function App() {
               <Route path="/schedule" element={<SchedulePage />} />
               <Route path="/accessibility" element={<AccessibilityPage />} />
               <Route path="/about" element={<AboutPage />} />
+              <Route path="/terms-and-conditions" element={<TermsAndCondition />} />
               <Route path="*" element={<LandingPage />} />
             </Routes>
           </main>

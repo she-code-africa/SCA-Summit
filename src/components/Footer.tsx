@@ -49,6 +49,7 @@ export const Footer = () => {
                   Get Involved
                 </p>
                 <a
+                  target="_blank"
                   href="https://tix.africa/discover/she-code-africa-summit-2026"
                   className="button-text block text-black mb-5 mt-8 hover:text-primary-main-pink focus:outline-none focus:ring focus:ring-tutu"
                 >
@@ -101,7 +102,7 @@ export const Footer = () => {
                   Privacy Policy
                 </a>
                 <a
-                  href="https://www.shecodeafrica.org/terms"
+                  href="/terms-and-conditions"
                   className="button-text block mb-5 hover:text-primary-main-pink focus:outline-none focus:ring focus:ring-tutu"
                 >
                   Terms and Condition

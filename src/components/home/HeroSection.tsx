@@ -71,11 +71,11 @@ const HeroSection = () => {
                 className="max-w-fit mx-auto mt-10 xl:mt-0 text-sca-white sca-badges overflow-hidden"
               >
                 <span className="flex py-2 px-2.5 xl:py-4 xl:px-5 gap-2 items-center justify-center">
-                  <FlowerVector className="text-sca-white size-3 sm:size-5.25" />
+                  <FlowerVector className="text-sca-white size-3 sm:size-5.25 animate-spin" />
                   <span className="font-sans text-sm sm:text-base xl:text-[23px] inline-block font-semibold">
                     SHE CODE AFRICA SUMMIT 2026
                   </span>
-                  <FlowerVector className="text-sca-white size-3 sm:size-5.25" />
+                  <FlowerVector className="text-sca-white size-3 sm:size-5.25 animate-spin" />
                 </span>
               </motion.div>
 

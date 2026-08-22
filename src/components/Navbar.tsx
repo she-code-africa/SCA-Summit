@@ -5,7 +5,7 @@ import {
   LayoutGrid,
   Sparkles,
   Users,
-  MessageCircleQuestion,
+  // MessageCircleQuestion,
   Menu,
   X,
   ChevronDown,
@@ -17,11 +17,6 @@ const aboutDropdownItems = [
   { name: "About SCA", path: "/about#about-sca", icon: LayoutGrid },
   { name: "Why attend", path: "/about#why-attend", icon: Sparkles },
   { name: "Get Involved", path: "/about#get-involved", icon: Users },
-  {
-    name: "Accessibility",
-    path: "/accessibility",
-    icon: MessageCircleQuestion,
-  },
 ];
 
 const navLinks = [
@@ -47,7 +42,7 @@ export function Navbar() {
           <img
             src={navLogo}
             alt="SheCode Africa — Summit 2026"
-            className="h-12 sm:h-20.5 w-auto object-contain"
+            className="h-12 sm:h-17.5 w-45 object-contain"
           />
         </Link>
 
