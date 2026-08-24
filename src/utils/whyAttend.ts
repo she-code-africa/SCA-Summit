@@ -4,7 +4,7 @@ export type MediaTabContent = {
   // Tailwind background class for this section
   bg: string;
   // which of the two stock photos to use
-  image: "img1" | "img2" | "img3" | "img4" | "img5" | "img6";
+  image: "img1" | "img2" | "img3";
   // which side the photo sits on at md+ widths
   imageSide: "left" | "right";
   // only "networking" uses this today, but any tab can opt in
@@ -51,7 +51,7 @@ export const whyAttendMediaContent: Record<string, MediaTabContent> = {
     description:
       "The summit includes opportunities to engage with speakers through keynote sessions, fireside chats, panel discussions, networking sessions, and audience Q&A.",
     bg: "bg-sca-zesty",
-    image: "img4",
+    image: "img2",
     imageSide: "left",
   },
   "community-experience": {
@@ -59,7 +59,7 @@ export const whyAttendMediaContent: Record<string, MediaTabContent> = {
     description:
       "As part of She Code Africa's 10th anniversary celebration, attendees can participate in activities that bring together alumni, chapter members, volunteers, partners, scholarship recipients, and the wider community. Community experiences will include alumni showcases, impact storytelling, networking activities, interactive games and icebreakers, and the anniversary cake-cutting ceremony.",
     bg: "bg-sca-blush",
-    image: "img5",
+    image: "img1",
     imageSide: "right",
   },
   "partner-showcase": {
@@ -67,7 +67,7 @@ export const whyAttendMediaContent: Record<string, MediaTabContent> = {
     description:
       "Sponsors and partners will have opportunities to engage with attendees through exhibition booths and spotlight sessions during the summit programme.",
     bg: "bg-sca-zesty",
-    image: "img6",
+    image: "img2",
     imageSide: "left",
   },
 };

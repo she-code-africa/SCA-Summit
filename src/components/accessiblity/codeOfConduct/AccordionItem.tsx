@@ -27,7 +27,7 @@ const parseText = (text: string) => {
 export function AccordionItem({
   data,
   isOpen,
-  toggle,
+  toggle
 }: {
   data: any;
   isOpen: boolean;
@@ -37,9 +37,9 @@ export function AccordionItem({
     <div className="pt-2 border-b border-transparent">
       <button
         onClick={toggle}
-        className="w-full flex cursor-pointer border-b border-b-[#E9E1E6] pb-3 items-center justify-between text-left py-2"
+        className="w-full flex items-center justify-between text-left py-2"
       >
-        <span className="description-text font-bold text-seal-brown">
+        <span className="description-text font-bold text-black">
           {data.title}
         </span>
         <span className="text-slate-900">
@@ -66,7 +66,7 @@ export function AccordionItem({
                   return (
                     <p
                       key={idx}
-                      className="text-seal-brown font-medium! description-light"
+                      className="text-black description-light"
                     >
                       {parseText(section.text)}
                     </p>
@@ -76,7 +76,7 @@ export function AccordionItem({
                   return (
                     <ul
                       key={idx}
-                      className="space-y-2 description-light font-medium! text-seal-brown list-disc list-outside pl-5"
+                      className="space-y-2 description-light text-black list-disc list-outside pl-5"
                     >
                       {section.items.map((item: string, liIdx: number) => (
                         <li key={liIdx}>{parseText(item)}</li>

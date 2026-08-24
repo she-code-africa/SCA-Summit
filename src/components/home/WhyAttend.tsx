@@ -34,7 +34,7 @@ const WhyAttend = () => {
           </motion.div>
 
           <section className="w-full flex flex-col xl:flex-row gap-8 mt-10">
-            <div className="xl:sticky xl:top-40 xl:self-start">
+            <div className="xl:sticky xl:top-10 xl:self-start">
               <WhyAttendTabSection setTab={setTab} tab={tab} />
             </div>
             <WhyAttendTabContent tab={tab} setTab={setTab} />

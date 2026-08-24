@@ -1,10 +1,5 @@
 import { motion } from "framer-motion";
-
-import sponsorPhoto from "../../assets/get-involved-sponsor.jpg";
-import brandPhoto from "../../assets/showBrand.jpg";
-import mediaPhoto from "../../assets/get-involved-media.png";
-import logisticsPhoto from "../../assets/get-involved-logistics.png";
-import diversityPhoto from "../../assets/get-involved-diversity.jpg";
+import involvedPhoto from "../../assets/get-involved-photo.png";
 
 interface GetInvolvedCard {
   key: string;
@@ -15,7 +10,6 @@ interface GetInvolvedCard {
   bgColor: string;
   ctaColor: string;
   size: "large" | "small";
-  image: string;
 }
 
 const cards: GetInvolvedCard[] = [
@@ -23,62 +17,57 @@ const cards: GetInvolvedCard[] = [
     key: "sponsor",
     title: "Sponsor SCA Summit 2026",
     description:
-      "As a sponsor, you'll have the opportunity to increase brand visibility before, during and after the Summit, connect with top technology talent across Africa, showcase your products, services or initiatives, demonstrate your commitment to diversity, inclusion and innovation, and contribute to building a more inclusive technology ecosystem.",
+      "Support the flagship summit of African women in tech while connecting your organisation with a highly engaged community of technology professionals, emerging talent, founders and industry leaders.",
     ctaLabel: "Become a Sponsor",
     ctaHref: " https://forms.gle/s6bhvvSeEXFWzT5Y7",
     bgColor: "#ffffff",
     ctaColor: "#B70569",
-    size: "large",
-    image: sponsorPhoto,
+    size: "large"
   },
   {
     key: "brand",
     title: "Showcase your Brand",
     description:
-      "Showcase your products, services or innovations to a vibrant audience of technology professionals, founders, students and decision-makers. Exhibiting at the Summit provides an opportunity to engage directly with attendees, generate leads and increase brand awareness.",
+      "Support the flagship summit of African women in tech while connecting your organisation with a highly engaged community of technology professionals, emerging talent, founders and industry leaders.",
     ctaLabel: "Exhibit your brand",
     ctaHref: " https://forms.gle/s6bhvvSeEXFWzT5Y7",
     bgColor: "#FFEAF6",
     ctaColor: "#B70569",
-    size: "large",
-    image: brandPhoto,
+    size: "large"
   },
   {
     key: "media",
     title: "Media Partner",
     description:
-      "Partner with us to spotlight the voices, ideas and innovations emerging from Africa's largest gathering of women in technology. If you're a media organisation, publication, content creator or storyteller passionate about technology, innovation and impact, we'd love to work with you to share these stories with the world",
+      "Support the flagship summit of African women in tech while connecting your organisation with a highly engaged community of technology",
     ctaLabel: "Become a Partner",
     ctaHref: " https://forms.gle/s6bhvvSeEXFWzT5Y7",
     bgColor: "#FFFDDE",
     ctaColor: "#B70569",
-    size: "small",
-    image: mediaPhoto,
+    size: "small"
   },
   {
     key: "logistics",
     title: "Logistics Partner",
     description:
-      "Every great Summit experience is made possible through collaboration. \nIf your organisation provides event, hospitality, transportation, production, catering, technology or other event support services, we'd love to explore how we can work together to deliver an exceptional experience for our attendees.",
+      "Support the flagship summit of African women in tech while connecting your organisation with a highly engaged community of technology",
     ctaLabel: "Become a Partner",
     ctaHref: " https://forms.gle/s6bhvvSeEXFWzT5Y7",
     bgColor: "#F8EAFF",
     ctaColor: "#B70569",
-    size: "small",
-    image: logisticsPhoto,
+    size: "small"
   },
   {
     key: "diversity",
     title: "Diversity ticket Partner",
     description:
-      "Help make the Summit accessible to more women across our community. \nBy sponsoring an attendee, you're creating an opportunity for someone to learn, connect, and be part of one of Africa's biggest gatherings for women in technology.",
+      "Support the flagship summit of African women in tech while connecting your organisation with a highly engaged community of technology",
     ctaLabel: "Partner with us",
     ctaHref: " https://forms.gle/s6bhvvSeEXFWzT5Y7",
     bgColor: "#FFFDDE",
     ctaColor: "#B70569",
-    size: "small",
-    image: diversityPhoto,
-  },
+    size: "small"
+  }
 ];
 
 const cardVariants = {
@@ -87,13 +76,13 @@ const cardVariants = {
     ({
       opacity: 1,
       y: 0,
-      transition: { duration: 0.55, delay, ease: "easeOut" },
-    }) as const,
+      transition: { duration: 0.55, delay, ease: "easeOut" }
+    }) as const
 };
 
 function GetInvolvedCardItem({
   card,
-  delay,
+  delay
 }: {
   card: GetInvolvedCard;
   delay: number;
@@ -107,16 +96,16 @@ function GetInvolvedCardItem({
       viewport={{ once: true, amount: 0.2 }}
       whileHover={{ y: -6 }}
       transition={{ type: "spring", stiffness: 300, damping: 20 }}
-      className="rounded-xl overflow-hidden shadow-lg flex flex-col h-full p-4 sm:p-6 gap-8"
+      className="rounded-xl overflow-hidden shadow-lg flex flex-col h-full  p-4 sm:p-6 gap-8"
       style={{ backgroundColor: card.bgColor }}
     >
       <div
-        className={`w-full overflow-hidden h-90 ${card.size === "large" ? "aspect-700/610" : "aspect-4/5 sm:aspect-699/400"}`}
+        className={`w-full overflow-hidden ${card.size === "large" ? "aspect-700/610" : "aspect-4/5 sm:aspect-699/400"}`}
       >
         <img
-          src={card.image}
+          src={involvedPhoto}
           alt={card.title}
-          className="w-full h-full object-cover  transition-transform duration-300 ease-in-out hover:scale-120"
+          className="w-full h-full object-cover"
         />
       </div>
 
@@ -144,6 +133,7 @@ export function GetInvolvedSection() {
   return (
     <section className="relative w-full bg-secondary-velvet py-20 sm:py-28">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Heading */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -151,20 +141,24 @@ export function GetInvolvedSection() {
           transition={{ duration: 0.6, ease: "easeOut" }}
           className="text-center space-y-4 mb-14 sm:mb-16"
         >
-          <h2 className="font-display hero-title text-white">Get Involved</h2>
-          <p className="max-w-4xl mx-auto text-white text-lg font-semibold sm:text-2xl leading-relaxed">
+          <h2 className="font-display hero-title uppercase text-white ">
+            Get Involved
+          </h2>
+          <p className="max-w-4xl mx-auto text-white text-lg sm:text-2xl leading-relaxed">
             There's more than one way to show up, sponsor, exhibit, partner on
             media or logistics, or fund a ticket for someone who couldn't
             otherwise attend.
           </p>
         </motion.div>
 
+        {/* Top row — 2 large cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 mb-6 sm:mb-8">
           {largeCards.map((card, i) => (
             <GetInvolvedCardItem key={card.key} card={card} delay={i * 0.1} />
           ))}
         </div>
 
+        {/* Bottom row — 3 small cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {smallCards.map((card, i) => (
             <GetInvolvedCardItem

@@ -1,18 +1,14 @@
 import { useEffect, useRef, useState } from "react";
 import type { Dispatch, ReactNode, SetStateAction } from "react";
 import SecondaryPattern2 from "../../icons/SecondaryPattern2";
-import keynoteImg from "../../assets/home/keynoteImg.jpg";
-import workshops from "../../assets/home/workshops.jpg";
-import learning from "../../assets/home/learning.jpg";
-import panelSessions from "../../assets/home/panelSession.jpg";
-import networking from "../../assets/home/networking.jpg";
+import whyAttendImg1 from "../../assets/home/whyAttendImg1.png";
+import whyAttendImg2 from "../../assets/home/whyAttendImg2.png";
+import whyAttendImg3 from "../../assets/home/whyAttendImg2.jpg";
 import { whyAttendTab } from "../../utils/appData";
 import { tracks, whyAttendMediaContent } from "../../utils/whyAttend";
 import starTrophy from "../../assets/home/StarTrophy.png";
 import laptop from "../../assets/home/laptop.png";
 import bottle from "../../assets/home/bottle.png";
-import community from "../../assets/home/community.jpg";
-import partner from "../../assets/home/partner.jpg";
 
 type Props = {
   tab: string;
@@ -20,18 +16,15 @@ type Props = {
 };
 
 const images = {
-  img1: keynoteImg,
-  img2: workshops,
-  img3: panelSessions,
-  img4: learning,
-  img5: community,
-  img6: partner,
+  img1: whyAttendImg1,
+  img2: whyAttendImg2,
+  img3: whyAttendImg3,
 };
 
 const ImageFigure = ({ src, value = "" }: { src: string; value?: string }) => (
-  <div className="w-full block ">
+  <div className="w-full md:block hidden ">
     <figure
-      className={`w-full xl:max-w-127  ${value === "panel-sessions" || value === "community-experience" ? "h-full" : "h-91"}`}
+      className={`w-full max-w-127  ${value === "panel-sessions" || value === "community-experience" ? "h-full" : "h-91"}`}
     >
       <img src={src} alt="why attend" className="object-cover w-full h-full" />
     </figure>
@@ -47,9 +40,7 @@ const MediaBlock = ({ value }: { value: string }) => {
   const { title, description, bg, image, imageSide, readMore } = entry;
 
   return (
-    <div
-      className={`w-full flex ${imageSide === "left" ? "flex-col-reverse" : "flex-col"} md:flex-row ${bg}`}
-    >
+    <div className={`w-full flex ${bg}`}>
       {imageSide === "left" && (
         <ImageFigure src={images[image]} value={value} />
       )}
@@ -145,7 +136,7 @@ const NetworkingBlock = () => {
       <div className="w-full flex flex-col">
         <figure className="w-full h-91 md:h-auto md:flex-1">
           <img
-            src={networking}
+            src={whyAttendImg1}
             alt="Networking"
             className="object-cover w-full h-full"
           />
@@ -241,9 +232,10 @@ const AwardsBlock = () => (
 );
 
 const giveaways = [
-  "Scholarships such as Professional courses, Brand new Laptops",
-  "Partner-sponsored offerings",
-  "She Code Africa Access Fund Launch and other initiatives",
+  "Laptops giveaway",
+  "Scholarships",
+  "Partner-sponsored giveaways",
+  "Updates on the She Code Africa Access Fund and other initiatives",
   "Branded souvenir giveaways",
 ];
 

@@ -5,7 +5,7 @@ import {
   LayoutGrid,
   Sparkles,
   Users,
-  // MessageCircleQuestion,
+  MessageCircleQuestion,
   Menu,
   X,
   ChevronDown,
@@ -17,6 +17,11 @@ const aboutDropdownItems = [
   { name: "About SCA", path: "/about#about-sca", icon: LayoutGrid },
   { name: "Why attend", path: "/about#why-attend", icon: Sparkles },
   { name: "Get Involved", path: "/about#get-involved", icon: Users },
+  {
+    name: "Accessibility",
+    path: "/accessibility",
+    icon: MessageCircleQuestion,
+  },
 ];
 
 const navLinks = [
@@ -42,12 +47,12 @@ export function Navbar() {
           <img
             src={navLogo}
             alt="SheCode Africa — Summit 2026"
-            className="h-12 sm:h-17.5 w-45 object-contain"
+            className="h-12 sm:h-20.5 w-auto object-contain"
           />
         </Link>
 
         {/* Desktop Navigation Links */}
-        <nav className="hidden xl:flex items-center space-x-8">
+        <nav className="hidden lg:flex items-center space-x-8">
           {navLinks.map((link) => (
             <div
               key={link.path}
@@ -128,13 +133,13 @@ export function Navbar() {
         {/* Action Buttons */}
         <div className="hidden sm:flex items-center space-x-4">
           <a
-            href="/#tickets"
+            href="#tickets"
             className="px-8 py-4.5 rounded-lg bg-primary-main-pink hover:bg-primary-dark-pink text-white font-semibold text-sm transition shadow-sm hover:shadow"
           >
             Get Tickets
           </a>
           <a
-            href="/about#get-involved"
+            href=" https://forms.gle/s6bhvvSeEXFWzT5Y7"
             className="px-8 py-4.5 rounded-lg border border-primary-main-pink text-primary-main-pink hover:bg-primary-very-light-pink font-semibold text-sm transition"
           >
             Become a sponsor
@@ -142,7 +147,7 @@ export function Navbar() {
         </div>
 
         {/* Mobile menu toggle button */}
-        <div className="flex xl:hidden">
+        <div className="flex lg:hidden">
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="p-2 rounded-lg text-secondary-main-black hover:bg-primary-very-light-pink focus:outline-none"
@@ -184,7 +189,7 @@ export function Navbar() {
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.25, ease: "easeInOut" }}
-            className="xl:hidden border-t border-gray-100 bg-white overflow-hidden"
+            className="lg:hidden border-t border-gray-100 bg-white overflow-hidden"
           >
             <div className="px-4 pt-4 pb-6 space-y-1">
               {navLinks.map((link) =>
@@ -253,18 +258,18 @@ export function Navbar() {
                   >
                     {link.name}
                   </NavLink>
-                ),
+                )
               )}
 
               <div className="pt-4 flex flex-col gap-2">
                 <a
-                  href="/#tickets"
+                  href="#tickets"
                   className="w-full text-center px-8 py-4.5 rounded-lg bg-primary-main-pink hover:bg-primary-dark-pink text-white font-semibold text-sm transition"
                 >
                   Get Tickets
                 </a>
                 <a
-                  href="/about#get-involved"
+                  href="https://forms.gle/s6bhvvSeEXFWzT5Y7"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full text-center px-8 py-4.5 rounded-lg border border-primary-main-pink text-primary-main-pink hover:bg-primary-very-light-pink font-semibold text-sm transition"

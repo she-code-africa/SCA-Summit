@@ -4,7 +4,7 @@ import {
   faInstagram,
   faFacebookF,
   faYoutube,
-  faLinkedinIn,
+  faLinkedinIn
 } from "@fortawesome/free-brands-svg-icons";
 import logo from "../assets/footer-logo.png";
 import { motion } from "framer-motion";
@@ -49,17 +49,10 @@ export const Footer = () => {
                   Get Involved
                 </p>
                 <a
-                  target="_blank"
-                  href="https://tix.africa/discover/she-code-africa-summit-2026"
+                  href="https://www.shecodeafrica.org/donate"
                   className="button-text block text-black mb-5 mt-8 hover:text-primary-main-pink focus:outline-none focus:ring focus:ring-tutu"
                 >
-                  Get your ticket
-                </a>
-                <a
-                  href="/about#get-involved"
-                  className="button-text block mb-5 text-black hover:text-primary-main-pink focus:outline-none focus:ring focus:ring-tutu"
-                >
-                  Become a sponsor
+                  Donate To A Cause
                 </a>
                 <a
                   href="https://www.shecodeafrica.org/partner"
@@ -68,12 +61,18 @@ export const Footer = () => {
                   Partner With Us
                 </a>
                 <a
-                  href="https://shecodeafrica.org/donate"
+                  href="https://www.shecodeafrica.org/chapters"
+                  className="button-text block mb-5 text-black hover:text-primary-main-pink focus:outline-none focus:ring focus:ring-tutu"
+                >
+                  Start An S.C.A Chapter
+                </a>
+                <a
+                  href="https://summit.shecodeafrica.org/"
                   className="button-text block mb-5 text-black hover:text-primary-main-pink focus:outline-none focus:ring focus:ring-tutu"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  Donate To A Cause
+                  Summit
                 </a>
               </div>
 
@@ -82,15 +81,20 @@ export const Footer = () => {
                 <p className="text-black text-[clamp(24px,4vw,32px)] font-bold leading-[1.3]">
                   About Us
                 </p>
-
                 <a
-                  href="/faqs#faq-section"
-                  className="button-text block mb-5 mt-8  hover:text-primary-main-pink focus:outline-none focus:ring focus:ring-tutu"
+                  href="https://www.shecodeafrica.org/team"
+                  className="button-text block mb-5 hover:text-primary-main-pink mt-8 focus:outline-none focus:ring focus:ring-tutu"
+                >
+                  Meet The Team
+                </a>
+                <a
+                  href="https://www.shecodeafrica.org/faq"
+                  className="button-text block mb-5 hover:text-primary-main-pink focus:outline-none focus:ring focus:ring-tutu"
                 >
                   FAQ
                 </a>
                 <a
-                  href="/accessibility"
+                  href="https://www.shecodeafrica.org/code-of-conduct"
                   className="button-text block mb-5 hover:text-primary-main-pink focus:outline-none focus:ring focus:ring-tutu"
                 >
                   Code of Conduct
@@ -102,7 +106,7 @@ export const Footer = () => {
                   Privacy Policy
                 </a>
                 <a
-                  href="/terms-and-conditions"
+                  href="https://www.shecodeafrica.org/terms"
                   className="button-text block mb-5 hover:text-primary-main-pink focus:outline-none focus:ring focus:ring-tutu"
                 >
                   Terms and Condition

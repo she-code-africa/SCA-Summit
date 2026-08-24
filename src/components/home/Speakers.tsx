@@ -1,5 +1,17 @@
 import { motion } from "framer-motion";
+//import whyAttendImg2 from "../../assets/home/whyAttendImg2.png";
 import { speakers } from "../../utils/speakers";
+
+// const speakers = [
+//   { name: "Speaker Name", title: "Speaker title" },
+//   { name: "Speaker Name", title: "Speaker title" },
+//   { name: "Speaker Name", title: "Speaker title" },
+//   { name: "Speaker Name", title: "Speaker title" },
+//   { name: "Speaker Name", title: "Speaker title" },
+//   { name: "Speaker Name", title: "Speaker title" },
+//   { name: "Speaker Name", title: "Speaker title" },
+//   { name: "Speaker Name", title: "Speaker title" },
+// ];
 
 const SpeakersSection = () => {
   // Duplicate the list so the track can loop seamlessly (0% -> -50%)
