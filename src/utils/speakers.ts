@@ -5,6 +5,7 @@ import adeife from "../assets/speaker/speakers/adeife.png";
 import ada from "../assets/speaker/speakers/ada.png";
 import favourO from "../assets/speaker/speakers/favourO.png";
 import rachel from "../assets/speaker/speakers/rachel.png";
+import ijAdesanya from "../assets/speaker/speakers/ij-adesanya.png";
 
 export type SpeakerCategory = "keynote-speakers" | "panelists" | "facilitators";
 
@@ -95,5 +96,16 @@ export const speakers = [
     image: favourO,
     category: "facilitators",
     bg: "#FFB8E0",
+  },
+  {
+    id: "facilitator-2",
+    name: "Ijeoma Adesanya",
+    title: "Executive Director, Kobikam Africa",
+    bio: [
+      'Ijeoma Adesanya is the founder of Kobikam Africa, a gender advisory and advocacy consultancy that specialises in providing companies with the tools needed to foster a more gender-inclusive workplace. Driven by a strong need to advocate for women, she founded the company to create bias-free workplaces across Africa. Kobikam Africa creates a level playing field for women to excel by providing clients with gender advisory services such as gender strategy for private-sector organisations, participatory gender audits, unconscious bias training for senior management, and "back-to-work" training for mothers after maternity leave.',
+    ],
+    image: ijAdesanya,
+    category: "facilitators",
+    bg: "#FFEAF6",
   },
 ];
