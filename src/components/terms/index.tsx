@@ -36,7 +36,7 @@ const TermsPage = () => {
 
       <section className="w-full bg-sca-white">
         <div className="px-4 py-25 sm:px-6 lg:px-8">
-          <div className="max-w-303 mx-auto flex flex-col xl:flex-row gap-8">
+          <div className="max-w-303 mx-auto flex flex-col xl:flex-row gap-8 xl:gap-25">
             <div className="xl:sticky xl:top-40 xl:self-start">
               <TermsNav tab={tab} setTab={setTab} />
             </div>

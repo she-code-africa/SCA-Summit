@@ -31,9 +31,7 @@ export function NeedHelpBanner({ activeTab }: { activeTab: string }) {
           variants={fadeUp}
           className="font-display section-header text-sca-white "
         >
-          {activeTab === "code-of-conduct"
-            ? "Need Help? Let Us Know"
-            : "Have a feedback?"}
+          Have a feedback?
         </motion.h2>
 
         <motion.p
