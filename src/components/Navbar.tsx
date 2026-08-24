@@ -128,7 +128,7 @@ export function Navbar() {
         {/* Action Buttons */}
         <div className="hidden sm:flex items-center space-x-4">
           <a
-            href="#tickets"
+            href="/#tickets"
             className="px-8 py-4.5 rounded-lg bg-primary-main-pink hover:bg-primary-dark-pink text-white font-semibold text-sm transition shadow-sm hover:shadow"
           >
             Get Tickets
@@ -258,13 +258,13 @@ export function Navbar() {
 
               <div className="pt-4 flex flex-col gap-2">
                 <a
-                  href="#tickets"
+                  href="/#tickets"
                   className="w-full text-center px-8 py-4.5 rounded-lg bg-primary-main-pink hover:bg-primary-dark-pink text-white font-semibold text-sm transition"
                 >
                   Get Tickets
                 </a>
                 <a
-                  href="https://forms.gle/s6bhvvSeEXFWzT5Y7"
+                  href="/about#get-involved"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full text-center px-8 py-4.5 rounded-lg border border-primary-main-pink text-primary-main-pink hover:bg-primary-very-light-pink font-semibold text-sm transition"
