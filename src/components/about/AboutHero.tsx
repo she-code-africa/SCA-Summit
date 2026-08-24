@@ -1,25 +1,24 @@
 import { motion } from "framer-motion";
-import aboutHero from "../../assets/about-hero.png";
+import aboutHero from "../../assets/about-hero.jpg";
 import FlowerPinwheel from "../FlowerPinwheel";
 
 export function AboutHero() {
   return (
     <section className="relative w-full bg-slate-950 text-white overflow-hidden py-24 sm:py-32 md:py-40 flex items-center justify-center">
-      {/* Photographic background */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-60 scale-105"
         style={{ backgroundImage: `url(${aboutHero})` }}
       />
 
       {/* Color wash using theme colors */}
-      <div className="absolute inset-0 bg-gradient-to-r from-primary-dark-pink/80 via-secondary-velvet/70 to-seal-brown/85" />
+      <div className="absolute inset-0 bg-linear-to-r from-primary-dark-pink/80 via-secondary-velvet/70 to-seal-brown/85" />
 
-      <div className="relative max-w-7xl mx-auto px-4 text-center z-10 space-y-8">
+      <div className="relative max-w-7xl mx-auto px-4 text-center z-10 space-y-2">
         <motion.h1
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
-          className="hero-title font-black uppercase text-white flex flex-wrap items-center justify-center gap-x-3 sm:gap-x-5 leading-none font-display"
+          className="hero-title font-black uppercase text-white flex flex-wrap items-center justify-center gap-x-3 sm:gap-x-3 leading-none font-display"
         >
           <span className="relative inline-flex items-center justify-center select-none my-1 w-[1.6em] h-[1em] sm:w-[1em]">
             {/* Green flower (left-top) – using theme color sca-garden */}
@@ -42,7 +41,7 @@ export function AboutHero() {
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.15, ease: "easeOut" }}
-          className="max-w-3xl mx-auto text-base sm:text-lg md:text-2xl text-sca-white font-medium leading-relaxed tracking-wide pt-2"
+          className="max-w-3xl mx-auto text-base sm:text-lg md:text-2xl text-sca-white font-medium leading-relaxed tracking-wide"
         >
           One celebration of a decade of impact, where Africa's women in
           technology come together to inspire, connect, and shape the next

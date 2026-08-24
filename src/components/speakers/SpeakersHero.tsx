@@ -1,4 +1,5 @@
 import { motion, type Variants } from "framer-motion";
+import HeroBlob from "../../icons/HeroBlob";
 
 const heroContainer: Variants = {
   hidden: {},
@@ -18,13 +19,29 @@ const heroItem: Variants = {
 
 const SpeakersHero = () => {
   return (
-    <section className="bg-secondary-velvet">
-      <div className="min-h-108 w-full flower-img py-25">
+    <section className="relative bg-secondary-velvet overflow-hidden">
+      <motion.div
+        className="absolute -top-8 -left-8 sm:-top-10 sm:-left-10 w-24 sm:w-32 lg:w-44 xl:w-60 pointer-events-none"
+        animate={{ rotate: 360 }}
+        transition={{ duration: 20, ease: "linear", repeat: Infinity }}
+      >
+        <HeroBlob className="w-full h-auto" />
+      </motion.div>
+
+      <motion.div
+        className="absolute -bottom-8 -right-8 sm:-bottom-10 sm:-right-10 w-24 sm:w-32 lg:w-44 xl:w-60 pointer-events-none"
+        animate={{ rotate: 360 }}
+        transition={{ duration: 20, ease: "linear", repeat: Infinity }}
+      >
+        <HeroBlob className="w-full h-auto" />
+      </motion.div>
+
+      <div className="min-h-108 w-full py-25">
         <motion.article
           initial="hidden"
           animate="visible"
           variants={heroContainer}
-          className="w-full max-w-260 mx-auto"
+          className="relative z-10 w-full max-w-260 mx-auto"
         >
           <motion.h1
             variants={heroItem}

@@ -9,6 +9,7 @@ import OurSponsors from "./OurSponsors";
 import SpeakersSection from "./Speakers";
 import WhatWeBuilt from "./WhatWeBuilt";
 import WhyAttend from "./WhyAttend";
+import EventVenue from "./EventVenue";
 
 const countdownContainer: Variants = {
   hidden: {},
@@ -40,9 +41,7 @@ const HomePage = () => {
     }
   }, [hash]);
 
-  const { days, hours, minutes, seconds } = useCountdown(
-    new Date("2026-09-19T00:00:00Z"),
-  );
+  const countdownState = useCountdown(new Date("2026-09-19T00:00:00Z"));
 
   return (
     <div className="min-h-screen w-full">
@@ -54,66 +53,93 @@ const HomePage = () => {
           whileInView="visible"
           viewport={{ once: true, amount: 0.4 }}
           variants={countdownContainer}
-          className="mx-auto px-4 sm:px-6 lg:px-8 max-w-fit"
+          className="mx-auto px-4 sm:px-6 lg:px-8 max-w-auto"
         >
           <motion.h3
             variants={countdownItem}
             className="font-display text-primary-magenta text-[48px] sm:text-[56px] lg:text-[64px] w-full text-center"
           >
-            Our summit starts in
+            {countdownState.status === "counting"
+              ? "Our summit starts in"
+              : countdownState.status === "today"
+                ? "Our summit is"
+                : "Our summit was"}
           </motion.h3>
 
-          <motion.p
-            variants={countdownItem}
-            className="mt-10 font-display flex items-center justify-center flex-wrap text-[64px] lg:text-[96px] xl:text-9xl font-semibold gap-5 text-black"
-          >
-            <span className="inline-flex flex-col items-center">
-              <span className="inline-flex gap-5 items-center">
-                {days} <span className="inline-block text-[30px]">:</span>
+          {countdownState.status === "counting" ? (
+            <motion.p
+              variants={countdownItem}
+              className="mt-10 font-display flex items-center justify-center flex-wrap text-[64px] lg:text-[96px] xl:text-9xl font-semibold gap-5 text-black"
+            >
+              <span className="inline-flex flex-col items-center">
+                <span className="inline-flex gap-5 items-center">
+                  {countdownState.days}{" "}
+                  <span className="inline-block text-[30px]">:</span>
+                </span>
+
+                <span className="font-sans text-xl inline-block font-light">
+                  Days
+                </span>
               </span>
 
-              <span className="font-sans text-xl inline-block font-light">
-                Days
+              <span className="inline-flex flex-col items-center">
+                <span className="inline-flex gap-5 items-center">
+                  {countdownState.hours}{" "}
+                  <span className="inline-block text-[30px]">:</span>
+                </span>
+                <span className="font-sans text-xl inline-block font-light">
+                  Hours
+                </span>
               </span>
-            </span>
 
-            <span className="inline-flex flex-col items-center">
-              <span className="inline-flex gap-5 items-center">
-                {hours} <span className="inline-block text-[30px]">:</span>
+              <span className="inline-flex flex-col items-center">
+                <span className="inline-flex gap-5 items-center">
+                  {countdownState.minutes}{" "}
+                  <span className="inline-block text-[30px]">:</span>
+                </span>
+                <span className="font-sans text-xl inline-block font-light">
+                  Minutes
+                </span>
               </span>
-              <span className="font-sans text-xl inline-block font-light">
-                Hours
-              </span>
-            </span>
 
-            <span className="inline-flex flex-col items-center">
-              <span className="inline-flex gap-5 items-center">
-                {minutes} <span className="inline-block text-[30px]">:</span>
+              <span className="inline-flex flex-col items-center">
+                {countdownState.seconds}
+                <span className="font-sans text-xl inline-block font-light">
+                  Seconds
+                </span>
               </span>
-              <span className="font-sans text-xl inline-block font-light">
-                Minutes
-              </span>
-            </span>
-
-            <span className="inline-flex flex-col items-center">
-              {seconds}
-              <span className="font-sans text-xl inline-block font-light">
-                Seconds
-              </span>
-            </span>
-          </motion.p>
+            </motion.p>
+          ) : (
+            <motion.p
+              variants={countdownItem}
+              className="mt-10 font-display text-[64px] lg:text-[96px] xl:text-9xl font-semibold text-black text-center"
+            >
+              {countdownState.status === "today"
+                ? "Today"
+                : countdownState.label}
+            </motion.p>
+          )}
 
           <motion.div
             variants={countdownItem}
-            className="flex justify-center items-center mt-10 w-full"
+            className="flex justify-center items-center gap-2.5 flex-wrap xl:flex-nowrap mt-10 w-full"
           >
             <motion.a
               href="#tickets"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.96 }}
-              className="px-8 py-4.5 rounded-lg bg-primary-main-pink hover:bg-primary-dark-pink text-white font-semibold text-sm transition shadow-sm hover:shadow"
+              className="px-8 py-4.5 rounded-lg w-full flex items-center justify-center max-w-59.25 bg-primary-main-pink border border-primary-magenta hover:bg-primary-dark-pink text-white font-normal text-base transition shadow-sm hover:shadow"
             >
               Get Tickets
+            </motion.a>
+
+            <motion.a
+              href="#sponsors"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.96 }}
+              className="px-8 py-4.5 rounded-lg  w-full flex items-center justify-center max-w-59.25 bg-sca-white border border-primary-magenta hover:bg-primary-dark-pink text-primary-magenta hover:text-white font-normal text-base transition shadow-sm hover:shadow"
+            >
+              Talk to partnerships
             </motion.a>
           </motion.div>
         </motion.div>
@@ -122,7 +148,10 @@ const HomePage = () => {
       <WhyAttend />
       <WhatWeBuilt />
       <SpeakersSection />
-      <OurSponsors />
+      <div id="sponsors">
+        <OurSponsors />
+      </div>
+      <EventVenue />
 
       <section id="tickets" className="scroll-mt-24">
         <TicketsSection />
