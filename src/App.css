@@ -1,199 +1,70 @@
-@import "slick-carousel/slick/slick.css";
-@import "slick-carousel/slick/slick-theme.css";
+/*  Custom component styles can be added here if needed; default Vite styles cleared for Tailwind CSS. */
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/*============================================
+  RESPONSIVE TYPOGRAPHY SYSTEM
+  Based on Figma Desktop Specifications
+  ============================================ */
+
+/* HERO TITLES - 128px desktop */
+.hero-title {
+  font-size: clamp(48px, 10vw, 128px);
+  font-weight: 600; /* semi-bold */
+  line-height: 1.2;
 }
 
-.emboss-bg {
-  background-image: url("./assets/images/2024/emboss2.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+/* MEDIUM HEADER - 48px desktop, extra bold */
+.medium-header {
+  font-size: clamp(28px, 5vw, 40px);
+  font-weight: 800; /* extra bold */
+  line-height: 1.3;
 }
 
-.mullish-font {
-  font-family: "Mulish", sans-serif;
+/* LARGE HEADER - 96px desktop, extra bold */
+.large-header {
+  font-size: clamp(40px, 8vw, 96px);
+  font-weight: 800; /* extra bold */
+  /* line-height: 1.2; */
 }
 
-.oswald-font {
-  font-family: "Oswald", sans-serif;
+/* DESCRIPTION LIGHT - 24px desktop, regular */
+.description-light {
+  font-size: clamp(16px, 2.5vw, 24px);
+  font-weight: 400; /* regular */
+  line-height: 1.5;
 }
 
-.bigShouldersText {
-  font-family: "Big Shoulders Text", sans-serif;
+/* SECTION HEADERS - 64px desktop */
+.section-header {
+  font-size: clamp(32px, 6vw, 64px);
+  font-weight: 600; /* semi-bold */
+  line-height: 1.3;
 }
 
-.vector-bgs {
-  background: url("./assets/images/2024/Union.png");
-  background-position: top left;
-  background-repeat: no-repeat;
-  background-size: 200px;
+/* SECTION HEADERS BOLD VARIANT - 64px desktop, bold */
+.section-header-bold {
+  font-size: clamp(32px, 6vw, 64px);
+  font-weight: 700; /* bold */
+  line-height: 1.3;
 }
 
-.ray-bgs {
-  background: url("./assets/images/2024/Union.png"),
-    url("./assets/images/2024/ray.png");
-  background-position: top left, center;
-  background-repeat: no-repeat, no-repeat;
-  background-size: 200px, auto;
+/* SUBSECTION HEADERS - 32px desktop */
+.subsection-header {
+  font-size: clamp(24px, 4vw, 32px);
+  font-weight: 700; /* bold */
+  line-height: 1.3;
 }
 
-.angle-bg {
-  background: url("./assets/images/2024/sub-angle.png"),
-    url("./assets/images/2024/subangle.png");
-  background-repeat: no-repeat, no-repeat;
-  background-position: center, 350px 300px;
+/* CARD TEXT - 20px desktop */
+.card-text {
+  font-size: clamp(16px, 2vw, 20px);
+  font-weight: 500; /* medium */
+  line-height: 1.5;
 }
 
-.double-angle {
-  background: url("./assets/images/2024/doubleTriangle.png");
-  background-repeat: no-repeat;
-  background-position: 20px top;
-  background-size: 130px;
-}
-.custom-list::before {
-  content: "";
-  display: inline-flex;
-  width: 20px;
-  height: 20px;
-  margin-right: 8px;
+.description-text {
+  font-size: clamp(16px, 2.5vw, 24px);
+  font-weight: 600; /* medium */
+  line-height: 1.5;
 }
 
-.custom-list-one::before {
-  background-image: url("./assets/images/2024/custome-list-one.png");
-}
-.custom-list-two::before {
-  background-image: url("./assets/images/2024/Subtract.png");
-}
 
-.custom-list-three::before {
-  background-image: url("./assets/images/2024/cl-three.png");
-}
-
-.custom-list-four::before {
-  background-image: url("./assets/images/2024/cl-4.png");
-}
-
-.custom-list-five::before {
-  background-image: url("./assets/images/2024/cl-5.png");
-}
-
-.custom-list-six::before {
-  background-image: url("./assets/images/2024/cl-6.png");
-}
-
-.squiggles {
-  background-image: url("./assets/images/2024/highlight-squiggle.png"),
-    url("./assets/images/2024/highlight-angle.png");
-  background-position: left 80px, center 100px;
-  background-repeat: no-repeat, no-repeat;
-}
-
-.wave-bg {
-  background-image: url("./assets/images/2024/wave.png");
-  background-repeat: no-repeat;
-}
-
-.squiggly {
-  background-image: url("./assets/images/2024/spring2.png");
-  background-size: contain;
-}
-
-.theme-bg {
-  background-image: url("./assets/images/2024/highlight-squiggle.png");
-  background-position: left center;
-  background-repeat: no-repeat;
-}
-
-.ticket-section-bg {
-  background: url("./assets/images/2024/spring2.png");
-}
-
-.footer-bg {
-  background-image: url("./assets/images/2024/ticket-section-footer.png");
-  background-repeat: no-repeat;
-}
-.starBg {
-  background-image: url("./assets/images/2024/tickets/Star.png");
-  background-repeat: no-repeat;
-}
-
-.textGradient {
-  background: linear-gradient(rgba(183, 5, 105, 1), rgba(81, 2, 46, 1));
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.speaker-modal-image {
-  background-image: url("./assets/images/2024/speakers/speakers-vector/bgimage.png");
-  background-repeat: no-repeat;
-}
-
-@media screen and (max-width: 480px) {
-  .ticketDetail {
-    flex-direction: column;
-  }
-}
-
-@media screen and (max-width: 1023px) {
-  .nav-menu-mobile {
-    display: block;
-    position: fixed;
-    background: white;
-    bottom: 0;
-    right: 0;
-    top: 0;
-    width: 100%;
-    max-width: 350px;
-    padding: 0 20px;
-    transform: translateX(500px);
-    transition: 0.5s linear;
-    /* z-index: 300; */
-  }
-
-  .active {
-    transform: translateX(0);
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .vector-bgs {
-    background-size: auto;
-  }
-
-  .squiggles {
-    background-position: left 140px, 500px 170px;
-  }
-
-  .nextGenBg {
-    background-image: url("./assets/images/2024/tickets/nextGenBg.png");
-    background-repeat: no-repeat;
-    /* background-size: contain; */
-    background-position: bottom left;
-  }
-
-  .sparkTicketBg {
-    background-image: url("./assets/images/2024/tickets/sparkBg.png");
-    background-repeat: no-repeat;
-    /* background-size: contain; */
-    background-position: bottom left;
-  }
-
-  .ascendBg {
-    background-image: url("./assets/images/2024/tickets/ascendBg.png");
-    background-repeat: no-repeat;
-    /* background-size: contain; */
-    background-position: bottom left;
-  }
-
-  .trailblazerBg {
-    background-image: url("./assets/images/2024/tickets/trailblazerBg.png");
-    background-repeat: no-repeat;
-    /* background-size: contain; */
-    background-position: bottom left;
-  }
-}
