@@ -9,7 +9,7 @@ export function AccessibilityPage() {
     <div className="min-h-screen bg-white">
       <AccessibilityHero />
       <CodeOfConductSection activeTab={activeTab} setActiveTab={setActiveTab} />
-      <NeedHelpBanner activeTab={activeTab} />
+      <NeedHelpBanner />
     </div>
   );
 }
