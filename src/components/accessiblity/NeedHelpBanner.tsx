@@ -11,7 +11,7 @@ const fadeUp = {
     }) as const,
 };
 
-export function NeedHelpBanner({ activeTab }: { activeTab: string }) {
+export function NeedHelpBanner() {
   return (
     <section className="relative w-full bg-primary-magenta overflow-hidden py-16 sm:py-20 md:py-24">
       {/* Background PNG - fill the whole screen and sit behind text */}
