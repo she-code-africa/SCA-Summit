@@ -3,7 +3,7 @@ import type { AgendaItem } from "../../data/scheduleData";
 
 export function AgendaCard({
   item,
-  index
+  index,
 }: {
   item: AgendaItem;
   index: number;
@@ -33,16 +33,16 @@ export function AgendaCard({
               {item.tag}
             </span>
           </div>
-
+          {/* hide for now: subtitle and speakers */}
           {item.subtitle && (
-            <p className="mt-2 text-sm sm:text-base text-black">
+            <p className="mt-2 text-sm sm:text-base text-black hidden">
               {item.subtitle}
             </p>
           )}
           {item.speakers && (
             <div className="mt-2 space-y-1">
               {item.speakers.map((speaker, i) => (
-                <p key={i} className="text-sm sm:text-base text-black">
+                <p key={i} className="text-sm sm:text-base text-black hidden">
                   {speaker}
                 </p>
               ))}
