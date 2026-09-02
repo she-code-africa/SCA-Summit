@@ -13,8 +13,13 @@ export function AgendaCard({
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.4, delay: index * 0.06, ease: "easeOut" }}
-      className="relative border-2 bg-white border-primary-light-pink rounded-2xl px-5 sm:px-8 py-5 sm:py-6"
+      className="relative border-2 bg-white border-sca-bloom rounded-2xl px-5 sm:px-8 py-5 sm:py-6"
     >
+      <div className="w-[60%] from-primary-dark-brown from-0% via-primary-dark-brown via-50% to-primary-magenta to-100% absolute h-0.5 right-3 -top-0.5 sm:w-[90%] bg-linear-to-r"></div>
+
+      <div className="w-[50%] from-primary-dark-brown from-0% via-primary-dark-brown via-40% to-primary-magenta to-100% absolute h-0.5 right-10 -bottom-0.5 sm:w-[85%] bg-linear-to-r"></div>
+
+      {/* colored borders */}
       <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-6">
         {/* Time */}
         <div className="shrink-0 w-full sm:w-40">

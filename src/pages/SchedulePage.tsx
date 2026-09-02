@@ -34,14 +34,14 @@ export default function SchedulePage() {
                   />
                 )}
                 <span
-                  className={`relative z-10 ${isActive ? "text-white" : "text-[#be0e69]"}`}
+                  className={`relative z-10 ${isActive ? "text-white" : "text-secondary-velvet"}`}
                 >
                   {session === "morning"
                     ? "Morning session"
                     : "Afternoon session"}
                 </span>
                 {!isActive && (
-                  <span className="absolute inset-0 rounded-lg bg-pink-100 z-0" />
+                  <span className="absolute inset-0 rounded-lg bg-sca-blush z-0" />
                 )}
               </button>
             );
