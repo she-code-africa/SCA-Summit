@@ -11,7 +11,7 @@ import conoja from "../assets/speaker/speakers/conoja.png";
 import oreoluwa from "../assets/speaker/speakers/oreoluwa.png";
 import zuzka from "../assets/speaker/speakers/zuzka.png";
 import chisom from "../assets/speaker/speakers/chisomN.png";
-import olivia from "../assets/speaker/speakers/olivia.png";
+import olivia from "../assets/speaker/speakers/Olivia.png";
 import olaniyi from "../assets/speaker/speakers/olaniyi.png";
 import perp from "../assets/speaker/speakers/perp.png";
 import mary from "../assets/speaker/speakers/mary.png";
