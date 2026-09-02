@@ -6,6 +6,15 @@ import ada from "../assets/speaker/speakers/ada.png";
 import favourO from "../assets/speaker/speakers/favourO.png";
 import rachel from "../assets/speaker/speakers/rachel.png";
 import ijAdesanya from "../assets/speaker/speakers/ij-adesanya.png";
+import napa from "../assets/speaker/speakers/napa.png";
+import conoja from "../assets/speaker/speakers/conoja.png";
+import oreoluwa from "../assets/speaker/speakers/oreoluwa.png";
+import zuzka from "../assets/speaker/speakers/zuzka.png";
+import chisom from "../assets/speaker/speakers/chisomN.png";
+import olivia from "../assets/speaker/speakers/Olivia.png";
+import olaniyi from "../assets/speaker/speakers/olaniyi.png";
+import perp from "../assets/speaker/speakers/perp.png";
+import mary from "../assets/speaker/speakers/mary.png";
 
 export type SpeakerCategory = "keynote-speakers" | "panelists" | "facilitators";
 
@@ -14,6 +23,7 @@ export const speakersTab: { key: string; label: string }[] = [
   { key: "keynote-speakers", label: "Keynote Speakers" },
   { key: "panelists", label: "Panelists" },
   { key: "facilitators", label: "Facilitators" },
+  { key: "impact-speaker", label: "Impact Speakers" },
 ];
 
 export const speakers = [
@@ -29,6 +39,17 @@ export const speakers = [
     image: ada,
     category: "keynote-speakers",
     bg: "#FFFDDE",
+  },
+  {
+    id: "keynote-2",
+    name: "Napa Onwusah",
+    title: "Managing Partner, B4B Partners",
+    bio: [
+      "Napa Onwusah is a Revenue and Leadership Strategist with over 25 years of experience driving commercial growth across Africa, the Middle East, and Europe. Her corporate career spans the technology industry's most influential companies. At Amazon Web Services, she led a 20+ person startup team across 66 countries — the only region in EMEA to meet and exceed targets, delivering 39% year-on-year growth and pioneering the first AWS Fintech Accelerator in Africa.",
+    ],
+    image: napa,
+    category: "keynote-speakers",
+    bg: "#F8EAFF",
   },
   {
     id: "panelist-1",
@@ -86,6 +107,17 @@ export const speakers = [
     bg: "#F5FFDE",
   },
   {
+    id: "panelist-6",
+    name: "Zuzka Pelechova",
+    title: " Head of Apify Store",
+    bio: [
+      "Zuzka Pelechová is Head of Apify Store, the largest marketplace of trusted tools for AI, where she has shaped the product since 2019. She looks after the ecosystem end to end: helping thousands of developers publish, monetize, and grow their Actors, and making sure the tools that power AI agents and automation workflows are reliable and easy to use. Before tech, Zuzka spent a decade in Czech politics, then retrained through Czechitas, a non-profit bringing women into IT. She builds and publishes her own Actors and is a familiar face in the Apify community.",
+    ],
+    image: zuzka,
+    category: "panelists",
+    bg: "#FFB8E0",
+  },
+  {
     id: "facilitator-1",
     name: "Favour Onwuka",
     title: "The Creative Architect",
@@ -107,5 +139,83 @@ export const speakers = [
     image: ijAdesanya,
     category: "facilitators",
     bg: "#FFEAF6",
+  },
+  {
+    id: "facilitator-3",
+    name: "Christiana Onoja",
+    title: "Cofounder/CEO, Shecode.ai",
+    bio: [
+      "Christiana Ojonugwa Onoja is a technology strategist and AI/ML integrator specializing in human-AI collaboration in Africa. She drives ethical, scalable, and people-centered digital transformation at the intersection of emerging technology, governance, and inclusive innovation. As CEO and Co-Founder of SheCode.ai, she builds AI-powered platforms that enable women to lead in the digital economy. She also serves as Founder and Executive Director of the PAWA Initiative, where she advances gender inclusion in STEM across Africa. Christiana has over a decade of experience advising the oil & gas, financial services, FMCG, and telecoms sectors on AI integration and digital strategy.",
+    ],
+    image: conoja,
+    category: "facilitators",
+    bg: "#FFFDDE",
+  },
+  {
+    id: "impact-6",
+    name: "Oreoluwa Adetula",
+    title: "Programs Manager, She Code Africa",
+    bio: [
+      "Oreoluwa Adetula is a Programs and Project Management professional with over four years of experience designing, managing, and scaling high-impact education, technology, advocacy, and social impact initiatives across Africa.",
+      "With a background in Psychology and certifications in Project and Product Management, she blends strategic program design, stakeholder engagement, and community building to create opportunities that drive both gender equity and digital transformation.",
+    ],
+    image: oreoluwa,
+    category: "impact-speaker",
+    bg: "#FFEAF6",
+  },
+  {
+    id: "impact-1",
+    name: "Chisom Nwachukwu",
+    title: "Mobile App Developer",
+    bio: [
+      "Chisom Nwachukwu is a mobile app developer and a final-year Electronics and Computer Engineering student at Lagos State University. She is proficient in Flutter and Dart, using her technical skills to build impactful digital solutions. Chisom is the co-developer of Nezay, a pioneering fintech mobile app that enables users to convert Naira to cryptocurrency, pay bills, make seamless transfers, and redeem gift cards for cash. Currently, she is an intern at the Nigerian Bottling Company (Coca-Cola), where she applies her expertise to develop an internal application and is expanding her skill set by learning data analytics.",
+    ],
+    image: chisom,
+    category: "impact-speaker",
+    bg: "#FFB8E0",
+  },
+  {
+    id: "impact-2",
+    name: "Olivia Ekwuyasi",
+    title: "Product Manager & Founder, Yachdahv",
+    bio: [
+      "Olivia Ekwuyasi is a product manager and founder passionate about building products that meet real user needs and create meaningful value. With a background in mass communication and six years of experience in sales and business development, she has developed strong expertise in customer communication, relationship management, business strategy, and partnership engagement. Olivia transitioned into technology and product management in 2025 and currently works as a product manager at OvanaHealth, a healthtech startup focused on improving health outcomes through technology. In her role, she works across product discovery, research, strategy, user experience, and product development to turn real-world problems into practical digital solutions.",
+    ],
+    image: olivia,
+    category: "impact-speaker",
+    bg: "#FFEAF6",
+  },
+  {
+    id: "impact-3",
+    name: "Olaniyi Olanike Gift",
+    title: "Machine Learning Engineer",
+    bio: [
+      'Olaniyi Olanike Gift is a Computer Engineering student at Obafemi Awolowo University and a Machine Learning Engineer Intern at FlyRank AI, where she focuses on building and fine-tuning predictive models and working with Retrieval-Augmented Generation (RAG) and LLM frameworks. Her technical portfolio includes impactful machine learning projects, most notably her widely recognized "crop-recommendation-ml" model designed for precision agriculture, alongside "end-to-end predictive web pipelines" and MLflow experiment tracking. Olanike holds certifications in AI Fundamentals and RAG Systems. Beyond development, she is a dedicated STEM volunteer and active leader across IEEE Women in Engineering OAU, She Code Africa OAU, Google Developers Group OAU, and the WAAW Foundation OAU, driving technical outreach and community growth.',
+    ],
+    image: olaniyi,
+    category: "impact-speaker",
+    bg: "#FFFDDE",
+  },
+  {
+    id: "impact-4",
+    name: "Mbaoma Mary",
+    title: "Cloud Engineer",
+    bio: [
+      "Mbaoma Mary is a Cloud/DevOps professional with over five years of experience across cloud infrastructure, site reliability engineering, platform engineering, CI/CD, and developer productivity. Beyond her technical career, Oma is the brain behind Taru, an Ayurvedic hair care brand focused on helping individuals build confidence through intentional self-care and healthy hair routines. Through her work with Taru, she combines technology, storytelling, and community-building to create meaningful experiences for customers.",
+    ],
+    image: mary,
+    category: "impact-speaker",
+    bg: "#FFEAF6",
+  },
+  {
+    id: "impact-5",
+    name: "Perpetual Meninwa",
+    title: "Founder, Creator and MBA Student",
+    bio: [
+      "Perpetual Meninwa is a software engineer, technology educator, and community advocate passionate about using technology to create meaningful impact and making the tech ecosystem more inclusive and accessible. Her journey in technology spans software development, mentorship, and continuous learning, with a focus on building digital solutions and helping others grow their skills and confidence in tech. She has experience across backend and full-stack development and has worked with technologies including JavaScript, TypeScript, Node.js, React, Next.js, databases, and cloud technologies",
+    ],
+    image: perp,
+    category: "impact-speaker",
+    bg: "#F5FFDE",
   },
 ];
