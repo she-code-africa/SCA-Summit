@@ -40,30 +40,32 @@ const SpeakersSection = () => {
           className="mt-11.5 w-full overflow-hidden group"
         >
           <div className="flex gap-7.5 w-max animate-marquee group-hover:[animation-play-state:paused]">
-            {marqueeSpeakers.map((speaker, i) => (
-              <div
-                className="shrink-0 w-full max-w-93.5 bg-sca-white border-2 border-primary-magenta rounded-[15.29px] p-5"
-                key={i}
-              >
-                <figure className="rounded-[15px] w-full h-62.25 overflow-hidden">
-                  <img
-                    src={speaker.image}
-                    alt="speaker"
-                    className="object-cover w-full h-full"
-                  />
-                </figure>
+            {marqueeSpeakers
+              .filter((speaker) => speaker.category !== "impact-speaker")
+              .map((speaker, i) => (
+                <div
+                  className="shrink-0 w-full max-w-93.5 bg-sca-white border-2 border-primary-magenta rounded-[15.29px] p-5"
+                  key={i}
+                >
+                  <figure className="rounded-[15px] w-full h-62.25 overflow-hidden">
+                    <img
+                      src={speaker.image}
+                      alt="speaker"
+                      className="object-cover w-full h-full"
+                    />
+                  </figure>
 
-                <article className="mt-5 w-full">
-                  <h4 className="text-2xl font-sans font-bold text-primary-magenta">
-                    {speaker.name}
-                  </h4>
+                  <article className="mt-5 w-full">
+                    <h4 className="text-2xl font-sans font-bold text-primary-magenta">
+                      {speaker.name}
+                    </h4>
 
-                  <p className="text-xl text-black font-medium">
-                    {speaker.title}
-                  </p>
-                </article>
-              </div>
-            ))}
+                    <p className="text-xl text-black font-medium">
+                      {speaker.title}
+                    </p>
+                  </article>
+                </div>
+              ))}
           </div>
         </motion.section>
       </div>
