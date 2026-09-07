@@ -1,4 +1,3 @@
-import adesuwa from "../assets/speaker/speakers/adesuwa.png";
 import dami from "../assets/speaker/speakers/damiT.png";
 import damiO from "../assets/speaker/speakers/damiO.png";
 import adeife from "../assets/speaker/speakers/adeife.png";
@@ -51,17 +50,7 @@ export const speakers = [
     category: "keynote-speakers",
     bg: "#F8EAFF",
   },
-  {
-    id: "panelist-1",
-    name: "Adesuwa Okunbo Rhodes",
-    title: "Founder & Managing Partner, Aruwa Capital Management",
-    bio: [
-      "Adesuwa Okunbo Rhodes is the Founder and Managing Partner of Aruwa Capital Management, a women-owned growth equity and gender lens fund managing $80 million in assets across two funds. She brings over 15 years of investment banking and private equity experience across developed and emerging markets, including at J.P. Morgan. ",
-    ],
-    image: adesuwa,
-    category: "panelists",
-    bg: "#FFB8E0",
-  },
+
   {
     id: "panelist-2",
     bg: "#FFEAF6",
@@ -160,7 +149,7 @@ export const speakers = [
       "With a background in Psychology and certifications in Project and Product Management, she blends strategic program design, stakeholder engagement, and community building to create opportunities that drive both gender equity and digital transformation.",
     ],
     image: oreoluwa,
-    category: "impact-speaker",
+    category: "facilitators",
     bg: "#FFEAF6",
   },
   {
