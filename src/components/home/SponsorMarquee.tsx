@@ -12,7 +12,7 @@ const SponsorMarquee = () => {
           <h4 className="text-[48px] sm:text-[60px]">
             Our Sponsors & Partners
           </h4>
-          <FlowerVector className="text-sca-white size-6 sm:size-8.75" />
+          <FlowerVector className="text-sca-white size-6 sm:size-8.75 animate-spin" />
         </article>
       </Marquee>
     </section>
