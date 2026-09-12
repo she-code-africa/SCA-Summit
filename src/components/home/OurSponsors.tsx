@@ -1,18 +1,18 @@
 import { motion, type Variants } from "framer-motion";
-import googleImg from "../../assets/home/dawfd.png";
+import gdg from "../../assets/home/gdglagos.png";
 import techCabal from "../../assets/home/techcabal.png";
-import propel from "../../assets/home/propel.png";
-import osca from "../../assets/home/osca.png";
-import zaycodes from "../../assets/home/zaycodes.png";
+import genzHr from "../../assets/home/genzhr.png";
+import fcdc from "../../assets/home/fcdc.png";
+import gsd from "../../assets/home/gsd.png";
 import chaoss from "../../assets/home/chaoss.png";
-import myCover from "../../assets/home/myCover.png";
-import weTech from "../../assets/home/weTech.png";
-import wtm from "../../assets/home/wtm.png";
-import yellowCard from "../../assets/home/yellowCard.png";
-import outreachy from "../../assets/home/Outreachy.png";
-import wiicreate from "../../assets/home/wiicreate.png";
-import osfe from "../../assets/home/osfe.png";
-import axa from "../../assets/home/axa.png";
+import udc from "../../assets/home/udc.png";
+import wid from "../../assets/home/wid.png";
+import enyata from "../../assets/home/Enyata.png";
+import jci from "../../assets/home/jci.png";
+import SponsorMarquee from "./SponsorMarquee";
+import nextGen from "../../assets/home/nextGen.png";
+import StrategicPartner from "./StrategicPartner";
+import CallForSponsors from "./CallForSponsors";
 
 const gridContainer: Variants = {
   hidden: {},
@@ -30,32 +30,30 @@ const gridItem: Variants = {
 
 const OurSponsors = () => {
   const partners = [
-    googleImg,
-    techCabal,
-    propel,
-    osca,
-    zaycodes,
-    chaoss,
-    myCover,
-    weTech,
-    wtm,
-    yellowCard,
-    outreachy,
-    wiicreate,
-    osfe,
-    axa,
+    { src: gdg, width: "224px", height: "84px" },
+    { src: techCabal, width: "203px", height: "52.91px" },
+    { src: chaoss, width: "136px", height: "54px" },
+    { src: genzHr, width: "172px", height: "76px" },
+    { src: fcdc, width: "216px", height: "42.87px" },
+    { src: gsd, width: "178px", height: "58.79px" },
+    { src: enyata, width: "218px", height: "44.91px" },
+    { src: udc, width: "100px", height: "86px" },
+    { src: wid, width: "101px", height: "84px" },
+    { src: nextGen, width: "156px", height: "106px" },
+    { src: jci, width: "126px", height: "76px" },
   ];
   return (
-    <section className="w-full bg-sca-white">
-      <div className="w-full py-25 max-w-307 mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="w-full bg-pastel-pink">
+      <SponsorMarquee />
+      <div className="w-full py-20 max-w-307 mx-auto px-4 sm:px-6 lg:px-8">
         <motion.h3
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.5 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
-          className="font-display text-primary-magenta text-[48px] sm:text-[56px] lg:text-[64px] w-full text-center"
+          className="font-display capitalize text-black text-[48px] sm:text-[56px] lg:text-[60px] w-full text-center"
         >
-          Our Past Sponsors & Partners
+          Community Partners
         </motion.h3>
 
         <motion.section
@@ -68,19 +66,25 @@ const OurSponsors = () => {
           {partners.map((img, i) => (
             <motion.div
               variants={gridItem}
-              className="rounded-lg flex items-center justify-center bg-sca-white border border-[#E9E1E6] h-[99.29px] w-full sm:w-[calc(50%-0.75rem)] xl:w-[calc(25%-1.125rem)] sm:max-w-72.25"
+              className="rounded-lg flex hover:border-sca-blush items-center justify-center bg-sca-white border border-[#E9E1E6] h-37.5 w-full sm:w-[calc(50%-0.75rem)] xl:w-[calc(25%-1.125rem)] sm:max-w-74.75"
               key={i}
             >
               <img
-                src={img}
+                src={img.src}
+                style={{
+                  width: img.width,
+                  height: img.height,
+                }}
                 alt="Partner"
-                className="object-contain w-38.75 h-10"
+                className="object-contain"
               />
             </motion.div>
           ))}
         </motion.section>
 
-        <div className="flex justify-center items-center w-full mt-10">
+        <StrategicPartner />
+
+        <div className="flex justify-center items-center w-full mt-15">
           <a
             href="https://drive.google.com/file/d/1pZxpSxCmeiPC6sYWyuVNPPlzI30NRdfc/view"
             className="px-8 py-4.5 w-full max-w-56.5 text-base flex items-center justify-center rounded-lg bg-primary-main-pink hover:bg-primary-dark-pink text-white transition shadow-sm hover:shadow"
@@ -89,6 +93,8 @@ const OurSponsors = () => {
           </a>
         </div>
       </div>
+
+      <CallForSponsors />
     </section>
   );
 };
