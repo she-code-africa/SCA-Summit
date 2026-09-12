@@ -32,17 +32,10 @@ export const agendaItems: AgendaItem[] = [
     tag: "Video Presentation",
     session: "morning",
   },
-  {
-    id: "introduce-keynote",
-    time: "10:40 AM – 10:45 AM",
-    title: "Introduce Keynote Speaker",
-    subtitle: "Ada Nduka Oyom",
-    tag: "Keynote",
-    session: "morning",
-  },
+ 
   {
     id: "opening-keynote",
-    time: "10:45 AM – 11:15 AM",
+    time: "10:40 AM – 11:15 AM",
     title: "Opening Keynote Address",
     subtitle: "Ada Nduka Oyom",
     tag: "Keynote",
