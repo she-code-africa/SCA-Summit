@@ -84,7 +84,8 @@ const OurSponsors = () => {
 
         <StrategicPartner />
 
-        <div className="flex justify-center items-center w-full mt-15">
+        {/* remove */}
+        <div className="hidden justify-center items-center w-full mt-15">
           <a
             href="https://drive.google.com/file/d/1pZxpSxCmeiPC6sYWyuVNPPlzI30NRdfc/view"
             className="px-8 py-4.5 w-full max-w-56.5 text-base flex items-center justify-center rounded-lg bg-primary-main-pink hover:bg-primary-dark-pink text-white transition shadow-sm hover:shadow"
@@ -92,6 +93,7 @@ const OurSponsors = () => {
             View Partnership Deck
           </a>
         </div>
+        {/* to be removed */}
       </div>
 
       <CallForSponsors />
