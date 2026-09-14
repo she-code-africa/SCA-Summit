@@ -101,7 +101,7 @@ export const speakers = [
     name: "Zuzka Pelechova",
     title: "Head of Apify Store",
     bio: [
-      "Oluwatosin Fatokun is an experienced security professional, trained in the fields of Information Security, Governance, and Compliance. She has accumulated a wealth of experience following years of expertise across diverse industries and domains. Her career has encompassed roles in Retail, Financial Services (both Banking and Non-Banking), as well as eCommerce, spanning multiple regions including Sub-Saharan Africa and Europe.",
+      "Zuzka Pelechová is Head of Apify Store, the largest marketplace of trusted tools for AI, where she has shaped the product since 2019. She looks after the ecosystem end to end: helping thousands of developers publish, monetize, and grow their Actors, and making sure the tools that power AI agents and automation workflows are reliable and easy to use. Before tech, Zuzka spent a decade in Czech politics, then retrained through Czechitas, a non-profit bringing women into IT. She builds and publishes her own Actors and is a familiar face in the Apify community.",
     ],
     image: zuzka,
     category: "panelists",
@@ -112,7 +112,7 @@ export const speakers = [
     name: "Oluwatosin Fatokun",
     title: "Security GRC Professional",
     bio: [
-      "Zuzka Pelechová is Head of Apify Store, the largest marketplace of trusted tools for AI, where she has shaped the product since 2019. She looks after the ecosystem end to end: helping thousands of developers publish, monetize, and grow their Actors, and making sure the tools that power AI agents and automation workflows are reliable and easy to use. Before tech, Zuzka spent a decade in Czech politics, then retrained through Czechitas, a non-profit bringing women into IT. She builds and publishes her own Actors and is a familiar face in the Apify community.",
+      "Oluwatosin Fatokun is an experienced security professional, trained in the fields of Information Security, Governance, and Compliance. She has accumulated a wealth of experience following years of expertise across diverse industries and domains. Her career has encompassed roles in Retail, Financial Services (both Banking and Non-Banking), as well as eCommerce, spanning multiple regions including Sub-Saharan Africa and Europe.",
     ],
     image: oluwatosin,
     category: "panelists",
