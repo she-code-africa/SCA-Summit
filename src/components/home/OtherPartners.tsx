@@ -1,8 +1,6 @@
 import { motion, type Variants } from "framer-motion";
-import imo from "../../assets/home/IMO_Logo.png";
-import auxxi from "../../assets/home/Auuxi.png";
-import genzHr from "../../assets/home/genzhr.png";
-import moniepoint from "../../assets/home/Moniepoint.png";
+import knorr from "../../assets/home/Knorr.png";
+import ladyp from "../../assets/home/Ladyp.png";
 
 const gridContainer: Variants = {
   hidden: {},
@@ -19,13 +17,11 @@ const gridItem: Variants = {
 };
 
 const partners = [
-  { src: imo, width: "115px", height: "57.09px" },
-  { src: auxxi, width: "180px", height: "56px" },
-  { src: genzHr, width: "172px", height: "76px" },
-  { src: moniepoint, width: "203px", height: "47.09px" },
+  { src: knorr, width: "116px", height: "96px" },
+  { src: ladyp, width: "203px", height: "48px" },
 ];
 
-const HiringPartners = () => {
+const OtherPartners = () => {
   return (
     <section className="w-full mt-20">
       <motion.h3
@@ -35,7 +31,7 @@ const HiringPartners = () => {
         transition={{ duration: 0.6, ease: "easeOut" }}
         className="font-display capitalize text-black text-[48px] sm:text-[56px] lg:text-[60px] w-full text-center"
       >
-        Hiring Partners
+        Other Partners
       </motion.h3>
 
       <motion.section
@@ -67,4 +63,4 @@ const HiringPartners = () => {
   );
 };
 
-export default HiringPartners;
+export default OtherPartners;

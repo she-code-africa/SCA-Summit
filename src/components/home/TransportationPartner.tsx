@@ -45,20 +45,20 @@ const TransportationPartner = () => {
                 />
               </figure>
 
-              <p className="mt-6 font-sans text-lg text-black font-normal">
+              {/* <p className="mt-6 font-sans hidden text-lg text-black font-normal">
                 DriveMe is Nigeria's electric mobility platform — financing EV
                 ownership for ride-hailing drivers through rent-to-own, and
                 placing professional drivers with vetted corporate clients
                 through our Matching Network.
-              </p>
+              </p> */}
 
               <div className="mt-8 w-full">
                 <a
-                  href="https://www.driveme-mobility.com/"
+                  href="https://www.instagram.com/driveme.carhire?stkn=MXZ3M2UzdDZobDF3ag%3D%3D"
                   target="_blank"
                   className="underline text-black font-bold text-lg"
                 >
-                  www.driveme-mobility.com
+                  Driveme
                 </a>
               </div>
             </article>

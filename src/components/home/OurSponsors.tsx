@@ -24,6 +24,8 @@ import HiringPartners from "./HiringPartners";
 import MediPartners from "./MediPartners";
 import TransportationPartner from "./TransportationPartner";
 
+import OtherPartners from "./OtherPartners";
+
 const gridContainer: Variants = {
   hidden: {},
   visible: { transition: { staggerChildren: 0.08 } },
@@ -58,6 +60,7 @@ const OurSponsors = () => {
     { src: elegance, width: "143px", height: "81.21px" },
     { src: propel, width: "149px", height: "42px" },
     { src: gamms, width: "163px", height: "37px" },
+    
   ];
   return (
     <section className="w-full bg-pastel-pink">
@@ -109,6 +112,8 @@ const OurSponsors = () => {
         <HiringPartners />
 
         <MediPartners />
+
+        <OtherPartners />
       </div>
 
       <CallForSponsors />
