@@ -13,6 +13,16 @@ import SponsorMarquee from "./SponsorMarquee";
 import nextGen from "../../assets/home/nextGen.png";
 import StrategicPartner from "./StrategicPartner";
 import CallForSponsors from "./CallForSponsors";
+import cc from "../../assets/home/cc.png";
+import gAfrica from "../../assets/home/GrowthAfrica.png";
+import owef from "../../assets/home/OWEF.png";
+import bif from "../../assets/home/bif.png";
+import elegance from "../../assets/home/Elegance.png";
+import propel from "../../assets/home/Propel.png";
+import gamms from "../../assets/home/Gamms_Logo.png";
+import HiringPartners from "./HiringPartners";
+import MediPartners from "./MediPartners";
+import TransportationPartner from "./TransportationPartner";
 
 const gridContainer: Variants = {
   hidden: {},
@@ -41,59 +51,64 @@ const OurSponsors = () => {
     { src: wid, width: "101px", height: "84px" },
     { src: nextGen, width: "156px", height: "106px" },
     { src: jci, width: "126px", height: "76px" },
+    { src: cc, width: "163px", height: "101px" },
+    { src: gAfrica, width: "137px", height: "137px" },
+    { src: owef, width: "96px", height: "96px" },
+    { src: bif, width: "184px", height: "67.2px" },
+    { src: elegance, width: "143px", height: "81.21px" },
+    { src: propel, width: "149px", height: "42px" },
+    { src: gamms, width: "163px", height: "37px" },
   ];
   return (
     <section className="w-full bg-pastel-pink">
       <SponsorMarquee />
+
       <div className="w-full py-20 max-w-307 mx-auto px-4 sm:px-6 lg:px-8">
-        <motion.h3
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.5 }}
-          transition={{ duration: 0.6, ease: "easeOut" }}
-          className="font-display capitalize text-black text-[48px] sm:text-[56px] lg:text-[60px] w-full text-center"
-        >
-          Community Partners
-        </motion.h3>
-
-        <motion.section
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.2 }}
-          variants={gridContainer}
-          className="mt-10 w-full flex flex-wrap justify-center gap-x-6 gap-y-4"
-        >
-          {partners.map((img, i) => (
-            <motion.div
-              variants={gridItem}
-              className="rounded-lg flex hover:border-sca-blush items-center justify-center bg-sca-white border border-[#E9E1E6] h-37.5 w-full sm:w-[calc(50%-0.75rem)] xl:w-[calc(25%-1.125rem)] sm:max-w-74.75"
-              key={i}
-            >
-              <img
-                src={img.src}
-                style={{
-                  width: img.width,
-                  height: img.height,
-                }}
-                alt="Partner"
-                className="object-contain"
-              />
-            </motion.div>
-          ))}
-        </motion.section>
-
         <StrategicPartner />
 
-        {/* remove */}
-        {/* <div className="hidden justify-center items-center w-full mt-15">
-          <a
-            href="https://drive.google.com/file/d/1pZxpSxCmeiPC6sYWyuVNPPlzI30NRdfc/view"
-            className="px-8 py-4.5 w-full max-w-56.5 text-base flex items-center justify-center rounded-lg bg-primary-main-pink hover:bg-primary-dark-pink text-white transition shadow-sm hover:shadow"
+        <TransportationPartner />
+
+        <section className="mt-20 w-full">
+          <motion.h3
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+            className="font-display capitalize text-black text-[48px] sm:text-[56px] lg:text-[60px] w-full text-center"
           >
-            View Partnership Deck
-          </a>
-        </div> */}
-        {/* to be removed */}
+            Community Partners
+          </motion.h3>
+
+          <motion.section
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.2 }}
+            variants={gridContainer}
+            className="mt-10 w-full flex flex-wrap justify-center gap-x-6 gap-y-4"
+          >
+            {partners.map((img, i) => (
+              <motion.div
+                variants={gridItem}
+                className="rounded-lg flex hover:border-sca-blush items-center justify-center bg-sca-white border border-[#E9E1E6] h-37.5 w-full sm:w-[calc(50%-0.75rem)] xl:w-[calc(25%-1.125rem)] sm:max-w-74.75"
+                key={i}
+              >
+                <img
+                  src={img.src}
+                  style={{
+                    width: img.width,
+                    height: img.height,
+                  }}
+                  alt="Partner"
+                  className="object-contain"
+                />
+              </motion.div>
+            ))}
+          </motion.section>
+        </section>
+
+        <HiringPartners />
+
+        <MediPartners />
       </div>
 
       <CallForSponsors />

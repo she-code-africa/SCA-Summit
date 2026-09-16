@@ -15,6 +15,7 @@ import olaniyi from "../assets/speaker/speakers/olaniyi.png";
 import perp from "../assets/speaker/speakers/perp.png";
 import mary from "../assets/speaker/speakers/mary.png";
 import oluwatosin from "../assets/speaker/speakers/oluwatosin.png";
+import esther from "../assets/speaker/speakers/esther.png";
 
 export type SpeakerCategory = "keynote-speakers" | "panelists" | "facilitators";
 
@@ -50,6 +51,19 @@ export const speakers = [
     image: napa,
     category: "keynote-speakers",
     bg: "#F8EAFF",
+  },
+
+  {
+    id: "panelist-esther",
+    name: "Esther Otusanya",
+    title: "Entrepreneur Experience, Endeavor Nigeria",
+    bio: [
+      "Esther Otusanya is on the Entrepreneur Experience Team at Endeavor, where she selects and supports high-growth companies. She works closely with these companies on access to capital, market expansion, and ecosystem connections.",
+      "She holds an MBA in Finance with experience in financial advisory, investment research, and infrastructure finance. Esther is passionate about unlocking capital and enabling founders to build enduring, impactful businesses in emerging markets.",
+    ],
+    image: esther,
+    category: "panelists",
+    bg: "#FFB8E0",
   },
 
   {
@@ -135,7 +149,7 @@ export const speakers = [
     name: "Ijeoma Adesanya",
     title: "Executive Director, Kobikam Africa",
     bio: [
-      'Ijeoma Adesanya is the founder of Kobikam Africa, a gender advisory and advocacy consultancy that specialises in providing companies with the tools needed to foster a more gender-inclusive workplace. Driven by a strong need to advocate for women, she founded the company to create bias-free workplaces across Africa. Kobikam Africa creates a level playing field for women to excel by providing clients with gender advisory services such as gender strategy for private-sector organisations, participatory gender audits, unconscious bias training for senior management, and "back-to-work" training for mothers after maternity leave.',
+      "Ijeoma Adesanya is a development professional and gender inclusion specialist with over 14 years of leadership experience across finance, policy, and social impact. She spent 8 years in commercial finance and cash management at General Electric, negotiating contracts and structuring financing for major infrastructure projects across Sub-Saharan Africa. She later moved into enterprise development, managing the Orange Corners Innovation Fund at FATE Foundation to support entrepreneurs scaling their businesses, and now leads gender-responsive financial and policy work as Principal Consultant at Kobikam Africa, including Nigeria's National Policy for MSMEs and equity scorecards for private-sector organizations",
     ],
     image: ijAdesanya,
     category: "facilitators",

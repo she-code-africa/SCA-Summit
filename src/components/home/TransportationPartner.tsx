@@ -1,10 +1,10 @@
 import { AnimatePresence, motion } from "framer-motion";
-import partner from "../../assets/home/strategic-partner.png";
-import apify from "../../assets/home/apify.png";
+import partner from "../../assets/home/transport-partner.png";
+import driveMe from "../../assets/home/DriveMe.png";
 
-const StrategicPartner = () => {
+const TransportationPartner = () => {
   return (
-    <section className="w-full ">
+    <section className="w-full mt-20">
       <motion.h3
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -12,7 +12,7 @@ const StrategicPartner = () => {
         transition={{ duration: 0.6, ease: "easeOut" }}
         className="font-display capitalize text-black text-[48px] sm:text-[56px] lg:text-[60px] w-full text-center"
       >
-        Strategic AI Builder Partner
+        Transportation Partner
       </motion.h3>
 
       <div className="w-full mt-10">
@@ -32,32 +32,33 @@ const StrategicPartner = () => {
             <figure className="h-87.5 sm:h-auto w-full xl:max-w-87.5">
               <img
                 src={partner}
-                alt="Partner"
+                alt="Transport Partner"
                 className="w-full h-full object-cover"
               />
             </figure>
             <article className="w-full py-10 sm:py-17.5 px-6 sm:px-10">
-              <figure className="w-full max-w-[225.26px] h-[62.41px]">
+              <figure className="w-full max-w-37.75 h-18.75">
                 <img
-                  src={apify}
-                  alt="apify"
+                  src={driveMe}
+                  alt="DriveMe"
                   className="w-full h-full object-contain"
                 />
               </figure>
 
               <p className="mt-6 font-sans text-lg text-black font-normal">
-                Apify is the largest marketplace of trusted tools for AI. Get
-                real-time web data, track competitors, generate leads, monitor
-                social media, and integrate your apps and agents.
+                DriveMe is Nigeria's electric mobility platform — financing EV
+                ownership for ride-hailing drivers through rent-to-own, and
+                placing professional drivers with vetted corporate clients
+                through our Matching Network.
               </p>
 
               <div className="mt-8 w-full">
                 <a
-                  href="https://apify.com/"
+                  href="https://www.driveme-mobility.com/"
                   target="_blank"
                   className="underline text-black font-bold text-lg"
                 >
-                  www.apify.com
+                  www.driveme-mobility.com
                 </a>
               </div>
             </article>
@@ -68,4 +69,4 @@ const StrategicPartner = () => {
   );
 };
 
-export default StrategicPartner;
+export default TransportationPartner;
