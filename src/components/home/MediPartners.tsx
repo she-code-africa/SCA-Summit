@@ -1,6 +1,7 @@
 import { motion, type Variants } from "framer-motion";
 import femmeAfrica from "../../assets/home/femmeAfrica.png";
 import technext from "../../assets/home/Technext.png";
+import twentyone from '../../assets/home/to-21.png'
 
 const gridContainer: Variants = {
   hidden: {},
@@ -19,6 +20,7 @@ const gridItem: Variants = {
 const partners = [
   { src: femmeAfrica, width: "176px", height: "78px" },
   { src: technext, width: "203px", height: "48px" },
+  { src: twentyone, width: "203px", height: "61px" },
 ];
 
 const MediPartners = () => {
