@@ -12,6 +12,7 @@ import EventVenue from "./EventVenue";
 import SummitStats from "./SummitStats";
 import AboutSummitSection from "./AboutSummitSection";
 import SummitHighlights from "./summit-highlights/SummitHighlights";
+import Gallery from "./Gallery";
 
 const HomePage = () => {
   const { hash } = useLocation();
@@ -51,10 +52,12 @@ const HomePage = () => {
         </div>
       </section>
       <SummitHighlights />
-      {/*  */}
+
       <WhyAttend />
+      <Gallery />
       <WhatWeBuilt />
-      <SpeakersSection />
+
+      {/* <SpeakersSection /> */}
       <div id="sponsors">
         <OurSponsors />
       </div>
