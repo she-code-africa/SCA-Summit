@@ -53,6 +53,53 @@ const testimonials: Testimonial[] = [
     textColor: "#5C0335",
     tilt: true,
   },
+  {
+    paragraphs: [
+      "Thank you for having me as part of the Summit. I enjoyed the conversation and was glad to contribute to such an important discussion.",
+    ],
+    name: "Bekere Amassoma",
+    role: "VIP Guest",
+    cardBg: "#FFF68F",
+    quoteColor: "#FFE9A0",
+    bandColor: "#FF8A3D",
+    textColor: "#5C0335",
+  },
+  {
+    paragraphs: [
+      "The Summit was amazing, and what wowed me was the high level of organization, from the ambiance to the reception (welcoming of people), the event itself, and the packaging of the refreshments...",
+      "I am a perfectionist, so it's not difficult for me to notice lapses at any event I attend. But, I must say that the summit was beyond my imagination, and I want to give kudos to the organizers and She Code Africa Management as a whole. The Summit was indeed a Success!!!",
+    ],
+    name: "Adaeze Blessing Oyetunde",
+    role: "",
+    cardBg: "#F7E8FF",
+    quoteColor: "#EFD9FF",
+    bandColor: "#9966FF",
+    textColor: "#9966FF",
+  },
+  {
+    paragraphs: [
+      "What stood out to me most was how intentional the summit was, the creative designs, and how inclusive it felt- especially the florals, which made one feel like celebrating yourself, community and the 10th year anniversary altogether. I also appreciate the hospitality of the event.",
+      "I loved seeing students, young women, and experienced professionals in the same space, alongside a diverse mix of speakers with inspirational stories and insights. The recruitment opportunity was another highlight, a real opportunity for a woman to get hired. The She Code Africa Team excels at creating a fresh experience with every summit. There is always something new to look forward to. Thank you for an incredible summit experience.",
+    ],
+    name: "Seriki A",
+    role: "",
+    cardBg: "#FFE6F3",
+    quoteColor: "#EBD3E0",
+    bandColor: "#FFB3DC",
+    textColor: "#5C0335",
+  },
+  {
+    paragraphs: [
+      "My experience at the SCA Summit was everything and more. From the hall ambience to the conversations, the summit truly embodied the message it was sharing and opened my eyes to what is possible for women in tech. The insightful panels, keynote sessions, and especially Ada's keynote reignited my drive and reminded me why I continue to pursue a future in tech. Seeing fellow undergraduates and women like myself take the stage to share their work and impact was equally inspiring.",
+      "One of my highlights was the hiring room, where recruiters were ready to connect with and hire talent. I had one of the most amazing 10-minute interviews, which boosted my confidence and reminded me of the opportunities ahead. Beyond the sessions, it was beautiful to celebrate, connect, and share space with fellow women in tech.",
+    ],
+    name: "Elizabeth Ogunmola",
+    role: "",
+    cardBg: "#DDFA8F",
+    quoteColor: "#D0F07A",
+    bandColor: "#8FAB4F",
+    textColor: "#0F3D1F",
+  },
 ];
 
 const TestimonialCard = ({
