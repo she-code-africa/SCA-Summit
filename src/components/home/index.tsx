@@ -13,6 +13,8 @@ import SummitStats from "./SummitStats";
 import AboutSummitSection from "./AboutSummitSection";
 import SummitHighlights from "./summit-highlights/SummitHighlights";
 import Gallery from "./Gallery";
+import Testimonials from "./Testimonials";
+import { Newsletter } from "./NewsLetter";
 
 const HomePage = () => {
   const { hash } = useLocation();
@@ -56,19 +58,20 @@ const HomePage = () => {
       <WhyAttend />
       <Gallery />
       <WhatWeBuilt />
-
+      <Testimonials />
       {/* <SpeakersSection /> */}
       <div id="sponsors">
         <OurSponsors />
       </div>
-      <EventVenue />
+      {/* <EventVenue /> */}
 
-      <section id="tickets" className="scroll-mt-24">
+      {/* <section id="tickets" className="scroll-mt-24">
         <TicketsSection />
-      </section>
-      <section id="faq-section" className="scroll-mt-24">
+      </section> */}
+      <Newsletter />
+      {/* <section id="faq-section" className="scroll-mt-24">
         <FaqSection />
-      </section>
+      </section> */}
     </div>
   );
 };
