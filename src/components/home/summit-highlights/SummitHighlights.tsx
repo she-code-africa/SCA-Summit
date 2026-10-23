@@ -8,6 +8,8 @@ import KeynoteSessions from "./KeynoteSessions";
 import VolunteerSummit from "./VolunteerSummit";
 import useEmblaCarousel from "embla-carousel-react";
 import { useCallback, useEffect, useState } from "react";
+import AutoHeight from "embla-carousel-auto-height";
+import Autoplay from "embla-carousel-autoplay";
 
 const sliderColors = [
   "bg-[#FFFDDE]",
@@ -28,10 +30,15 @@ const slides = [
 ];
 
 const SummitHighlights = () => {
-  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: false });
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [
+    AutoHeight(),
+    Autoplay({
+      delay: 4000,
+      stopOnInteraction: false,
+      stopOnMouseEnter: true,
+    }),
+  ]);
   const [selected, setSelected] = useState(0);
-  const [canPrev, setCanPrev] = useState(false);
-  const [canNext, setCanNext] = useState(true);
   const scrollPrev = useCallback(() => emblaApi?.scrollPrev(), [emblaApi]);
   const scrollNext = useCallback(() => emblaApi?.scrollNext(), [emblaApi]);
 
@@ -40,8 +47,6 @@ const SummitHighlights = () => {
 
     const update = () => {
       setSelected(emblaApi.selectedScrollSnap());
-      setCanPrev(emblaApi.canScrollPrev());
-      setCanNext(emblaApi.canScrollNext());
     };
 
     update();
@@ -53,19 +58,20 @@ const SummitHighlights = () => {
       emblaApi.off("reInit", update);
     };
   }, [emblaApi]);
+
   return (
     <section className="w-full embla">
       <div
-        className={`w-full py-25 px-4 sm:px-6 lg:px-8 ${sliderColors[selected]}`}
+        className={`w-full py-16 md:py-25 px-4 sm:px-6 lg:px-8 transition-colors duration-700 ease-in-out ${sliderColors[selected]}`}
       >
-        <h3 className="w-full text-[64px] text-center text-primary-magenta font-semibold font-display">
+        <h3 className="w-full text-[48px] sm:text-[56px] md:text-[64px] text-center text-primary-magenta font-semibold font-display">
           Summit Highlights
         </h3>
 
         <section className="w-full mt-12.5 embla__viewport" ref={emblaRef}>
-          <div className="embla__container">
+          <div className="embla__container items-start transition-[height] duration-300">
             {slides.map((slide, idx) => (
-              <div className="embla__slide" key={idx}>
+              <div className="embla__slide " key={idx}>
                 {slide}
               </div>
             ))}
@@ -74,16 +80,13 @@ const SummitHighlights = () => {
 
         {/* navigation */}
         <section className="w-full justify-center flex mt-12.5">
-          <div className="w-full max-w-105 mx-auto flex justify-center items-center gap-6.5">
+          <div className="w-full max-w-105 mx-auto flex justify-center items-center gap-4 lg:gap-6.5">
             <button
               onClick={scrollPrev}
               aria-label="Previous slide"
-              disabled={!canPrev}
-              className={`w-[62.24px] cursor-pointer h-[62.24px] flex items-center justify-center rounded-full  border-4  ${canPrev ? "border-primary-magenta" : "border-[#D9D9D9]"}`}
+              className="w-9 h-9 lg:w-[62.24px] cursor-pointer lg:h-[62.24px] flex items-center justify-center rounded-full border-4 border-primary-magenta transition-transform duration-200 hover:scale-105 active:scale-95"
             >
-              <ArrowLeft
-                className={`${canPrev ? "text-primary-magenta" : "text-[#D9D9D9]"} `}
-              />
+              <ArrowLeft className="w-5 h-5 lg:w-8.25 lg:h-11 text-primary-magenta" />
             </button>
 
             <ul className="flex items-center justify-center gap-1.5">
@@ -91,20 +94,22 @@ const SummitHighlights = () => {
                 <li
                   onClick={() => emblaApi?.scrollTo(idx)}
                   aria-label={`Go to slide ${idx + 1}`}
-                  className={`cursor-pointer ${idx === selected ? "w-[58.91px] bg-primary-magenta rounded-[101.13px]" : "bg-[#D9D9D9] rounded-full w-[29.45px]"} h-[29.45px]`}
+                  className={`cursor-pointer h-5 lg:h-[29.45px] rounded-full transition-all duration-500 ease-in-out ${
+                    idx === selected
+                      ? "w-8 lg:w-[58.91px] bg-primary-magenta"
+                      : "w-5 lg:w-[29.45px] bg-[#D9D9D9]"
+                  }`}
                   key={idx}
                 ></li>
               ))}
             </ul>
+
             <button
               onClick={scrollNext}
               aria-label="Next slide"
-              disabled={!canNext}
-              className={`w-[62.24px] cursor-pointer h-[62.24px] flex items-center justify-center rounded-full  border-4  ${canNext ? "border-primary-magenta" : "border-[#D9D9D9]"}`}
+              className="w-9 h-9 lg:w-[62.24px] cursor-pointer lg:h-[62.24px] flex items-center justify-center rounded-full border-4 border-primary-magenta transition-transform duration-200 hover:scale-105 active:scale-95"
             >
-              <ArrowRight
-                className={` ${canNext ? "text-primary-magenta" : "text-[#D9D9D9]"}`}
-              />
+              <ArrowRight className="w-5 h-5 lg:w-8.25 lg:h-11 text-primary-magenta" />
             </button>
           </div>
         </section>

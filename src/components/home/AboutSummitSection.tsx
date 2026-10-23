@@ -5,13 +5,15 @@ const AboutSummitSection = () => {
   return (
     <section className="w-full flex items-center justify-between gap-12.5">
       <article className="w-full xl:max-w-150 text-black">
-        <h4 className="text-2xl font-sans font-semibold">About the Summit</h4>
+        <h4 className="text-lg md:text-2xl font-sans font-semibold">
+          About the Summit
+        </h4>
 
-        <h3 className="mt-4 leading-none text-[64px] text-primary-magenta font-display">
+        <h3 className="mt-4 leading-none text-[48px] sm:text-[56px] md:text-[64px] text-primary-magenta font-display">
           Ten Years of Building What Didn't Exist For Us.
         </h3>
 
-        <p className="w-full mt-8 font-medium text-2xl">
+        <p className="w-full mt-8 font-medium text-lg sm:text-xl md:text-2xl">
           The She Code Africa Summit 2026 marked ten years of advancing
           opportunities for African women in technology. Held in Lagos on 19
           September 2026, under the theme “A Decade of Impact: African Women
@@ -20,7 +22,7 @@ const AboutSummitSection = () => {
           exchange ideas and explore what lies ahead.
         </p>
 
-        <p className="w-full mt-6 font-medium text-2xl">
+        <p className="w-full mt-6 font-medium text-lg sm:text-xl md:text-2xl">
           From conversations on technology and leadership to community
           connections and shared experiences, the Summit celebrated the people
           shaping Africa's digital future and the work still needed to make the

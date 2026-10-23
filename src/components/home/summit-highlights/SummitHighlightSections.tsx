@@ -51,8 +51,8 @@ const SummitHighlightSections = ({
                 />
               </figure>
               <article className="w-full  h-auto flex-1 rounded-[26.79px] flex items-center justify-center">
-                <div className="w-full mx-auto lg:max-w-[488.37px]">
-                  <h3 className="font-extrabold text-black font-mulish text-[36px] xl:text-[61px] text-center">
+                <div className="w-full mx-auto lg:max-w-[488.37px] py-10 lg:py-0">
+                  <h3 className="font-extrabold text-black font-mulish text-[36px] sm:text-[48px] md:text-[56px] xl:text-[61px] text-center">
                     {title}
                   </h3>
 
@@ -93,19 +93,19 @@ const SummitHighlightSections = ({
                   className={`w-full h-full object-cover ${highlightSection === "panel" ? "rotate-y-180" : ""}`}
                 />
               </figure>
-              <article className="w-full  h-auto flex-1 rounded-[26.79px] flex items-center justify-center">
-                <div className="w-full lg:max-w-145 pr-6">
-                  <h3 className="font-extrabold text-black font-mulish text-[58px]">
+              <article className="w-full h-auto flex-1 rounded-[26.79px] flex items-center justify-center">
+                <div className="w-full lg:max-w-145 pr-6 py-10 lg:py-0">
+                  <h3 className="font-extrabold text-black font-mulish text-[36px] sm:text-[48px]  md:text-[58px]">
                     {title}
                   </h3>
 
-                  <p className="text-black mt-4.75 font-sans text-[31.03px] font-medium">
+                  <p className="text-black mt-4.75 font-sans text-xl sm:text-2xl md:text-[31.03px] font-medium">
                     {subtitle}
                   </p>
 
                   <a
                     href={url}
-                    className="flex mt-4.75 max-w-58.75 items-center justify-center h-13.75 rounded-[30px] bg-primary-magenta hover:bg-primary-dark-pink duration-300 transition-colors gap-1 text-white font-figtree text-base"
+                    className="flex mt-4.75 max-w-58.75 items-center justify-center rounded-[30px] bg-primary-magenta hover:bg-primary-dark-pink duration-300 transition-colors gap-1 text-white font-figtree xl:h-13.75 h-10 text-sm xl:text-base"
                   >
                     Watch session recap <ChevronRight />
                   </a>
@@ -178,18 +178,18 @@ const SummitHighlightSections = ({
                 />
               </figure>
               <article className="w-full h-auto flex-1 rounded-[26.79px] flex items-center justify-center">
-                <div className="w-full pl-6">
-                  <h3 className="font-extrabold text-black font-mulish text-[58px]">
+                <div className="w-full pl-6 py-10 lg:py-0">
+                  <h3 className="font-extrabold text-black font-mulish text-[36px] sm:text-[48px]  md:text-[58px]">
                     {title}
                   </h3>
 
-                  <p className="text-black mt-4.75 font-sans text-[28px] font-medium">
+                  <p className="text-black mt-4.75 font-sans text-xl sm:text-2xl md:text-[28px] font-medium">
                     {subtitle}
                   </p>
 
                   <a
                     href={url}
-                    className="flex mt-4.75 max-w-58.75 items-center justify-center h-13.75 rounded-[30px] bg-primary-magenta hover:bg-primary-dark-pink duration-300 transition-colors gap-1 text-white font-figtree text-base"
+                    className="flex mt-4.75 max-w-58.75 items-center justify-center h-13.75 rounded-[30px] bg-primary-magenta hover:bg-primary-dark-pink duration-300 transition-colors gap-1 text-white font-figtree xl:h-13.75 h-10 text-sm xl:text-base"
                   >
                     Watch session recap <ChevronRight />
                   </a>

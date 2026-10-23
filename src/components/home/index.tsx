@@ -36,7 +36,7 @@ const HomePage = () => {
         <SummitStats />
       </section>
 
-      <section className="w-full bg-sca-white py-12.5 md:py-25 relative z-20">
+      <section className="w-full bg-sca-white py-16 md:py-25 relative z-20">
         <div className="absolute z-10 top-0 h-20 sm:h-37.5 md:h-60 flex items-start justify-start left-0">
           <img
             src={vector}
