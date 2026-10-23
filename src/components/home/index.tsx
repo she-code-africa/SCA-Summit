@@ -56,11 +56,19 @@ const HomePage = () => {
       <SummitHighlights />
 
       <WhyAttend />
-      <Gallery />
+
+      <div id="gallery" className="scroll-mt-28">
+        <Gallery />
+      </div>
+
       <WhatWeBuilt />
-      <Testimonials />
+
+      <div id="testimonials" className="scroll-mt-28">
+        <Testimonials />
+      </div>
+
       {/* <SpeakersSection /> */}
-      <div id="sponsors">
+      <div id="sponsors" className="scroll-mt-28">
         <OurSponsors />
       </div>
       {/* <EventVenue /> */}
