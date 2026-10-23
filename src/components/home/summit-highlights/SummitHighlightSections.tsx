@@ -164,7 +164,7 @@ const SummitHighlightSections = ({
                 <img
                   src={images[2]}
                   alt="Summit Pictures"
-                  className="w-full h-full object-cover"
+                  className={`w-full h-full object-cover ${highlightSection === "keynote" ? "rotate-y-180" : ""}`}
                 />
               </figure>
             </section>

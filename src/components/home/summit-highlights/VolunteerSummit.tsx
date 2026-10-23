@@ -1,4 +1,8 @@
 import SummitHighlightSections from "./SummitHighlightSections";
+import volunteer1 from "../../../assets/home/summit-highlight/volunteer.jpg";
+import volunteer2 from "../../../assets/home/summit-highlight/volunteer2.jpg";
+import volunteer3 from "../../../assets/home/summit-highlight/volunteer3.jpg";
+import volunteer4 from "../../../assets/home/summit-highlight/volunteer4.jpg";
 
 const VolunteerSummit = () => {
   return (
@@ -6,6 +10,7 @@ const VolunteerSummit = () => {
       <SummitHighlightSections
         highlightSection="volunteer"
         url="#"
+        images={[volunteer1, volunteer2, volunteer3, volunteer4]}
         title="Volunteers’ Summit"
         subtitle="Behind She Code Africa's work is a community of volunteers who
                 give their time, skills and energy to the mission. The Volunteer

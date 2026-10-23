@@ -1,4 +1,10 @@
 import SummitHighlightSections from "./SummitHighlightSections";
+import keynote1 from "../../../assets/home/summit-highlight/keynote1.jpg";
+import keynote2 from "../../../assets/home/summit-highlight/keynote2.jpg";
+import keynote3 from "../../../assets/home/summit-highlight/keynote3.jpg";
+import keynote4 from "../../../assets/home/summit-highlight/keynote4.jpg";
+import keynote5 from "../../../assets/home/summit-highlight/keynote5.jpg";
+
 const KeynoteSessions = () => {
   return (
     <div className="w-full max-w-307.5 mx-auto space-y-4.25">
@@ -6,6 +12,7 @@ const KeynoteSessions = () => {
         highlightSection="keynote"
         url="#"
         title="Keynote Sessions"
+        images={[keynote1, keynote2, keynote3, keynote4, keynote5]}
         subtitle="The keynote sessions offered a moment to reflect on a decade of
                 progress and look ahead to what the next chapter could hold for
                 African women in technology. Grounded in the Summit's theme, the
