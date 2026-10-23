@@ -189,7 +189,7 @@ const SummitHighlightSections = ({
 
                   <a
                     href={url}
-                    className="flex mt-4.75 max-w-58.75 items-center justify-center h-13.75 rounded-[30px] bg-primary-magenta hover:bg-primary-dark-pink duration-300 transition-colors gap-1 text-white font-figtree xl:h-13.75 h-10 text-sm xl:text-base"
+                    className="flex mt-4.75 max-w-58.75 items-center justify-center rounded-[30px] bg-primary-magenta hover:bg-primary-dark-pink duration-300 transition-colors gap-1 text-white font-figtree xl:h-13.75 h-10 text-sm xl:text-base"
                   >
                     Watch session recap <ChevronRight />
                   </a>
