@@ -13,9 +13,9 @@ type Props = {
 };
 
 const PersonBlock = ({ name, role }: Person) => (
-  <div>
-    <p className="font-sans font-medium text-lg text-black">{name}</p>
-    <p className="font-sans text-base text-black/80">{role}</p>
+  <div className="font-sans text-black">
+    <p className=" font-medium text-lg sm:text-xl ">{name}</p>
+    <p className=" text-base sm:text-lg font-light italic">{role}</p>
   </div>
 );
 
@@ -42,20 +42,20 @@ const SessionCard = ({
 
     <article className="w-full md:w-1/2 py-10 px-6 lg:px-8">
       {/* small tag */}
-      <p className="flex items-center gap-2 text-primary-magenta font-sans font-semibold uppercase text-sm sm:text-base">
+      <p className="flex items-center gap-2 text-primary-magenta font-sans font-bold uppercase text-base sm:text-lg">
         <span className="inline-flex shrink-0 w-4 h-4 sm:w-5 sm:h-5 [&>svg]:w-full [&>svg]:h-full">
           <SecondaryPattern2 />
         </span>
         {label}
       </p>
 
-      <h4 className="mt-4 font-display font-semibold text-black text-[32px] sm:text-[40px] xl:text-[44px] leading-[1.05]">
+      <h4 className="mt-4 font-display font-semibold text-black text-[32px] sm:text-[40px] md:text-[44px] leading-[1.05] lg:text-[51.77px]">
         {title}
       </h4>
 
       {/* speakers */}
-      <div className="mt-5">
-        <p className="font-sans font-semibold text-primary-magenta text-base">
+      <div className="mt-4">
+        <p className="font-sans font-bold text-primary-magenta text-base sm:text-lg">
           {speakers.length > 1 ? "Speakers" : "Speaker"}
         </p>
         <div
@@ -72,7 +72,7 @@ const SessionCard = ({
       {/* moderator */}
       {moderator && (
         <div className="mt-5">
-          <p className="font-sans font-semibold text-primary-magenta text-base">
+          <p className="font-sans font-bold text-primary-magenta text-base sm:text-lg">
             Moderator
           </p>
           <div className="mt-1">
@@ -83,7 +83,7 @@ const SessionCard = ({
 
       <a
         href={url}
-        className="mt-7 inline-flex items-center justify-center gap-1 h-12 px-6 rounded-[30px] bg-primary-magenta hover:bg-primary-dark-pink transition-colors duration-300 text-white font-figtree text-sm xl:text-base"
+        className="mt-6 inline-flex items-center justify-center gap-1 h-12 sm:h-13.75 px-8 rounded-[30px] bg-primary-magenta hover:bg-primary-dark-pink transition-colors duration-300 text-white font-figtree text-sm xl:text-base"
       >
         Watch session recap <ChevronRight size={18} />
       </a>
