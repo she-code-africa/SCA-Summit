@@ -1,14 +1,13 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import vector from "../../assets/home/Vector.png";
-import { TicketsSection } from "../about/TicketsSection";
-import FaqSection from "./FaqSection";
+
 import HeroSection from "./HeroSection";
 import OurSponsors from "./OurSponsors";
-import SpeakersSection from "./Speakers";
+
 import WhatWeBuilt from "./WhatWeBuilt";
 import WhyAttend from "./WhyAttend";
-import EventVenue from "./EventVenue";
+
 import SummitStats from "./SummitStats";
 import AboutSummitSection from "./AboutSummitSection";
 import SummitHighlights from "./summit-highlights/SummitHighlights";

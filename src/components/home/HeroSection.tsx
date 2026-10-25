@@ -23,20 +23,6 @@ const heroItem: Variants = {
 };
 
 const HeroSection = () => {
-  const venueInfo = [
-    {
-      icon: <CalendarIcon className="text-primary-magenta" />,
-      label: "19th September 2026",
-    },
-    {
-      icon: <MapPin className="text-primary-magenta" />,
-      label: "Celebr8 Centre HQ, Vori Close, Ikeja , Lagos, Nigeria",
-    },
-    {
-      icon: <Globe className="text-primary-magenta" />,
-      label: "In-Person + Virtual",
-    },
-  ];
   return (
     <section className="w-full">
       <div className="w-full  bg-cover bg-no-repeat">

@@ -1,12 +1,8 @@
-import { useState } from "react";
-import type { SubmitEventHandler } from "react";
 import { motion } from "framer-motion";
 import wavyBg from "../../assets/ticket-bg-pattern.png";
 import { fadeUp, stagger, viewportOnce } from "../../utils/motion";
 
 export function Newsletter() {
-  const [email, setEmail] = useState("");
-
   return (
     <section className="relative w-full min-h-100 lg:min-h-156 bg-black overflow-hidden flex items-center justify-center py-16 lg:py-0">
       {/* wavy background */}
