@@ -2,9 +2,6 @@
 import { motion, type Variants } from "framer-motion";
 import heroImage from "../../assets/home/homeHero.jpg";
 import FlowerVector from "../../icons/FlowerVector";
-import CalendarIcon from "../../icons/CalendarIcon";
-import MapPin from "../../icons/MapPin";
-import Globe from "../../icons/Globe";
 
 const heroContainer: Variants = {
   hidden: {},
