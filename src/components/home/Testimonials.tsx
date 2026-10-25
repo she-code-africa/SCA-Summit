@@ -1,13 +1,15 @@
 import { useCallback, useEffect, useState } from "react";
+import { motion } from "framer-motion";
 import useEmblaCarousel from "embla-carousel-react";
 import ArrowLeft from "../../icons/ArrowLeft";
 import ArrowRight from "../../icons/ArrowRight";
 import TestimonialQuote from "../../icons/TestimonialQuote";
+import { fadeUp, viewportOnce } from "../../utils/motion";
 
 type Testimonial = {
   paragraphs: string[];
   name: string;
-  role: string;
+  role?: string;
   cardBg: string; // card background
   quoteColor: string; // big quote mark
   bandColor: string; // slanted shape on the right
@@ -70,7 +72,6 @@ const testimonials: Testimonial[] = [
       "I am a perfectionist, so it's not difficult for me to notice lapses at any event I attend. But, I must say that the summit was beyond my imagination, and I want to give kudos to the organizers and She Code Africa Management as a whole. The Summit was indeed a Success!!!",
     ],
     name: "Adaeze Blessing Oyetunde",
-    role: "",
     cardBg: "#F7E8FF",
     quoteColor: "#EFD9FF",
     bandColor: "#9966FF",
@@ -82,7 +83,6 @@ const testimonials: Testimonial[] = [
       "I loved seeing students, young women, and experienced professionals in the same space, alongside a diverse mix of speakers with inspirational stories and insights. The recruitment opportunity was another highlight, a real opportunity for a woman to get hired. The She Code Africa Team excels at creating a fresh experience with every summit. There is always something new to look forward to. Thank you for an incredible summit experience.",
     ],
     name: "Seriki A",
-    role: "",
     cardBg: "#FFE6F3",
     quoteColor: "#EBD3E0",
     bandColor: "#FFB3DC",
@@ -94,7 +94,6 @@ const testimonials: Testimonial[] = [
       "One of my highlights was the hiring room, where recruiters were ready to connect with and hire talent. I had one of the most amazing 10-minute interviews, which boosted my confidence and reminded me of the opportunities ahead. Beyond the sessions, it was beautiful to celebrate, connect, and share space with fellow women in tech.",
     ],
     name: "Elizabeth Ogunmola",
-    role: "",
     cardBg: "#DDFA8F",
     quoteColor: "#D0F07A",
     bandColor: "#8FAB4F",
@@ -151,7 +150,7 @@ const TestimonialCard = ({
 
       <div className="text-black">
         <p className="font-sans font-bold text-sm">- {name}</p>
-        <p className="font-sans italic text-sm pl-3.5">{role}</p>
+        {role && <p className="font-sans italic text-sm pl-3.5">{role}</p>}
       </div>
     </div>
   </div>
@@ -195,7 +194,13 @@ const Testimonials = () => {
       />
 
       <div className="relative px-4 sm:px-6 lg:px-8 w-full">
-        <article className="w-full space-y-2">
+        <motion.article
+          initial="hidden"
+          whileInView="visible"
+          viewport={viewportOnce}
+          variants={fadeUp}
+          className="w-full space-y-2"
+        >
           <h3 className="font-display text-primary-magenta mt-5 text-[48px] sm:text-[56px] lg:text-[64px] w-full text-center">
             Our Queens’ Experiences
           </h3>
@@ -203,25 +208,38 @@ const Testimonials = () => {
           <p className="font-medium text-center font-sans text-lg sm:text-2xl text-black">
             Behind every number is a woman whose life has been transformed{" "}
           </p>
-        </article>
+        </motion.article>
 
         <div className="mt-9 w-full max-w-316.5 mx-auto">
-          {/* carousel */}
-          <div className="overflow-hidden" ref={emblaRef}>
-            <div className="flex -ml-6">
-              {testimonials.map((item) => (
-                <div
-                  key={item.name}
-                  className="min-w-0 pl-6 flex-[0_0_100%] md:flex-[0_0_50%] lg:flex-[0_0_33.3333%]"
-                >
-                  <TestimonialCard {...item} />
-                </div>
-              ))}
+          {/* the wrapper animates; Embla still moves the slides inside it */}
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={viewportOnce}
+            variants={fadeUp}
+          >
+            <div className="overflow-hidden" ref={emblaRef}>
+              <div className="flex -ml-6">
+                {testimonials.map((item, idx) => (
+                  <div
+                    key={`${item.name}-${idx}`}
+                    className="min-w-0 pl-6 flex-[0_0_100%] md:flex-[0_0_50%] lg:flex-[0_0_33.3333%]"
+                  >
+                    <TestimonialCard {...item} />
+                  </div>
+                ))}
+              </div>
             </div>
-          </div>
+          </motion.div>
 
           {/* arrows */}
-          <div className="mt-16 flex items-center justify-center gap-3">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={viewportOnce}
+            variants={fadeUp}
+            className="mt-16 flex items-center justify-center gap-3"
+          >
             <button
               onClick={scrollPrev}
               disabled={!canPrev}
@@ -247,7 +265,7 @@ const Testimonials = () => {
             >
               <ArrowRight className="w-5 h-5 lg:w-8 lg:h-8" />
             </button>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

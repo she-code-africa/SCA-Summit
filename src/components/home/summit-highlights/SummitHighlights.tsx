@@ -8,8 +8,10 @@ import KeynoteSessions from "./KeynoteSessions";
 import VolunteerSummit from "./VolunteerSummit";
 import useEmblaCarousel from "embla-carousel-react";
 import { useCallback, useEffect, useState } from "react";
+import { motion } from "framer-motion";
 import AutoHeight from "embla-carousel-auto-height";
 import Autoplay from "embla-carousel-autoplay";
+import { fadeUp, viewportOnce } from "../../../utils/motion";
 
 const sliderColors = [
   "bg-[#FFFDDE]",
@@ -64,9 +66,15 @@ const SummitHighlights = () => {
       <div
         className={`w-full py-16 md:py-25 px-4 sm:px-6 lg:px-8 transition-colors duration-700 ease-in-out ${sliderColors[selected]}`}
       >
-        <h3 className="w-full text-[48px] sm:text-[56px] md:text-[64px] text-center text-primary-magenta font-semibold font-display">
+        <motion.h3
+          initial="hidden"
+          whileInView="visible"
+          viewport={viewportOnce}
+          variants={fadeUp}
+          className="w-full text-[48px] sm:text-[56px] md:text-[64px] text-center text-primary-magenta font-semibold font-display"
+        >
           Summit Highlights
-        </h3>
+        </motion.h3>
 
         <section className="w-full mt-12.5 embla__viewport" ref={emblaRef}>
           <div className="embla__container items-start transition-[height] duration-300">

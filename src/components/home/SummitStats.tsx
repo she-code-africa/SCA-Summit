@@ -1,3 +1,6 @@
+import { motion } from "framer-motion";
+import { fadeUp, stagger, viewportOnce } from "../../utils/motion";
+
 const SummitStats = () => {
   const statsData = [
     {
@@ -19,9 +22,16 @@ const SummitStats = () => {
   ];
   return (
     <div className="w-full max-w-7xl mx-auto">
-      <div className="w-full grid grid-cols-2 sm:flex">
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={viewportOnce}
+        variants={stagger(0.15)}
+        className="w-full grid grid-cols-2 sm:flex"
+      >
         {statsData.map(({ title, value }, idx) => (
-          <article
+          <motion.article
+            variants={fadeUp}
             className={`text-sca-white text-center border-r border-r-white border-b-white max-sm:even:border-r-0 sm:last:border-r-0 sm:border-b-0 py-10 sm:py-12.5 px-6 lg:px-10 xl:px-14 ${
               idx < 2 ? "border-b" : ""
             } ${idx === 1 ? "sm:flex-2" : "sm:flex-1"}`}
@@ -34,9 +44,9 @@ const SummitStats = () => {
             <p className="font-sans text-base lg:text-xl xl:text-[29.74px] sm:whitespace-nowrap">
               {title}
             </p>
-          </article>
+          </motion.article>
         ))}
-      </div>
+      </motion.div>
     </div>
   );
 };

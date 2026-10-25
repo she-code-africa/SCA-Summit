@@ -1,13 +1,15 @@
 import { useState } from "react";
-import type { FormEvent } from "react";
+import type { SubmitEventHandler } from "react";
+import { motion } from "framer-motion";
 import wavyBg from "../../assets/ticket-bg-pattern.png";
+import { fadeUp, stagger, viewportOnce } from "../../utils/motion";
 
 export function Newsletter() {
   const [email, setEmail] = useState("");
 
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+  const handleSubmit: SubmitEventHandler<HTMLFormElement> = (e) => {
     e.preventDefault();
-    // TODO: send `email` to your newsletter service here
+
     setEmail("");
   };
 
@@ -25,13 +27,23 @@ export function Newsletter() {
         }}
       />
 
-      <div className="relative z-10 w-full px-4 sm:px-6 lg:px-8 flex flex-col items-center">
-        <h3 className="font-sans text-white text-center font-normal text-2xl sm:text-4xl lg:text-[47.59px] leading-[1.25] max-w-245">
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={viewportOnce}
+        variants={stagger(0.2)}
+        className="relative z-10 w-full px-4 sm:px-6 lg:px-8 flex flex-col items-center"
+      >
+        <motion.h3
+          variants={fadeUp}
+          className="font-sans text-white text-center font-normal text-2xl sm:text-4xl lg:text-[47.59px] leading-[1.25] max-w-245"
+        >
           Subscribe to our newsletter to be the first to know about our upcoming
           events.
-        </h3>
+        </motion.h3>
 
-        <form
+        <motion.form
+          variants={fadeUp}
           onSubmit={handleSubmit}
           className="mt-6 lg:mt-10 w-full max-w-206 flex h-14 sm:h-20 lg:h-28.75"
         >
@@ -54,8 +66,8 @@ export function Newsletter() {
           >
             Subscribe
           </button>
-        </form>
-      </div>
+        </motion.form>
+      </motion.div>
     </section>
   );
 }
