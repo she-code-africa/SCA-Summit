@@ -67,19 +67,11 @@ const HomePage = () => {
         <Testimonials />
       </div>
 
-      {/* <SpeakersSection /> */}
       <div id="sponsors" className="scroll-mt-28">
         <OurSponsors />
       </div>
-      {/* <EventVenue /> */}
 
-      {/* <section id="tickets" className="scroll-mt-24">
-        <TicketsSection />
-      </section> */}
       <Newsletter />
-      {/* <section id="faq-section" className="scroll-mt-24">
-        <FaqSection />
-      </section> */}
     </div>
   );
 };

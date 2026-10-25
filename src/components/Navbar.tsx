@@ -11,10 +11,10 @@ import {
   ChevronDown,
 } from "lucide-react";
 import navLogo from "../assets/nav-logo.png";
+import industryReport from "../assets/SCAStateofWomeninAfricanTech-2026.pdf";
 
-// TODO: put the real links here
-const WATCH_RECAP_URL = "#";
-const REPORT_URL = "#"; // e.g. "/sca-summit-2026-report.pdf" (file in your public folder)
+const WATCH_RECAP_URL = "https://youtu.be/EB4wg_AiZVc?si=jEcomf8Hv64xhyS7";
+const REPORT_URL = industryReport;
 
 // About dropdown (unchanged)
 const aboutDropdownItems = [
@@ -25,8 +25,8 @@ const aboutDropdownItems = [
 
 type NavItem = {
   name: string;
-  path?: string; // goes to another page
-  sectionId?: string; // scrolls to a section on the home page
+  path?: string;
+  sectionId?: string;
   hasDropdown?: boolean;
 };
 
@@ -180,7 +180,7 @@ export function Navbar() {
           </a>
           <a
             href={REPORT_URL}
-            download
+            download="SCA-State-of-Women-in-African-Tech-2026"
             className="px-8 py-4.5 rounded-lg border border-primary-main-pink text-primary-main-pink hover:bg-primary-very-light-pink font-medium text-base transition-colors"
           >
             Download Report
@@ -331,7 +331,7 @@ export function Navbar() {
                 </a>
                 <a
                   href={REPORT_URL}
-                  download
+                  download="SCA-State-of-Women-in-African-Tech-2026"
                   className="w-full text-center px-8 py-4.5 rounded-lg border border-primary-main-pink text-primary-main-pink hover:bg-primary-very-light-pink font-medium text-base transition"
                 >
                   Download Report

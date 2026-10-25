@@ -10,7 +10,7 @@ const GeneralHighlight = () => {
       <SummitHighlightSections
         highlightSection="general"
         title="10 years Anniversary Celebration"
-        url="#"
+        url="https://youtu.be/EB4wg_AiZVc?si=l4pWTGEjVVZgKjrH"
         images={[generalImg1, gimg2, gimg3, gImg4]}
       />
     </div>

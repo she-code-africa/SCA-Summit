@@ -57,8 +57,8 @@ const WhatWeBuilt = () => {
               ) : (
                 <iframe
                   className="w-full h-full absolute inset-0"
-                  src="https://www.youtube.com/embed/j_oGekQqj34?autoplay=1&rel=0&mute=1"
-                  title="See What We Built Last Summit"
+                  src="https://www.youtube.com/embed/EB4wg_AiZVc?si=DW3fh64dznMj03xn"
+                  title="She Code Africa Summit 2026"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
                 />

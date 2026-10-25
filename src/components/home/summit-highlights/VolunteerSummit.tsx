@@ -9,7 +9,7 @@ const VolunteerSummit = () => {
     <div className="w-full max-w-307.5 mx-auto space-y-4.25">
       <SummitHighlightSections
         highlightSection="volunteer"
-        url="#"
+        url="https://www.instagram.com/p/DehBEEFmJVv/"
         images={[volunteer1, volunteer2, volunteer3, volunteer4]}
         title="Volunteers’ Summit"
         subtitle="Behind She Code Africa's work is a community of volunteers who

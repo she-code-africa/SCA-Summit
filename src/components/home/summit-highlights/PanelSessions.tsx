@@ -9,7 +9,7 @@ const PanelSessions = () => {
     <div className="w-full max-w-307.5 mx-auto space-y-4.25">
       <SummitHighlightSections
         highlightSection="panel"
-        url="#"
+        url="https://youtu.be/-TLrsJudUYU?si=tf2H07fuHuqQEQZe"
         images={[panel1, panel2, panel3, panel4]}
         title="Panel Sessions"
         subtitle="From navigating the realities of the tech industry to rethinking

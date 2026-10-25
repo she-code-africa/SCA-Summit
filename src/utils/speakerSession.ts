@@ -37,7 +37,7 @@ export const sessions: Session[] = [
     bg: "bg-pastel-pink",
     image: keynote1,
     imageSide: "right",
-    url: "#",
+    url: "https://youtu.be/3zP1HKYcofk?si=rT-UQaOIzE5FQtkn",
   },
   {
     value: "keynote-2",
@@ -49,7 +49,7 @@ export const sessions: Session[] = [
     bg: "bg-[#F8EAFF]",
     image: keynote2,
     imageSide: "left",
-    url: "#",
+    url: "https://youtu.be/LTFR-qq3YZc?si=6MqMhIM3atowtqiL",
   },
   {
     value: "fireside-chat",
@@ -62,7 +62,7 @@ export const sessions: Session[] = [
     bg: "bg-[#FFFDDE]",
     image: fireside,
     imageSide: "right",
-    url: "#",
+    url: "https://youtu.be/fHmfsqp9KEw?si=-ge-n0XoiUr6cvfK",
   },
   {
     value: "panel-session-1",
@@ -83,7 +83,7 @@ export const sessions: Session[] = [
     bg: "bg-pastel-pink",
     image: panel1,
     imageSide: "left",
-    url: "#",
+    url: "https://youtu.be/Fxb8w78IqKU?si=X8ys9lmIumJcsBAb",
   },
   {
     value: "panel-session-2",
@@ -108,7 +108,7 @@ export const sessions: Session[] = [
     bg: "bg-[#F8EAFF]",
     image: panel2,
     imageSide: "right",
-    url: "#",
+    url: "https://youtu.be/-TLrsJudUYU?si=Qfg3X2x70SyAQilh",
   },
   {
     value: "panel-session-3",
@@ -128,7 +128,7 @@ export const sessions: Session[] = [
     bg: "bg-[#FFFDDE]",
     image: panel3,
     imageSide: "left",
-    url: "#",
+    url: "https://youtu.be/EB4wg_AiZVc?si=jEcomf8Hv64xhyS7",
     twoColumnSpeakers: true,
   },
 ];

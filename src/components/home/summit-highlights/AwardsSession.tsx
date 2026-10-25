@@ -9,7 +9,7 @@ const AwardsSession = () => {
     <div className="w-full max-w-307.5 mx-auto space-y-4.25">
       <SummitHighlightSections
         highlightSection="awards"
-        url="#"
+        url="https://youtu.be/TSrG2V6UpjE?si=annVQ7WLS5LuNfsV"
         title="Award Session"
         images={[awards1, awards2, awards3, awards4]}
         subtitle="The Award Session recognised individuals whose work and

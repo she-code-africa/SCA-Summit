@@ -10,7 +10,7 @@ const KeynoteSessions = () => {
     <div className="w-full max-w-307.5 mx-auto space-y-4.25">
       <SummitHighlightSections
         highlightSection="keynote"
-        url="#"
+        url="https://youtu.be/3zP1HKYcofk?si=O_v9PTs61gIXD5-X"
         title="Keynote Sessions"
         images={[keynote1, keynote2, keynote3, keynote4, keynote5]}
         subtitle="The keynote sessions offered a moment to reflect on a decade of

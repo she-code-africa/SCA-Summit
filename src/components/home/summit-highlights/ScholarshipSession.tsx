@@ -10,7 +10,7 @@ const ScholarshipSession = () => {
     <div className="w-full max-w-307.5 mx-auto space-y-4.25">
       <SummitHighlightSections
         highlightSection="scholarship"
-        url="#"
+        url="https://youtu.be/N15y4qDG5Gk?si=ijo0As5deT572QX3"
         title="Scholarship Session"
         images={[
           scholarshipImg1,
