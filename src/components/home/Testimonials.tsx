@@ -1,6 +1,5 @@
 import { useCallback, useEffect, useState } from "react";
-import { motion } from "framer-motion";
-import useEmblaCarousel from "embla-carousel-react";
+import { motion, AnimatePresence } from "framer-motion";
 import ArrowLeft from "../../icons/ArrowLeft";
 import ArrowRight from "../../icons/ArrowRight";
 import TestimonialQuote from "../../icons/TestimonialQuote";
@@ -156,34 +155,58 @@ const TestimonialCard = ({
   </div>
 );
 
-const Testimonials = () => {
-  const [emblaRef, emblaApi] = useEmblaCarousel({
-    loop: false,
-    align: "start",
-  });
-  const [canPrev, setCanPrev] = useState(false);
-  const [canNext, setCanNext] = useState(true);
+// How many boxes are visible: 3 on large screens, 2 on tablets, 1 on phones
+const usePerPage = () => {
+  const getCount = () => {
+    if (typeof window === "undefined") return 3;
+    if (window.matchMedia("(min-width: 1024px)").matches) return 3;
+    if (window.matchMedia("(min-width: 768px)").matches) return 2;
+    return 1;
+  };
 
-  const scrollPrev = useCallback(() => emblaApi?.scrollPrev(), [emblaApi]);
-  const scrollNext = useCallback(() => emblaApi?.scrollNext(), [emblaApi]);
+  const [perPage, setPerPage] = useState(getCount);
 
   useEffect(() => {
-    if (!emblaApi) return;
+    const update = () => setPerPage(getCount());
+    window.addEventListener("resize", update);
+    return () => window.removeEventListener("resize", update);
+  }, []);
 
-    const update = () => {
-      setCanPrev(emblaApi.canScrollPrev());
-      setCanNext(emblaApi.canScrollNext());
-    };
+  return perPage;
+};
 
-    update();
-    emblaApi.on("select", update);
-    emblaApi.on("reInit", update);
+// Tweak these to change the feel
+const FADE = 1.1; // seconds for the new card to fade in (bigger = smoother/slower)
+const EXIT_EXTRA = 0.15; // old card stays this much longer so it never pops out early
+const SMOOTH_EASE: [number, number, number, number] = [0.45, 0, 0.55, 1]; // gentle start and end
 
-    return () => {
-      emblaApi.off("select", update);
-      emblaApi.off("reInit", update);
-    };
-  }, [emblaApi]);
+const Testimonials = () => {
+  const perPage = usePerPage();
+  const [page, setPage] = useState(0);
+
+  const totalPages = Math.ceil(testimonials.length / perPage);
+
+  // If the screen size changes, make sure we are not on a page that no longer exists
+  useEffect(() => {
+    setPage((p) => Math.min(p, totalPages - 1));
+  }, [totalPages]);
+
+  const canPrev = page > 0;
+  const canNext = page < totalPages - 1;
+
+  const scrollPrev = useCallback(() => setPage((p) => Math.max(p - 1, 0)), []);
+  const scrollNext = useCallback(
+    () => setPage((p) => Math.min(p + 1, totalPages - 1)),
+    [totalPages],
+  );
+
+  // The last page always shows the final cards (no wrapping to the start),
+  // so with 7 testimonials on desktop the pages are: 1-3, 4-6, 5-7
+  const start = Math.min(page * perPage, testimonials.length - perPage);
+  const visible = Array.from({ length: perPage }, (_, slot) => {
+    const index = start + slot;
+    return { index, item: testimonials[index] };
+  });
 
   return (
     <section className="relative w-full overflow-hidden border-b border-b-secondary-grape bg-white py-25">
@@ -211,25 +234,41 @@ const Testimonials = () => {
         </motion.article>
 
         <div className="mt-9 w-full max-w-316.5 mx-auto">
-          {/* the wrapper animates; Embla still moves the slides inside it */}
+          {/* the boxes never leave, only their content crossfades */}
           <motion.div
             initial="hidden"
             whileInView="visible"
             viewport={viewportOnce}
             variants={fadeUp}
+            className="grid gap-6 md:grid-cols-2 lg:grid-cols-3"
           >
-            <div className="overflow-hidden" ref={emblaRef}>
-              <div className="flex -ml-6">
-                {testimonials.map((item, idx) => (
-                  <div
-                    key={`${item.name}-${idx}`}
-                    className="min-w-0 pl-6 flex-[0_0_100%] md:flex-[0_0_50%] lg:flex-[0_0_33.3333%]"
+            {visible.map(({ index, item }, slot) => (
+              // Old and new card sit in the same grid cell, on top of each other
+              <div key={slot} className="grid h-full">
+                <AnimatePresence initial={false}>
+                  <motion.div
+                    key={index}
+                    // the new card fades in on top (higher zIndex)...
+                    initial={{ opacity: 0, zIndex: 2 }}
+                    animate={{
+                      opacity: 1,
+                      zIndex: 2,
+                      transition: { duration: FADE, ease: SMOOTH_EASE },
+                    }}
+                    // ...while the old one stays fully visible underneath
+                    // until the new one has fully covered it, then it is removed
+                    exit={{
+                      opacity: 1,
+                      zIndex: 1,
+                      transition: { duration: FADE + EXIT_EXTRA },
+                    }}
+                    className="col-start-1 row-start-1 h-full"
                   >
                     <TestimonialCard {...item} />
-                  </div>
-                ))}
+                  </motion.div>
+                </AnimatePresence>
               </div>
-            </div>
+            ))}
           </motion.div>
 
           {/* arrows */}
@@ -243,11 +282,11 @@ const Testimonials = () => {
             <button
               onClick={scrollPrev}
               disabled={!canPrev}
-              aria-label="Previous testimonial"
-              className={`flex size-12 lg:size-15.5 items-center justify-center rounded-full border-4 transition-colors duration-300 cursor-pointer ${
+              aria-label="Previous testimonials"
+              className={`flex size-12 lg:size-15.5 items-center justify-center rounded-full border-4 transition-colors duration-300 ${
                 canPrev
-                  ? "border-white text-white"
-                  : "border-white/30 text-white/30"
+                  ? "border-white text-white cursor-pointer"
+                  : "border-white/30 text-white/30 cursor-not-allowed"
               }`}
             >
               <ArrowLeft className="w-5 h-5 lg:w-8 lg:h-8" />
@@ -256,11 +295,11 @@ const Testimonials = () => {
             <button
               onClick={scrollNext}
               disabled={!canNext}
-              aria-label="Next testimonial"
-              className={`flex size-12 lg:size-15.5 items-center justify-center rounded-full border-4 transition-colors duration-300 cursor-pointer ${
+              aria-label="Next testimonials"
+              className={`flex size-12 lg:size-15.5 items-center justify-center rounded-full border-4 transition-colors duration-300 ${
                 canNext
-                  ? "border-white text-white"
-                  : "border-white/30 text-white/30"
+                  ? "border-white text-white cursor-pointer"
+                  : "border-white/30 text-white/30 cursor-not-allowed"
               }`}
             >
               <ArrowRight className="w-5 h-5 lg:w-8 lg:h-8" />

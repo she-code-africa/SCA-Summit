@@ -31,8 +31,8 @@ type NavItem = {
 };
 
 const navLinks: NavItem[] = [
-  { name: "About", path: "/about", hasDropdown: false },
-  { name: "Speakers", path: "/speakers" },
+  { name: "About", sectionId: "aboutSummit", hasDropdown: false },
+  { name: "Speakers", sectionId: "summitSpeakers" },
   { name: "Gallery", sectionId: "gallery" },
   { name: "Partners & Sponsors", sectionId: "sponsors" },
   { name: "Testimonials", sectionId: "testimonials" },

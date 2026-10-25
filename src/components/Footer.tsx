@@ -190,7 +190,7 @@ export const Footer = () => {
                 </div>
               </div>
 
-              <figure className="m-0 p-0 w-37.5 h-37.5 rounded-full overflow-hidden lg:mx-0 lg:self-center self-start">
+              <figure className="m-0 p-0 w-37.5 h-37.5 rounded-full overflow-hidden lg:mx-0 lg:self-center hidden self-start">
                 <img
                   src="https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/85802796"
                   alt="CAF-validated-badge"
