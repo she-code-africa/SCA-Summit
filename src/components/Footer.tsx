@@ -20,8 +20,8 @@ export const Footer = () => {
         className="pt-10 lg:mt-20"
       >
         <div className="container xl:mx-auto px-6 py-6 lg:py-10 mb-14">
-          <section className="w-full flex flex-col lg:flex-row lg:items-center lg:gap-10 lg:justify-center">
-            <figure className="max-w-37.5 h-40.5 w-full hidden lg:block mb-12 lg:mb-0 lg:mr-24">
+          <section className="w-full flex flex-col lg:flex-row lg:items-center lg:gap-10 lg:justify-center ">
+            <figure className="max-w-37.5  h-40.5 w-full hidden lg:block mb-12 lg:mb-0 lg:mr-24">
               <img
                 src={logo}
                 alt="SCA-Logo"
@@ -41,7 +41,7 @@ export const Footer = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2, duration: 0.8, ease: "easeOut" }}
               viewport={{ once: true, amount: 0.3 }}
-              className="w-full flex flex-wrap lg:flex-row gap-12 lg:gap-20 justify-between lg:items-start"
+              className="w-full lg:max-w-fit flex flex-wrap lg:flex-row gap-12 lg:gap-25 lg:justify-end justify-between lg:items-start "
             >
               {/* Get Involved */}
               <div aria-label="Get Involved">
