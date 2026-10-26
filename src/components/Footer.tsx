@@ -50,17 +50,12 @@ export const Footer = () => {
                 </p>
                 <a
                   target="_blank"
-                  href="https://tix.africa/discover/she-code-africa-summit-2026"
-                  className="button-text block text-black mb-5 mt-8 hover:text-primary-main-pink focus:outline-none focus:ring focus:ring-tutu"
-                >
-                  Get your ticket
-                </a>
-                <a
                   href="/about#get-involved"
-                  className="button-text block mb-5 text-black hover:text-primary-main-pink focus:outline-none focus:ring focus:ring-tutu"
+                  className="button-text block text-black mb-5 mt-8 hover:text-primary-main-pink focus:outline-none focus:ring focus:ring-tutu"
                 >
                   Become a sponsor
                 </a>
+
                 <a
                   href="https://www.shecodeafrica.org/partner"
                   className="button-text block mb-5 text-black hover:text-primary-main-pink focus:outline-none focus:ring focus:ring-tutu"
@@ -84,23 +79,18 @@ export const Footer = () => {
                 </p>
 
                 <a
-                  href="/faqs#faq-section"
+                  href="https://shecodeafrica.org/academy"
                   className="button-text block mb-5 mt-8  hover:text-primary-main-pink focus:outline-none focus:ring focus:ring-tutu"
                 >
-                  FAQ
+                  Our Programs
                 </a>
                 <a
-                  href="/accessibility"
+                  href="https://shecodeafrica.org/"
                   className="button-text block mb-5 hover:text-primary-main-pink focus:outline-none focus:ring focus:ring-tutu"
                 >
-                  Code of Conduct
+                  SCA Website
                 </a>
-                <a
-                  href="https://www.shecodeafrica.org/privacy"
-                  className="button-text block mb-5 hover:text-primary-main-pink focus:outline-none focus:ring focus:ring-tutu"
-                >
-                  Privacy Policy
-                </a>
+
                 <a
                   href="/terms-and-conditions"
                   className="button-text block mb-5 hover:text-primary-main-pink focus:outline-none focus:ring focus:ring-tutu"
