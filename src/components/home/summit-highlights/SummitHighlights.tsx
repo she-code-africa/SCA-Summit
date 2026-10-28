@@ -31,11 +31,14 @@ const slides = [
 ];
 
 const SummitHighlights = () => {
-  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [
+  // loop is false so the carousel has a real start and end
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: false }, [
     AutoHeight(),
-   
   ]);
   const [selected, setSelected] = useState(0);
+  const [canScrollPrev, setCanScrollPrev] = useState(false);
+  const [canScrollNext, setCanScrollNext] = useState(true);
+
   const scrollPrev = useCallback(() => emblaApi?.scrollPrev(), [emblaApi]);
   const scrollNext = useCallback(() => emblaApi?.scrollNext(), [emblaApi]);
 
@@ -44,6 +47,8 @@ const SummitHighlights = () => {
 
     const update = () => {
       setSelected(emblaApi.selectedScrollSnap());
+      setCanScrollPrev(emblaApi.canScrollPrev());
+      setCanScrollNext(emblaApi.canScrollNext());
     };
 
     update();
@@ -86,8 +91,9 @@ const SummitHighlights = () => {
           <div className="w-full max-w-105 mx-auto flex justify-center items-center gap-4 lg:gap-6.5">
             <button
               onClick={scrollPrev}
+              disabled={!canScrollPrev}
               aria-label="Previous slide"
-              className="w-9 h-9 lg:w-[62.24px] cursor-pointer lg:h-[62.24px] flex items-center justify-center rounded-full border-4 border-primary-magenta transition-transform duration-200 hover:scale-105 active:scale-95"
+              className="w-9 h-9 lg:w-[62.24px] cursor-pointer lg:h-[62.24px] flex items-center justify-center rounded-full border-4 border-primary-magenta transition-all duration-200 hover:scale-105 active:scale-95 disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:scale-100 disabled:active:scale-100"
             >
               <ArrowLeft className="w-5 h-5 lg:w-8.25 lg:h-11 text-primary-magenta" />
             </button>
@@ -109,8 +115,9 @@ const SummitHighlights = () => {
 
             <button
               onClick={scrollNext}
+              disabled={!canScrollNext}
               aria-label="Next slide"
-              className="w-9 h-9 lg:w-[62.24px] cursor-pointer lg:h-[62.24px] flex items-center justify-center rounded-full border-4 border-primary-magenta transition-transform duration-200 hover:scale-105 active:scale-95"
+              className="w-9 h-9 lg:w-[62.24px] cursor-pointer lg:h-[62.24px] flex items-center justify-center rounded-full border-4 border-primary-magenta transition-all duration-200 hover:scale-105 active:scale-95 disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:scale-100 disabled:active:scale-100"
             >
               <ArrowRight className="w-5 h-5 lg:w-8.25 lg:h-11 text-primary-magenta" />
             </button>
