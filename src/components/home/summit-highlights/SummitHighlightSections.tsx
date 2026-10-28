@@ -24,16 +24,23 @@ const SummitHighlightSections = ({
     <>
       {highlightSection === "general" && (
         <>
-          <div className="w-full flex flex-col lg:flex-row gap-4.25">
-            <section className="lg:max-w-155.5 w-full flex flex-col gap-4.25">
-              <figure className="w-full  overflow-hidden  h-201 rounded-[26.79px]">
+          <div className="w-full space-y-2.5 ">
+            <section className=" w-full flex flex-col lg:flex-row gap-[19.11px]">
+              <figure className="w-full  overflow-hidden  h-[318.4px] rounded-[14.55px]">
                 <img
                   src={images[0]}
                   alt="Summit Pictures"
                   className="w-full h-full object-cover"
                 />
               </figure>
-              <figure className="w-full  overflow-hidden  h-109.25 rounded-[26.79px]">
+              <figure className="w-full  overflow-hidden  h-[318.4px] rounded-[14.55px]">
+                <img
+                  src={images[2]}
+                  alt="Summit Pictures"
+                  className="w-full h-full object-cover "
+                />
+              </figure>
+              <figure className="w-full  overflow-hidden  h-[318.4px] rounded-[14.55px]">
                 <img
                   src={images[1]}
                   alt="Summit Pictures"
@@ -42,39 +49,32 @@ const SummitHighlightSections = ({
               </figure>
             </section>
             {/* second section */}
-            <section className="lg:max-w-147.75 w-full flex flex-col gap-4.25">
-              <figure className="w-full overflow-hidden h-141.25 rounded-[26.79px]">
+            <section className=" w-full flex flex-col lg:flex-row gap-[19.11px]">
+              <figure className="w-full flex-1 h-[287.88px] overflow-hidden rounded-[15.49px]">
                 <img
-                  src={images[2]}
+                  src={images[3]}
                   alt="Summit Pictures"
-                  className="w-full h-full object-cover "
+                  className="w-full h-full object-cover"
                 />
               </figure>
-              <article className="w-full  h-auto flex-1 rounded-[26.79px] flex items-center justify-center">
+              {/*  */}
+              <article className="w-full  h-auto lg:max-w-86 rounded-[26.79px] flex items-center justify-center">
                 <div className="w-full mx-auto lg:max-w-[488.37px] py-10 lg:py-0">
-                  <h3 className="font-extrabold text-black font-mulish text-[36px] sm:text-[48px] md:text-[56px] xl:text-[61px] text-center">
+                  <h3 className="font-extrabold text-black font-mulish text-[36px] sm:text-[40px]  text-center">
                     {title}
                   </h3>
 
                   <a
                     href={url}
                     target="_blank"
-                    className="flex mx-auto mt-1.5 max-w-58.75 items-center justify-center h-10 xl:h-13.75 rounded-[30px] bg-primary-magenta hover:bg-primary-dark-pink duration-300 transition-colors gap-1 text-white font-figtree text-sm xl:text-base"
+                    className="flex mx-auto mt-1.5 max-w-[138.76px] items-center justify-center h-[31.81px] rounded-[17.35px] bg-primary-magenta hover:bg-primary-dark-pink duration-300 transition-colors gap-1 text-white font-figtree text-xs"
                   >
-                    Watch session recap <ChevronRight />
+                    Watch recap <ChevronRight size={13} />
                   </a>
                 </div>
               </article>
             </section>
           </div>
-
-          <figure className="w-full h-98.75 overflow-hidden rounded-[26.79px]">
-            <img
-              src={images[3]}
-              alt="Summit Pictures"
-              className="w-full h-full object-cover"
-            />
-          </figure>
         </>
       )}
 
@@ -82,129 +82,189 @@ const SummitHighlightSections = ({
 
       {(highlightSection === "awards" ||
         highlightSection === "panel" ||
-        highlightSection === "volunteer") && (
+        highlightSection === "keynote") && (
         <>
-          <div className="w-full flex flex-col lg:flex-row gap-4.25">
-            {/* second section */}
-            <section className="lg:max-w-147.75 w-full flex flex-col gap-4.25">
-              <figure className="w-full h-141.25 rounded-[26.79px] overflow-hidden">
+          <div className="w-full space-y-2.5">
+            <section className="w-full flex flex-col lg:flex-row gap-[19.11px]">
+              <figure className="w-full  overflow-hidden  h-[318.4px] rounded-[14.55px]">
                 <img
                   src={images[0]}
                   alt="Summit Pictures"
-                  className={`w-full h-full object-cover ${highlightSection === "panel" ? "rotate-y-180" : ""}`}
+                  className={`w-full h-full object-cover `}
                 />
               </figure>
-              <article className="w-full h-auto flex-1 rounded-[26.79px] flex items-center justify-center">
-                <div className="w-full lg:max-w-145 pr-6 py-10 lg:py-0">
-                  <h3 className="font-extrabold text-black font-mulish text-[36px] sm:text-[48px]  md:text-[58px]">
+              <figure className="w-full  overflow-hidden  h-[318.4px] rounded-[14.55px]">
+                <img
+                  src={images[1]}
+                  alt="Summit Pictures"
+                  className={`w-full h-full object-cover `}
+                />
+              </figure>
+              <figure className="w-full  overflow-hidden  h-[318.4px] rounded-[14.55px]">
+                <img
+                  src={images[2]}
+                  alt="Summit Pictures"
+                  className={`w-full h-full object-cover `}
+                />
+              </figure>
+            </section>
+            {/* second section */}
+            <section className="w-full flex flex-col lg:flex-row gap-[19.11px]">
+              <article className="h-auto rounded-[26.79px] flex items-center ">
+                <div className="w-full lg:max-w-85.5 py-10 lg:py-0">
+                  <h3 className="font-extrabold text-black font-mulish text-[36px] sm:text-[40px]  ">
                     {title}
                   </h3>
 
-                  <p className="text-black mt-4.75 font-sans text-xl sm:text-2xl md:text-[31.03px] font-medium">
+                  <p className="text-black mt-4.75 font-sans text-base font-medium">
                     {subtitle}
                   </p>
 
                   <a
                     href={url}
                     target="_blank"
-                    className="flex mt-4.75 max-w-58.75 items-center justify-center rounded-[30px] bg-primary-magenta hover:bg-primary-dark-pink duration-300 transition-colors gap-1 text-white font-figtree xl:h-13.75 h-10 text-sm xl:text-base"
+                    className="flex mt-2.5 max-w-[138.76px] items-center justify-center h-[31.81px] rounded-[17.35px] bg-primary-magenta hover:bg-primary-dark-pink duration-300 transition-colors gap-1 text-white font-figtree text-xs"
                   >
-                    Watch session recap <ChevronRight />
+                    Watch recap <ChevronRight size={13} />
                   </a>
                 </div>
               </article>
-            </section>
-            <section className="lg:max-w-155.5 w-full flex flex-col gap-4.25">
-              <figure className="w-full  h-201 rounded-[26.79px] overflow-hidden">
+
+              <figure className="w-full h-[289.88px] flex-1 overflow-hidden rounded-[26.79px]">
                 <img
-                  src={images[1]}
+                  src={images[3]}
                   alt="Summit Pictures"
-                  className={`w-full h-full object-cover ${highlightSection === "awards" || highlightSection === "panel" ? "rotate-y-180" : ""}`}
-                />
-              </figure>
-              <figure className="w-full  overflow-hidden h-109.25 rounded-[26.79px]">
-                <img
-                  src={images[2]}
-                  alt="Summit Pictures"
-                  className={`w-full h-full object-cover ${highlightSection === "awards" || highlightSection === "panel" ? "rotate-y-180" : ""}`}
+                  className={`w-full h-full object-cover`}
                 />
               </figure>
             </section>
           </div>
-
-          <figure className="w-full h-98.75  overflow-hidden rounded-[26.79px]">
-            <img
-              src={images[3]}
-              alt="Summit Pictures"
-              className={`w-full h-full object-cover ${highlightSection === "awards" ? "rotate-y-180" : ""}`}
-            />
-          </figure>
         </>
       )}
 
-      {(highlightSection === "scholarship" ||
-        highlightSection === "keynote") && (
+      {highlightSection === "volunteer" && (
         <>
-          {" "}
-          <div className="w-full flex flex-col lg:flex-row gap-4.25">
-            <section className="lg:max-w-[589.27px] w-full flex flex-col gap-4.25">
-              <figure className="w-full  h-[540.58px] rounded-[26.79px] overflow-hidden">
+          <div className="w-full space-y-2.5">
+            <section className="w-full flex flex-col lg:flex-row gap-[19.11px]">
+              <figure className="w-full  overflow-hidden  h-[318.4px] rounded-[14.55px]">
                 <img
                   src={images[0]}
                   alt="Summit Pictures"
                   className="w-full h-full object-cover"
                 />
               </figure>
-              <figure className="w-full  h-[540.58px] rounded-[26.79px] overflow-hidden">
+              <figure className="w-full  overflow-hidden  h-[318.4px] rounded-[14.55px]">
                 <img
                   src={images[1]}
                   alt="Summit Pictures"
                   className="w-full h-full object-cover"
                 />
               </figure>
-              <figure className="w-full  h-[540.58px] rounded-[26.79px] overflow-hidden">
+              <figure className="w-full  overflow-hidden  h-[318.4px] rounded-[14.55px]">
                 <img
                   src={images[2]}
                   alt="Summit Pictures"
-                  className={`w-full h-full object-cover ${highlightSection === "keynote" ? "rotate-y-180" : ""}`}
+                  className={`w-full h-full object-cover ${highlightSection === "volunteer" ? "rotate-y-180" : ""}`}
                 />
               </figure>
             </section>
             {/* second section */}
-            <section className="lg:max-w-[589.27px] w-full flex flex-col gap-4.25">
-              <figure className="w-full  h-[540.58px] rounded-[26.79px] overflow-hidden">
+            <section className=" w-full flex flex-col lg:flex-row gap-[19.11px]">
+              <figure className="w-full flex-1 h-[287.88px] overflow-hidden rounded-[15.49px]">
                 <img
                   src={images[3]}
                   alt="Summit Pictures"
                   className="w-full h-full object-cover"
                 />
               </figure>
-              <article className="w-full h-auto flex-1 rounded-[26.79px] flex items-center justify-center">
-                <div className="w-full pl-6 py-10 lg:py-0">
-                  <h3 className="font-extrabold text-black font-mulish text-[36px] sm:text-[48px]  md:text-[58px]">
+              <article className="w-full  h-auto lg:max-w-86 rounded-[26.79px] flex items-center justify-center">
+                <div className="w-full py-10 lg:py-0">
+                  <h3 className="font-extrabold text-black font-mulish text-[36px] sm:text-[34.2px]">
                     {title}
                   </h3>
 
-                  <p className="text-black mt-4.75 font-sans text-xl sm:text-2xl md:text-[28px] font-medium">
+                  <p className="text-black mt-2.5 font-sans text-base font-medium">
                     {subtitle}
                   </p>
 
                   <a
                     href={url}
                     target="_blank"
-                    className="flex mt-4.75 max-w-58.75 items-center justify-center rounded-[30px] bg-primary-magenta hover:bg-primary-dark-pink duration-300 transition-colors gap-1 text-white font-figtree xl:h-13.75 h-10 text-sm xl:text-base"
+                    className="flex mt-2.5 max-w-[138.76px] items-center justify-center h-[31.81px] rounded-[17.35px] bg-primary-magenta hover:bg-primary-dark-pink duration-300 transition-colors gap-1 text-white font-figtree text-xs"
                   >
-                    Watch session recap <ChevronRight />
+                    Watch recap <ChevronRight size={13} />
                   </a>
                 </div>
               </article>
-              <figure className="w-full h-[540.58px] rounded-[26.79px] overflow-hidden">
+            </section>
+          </div>
+        </>
+      )}
+
+      {highlightSection === "scholarship" && (
+        <>
+          <div className="w-full space-y-2.5">
+            <section className="w-full flex flex-col lg:flex-row gap-[19.11px]">
+              <figure className="w-full  overflow-hidden  h-[318.4px] rounded-[26.79px]">
+                <img
+                  src={images[0]}
+                  alt="Summit Pictures"
+                  className="w-full h-full object-cover"
+                />
+              </figure>
+              <figure className="w-full  overflow-hidden  h-[318.4px] rounded-[26.79px]">
+                <img
+                  src={images[3]}
+                  alt="Summit Pictures"
+                  className="w-full h-full object-cover"
+                />
+              </figure>
+              <figure className="w-full  overflow-hidden  h-[318.4px] rounded-[26.79px]">
+                <img
+                  src={images[1]}
+                  alt="Summit Pictures"
+                  className={`w-full h-full object-cover `}
+                />
+              </figure>
+            </section>
+            {/* second section */}
+            <section className=" w-full flex flex-col lg:flex-row gap-[19.11px]">
+              <figure className="w-full h-[318.4px] overflow-hidden rounded-[26.79px]">
+                <img
+                  src={images[2]}
+                  alt="Summit Pictures"
+                  className="w-full h-full object-cover"
+                />
+              </figure>
+
+              <figure className="w-full  h-[318.4px]  overflow-hidden rounded-[26.79px]">
                 <img
                   src={images[4]}
                   alt="Summit Pictures"
                   className="w-full h-full object-cover"
                 />
               </figure>
+
+              {/* text */}
+              <article className="w-full h-auto  rounded-[26.79px] flex items-center justify-center">
+                <div className="w-full py-10 lg:py-0">
+                  <h3 className="font-extrabold text-black font-mulish text-[36px] sm:text-[34.2px]">
+                    {title}
+                  </h3>
+
+                  <p className="text-black mt-2.5 font-sans text-base font-medium">
+                    {subtitle}
+                  </p>
+
+                  <a
+                    href={url}
+                    target="_blank"
+                    className="flex mt-2.5 max-w-[138.76px] items-center justify-center h-[31.81px] rounded-[17.35px] bg-primary-magenta hover:bg-primary-dark-pink duration-300 transition-colors gap-1 text-white font-figtree text-xs"
+                  >
+                    Watch recap <ChevronRight size={13} />
+                  </a>
+                </div>
+              </article>
             </section>
           </div>
         </>

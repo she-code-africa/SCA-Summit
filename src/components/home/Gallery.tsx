@@ -7,6 +7,7 @@ import gallery5 from "../../assets/home/gallery/gallery-5.jpg";
 import gallery6 from "../../assets/home/gallery/gallery-6.jpg";
 import gallery7 from "../../assets/home/gallery/gallery-7.jpg";
 import { fadeUp, scaleIn, stagger, viewportOnce } from "../../utils/motion";
+import { ChevronRight } from "lucide-react";
 
 const GalleryImage = ({
   src,
@@ -82,6 +83,19 @@ const Gallery = () => {
             <GalleryImage src={gallery7} className="flex-1 w-full" />
           </Row>
         </div>
+
+        <motion.div
+          variants={fadeUp}
+          className="mt-6 lg:mt-8 xl:mt-12.75 w-full flex  items-center justify-center"
+        >
+          <a
+            href="#"
+            target="_blank"
+            className="mx-auto flex items-center justify-center gap-1 w-full sm:w-44 lg:w-56.75 bg-primary-magenta hover:bg-primary-dark-pink transition-colors duration-300 text-white font-sans font-medium text-base rounded-[30px] cursor-pointer h-13.75"
+          >
+            View more pictures <ChevronRight />
+          </a>
+        </motion.div>
       </div>
     </section>
   );

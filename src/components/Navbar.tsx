@@ -11,10 +11,8 @@ import {
   ChevronDown,
 } from "lucide-react";
 import navLogo from "../assets/nav-logo.png";
-import industryReport from "../assets/SCAStateofWomeninAfricanTech-2026.pdf";
 
 const WATCH_RECAP_URL = "https://youtu.be/EB4wg_AiZVc?si=jEcomf8Hv64xhyS7";
-const REPORT_URL = industryReport;
 
 // About dropdown (unchanged)
 const aboutDropdownItems = [
@@ -31,10 +29,8 @@ type NavItem = {
 };
 
 const navLinks: NavItem[] = [
-  { name: "About", sectionId: "aboutSummit", hasDropdown: false },
   { name: "Speakers", sectionId: "summitSpeakers" },
   { name: "Gallery", sectionId: "gallery" },
-  { name: "Partners & Sponsors", sectionId: "sponsors" },
   { name: "Testimonials", sectionId: "testimonials" },
 ];
 
@@ -76,7 +72,7 @@ export function Navbar() {
         </Link>
 
         {/* Desktop Navigation Links */}
-        <nav className="hidden xl:flex items-center gap-5.5">
+        <nav className="hidden xl:flex items-center xl:justify-end xl:w-full gap-5.5">
           {navLinks.map((link) =>
             link.sectionId ? (
               <a
@@ -169,7 +165,7 @@ export function Navbar() {
         </nav>
 
         {/* Action Buttons */}
-        <div className="hidden sm:flex items-center gap-3 shrink-0">
+        <div className="hidden sm:flex items-center gap-3 ml-15.5 shrink-0">
           <a
             href={WATCH_RECAP_URL}
             target="_blank"
@@ -177,13 +173,6 @@ export function Navbar() {
             className="px-8 py-4.5 rounded-lg bg-primary-main-pink hover:bg-primary-dark-pink text-white font-medium text-base transition-colors shadow-sm"
           >
             Watch Recap
-          </a>
-          <a
-            href={REPORT_URL}
-            download="SCA-State-of-Women-in-African-Tech-2026"
-            className="px-8 py-4.5 rounded-lg border border-primary-main-pink text-primary-main-pink hover:bg-primary-very-light-pink font-medium text-base transition-colors"
-          >
-            Download Report
           </a>
         </div>
 
@@ -328,13 +317,6 @@ export function Navbar() {
                   className="w-full text-center px-8 py-4.5 rounded-lg bg-primary-main-pink hover:bg-primary-dark-pink text-white font-medium text-base transition"
                 >
                   Watch Recap
-                </a>
-                <a
-                  href={REPORT_URL}
-                  download="SCA-State-of-Women-in-African-Tech-2026"
-                  className="w-full text-center px-8 py-4.5 rounded-lg border border-primary-main-pink text-primary-main-pink hover:bg-primary-very-light-pink font-medium text-base transition"
-                >
-                  Download Report
                 </a>
               </div>
             </div>

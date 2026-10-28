@@ -6,7 +6,7 @@ import {
   faYoutube,
   faLinkedinIn,
 } from "@fortawesome/free-brands-svg-icons";
-import logo from "../assets/footer-logo.png";
+import logo from "../assets/nav-logo.png";
 import { motion } from "framer-motion";
 
 export const Footer = () => {
@@ -21,7 +21,7 @@ export const Footer = () => {
       >
         <div className="container xl:mx-auto px-6 py-6 lg:py-10 mb-14">
           <section className="w-full flex flex-col lg:flex-row lg:items-center lg:gap-10 lg:justify-center ">
-            <figure className="max-w-37.5  h-40.5 w-full hidden lg:block mb-12 lg:mb-0 lg:mr-24">
+            <figure className="max-w-[250.78px]  h-26.5 w-full hidden lg:block mb-12 lg:mb-0 lg:mr-24">
               <img
                 src={logo}
                 alt="SCA-Logo"

@@ -10,7 +10,6 @@ import useEmblaCarousel from "embla-carousel-react";
 import { useCallback, useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import AutoHeight from "embla-carousel-auto-height";
-import Autoplay from "embla-carousel-autoplay";
 import { fadeUp, viewportOnce } from "../../../utils/motion";
 
 const sliderColors = [
@@ -19,7 +18,7 @@ const sliderColors = [
   "bg-[#F8EAFF]",
   "bg-[#FFFDDE]",
   "bg-pastel-pink",
-  "bg-[#FFFDDE]",
+  "bg-[#F8EAFF]",
 ];
 
 const slides = [
@@ -34,11 +33,7 @@ const slides = [
 const SummitHighlights = () => {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [
     AutoHeight(),
-    Autoplay({
-      delay: 4000,
-      stopOnInteraction: false,
-      stopOnMouseEnter: true,
-    }),
+   
   ]);
   const [selected, setSelected] = useState(0);
   const scrollPrev = useCallback(() => emblaApi?.scrollPrev(), [emblaApi]);
