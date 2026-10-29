@@ -130,7 +130,7 @@ const SummitHighlightSections = ({
                 </div>
               </article>
 
-              <figure className="w-full h-[289.88px] flex-1 overflow-hidden rounded-[26.79px]">
+              <figure className="w-full h-81.5 flex-1 overflow-hidden rounded-[26.79px]">
                 <img
                   src={images[3]}
                   alt="Summit Pictures"

@@ -61,6 +61,25 @@ const SummitHighlights = () => {
     };
   }, [emblaApi]);
 
+  // Re-measure the carousel height whenever a slide changes size
+  // (images loading, fonts loading, text wrapping, screen resize)
+  useEffect(() => {
+    if (!emblaApi) return;
+
+    const remeasure = () => emblaApi.reInit();
+
+    const observer = new ResizeObserver(remeasure);
+    emblaApi.slideNodes().forEach((node) => observer.observe(node));
+
+    window.addEventListener("load", remeasure);
+    document.fonts?.ready.then(remeasure);
+
+    return () => {
+      observer.disconnect();
+      window.removeEventListener("load", remeasure);
+    };
+  }, [emblaApi]);
+
   return (
     <section className="w-full embla">
       <div
@@ -76,7 +95,7 @@ const SummitHighlights = () => {
           Summit Highlights
         </motion.h3>
 
-        <section className="w-full mt-12.5 embla__viewport" ref={emblaRef}>
+        <section className="w-full mt-4 embla__viewport" ref={emblaRef}>
           <div className="embla__container items-start transition-[height] duration-300">
             {slides.map((slide, idx) => (
               <div className="embla__slide " key={idx}>
@@ -87,13 +106,13 @@ const SummitHighlights = () => {
         </section>
 
         {/* navigation */}
-        <section className="w-full justify-center flex mt-12.5">
+        <section className="w-full justify-center flex mt-5">
           <div className="w-full max-w-105 mx-auto flex justify-center items-center gap-4 lg:gap-6.5">
             <button
               onClick={scrollPrev}
               disabled={!canScrollPrev}
               aria-label="Previous slide"
-              className="w-9 h-9 lg:w-[62.24px] cursor-pointer lg:h-[62.24px] flex items-center justify-center rounded-full border-4 border-primary-magenta transition-all duration-200 hover:scale-105 active:scale-95 disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:scale-100 disabled:active:scale-100"
+              className=" cursor-pointer  flex items-center justify-center rounded-full  transition-all duration-200 hover:scale-105 active:scale-95 disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:scale-100 disabled:active:scale-100"
             >
               <ArrowLeft className="w-5 h-5 lg:w-8.25 lg:h-11 text-primary-magenta" />
             </button>
@@ -103,10 +122,10 @@ const SummitHighlights = () => {
                 <li
                   onClick={() => emblaApi?.scrollTo(idx)}
                   aria-label={`Go to slide ${idx + 1}`}
-                  className={`cursor-pointer h-5 lg:h-[29.45px] rounded-full transition-all duration-500 ease-in-out ${
+                  className={`cursor-pointer h-[17.67px] rounded-full transition-all duration-500 ease-in-out ${
                     idx === selected
-                      ? "w-8 lg:w-[58.91px] bg-primary-magenta"
-                      : "w-5 lg:w-[29.45px] bg-[#D9D9D9]"
+                      ? "w-8 lg:w-[35.35px] bg-primary-magenta"
+                      : "w-[17.67px] bg-[#D9D9D9]"
                   }`}
                   key={idx}
                 ></li>
@@ -117,7 +136,7 @@ const SummitHighlights = () => {
               onClick={scrollNext}
               disabled={!canScrollNext}
               aria-label="Next slide"
-              className="w-9 h-9 lg:w-[62.24px] cursor-pointer lg:h-[62.24px] flex items-center justify-center rounded-full border-4 border-primary-magenta transition-all duration-200 hover:scale-105 active:scale-95 disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:scale-100 disabled:active:scale-100"
+              className=" cursor-pointer  flex items-center justify-center rounded-full transition-all duration-200 hover:scale-105 active:scale-95 disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:scale-100 disabled:active:scale-100"
             >
               <ArrowRight className="w-5 h-5 lg:w-8.25 lg:h-11 text-primary-magenta" />
             </button>

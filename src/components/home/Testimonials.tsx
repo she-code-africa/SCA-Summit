@@ -283,26 +283,26 @@ const Testimonials = () => {
               onClick={scrollPrev}
               disabled={!canPrev}
               aria-label="Previous testimonials"
-              className={`flex size-12 lg:size-15.5 items-center justify-center rounded-full border-4 transition-colors duration-300 ${
+              className={`flex items-center justify-center rounded-full  transition-colors duration-300 ${
                 canPrev
-                  ? "border-white text-white cursor-pointer"
-                  : "border-white/30 text-white/30 cursor-not-allowed"
+                  ? " text-white cursor-pointer"
+                  : " text-white/30 cursor-not-allowed"
               }`}
             >
-              <ArrowLeft className="w-5 h-5 lg:w-8 lg:h-8" />
+              <ArrowLeft className="w-8 h-8 sm:w-[67.9px] lg:h-[67.9px]" />
             </button>
 
             <button
               onClick={scrollNext}
               disabled={!canNext}
               aria-label="Next testimonials"
-              className={`flex size-12 lg:size-15.5 items-center justify-center rounded-full border-4 transition-colors duration-300 ${
+              className={`flex items-center justify-center rounded-full transition-colors duration-300 ${
                 canNext
-                  ? "border-white text-white cursor-pointer"
-                  : "border-white/30 text-white/30 cursor-not-allowed"
+                  ? " text-white cursor-pointer"
+                  : " text-white/30 cursor-not-allowed"
               }`}
             >
-              <ArrowRight className="w-5 h-5 lg:w-8 lg:h-8" />
+              <ArrowRight className="w-8 h-8 sm:w-[67.9px] lg:h-[67.9px]" />
             </button>
           </motion.div>
         </div>
