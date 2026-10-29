@@ -64,7 +64,7 @@ const SummitHighlights = () => {
   return (
     <section className="w-full embla">
       <div
-        className={`w-full py-16 md:py-25 px-4 sm:px-6 lg:px-8 transition-colors duration-700 ease-in-out ${sliderColors[selected]}`}
+        className={`w-full py-12.5 px-4 sm:px-6 lg:px-8 transition-colors duration-700 ease-in-out ${sliderColors[selected]}`}
       >
         <motion.h3
           initial="hidden"
