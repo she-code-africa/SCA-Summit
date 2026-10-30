@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import whatWeBuilt from "../../assets/home/youtubePoster.jpg";
+import whatWeBuilt from "../../assets/home/whatWeBuiltPic.jpg";
 import PlayButton from "../../icons/PlayButton";
 
 const WhatWeBuilt = () => {
@@ -20,7 +20,7 @@ const WhatWeBuilt = () => {
           transition={{ duration: 0.6, ease: "easeOut" }}
           className="font-display text-black text-[48px] sm:text-[56px] lg:text-[64px] w-full text-center"
         >
-          See What We Built Last Summit
+          Watch Summit Recording
         </motion.h3>
 
         <motion.div
@@ -30,7 +30,7 @@ const WhatWeBuilt = () => {
           transition={{ duration: 0.6, delay: 0.15, ease: "easeOut" }}
           className="mt-10 w-full"
         >
-          <section className="px-6 py-6 md:px-12.5 bg-sca-white md:py-12.5 rounded-[30px]">
+          <section className="px-6 py-6 md:px-12.5 bg-sca-white md:py-12.5 ">
             <div className="w-full h-85.5 relative overflow-hidden rounded-[20px]">
               {!isPlaying ? (
                 <>
@@ -57,8 +57,8 @@ const WhatWeBuilt = () => {
               ) : (
                 <iframe
                   className="w-full h-full absolute inset-0"
-                  src="https://www.youtube.com/embed/j_oGekQqj34?autoplay=1&rel=0&mute=1"
-                  title="See What We Built Last Summit"
+                  src="https://www.youtube.com/embed/EB4wg_AiZVc?si=DW3fh64dznMj03xn"
+                  title="She Code Africa Summit 2026"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
                 />

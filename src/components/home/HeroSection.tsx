@@ -1,10 +1,7 @@
 "use client";
 import { motion, type Variants } from "framer-motion";
-import heroImage from "../../assets/home/homeHeroBg.jpg";
+import heroImage from "../../assets/home/homeHero.jpg";
 import FlowerVector from "../../icons/FlowerVector";
-import CalendarIcon from "../../icons/CalendarIcon";
-import MapPin from "../../icons/MapPin";
-import Globe from "../../icons/Globe";
 
 const heroContainer: Variants = {
   hidden: {},
@@ -23,26 +20,12 @@ const heroItem: Variants = {
 };
 
 const HeroSection = () => {
-  const venueInfo = [
-    {
-      icon: <CalendarIcon className="text-primary-magenta" />,
-      label: "19th September 2026",
-    },
-    {
-      icon: <MapPin className="text-primary-magenta" />,
-      label: "Celebr8 Centre HQ, Vori Close, Ikeja , Lagos, Nigeria",
-    },
-    {
-      icon: <Globe className="text-primary-magenta" />,
-      label: "In-Person + Virtual",
-    },
-  ];
   return (
     <section className="w-full">
       <div className="w-full  bg-cover bg-no-repeat">
-        <div className="relative min-h-[110vh] ">
+        <div className="relative min-h-200 ">
           {/* ABSOLUTE POSITIONED IMAGE */}
-          <figure className="absolute top-0 left-0 w-full h-full">
+          <figure className="absolute top-0 overflow-hidden left-0 w-full h-full">
             <img
               src={heroImage}
               rel="preload"
@@ -58,7 +41,7 @@ const HeroSection = () => {
           {/* BLACK DARKEN — flat overlay for text contrast */}
           <div className="absolute top-0 left-0 bg-[#00000059] w-full h-full" />
 
-          <div className="w-full  min-h-[110vh] flex items-center justify-center relative">
+          <div className="w-full  min-h-200 flex items-center justify-center relative">
             <motion.article
               initial="hidden"
               animate="visible"
@@ -94,24 +77,6 @@ const HeroSection = () => {
                 The flagship summit of African women in tech; talent, builders,
                 leaders, and funders shaping the ecosystem.
               </motion.p>
-
-              <motion.div
-                variants={heroItem}
-                className="w-full py-5 xl:py-0 max-w-280.5 mx-auto mt-4 xl:mt-8 flex justify-center flex-wrap gap-5"
-              >
-                {venueInfo.map(({ icon, label }, idx) => (
-                  <span
-                    className="flex py-2.5 px-6 gap-2.5 items-center justify-center bg-pastel-pink rounded-[20px]"
-                    key={idx}
-                  >
-                    {icon}
-
-                    <span className=" text-primary-magenta font-medium text-sm sm:text-base font-sans">
-                      {label}
-                    </span>
-                  </span>
-                ))}
-              </motion.div>
             </motion.article>
           </div>
         </div>
