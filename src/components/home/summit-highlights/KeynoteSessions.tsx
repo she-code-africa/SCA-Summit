@@ -12,7 +12,7 @@ const KeynoteSessions = () => {
         highlightSection="keynote"
         url="https://youtu.be/3zP1HKYcofk?si=O_v9PTs61gIXD5-X"
         title="Keynote Sessions"
-        images={[keynote1, keynote2, keynote3, keynote4, keynote5]}
+        images={[keynote1, keynote4, keynote2, keynote3, keynote5]}
         subtitle="The keynote sessions offered a moment to reflect on a decade of
                 progress and look ahead to what the next chapter could hold for
                 African women in technology. Grounded in the Summit's theme, the

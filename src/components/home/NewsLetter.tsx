@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import wavyBg from "../../assets/ticket-bg-pattern.png";
+import wavyBg from "../../assets/ticket-bg.png";
 import { fadeUp, stagger, viewportOnce } from "../../utils/motion";
 
 export function Newsletter() {
