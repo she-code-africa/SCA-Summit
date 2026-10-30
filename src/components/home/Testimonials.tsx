@@ -112,7 +112,7 @@ const TestimonialCard = ({
   tilt,
 }: Testimonial) => (
   <div
-    className="relative h-full min-h-100 overflow-hidden rounded-[26px]"
+    className="relative h-full w-full max-w-100 min-h-100 overflow-hidden rounded-[26px]"
     style={{ backgroundColor: cardBg }}
   >
     {/* big quote mark (color comes from the inline style, not a Tailwind class) */}
@@ -132,7 +132,7 @@ const TestimonialCard = ({
     />
 
     <div
-      className={`relative flex h-full flex-col justify-between gap-8 px-8 py-12 ${
+      className={`relative flex h-full flex-col  gap-8 px-8 py-12 ${
         tilt ? "-rotate-1" : ""
       }`}
     >
@@ -234,7 +234,7 @@ const Testimonials = () => {
           </p>
         </motion.article>
 
-        <div className="mt-9 w-full max-w-316.5 mx-auto">
+        <div className="mt-9 w-full max-w-312.5 mx-auto">
           {/* the boxes never leave, only their content crossfades */}
           <motion.div
             initial="hidden"
