@@ -9,11 +9,12 @@ type Testimonial = {
   paragraphs: string[];
   name: string;
   role?: string;
-  cardBg: string; // card background
-  quoteColor: string; // big quote mark
-  bandColor: string; // slanted shape on the right
+  cardBg: string;
+  quoteColor: string;
+  bandColor: string;
   textColor: string;
-  tilt?: boolean; // 1 degree rotation from the Figma design
+  tilt?: boolean;
+  customClass?: string;
 };
 
 const testimonials: Testimonial[] = [
@@ -53,6 +54,7 @@ const testimonials: Testimonial[] = [
     bandColor: "#A9849E",
     textColor: "#5C0335",
     tilt: true,
+    customClass: "pr-[55.03px]",
   },
 
   {
@@ -110,6 +112,7 @@ const TestimonialCard = ({
   bandColor,
   textColor,
   tilt,
+  customClass,
 }: Testimonial) => (
   <div
     className="relative h-full w-full max-w-100 min-h-100 overflow-hidden rounded-[26px]"
@@ -136,7 +139,7 @@ const TestimonialCard = ({
         tilt ? "-rotate-1" : ""
       }`}
     >
-      <div className="space-y-5 pr-6">
+      <div className={`space-y-5  ${customClass ? customClass : "pr-6"}`}>
         {paragraphs.map((text, idx) => (
           <p
             key={idx}
