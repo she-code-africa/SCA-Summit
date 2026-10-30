@@ -83,6 +83,7 @@ const SessionCard = ({
 
       <a
         href={url}
+        target="_blank"
         className="mt-6 inline-flex items-center justify-center gap-1 h-12 sm:h-13.75 px-8 rounded-[30px] bg-primary-magenta hover:bg-primary-dark-pink transition-colors duration-300 text-white font-figtree text-sm xl:text-base"
       >
         Watch session recap <ChevronRight size={18} />
