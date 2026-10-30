@@ -12,7 +12,7 @@ import jci from "../../assets/home/jci.png";
 import SponsorMarquee from "./SponsorMarquee";
 import nextGen from "../../assets/home/nextGen.png";
 import StrategicPartner from "./StrategicPartner";
-import CallForSponsors from "./CallForSponsors";
+// import CallForSponsors from "./CallForSponsors";
 import cc from "../../assets/home/cc.png";
 import gAfrica from "../../assets/home/GrowthAfrica.png";
 import owef from "../../assets/home/OWEF.png";
@@ -60,7 +60,6 @@ const OurSponsors = () => {
     { src: elegance, width: "143px", height: "81.21px" },
     { src: propel, width: "149px", height: "42px" },
     { src: gamms, width: "163px", height: "37px" },
-    
   ];
   return (
     <section className="w-full bg-pastel-pink">
@@ -116,7 +115,7 @@ const OurSponsors = () => {
         <OtherPartners />
       </div>
 
-      <CallForSponsors />
+      {/* <CallForSponsors /> */}
     </section>
   );
 };

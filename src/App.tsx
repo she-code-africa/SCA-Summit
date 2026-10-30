@@ -34,7 +34,10 @@ export default function App() {
               <Route path="/schedule" element={<SchedulePage />} />
               <Route path="/accessibility" element={<AccessibilityPage />} />
               <Route path="/about" element={<AboutPage />} />
-              <Route path="/terms-and-conditions" element={<TermsAndCondition />} />
+              <Route
+                path="/terms-and-conditions"
+                element={<TermsAndCondition />}
+              />
               <Route path="*" element={<LandingPage />} />
             </Routes>
           </main>

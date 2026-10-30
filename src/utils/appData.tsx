@@ -195,17 +195,11 @@ export const faqData: Record<
 };
 
 export const whyAttendTab = [
-  { label: "Keynotes", value: "keynotes" },
-  { label: "Workshops", value: "workshops" },
-  { label: "Track Sessions", value: "track-sessions" },
-  { label: "Panel Sessions", value: "panel-sessions" },
-  { label: "Networking", value: "networking" },
-  { label: "Learning & Engagement", value: "learning-engagement" },
-  { label: "Community Experience", value: "community-experience" },
-  { label: "Awards", value: "awards" },
-  {
-    label: "Access fund, scholarships & Giveaways",
-    value: "access-fund-scholarships-giveaways",
-  },
-  { label: "Partner showcase", value: "partner-showcase" },
+  { label: "Keynote I", value: "keynotes-1" },
+  { label: "Keynote II", value: "workshops-2" },
+  { label: "Fireside chat", value: "fireside-chat" },
+  { label: "Panel Session I", value: "panel-session-1" },
+  { label: "Panel Session II", value: "panel-session-2" },
+  { label: "Panel Session II", value: "panel-session-3" },
+  ,
 ];
