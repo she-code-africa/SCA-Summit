@@ -20,7 +20,7 @@ const testimonials: Testimonial[] = [
   {
     paragraphs: [
       "It was such an honour to be part of the Summit on the Impact Track and to share my story. I didn't take it lightly at all. Being part of a conversation that celebrates 10 years of She Code Africa's impact is something that means a lot to me personally.",
-      "Thank you for creating the space and for all the work you put in behind the scenes to make it seamless. I know how much effort goes into pulling off something like that. Count me in for whatever comes next. Always happy to support the SCA community in any way I can",
+      "Thank you for creating the space and for all the work you put in behind the scenes to make it seamless. I know how much effort goes into pulling off something like that. Count me in for whatever comes next. Always happy to support the SCA community in any way I can.",
     ],
     name: "Olaniyi Olanike",
     role: "Speaker",
@@ -54,6 +54,18 @@ const testimonials: Testimonial[] = [
     textColor: "#5C0335",
     tilt: true,
   },
+
+  {
+    paragraphs: [
+      "My experience at the SCA Summit was everything and more. From the hall ambience to the conversations, the summit truly embodied the message it was sharing and opened my eyes to what is possible for women in tech. The insightful panels, keynote sessions, and especially Ada's keynote reignited my drive and reminded me why I continue to pursue a future in tech. Seeing fellow undergraduates and women like myself take the stage to share their work and impact was equally inspiring.",
+      "One of my highlights was the hiring room, where recruiters were ready to connect with and hire talent. I had one of the most amazing 10-minute interviews, which boosted my confidence and reminded me of the opportunities ahead. Beyond the sessions, it was beautiful to celebrate, connect, and share space with fellow women in tech.",
+    ],
+    name: "Elizabeth Ogunmola",
+    cardBg: "#DDFA8F",
+    quoteColor: "#D0F07A",
+    bandColor: "#8FAB4F",
+    textColor: "#0F3D1F",
+  },
   {
     paragraphs: [
       "Thank you for having me as part of the Summit. I enjoyed the conversation and was glad to contribute to such an important discussion.",
@@ -86,17 +98,6 @@ const testimonials: Testimonial[] = [
     quoteColor: "#EBD3E0",
     bandColor: "#FFB3DC",
     textColor: "#5C0335",
-  },
-  {
-    paragraphs: [
-      "My experience at the SCA Summit was everything and more. From the hall ambience to the conversations, the summit truly embodied the message it was sharing and opened my eyes to what is possible for women in tech. The insightful panels, keynote sessions, and especially Ada's keynote reignited my drive and reminded me why I continue to pursue a future in tech. Seeing fellow undergraduates and women like myself take the stage to share their work and impact was equally inspiring.",
-      "One of my highlights was the hiring room, where recruiters were ready to connect with and hire talent. I had one of the most amazing 10-minute interviews, which boosted my confidence and reminded me of the opportunities ahead. Beyond the sessions, it was beautiful to celebrate, connect, and share space with fellow women in tech.",
-    ],
-    name: "Elizabeth Ogunmola",
-    cardBg: "#DDFA8F",
-    quoteColor: "#D0F07A",
-    bandColor: "#8FAB4F",
-    textColor: "#0F3D1F",
   },
 ];
 

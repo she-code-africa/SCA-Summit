@@ -128,7 +128,7 @@ export const sessions: Session[] = [
     bg: "bg-[#FFFDDE]",
     image: panel3,
     imageSide: "left",
-    url: "https://youtu.be/EB4wg_AiZVc?si=jEcomf8Hv64xhyS7",
+    url: "(https://www.youtube.com/watch?v=6499LUovHzg",
     twoColumnSpeakers: true,
   },
 ];

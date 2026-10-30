@@ -17,9 +17,9 @@ export const Footer = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
         viewport={{ once: true, amount: 0.3 }}
-        className="pt-10 lg:mt-20"
+        className="pt-25"
       >
-        <div className="container xl:mx-auto px-6 py-6 lg:py-10 mb-14">
+        <div className="container xl:mx-auto px-6  pb-14">
           <section className="w-full flex flex-col lg:flex-row lg:items-center lg:gap-10 lg:justify-center ">
             <figure className="max-w-[250.78px]  h-26.5 w-full hidden lg:block mb-12 lg:mb-0 lg:mr-24">
               <img
@@ -51,20 +51,20 @@ export const Footer = () => {
                 <a
                   target="_blank"
                   href="/about#get-involved"
-                  className="button-text block text-black mb-5 mt-8 hover:text-primary-main-pink focus:outline-none focus:ring focus:ring-tutu"
+                  className="button-text block text-black mb-3.75 mt-2 hover:text-primary-main-pink focus:outline-none focus:ring focus:ring-tutu"
                 >
                   Become a sponsor
                 </a>
 
                 <a
                   href="https://www.shecodeafrica.org/partner"
-                  className="button-text block mb-5 text-black hover:text-primary-main-pink focus:outline-none focus:ring focus:ring-tutu"
+                  className="button-text block mb-3.75 text-black hover:text-primary-main-pink focus:outline-none focus:ring focus:ring-tutu"
                 >
                   Partner With Us
                 </a>
                 <a
                   href="https://shecodeafrica.org/donate"
-                  className="button-text block mb-5 text-black hover:text-primary-main-pink focus:outline-none focus:ring focus:ring-tutu"
+                  className="button-text block mb-3.75 text-black hover:text-primary-main-pink focus:outline-none focus:ring focus:ring-tutu"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -80,20 +80,20 @@ export const Footer = () => {
 
                 <a
                   href="https://shecodeafrica.org/academy"
-                  className="button-text block mb-5 mt-8  hover:text-primary-main-pink focus:outline-none focus:ring focus:ring-tutu"
+                  className="button-text block mb-3.75 mt-2  hover:text-primary-main-pink focus:outline-none focus:ring focus:ring-tutu"
                 >
                   Our Programs
                 </a>
                 <a
                   href="https://shecodeafrica.org/"
-                  className="button-text block mb-5 hover:text-primary-main-pink focus:outline-none focus:ring focus:ring-tutu"
+                  className="button-text block mb-3.75 hover:text-primary-main-pink focus:outline-none focus:ring focus:ring-tutu"
                 >
                   SCA Website
                 </a>
 
                 <a
                   href="/terms-and-conditions"
-                  className="button-text block mb-5 hover:text-primary-main-pink focus:outline-none focus:ring focus:ring-tutu"
+                  className="button-text block mb-3.75 hover:text-primary-main-pink focus:outline-none focus:ring focus:ring-tutu"
                 >
                   Terms and Condition
                 </a>
@@ -106,7 +106,7 @@ export const Footer = () => {
                 </p>
                 <a
                   href="https://www.shecodeafrica.org/events"
-                  className="button-text block mb-5 text-black hover:text-primary-main-pink mt-8 focus:outline-none focus:ring focus:ring-tutu"
+                  className="button-text block mb-3.75 text-black hover:text-primary-main-pink mt-2 focus:outline-none focus:ring focus:ring-tutu"
                 >
                   Upcoming Events
                 </a>
@@ -114,14 +114,14 @@ export const Footer = () => {
                   href="https://docs.google.com/forms/d/e/1FAIpQLSdf-x58pHMIS5-YCLQQniKQxlncwJrtb0F60uljpjnoZMIo2g/viewform"
                   target="_blank"
                   rel="noreferrer"
-                  className="button-text block mb-5 text-black hover:text-primary-main-pink focus:outline-none focus:ring focus:ring-tutu"
+                  className="button-text block mb-3.75 text-black hover:text-primary-main-pink focus:outline-none focus:ring focus:ring-tutu"
                 >
                   Join Our Community
                 </a>
-                <div className="button-text block mb-5 text-black">
+                <div className="button-text block mb-3.75 text-black">
                   Follow Us On Social Media
                 </div>
-                <div className="flex gap-x-2.5 mb-5 items-center text-2xl text-primary-main-pink">
+                <div className="flex gap-x-2.5 mb-3.75 items-center text-2xl text-primary-main-pink">
                   <a
                     href="https://www.linkedin.com/company/she-code-africa/"
                     title="Follow us on Linkedin"
