@@ -54,12 +54,12 @@ const testimonials: Testimonial[] = [
     bandColor: "#A9849E",
     textColor: "#5C0335",
     tilt: true,
-    customClass: "pr-[55.03px]",
+    customClass: "pr-12",
   },
 
   {
     paragraphs: [
-      "My experience at the SCA Summit was everything and more. From the hall ambience to the conversations, the summit truly embodied the message it was sharing and opened my eyes to what is possible for women in tech. The insightful panels, keynote sessions, and especially Ada's keynote reignited my drive and reminded me why I continue to pursue a future in tech. Seeing fellow undergraduates and women like myself take the stage to share their work and impact was equally inspiring.",
+      "My experience at the SCA Summit was everything and more. From the hall ambience to the conversations, the summit truly embodied the message it was sharing and opened my eyes to what is possible for women in tech. The insightful panels, keynote sessions, and especially Ada’s keynote reignited my drive and reminded me why I continue to pursue a future in tech. Seeing fellow undergraduates and women like myself take the stage to share their work and impact was equally inspiring.",
       "One of my highlights was the hiring room, where recruiters were ready to connect with and hire talent. I had one of the most amazing 10-minute interviews, which boosted my confidence and reminded me of the opportunities ahead. Beyond the sessions, it was beautiful to celebrate, connect, and share space with fellow women in tech.",
     ],
     name: "Elizabeth Ogunmola",
@@ -67,6 +67,7 @@ const testimonials: Testimonial[] = [
     quoteColor: "#D0F07A",
     bandColor: "#8FAB4F",
     textColor: "#0F3D1F",
+    customClass: " pr-5",
   },
   {
     paragraphs: [
@@ -112,10 +113,10 @@ const TestimonialCard = ({
   bandColor,
   textColor,
   tilt,
-  customClass,
+  customClass = "",
 }: Testimonial) => (
   <div
-    className="relative h-full w-full max-w-100 min-h-100 overflow-hidden rounded-[26px]"
+    className="relative w-full max-w-100 h-100 overflow-hidden rounded-[26px]"
     style={{ backgroundColor: cardBg }}
   >
     {/* big quote mark (color comes from the inline style, not a Tailwind class) */}
@@ -135,15 +136,15 @@ const TestimonialCard = ({
     />
 
     <div
-      className={`relative flex h-full flex-col  gap-8 px-8 py-12 ${
+      className={`relative flex h-full flex-col  gap-3 pl-5  pb-5 pt-10 ${
         tilt ? "-rotate-1" : ""
       }`}
     >
-      <div className={`space-y-5  ${customClass ? customClass : "pr-6"}`}>
+      <div className={`space-y-3  ${customClass ? customClass : "pr-8"}`}>
         {paragraphs.map((text, idx) => (
           <p
             key={idx}
-            className="font-sans text-sm font-medium leading-[1.35]"
+            className="font-sans text-sm font-medium w-full leading-[1.35]"
             style={{ color: textColor }}
           >
             {text}
