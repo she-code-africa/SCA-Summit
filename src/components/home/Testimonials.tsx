@@ -4,105 +4,7 @@ import ArrowLeft from "../../icons/ArrowLeft";
 import ArrowRight from "../../icons/ArrowRight";
 import TestimonialQuote from "../../icons/TestimonialQuote";
 import { fadeUp, viewportOnce } from "../../utils/motion";
-
-type Testimonial = {
-  paragraphs: string[];
-  name: string;
-  role?: string;
-  cardBg: string;
-  quoteColor: string;
-  bandColor: string;
-  textColor: string;
-  tilt?: boolean;
-  customClass?: string;
-};
-
-const testimonials: Testimonial[] = [
-  {
-    paragraphs: [
-      "It was such an honour to be part of the Summit on the Impact Track and to share my story. I didn't take it lightly at all. Being part of a conversation that celebrates 10 years of She Code Africa's impact is something that means a lot to me personally.",
-      "Thank you for creating the space and for all the work you put in behind the scenes to make it seamless. I know how much effort goes into pulling off something like that. Count me in for whatever comes next. Always happy to support the SCA community in any way I can.",
-    ],
-    name: "Olaniyi Olanike",
-    role: "Speaker",
-    cardBg: "#FDB5E0",
-    quoteColor: "#FFA9D8",
-    bandColor: "#FF8FCF",
-    textColor: "#5C0335",
-  },
-  {
-    paragraphs: [
-      "It was truly an honour to join the Impact Track and share a part of my journey with the SCA community. Looking back, I'm reminded of how much access to the right community, knowledge, mentorship, and opportunities can change the direction of a person's life and career.",
-      "She Code Africa has been an important part of my own journey, and being able to return and share that story while reflecting on the wider impact of investing in African women in technology was particularly meaningful to me.",
-    ],
-    name: "Perpetual Meninwa",
-    role: "Speaker",
-    cardBg: "#F3FDDA",
-    quoteColor: "#E8F7C4",
-    bandColor: "#8FAB4F",
-    textColor: "#000000",
-    tilt: true,
-  },
-  {
-    paragraphs: [
-      "I had a great time learning more about the work SCA does and connecting with the wonderful members of your community. Cheers to the next 10!",
-    ],
-    name: "Bekere Amassoma",
-    role: "VIP Guest",
-    cardBg: "#E8DDE3",
-    quoteColor: "#DCCCD5",
-    bandColor: "#A9849E",
-    textColor: "#5C0335",
-    tilt: true,
-    customClass: "pr-12",
-  },
-
-  {
-    paragraphs: [
-      "My experience at the SCA Summit was everything and more. From the hall ambience to the conversations, the summit truly embodied the message it was sharing and opened my eyes to what is possible for women in tech. The insightful panels, keynote sessions, and especially Ada’s keynote reignited my drive and reminded me why I continue to pursue a future in tech. Seeing fellow undergraduates and women like myself take the stage to share their work and impact was equally inspiring.",
-      "One of my highlights was the hiring room, where recruiters were ready to connect with and hire talent. I had one of the most amazing 10-minute interviews, which boosted my confidence and reminded me of the opportunities ahead. Beyond the sessions, it was beautiful to celebrate, connect, and share space with fellow women in tech.",
-    ],
-    name: "Elizabeth Ogunmola",
-    cardBg: "#DDFA8F",
-    quoteColor: "#D0F07A",
-    bandColor: "#8FAB4F",
-    textColor: "#0F3D1F",
-    customClass: " pr-5",
-  },
-  {
-    paragraphs: [
-      "Thank you for having me as part of the Summit. I enjoyed the conversation and was glad to contribute to such an important discussion.",
-    ],
-    name: "Bekere Amassoma",
-    role: "VIP Guest",
-    cardBg: "#FFF68F",
-    quoteColor: "#FFE9A0",
-    bandColor: "#FF8A3D",
-    textColor: "#5C0335",
-  },
-  {
-    paragraphs: [
-      "The Summit was amazing, and what wowed me was the high level of organization, from the ambiance to the reception (welcoming of people), the event itself, and the packaging of the refreshments...",
-      "I am a perfectionist, so it's not difficult for me to notice lapses at any event I attend. But, I must say that the summit was beyond my imagination, and I want to give kudos to the organizers and She Code Africa Management as a whole. The Summit was indeed a Success!!!",
-    ],
-    name: "Adaeze Blessing Oyetunde",
-    cardBg: "#F7E8FF",
-    quoteColor: "#EFD9FF",
-    bandColor: "#9966FF",
-    textColor: "#9966FF",
-  },
-  {
-    paragraphs: [
-      "What stood out to me most was how intentional the summit was, the creative designs, and how inclusive it felt- especially the florals, which made one feel like celebrating yourself, community and the 10th year anniversary altogether. I also appreciate the hospitality of the event.",
-      "I loved seeing students, young women, and experienced professionals in the same space, alongside a diverse mix of speakers with inspirational stories and insights. The recruitment opportunity was another highlight, a real opportunity for a woman to get hired. The She Code Africa Team excels at creating a fresh experience with every summit. There is always something new to look forward to. Thank you for an incredible summit experience.",
-    ],
-    name: "Seriki A",
-    cardBg: "#FFE6F3",
-    quoteColor: "#EBD3E0",
-    bandColor: "#FFB3DC",
-    textColor: "#5C0335",
-  },
-];
+import { testimonials, type Testimonial } from "../../utils/testimonials";
 
 const TestimonialCard = ({
   paragraphs,
@@ -113,7 +15,7 @@ const TestimonialCard = ({
   bandColor,
   textColor,
   tilt,
-  customClass = "",
+  textWidth = "w-[348px]",
 }: Testimonial) => (
   <div
     className="relative w-full max-w-100 h-100 overflow-hidden rounded-[26px]"
@@ -136,26 +38,32 @@ const TestimonialCard = ({
     />
 
     <div
-      className={`relative flex h-full flex-col  gap-3 pl-5  pb-5 pt-10 ${
+      className={`relative flex h-full flex-col gap-3 pb-5 pt-10 ${
         tilt ? "-rotate-1" : ""
       }`}
     >
-      <div className={`space-y-3  ${customClass ? customClass : "pr-8"}`}>
+      {/* the text width is set per testimonial from the data file */}
+      <div className={`space-y-3 max-w-full ${textWidth}`}>
         {paragraphs.map((text, idx) => (
           <p
             key={idx}
-            className="font-sans text-sm font-medium w-full leading-[1.35]"
+            className="font-sans  font-medium w-full leading-[1.35]"
             style={{ color: textColor }}
           >
             {text}
           </p>
         ))}
+
+        <div className="text-black">
+          <p className="font-sans font-bold text-sm">- {name}</p>
+          {role && <p className="font-sans italic text-sm pl-3.5">{role}</p>}
+        </div>
       </div>
 
-      <div className="text-black">
+      {/* <div className="text-black">
         <p className="font-sans font-bold text-sm">- {name}</p>
         {role && <p className="font-sans italic text-sm pl-3.5">{role}</p>}
-      </div>
+      </div> */}
     </div>
   </div>
 );
@@ -205,13 +113,13 @@ const Testimonials = () => {
     [totalPages],
   );
 
-  // The last page always shows the final cards (no wrapping to the start),
-  // so with 7 testimonials on desktop the pages are: 1-3, 4-6, 5-7
-  const start = Math.min(page * perPage, testimonials.length - perPage);
-  const visible = Array.from({ length: perPage }, (_, slot) => {
-    const index = start + slot;
-    return { index, item: testimonials[index] };
-  });
+  // Each page shows the next group of cards. The last page shows only what is
+  // left (e.g. 11 testimonials on desktop: 3, 3, 3, then 2 centered),
+  // which matches the Figma design.
+  const start = page * perPage;
+  const visible = testimonials
+    .slice(start, start + perPage)
+    .map((item, slot) => ({ index: start + slot, item }));
 
   return (
     <section className="relative w-full overflow-hidden border-b border-b-secondary-grape bg-white py-25">
@@ -230,7 +138,7 @@ const Testimonials = () => {
           className="w-full space-y-2"
         >
           <h3 className="font-display text-primary-magenta mt-5 text-[48px] sm:text-[56px] lg:text-[64px] w-full text-center">
-            Our Queens’ Experiences
+            Attendees Experience
           </h3>
 
           <p className="font-medium text-center font-sans text-lg sm:text-2xl text-black">
@@ -245,11 +153,15 @@ const Testimonials = () => {
             whileInView="visible"
             viewport={viewportOnce}
             variants={fadeUp}
-            className="grid gap-6 md:grid-cols-2 lg:grid-cols-3"
+            className="flex flex-wrap justify-center gap-6"
           >
             {visible.map(({ index, item }, slot) => (
-              // Old and new card sit in the same grid cell, on top of each other
-              <div key={slot} className="grid h-full">
+              // Each slot is one third (desktop), one half (tablet) or full width (phone).
+              // Old and new card sit in the same grid cell, on top of each other.
+              <div
+                key={slot}
+                className="grid h-full justify-items-center w-full md:w-[calc((100%-1.5rem)/2)] lg:w-[calc((100%-3rem)/3)]"
+              >
                 <AnimatePresence initial={false}>
                   <motion.div
                     key={index}
@@ -267,7 +179,7 @@ const Testimonials = () => {
                       zIndex: 1,
                       transition: { duration: FADE + EXIT_EXTRA },
                     }}
-                    className="col-start-1 row-start-1 h-full"
+                    className="col-start-1 row-start-1 h-full w-full flex justify-center"
                   >
                     <TestimonialCard {...item} />
                   </motion.div>
@@ -288,10 +200,10 @@ const Testimonials = () => {
               onClick={scrollPrev}
               disabled={!canPrev}
               aria-label="Previous testimonials"
-              className={`flex items-center justify-center rounded-full  transition-colors duration-300 ${
+              className={`flex items-center justify-center rounded-full transition-colors duration-300 ${
                 canPrev
-                  ? " text-white cursor-pointer"
-                  : " text-white/30 cursor-not-allowed"
+                  ? "text-white cursor-pointer"
+                  : "text-white/30 cursor-not-allowed"
               }`}
             >
               <ArrowLeft className="w-8 h-8 sm:w-[67.9px] lg:h-[67.9px]" />
@@ -303,8 +215,8 @@ const Testimonials = () => {
               aria-label="Next testimonials"
               className={`flex items-center justify-center rounded-full transition-colors duration-300 ${
                 canNext
-                  ? " text-white cursor-pointer"
-                  : " text-white/30 cursor-not-allowed"
+                  ? "text-white cursor-pointer"
+                  : "text-white/30 cursor-not-allowed"
               }`}
             >
               <ArrowRight className="w-8 h-8 sm:w-[67.9px] lg:h-[67.9px]" />
